@@ -6,7 +6,7 @@
       "mode": "ALL"
     },
     "columnWidthsByName": {
-      "Date": 60,
+      "Date": 150,
       "Location": 106,
       "Positive": 100,
       "Tested": 100,
@@ -78,7 +78,7 @@
             "column": "Date",
             "type": "ALPHANUM",
             "numParams": {
-              "emptyBinsMode": "ZEROS"
+              "emptyBinsMode": "AVERAGE"
             },
             "maxValues": 20,
             "generateOthersCategory": true,
@@ -101,12 +101,23 @@
                 "measureIdx": 0,
                 "label": "Average of Fatal, ascending",
                 "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Count of records, ascending",
+                "sortAscending": true
               }
             ],
             "sort": {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Average of Fatal, descending"
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
             }
           }
         ],
@@ -117,6 +128,16 @@
           {
             "column": "Fatal",
             "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          },
+          {
+            "function": "COUNT",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
@@ -148,6 +169,7 @@
             "filterType": "ALPHANUM_FACET",
             "column": "Date",
             "columnType": "ALPHANUM",
+            "dateFilterType": "RANGE",
             "isA": "filter",
             "excludedValues": {},
             "explicitExclude": false
@@ -212,7 +234,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAYElEQVRoQ+3UAREAQAiEQO1f+gN8A1wbCMztHLs99u94uG6cYYZjBCQdE/q9wzDDMQKSjgk1WpKWdIyApGNCrbSkJR0jIOmYUCstaUnHCEg6JtRKS1rSMQKSjgm10ueSfinJACn8bS8UAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA/UlEQVRoQ2NkGGGAcYT5l2HUw8M9xkdjeDSGh1kIjCbpYRahGN4ZjeHRGB5mITCapIdZhI4WWiMiSW8+80nE14TvDSi6R4SH1518tTLIXCx8xHh4/dGXyoHW4ndHjIeRS64RkaRHPTzc697RGB6N4WEcAqOl9DCOXLDXRmN4MMSwfPmWKoZ//14x/GfY+7Db9wEDI+N/ct0lV7ol7VG3zyyYfrwxLFe2pfxRl08nuZaRqs945hnWs+kmv0nVh0/9uhMvFwZZiMcT5WFqWjyQZslVbDF+1OFzdjQPD2Qs0Mvu0VKaXiE9UPaMxvBAhTy97B2NYXqF9EDZM+JiGADnOSopaSI4cQAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
