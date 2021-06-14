@@ -52,7 +52,7 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Avg. of col_13 by Test",
+        "name": "Max. of col_7 by Test",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -75,12 +75,34 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of col_13, descending"
+                "label": "Maximum of col_7, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
+                "label": "Maximum of col_7, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of col_13, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
                 "label": "Average of col_13, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Average of col_16, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Average of col_16, ascending",
                 "sortAscending": true
               }
             ],
@@ -96,7 +118,29 @@
         "animationDimension": [],
         "genericMeasures": [
           {
+            "column": "col_7",
+            "function": "MAX",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          },
+          {
             "column": "col_13",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          },
+          {
+            "column": "col_16",
             "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
@@ -184,7 +228,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA4UlEQVRoQ2NkGGGAkVT/ypdv2Y+s52GnjyOIL1u6LRxZ/HG310oQH5d6Uu2llnqcHsbl0MEmLlOyUQ85MJ70+F/CFzhD3sOkpqBRD8OSw2BLuqS6B1eyHo3h0RiGhgCs+iE1aQ2U+tEkDQ2B0Tw8modH8zD2tvRAFU6jLS1oZ2a0lB4tpdHSwGDLk6S6ZzRJjybp0SQ9NOrb0Xp4tB5GzaujvaXR3tJob2lolN6jLa3RltZIb2lRa7ZusJlD8nTpYPMAqe4Z9TCpITbU1I/G8FCLMVLdOxrDpIbYUFM/4mIYAJD2rFa8sulLAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAvklEQVRoQ+2ZoQ2AMBBF2w2QuC6BQeIRhGWYAcUoGNDMwiQQoCWE5EJwl/bhaGru//u//1prEvusVK/r5tGYLVv7unrucd20HP/a16W6KDggA8MeCVpaKRBo2COAaWFanMMEj1MF2o4rXBqXfvUA0VJpopK8Aw2jYTTMjYfKgIFpfVxKMh4yHjIeMh6qdG+iJdGSaHlFy6EpTFvm94NaSDba139rONZXVDFpUXAkCMBwJESKZcAwDEeGQHItvQM3m95WJh/3cgAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
