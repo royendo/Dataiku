@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1623636343329
+    "lastModifiedOn": 1623636344563
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,8 +86,7 @@
     "columns": [
       {
         "name": "Date",
-        "type": "string",
-        "meaning": "Text"
+        "type": "string"
       },
       {
         "name": "Location",
