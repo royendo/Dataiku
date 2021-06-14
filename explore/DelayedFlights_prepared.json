@@ -62,7 +62,7 @@
               "emptyBinsMode": "ZEROS"
             },
             "maxValues": 20,
-            "generateOthersCategory": true,
+            "generateOthersCategory": false,
             "oneTickPerBin": false,
             "filters": [],
             "isA": "dimension",
