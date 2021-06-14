@@ -26,8 +26,31 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "Date_parsed",
+        "formats": [
+          "MM/dd/yyyy"
+        ],
+        "columns": [
+          "Date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +58,25 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Discharged": 100,
+    "Date_parsed": 113,
+    "Hosp_require": 105,
+    "Vaccinated_1st": 120,
+    "Asymptomatic": 105,
+    "Hosp_unknown": 105,
+    "Fatal": 100,
+    "Tested": 100,
+    "Date": 100,
+    "Hosp_severe": 100,
+    "Positive": 100,
+    "Hosp_mild": 100,
+    "Hosp_waiting": 105,
+    "Vaccinated_2nd": 120,
+    "Symptomatic": 100,
+    "Sym-unknown": 100,
+    "Location": 106
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
