@@ -75,7 +75,7 @@
   "tags": [],
   "params": {
     "connection": "filesystem_managed",
-    "path": "${projectKey}/covid_jpn_total_prepared",
+    "path": "/EVERYTHING.covid_jpn_total_prepared",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
