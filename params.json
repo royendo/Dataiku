@@ -22,7 +22,16 @@
       "exportGitRepository": false,
       "exportInsightsData": false,
       "useManualPluginsInfo": false,
-      "includedDatasetsData": [],
+      "includedDatasetsData": [
+        {
+          "name": "covid_jpn_total",
+          "type": "UploadedFiles"
+        },
+        {
+          "name": "Corona",
+          "type": "UploadedFiles"
+        }
+      ],
       "includedSavedModels": [],
       "includedModelEvaluationStores": [],
       "includedManagedFolders": [],
@@ -198,11 +207,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1623889249436
+    "lastModifiedOn": 1623889368360
   },
   "creationTag": {
     "versionNumber": 0,
