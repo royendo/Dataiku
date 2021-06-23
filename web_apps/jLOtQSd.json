@@ -7,7 +7,8 @@
     "autoStartBackend": false,
     "hideJSSecurityPanel": false,
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "Python27"
     },
     "nbProcesses": 1,
     "libraries": [
@@ -16,7 +17,7 @@
     ],
     "infra": {
       "containerSelection": {
-        "containerMode": "INHERIT"
+        "containerMode": "NONE"
       },
       "overrideGlobalK8sExposition": false,
       "exposition": {
@@ -40,11 +41,11 @@
   "name": "23938",
   "apiKey": "2pR8qphRmv84RP8RxR6mw1t19W2gszO3",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1624491502097
+    "lastModifiedOn": 1624491634838
   },
   "creationTag": {
     "versionNumber": 0,
