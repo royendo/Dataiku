@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1624425617118
+    "lastModifiedOn": 1624426677578
   },
   "creationTag": {
     "versionNumber": 0,
@@ -127,30 +127,6 @@
         "type": "double"
       },
       {
-        "name": "total_cases_per_million",
-        "type": "double"
-      },
-      {
-        "name": "new_cases_per_million",
-        "type": "double"
-      },
-      {
-        "name": "new_cases_smoothed_per_million",
-        "type": "double"
-      },
-      {
-        "name": "total_deaths_per_million",
-        "type": "double"
-      },
-      {
-        "name": "new_deaths_per_million",
-        "type": "double"
-      },
-      {
-        "name": "new_deaths_smoothed_per_million",
-        "type": "double"
-      },
-      {
         "name": "reproduction_rate",
         "type": "double"
       },
@@ -159,15 +135,7 @@
         "type": "double"
       },
       {
-        "name": "icu_patients_per_million",
-        "type": "double"
-      },
-      {
         "name": "hosp_patients",
-        "type": "double"
-      },
-      {
-        "name": "hosp_patients_per_million",
         "type": "double"
       },
       {
@@ -175,15 +143,7 @@
         "type": "string"
       },
       {
-        "name": "weekly_icu_admissions_per_million",
-        "type": "string"
-      },
-      {
         "name": "weekly_hosp_admissions",
-        "type": "double"
-      },
-      {
-        "name": "weekly_hosp_admissions_per_million",
         "type": "double"
       },
       {
@@ -195,19 +155,7 @@
         "type": "double"
       },
       {
-        "name": "total_tests_per_thousand",
-        "type": "double"
-      },
-      {
-        "name": "new_tests_per_thousand",
-        "type": "double"
-      },
-      {
         "name": "new_tests_smoothed",
-        "type": "double"
-      },
-      {
-        "name": "new_tests_smoothed_per_thousand",
         "type": "double"
       },
       {
@@ -240,22 +188,6 @@
       },
       {
         "name": "new_vaccinations_smoothed",
-        "type": "double"
-      },
-      {
-        "name": "total_vaccinations_per_hundred",
-        "type": "double"
-      },
-      {
-        "name": "people_vaccinated_per_hundred",
-        "type": "double"
-      },
-      {
-        "name": "people_fully_vaccinated_per_hundred",
-        "type": "double"
-      },
-      {
-        "name": "new_vaccinations_smoothed_per_million",
         "type": "double"
       },
       {
@@ -308,10 +240,6 @@
       },
       {
         "name": "handwashing_facilities",
-        "type": "double"
-      },
-      {
-        "name": "hospital_beds_per_thousand",
         "type": "double"
       },
       {
