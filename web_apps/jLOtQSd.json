@@ -2,7 +2,7 @@
   "type": "STANDARD",
   "hasLegacyBackendURL": false,
   "params": {
-    "backendEnabled": false,
+    "backendEnabled": true,
     "enableJavascriptModules": false,
     "autoStartBackend": false,
     "hideJSSecurityPanel": false,
@@ -40,11 +40,11 @@
   "name": "23938",
   "apiKey": "2pR8qphRmv84RP8RxR6mw1t19W2gszO3",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1624491429427
+    "lastModifiedOn": 1624491502097
   },
   "creationTag": {
     "versionNumber": 0,
