@@ -6,7 +6,7 @@ import re
 from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
 
 
-@app.route('/cluster/<path:url>/test')
+@app.route('<path:url>/test')
 def test():
     print ("TEST")
     return "TEST"
