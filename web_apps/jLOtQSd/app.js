@@ -1,4 +1,4 @@
-$.get(getWebAppBackendUrl('/cluster/apps/test'), function(data) {
+$.get(getWebAppBackendUrl('/test'), function(data) {
     console.log(data)
 })
 
