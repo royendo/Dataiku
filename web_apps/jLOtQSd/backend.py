@@ -6,7 +6,7 @@ import re
 from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
 
 
-@app.route('/test')
+@app.route('/<path:url>')
 def test():
     print ("TEST")
     return "TEST"
