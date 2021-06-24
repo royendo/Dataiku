@@ -12,7 +12,7 @@ def test():
     return "TEST"
 
 #@app.route('/<path:url>')
-@app.route('/cluster/<path:url>')
+@app.route('/cluster/apps/<path:url>')
 def reverse_proxy(url):
     #print ("before ",url)
        
