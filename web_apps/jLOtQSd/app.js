@@ -4,4 +4,3 @@ $.get(getWebAppBackendUrl('/cluster/apps/RUNNING'), function(data) {
     $("#regTitle").html(data)
 })
 
- document.getElementsByTagName("base")[0].href = document.location.href;
