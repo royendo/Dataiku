@@ -1,5 +1,5 @@
 $.get(getWebAppBackendUrl('/test'))
-$.get(getWebAppBackendUrl('/cluster/apps/test'), function(data) {
+$.get(getWebAppBackendUrl('/cluster/apps/'), function(data) {
     console.log(data)
     $("#regTitle").html(data)
 })
