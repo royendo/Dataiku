@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625128017631
+    "lastModifiedOn": 1625128149567
   },
   "creationTag": {
     "versionNumber": 0,
@@ -152,6 +152,54 @@
       },
       {
         "name": "Vaccinated_2nd",
+        "type": "bigint"
+      },
+      {
+        "name": "Date_last",
+        "type": "string"
+      },
+      {
+        "name": "Date_parsed_last",
+        "type": "date"
+      },
+      {
+        "name": "Location_last",
+        "type": "string"
+      },
+      {
+        "name": "Positive_last",
+        "type": "bigint"
+      },
+      {
+        "name": "Tested_last",
+        "type": "bigint"
+      },
+      {
+        "name": "Symptomatic_last",
+        "type": "bigint"
+      },
+      {
+        "name": "Asymptomatic_last",
+        "type": "bigint"
+      },
+      {
+        "name": "Sym-unknown_last",
+        "type": "bigint"
+      },
+      {
+        "name": "Hosp_require_last",
+        "type": "bigint"
+      },
+      {
+        "name": "Hosp_mild_last",
+        "type": "bigint"
+      },
+      {
+        "name": "Hosp_unknown_last",
+        "type": "bigint"
+      },
+      {
+        "name": "Hosp_waiting_last",
         "type": "bigint"
       }
     ],
