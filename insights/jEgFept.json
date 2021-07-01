@@ -8,7 +8,37 @@
       "columnsSelection": {
         "mode": "ALL"
       },
-      "columnWidthsByName": {},
+      "columnWidthsByName": {
+        "Date": 100,
+        "Date_parsed": 106,
+        "Location": 106,
+        "Positive": 100,
+        "Tested": 100,
+        "Symptomatic": 100,
+        "Asymptomatic": 105,
+        "Sym-unknown": 100,
+        "Hosp_require": 105,
+        "Hosp_mild": 100,
+        "Hosp_severe": 100,
+        "Hosp_unknown": 105,
+        "Hosp_waiting": 105,
+        "Discharged": 100,
+        "Fatal": 100,
+        "Vaccinated_1st": 120,
+        "Vaccinated_2nd": 120,
+        "Date_last": 113,
+        "Date_parsed_last": 135,
+        "Location_last": 113,
+        "Positive_last": 113,
+        "Tested_last": 100,
+        "Symptomatic_last": 135,
+        "Asymptomatic_last": 143,
+        "Sym-unknown_last": 135,
+        "Hosp_require_last": 143,
+        "Hosp_mild_last": 120,
+        "Hosp_unknown_last": 143,
+        "Hosp_waiting_last": 143
+      },
       "coloring": {
         "scheme": "MEANING_AND_STATUS",
         "individualColumns": [],
@@ -31,19 +61,21 @@
             "rules": []
           },
           "samplingMethod": "HEAD_SEQUENTIAL",
-          "maxRecords": 10000,
+          "maxRecords": 100000,
           "targetRatio": 0.02,
           "withinFirstN": -1,
           "maxReadUncompressedBytes": -1
         },
         "autoRefreshSample": false,
-        "_refreshTrigger": 0
+        "_refreshTrigger": 1
       },
       "vizSampling": {
         "autoRefreshSample": false,
         "_refreshTrigger": 0
       },
-      "exploreUIParams": {},
+      "exploreUIParams": {
+        "autoRefresh": true
+      },
       "globalSearchQuery": "",
       "explorationFilters": [],
       "previewMode": "ALL_ROWS"
@@ -54,11 +86,11 @@
   "name": "covid_jpn_total_prepared_windows",
   "dashboardCreationId": "XTyhvn6",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625181435069
+    "lastModifiedOn": 1625181484213
   },
   "creationTag": {
     "versionNumber": 0,
