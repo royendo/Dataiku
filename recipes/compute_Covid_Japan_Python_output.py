@@ -11,7 +11,6 @@ Corona_prepared_ColumnLength = dataiku.Dataset("Corona_prepared_ColumnLength") #
 
 covid_jpn_total_prepared_windows_prepared_df = covid_jpn_total_prepared_windows_prepared.get_dataframe()
 df = Corona_prepared_ColumnLength.get_dataframe()
-covid_jpn_total_prepared_windows_prepared
 covid_jpn_total_prepared_windows_prepared.write_with_schema(df)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
@@ -49,4 +48,4 @@ CJP_output.head()
 # Write recipe outputs
 covid_Japan_Python_output = dataiku.Dataset("Covid_Japan_Python_output")
 #covid_Japan_Python_output.write_with_schema(covid_Japan_Python_output_df)
-covid_Japan_Python_output.write_with_schema(df)
+covid_Japan_Python_output.write_with_schema(covid_jpn_total_prepared_windows_prepared)
