@@ -6,7 +6,7 @@ from dataiku import pandasutils as pdu
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Read recipe inputs
-covid_jpn_total_prepared_windows_prepared = dataiku.Dataset("covid_jpn_total_prepared_windows_prepared")
+covid_jpn_total_prepared_windows_prepared = dataiku.Dataset("Corona")
 Corona_prepared_ColumnLength = dataiku.Dataset("Corona_prepared_ColumnLength")
 
 covid_jpn_total_prepared_windows_prepared_df = covid_jpn_total_prepared_windows_prepared.get_dataframe()
