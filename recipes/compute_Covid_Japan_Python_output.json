@@ -24,6 +24,10 @@
         {
           "ref": "covid_jpn_total_prepared_windows_prepared",
           "deps": []
+        },
+        {
+          "ref": "Corona_prepared_ColumnLength",
+          "deps": []
         }
       ]
     }
@@ -40,11 +44,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625555877784
+    "lastModifiedOn": 1625555887016
   },
   "creationTag": {
     "versionNumber": 0,
