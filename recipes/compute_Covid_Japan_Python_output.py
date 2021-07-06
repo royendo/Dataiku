@@ -7,8 +7,11 @@ from dataiku import pandasutils as pdu
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Read recipe inputs
 covid_jpn_total_prepared_windows_prepared = dataiku.Dataset("covid_jpn_total_prepared_windows_prepared")
+Corona_prepared_ColumnLength = dataiku.Dataset("Corona_prepared_ColumnLength")
+
 covid_jpn_total_prepared_windows_prepared_df = covid_jpn_total_prepared_windows_prepared.get_dataframe()
-covid_jpn_total_prepared_windows_prepared.write_with_schema()
+df = Corona_prepared_ColumnLength.get_dataframe()
+covid_jpn_total_prepared_windows_prepared.write_with_schema(df)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Compute recipe outputs from inputs
