@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1623373741934
+    "lastModifiedOn": 1625556120408
   },
   "creationTag": {
     "versionNumber": 0,
@@ -102,119 +102,67 @@
       },
       {
         "name": "total_cases",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "new_cases",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "new_cases_smoothed",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "total_deaths",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "new_deaths",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "new_deaths_smoothed",
-        "type": "string"
-      },
-      {
-        "name": "total_cases_per_million",
-        "type": "string"
-      },
-      {
-        "name": "new_cases_per_million",
-        "type": "string"
-      },
-      {
-        "name": "new_cases_smoothed_per_million",
-        "type": "string"
-      },
-      {
-        "name": "total_deaths_per_million",
-        "type": "string"
-      },
-      {
-        "name": "new_deaths_per_million",
-        "type": "string"
-      },
-      {
-        "name": "new_deaths_smoothed_per_million",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "reproduction_rate",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "icu_patients",
-        "type": "string"
-      },
-      {
-        "name": "icu_patients_per_million",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "hosp_patients",
-        "type": "string"
-      },
-      {
-        "name": "hosp_patients_per_million",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "weekly_icu_admissions",
-        "type": "string"
-      },
-      {
-        "name": "weekly_icu_admissions_per_million",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "weekly_hosp_admissions",
-        "type": "string"
-      },
-      {
-        "name": "weekly_hosp_admissions_per_million",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "new_tests",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "total_tests",
-        "type": "string"
-      },
-      {
-        "name": "total_tests_per_thousand",
-        "type": "string"
-      },
-      {
-        "name": "new_tests_per_thousand",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "new_tests_smoothed",
-        "type": "string"
-      },
-      {
-        "name": "new_tests_smoothed_per_thousand",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "positive_rate",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "tests_per_case",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "tests_units",
@@ -222,110 +170,90 @@
       },
       {
         "name": "total_vaccinations",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "people_vaccinated",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "people_fully_vaccinated",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "new_vaccinations",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "new_vaccinations_smoothed",
-        "type": "string"
-      },
-      {
-        "name": "total_vaccinations_per_hundred",
-        "type": "string"
-      },
-      {
-        "name": "people_vaccinated_per_hundred",
-        "type": "string"
-      },
-      {
-        "name": "people_fully_vaccinated_per_hundred",
-        "type": "string"
-      },
-      {
-        "name": "new_vaccinations_smoothed_per_million",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "stringency_index",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "population",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "population_density",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "median_age",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "aged_65_older",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "aged_70_older",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "gdp_per_capita",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "extreme_poverty",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "cardiovasc_death_rate",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "diabetes_prevalence",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "female_smokers",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "male_smokers",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "handwashing_facilities",
-        "type": "string"
-      },
-      {
-        "name": "hospital_beds_per_thousand",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "life_expectancy",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "human_development_index",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "excess_mortality",
-        "type": "string"
+        "type": "double"
       }
     ],
-    "userModified": true
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
