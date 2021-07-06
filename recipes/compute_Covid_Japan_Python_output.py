@@ -15,7 +15,7 @@ covid_jpn_total_prepared_windows_prepared_df = covid_jpn_total_prepared_windows_
 # NB: DSS also supports other kinds of APIs for reading and writing data. Please see doc.
 
 #covid_Japan_Python_output_df = covid_jpn_total_prepared_windows_prepared_df # For this sample code, simply copy input to output
-
+CJP = 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 covid_Japan_Python_output = dataiku.Dataset("Covid_Japan_Python_output")
