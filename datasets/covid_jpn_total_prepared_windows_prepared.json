@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625182172659
+    "lastModifiedOn": 1625555955705
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,123 +87,175 @@
   "schema": {
     "columns": [
       {
-        "name": "Date",
+        "name": "iso_code",
         "type": "string"
       },
       {
-        "name": "Date_parsed",
-        "type": "date"
-      },
-      {
-        "name": "Location",
+        "name": "continent",
         "type": "string"
       },
       {
-        "name": "Positive",
-        "type": "bigint"
-      },
-      {
-        "name": "Tested",
-        "type": "bigint"
-      },
-      {
-        "name": "Symptomatic",
-        "type": "bigint"
-      },
-      {
-        "name": "Asymptomatic",
-        "type": "bigint"
-      },
-      {
-        "name": "Sym-unknown",
-        "type": "bigint"
-      },
-      {
-        "name": "Hosp_require",
-        "type": "bigint"
-      },
-      {
-        "name": "Hosp_mild",
-        "type": "bigint"
-      },
-      {
-        "name": "Hosp_severe",
-        "type": "bigint"
-      },
-      {
-        "name": "Hosp_unknown",
-        "type": "bigint"
-      },
-      {
-        "name": "Hosp_waiting",
-        "type": "bigint"
-      },
-      {
-        "name": "Discharged",
-        "type": "bigint"
-      },
-      {
-        "name": "Fatal",
-        "type": "bigint"
-      },
-      {
-        "name": "Vaccinated_1st",
-        "type": "bigint"
-      },
-      {
-        "name": "Vaccinated_2nd",
-        "type": "bigint"
-      },
-      {
-        "name": "Date_last",
+        "name": "location",
         "type": "string"
       },
       {
-        "name": "Date_parsed_last",
-        "type": "date"
-      },
-      {
-        "name": "Location_last",
+        "name": "date",
         "type": "string"
       },
       {
-        "name": "Positive_last",
-        "type": "bigint"
+        "name": "total_cases",
+        "type": "double"
       },
       {
-        "name": "Tested_last",
-        "type": "bigint"
+        "name": "new_cases",
+        "type": "double"
       },
       {
-        "name": "Symptomatic_last",
-        "type": "bigint"
+        "name": "new_cases_smoothed",
+        "type": "double"
       },
       {
-        "name": "Asymptomatic_last",
-        "type": "bigint"
+        "name": "total_deaths",
+        "type": "double"
       },
       {
-        "name": "Sym-unknown_last",
-        "type": "bigint"
+        "name": "new_deaths",
+        "type": "double"
       },
       {
-        "name": "Hosp_require_last",
-        "type": "bigint"
+        "name": "new_deaths_smoothed",
+        "type": "double"
       },
       {
-        "name": "Hosp_mild_last",
-        "type": "bigint"
+        "name": "reproduction_rate",
+        "type": "double"
       },
       {
-        "name": "Hosp_unknown_last",
-        "type": "bigint"
+        "name": "icu_patients",
+        "type": "double"
       },
       {
-        "name": "Hosp_waiting_last",
-        "type": "bigint"
+        "name": "hosp_patients",
+        "type": "double"
+      },
+      {
+        "name": "weekly_icu_admissions",
+        "type": "double"
+      },
+      {
+        "name": "weekly_hosp_admissions",
+        "type": "double"
+      },
+      {
+        "name": "new_tests",
+        "type": "double"
+      },
+      {
+        "name": "total_tests",
+        "type": "double"
+      },
+      {
+        "name": "new_tests_smoothed",
+        "type": "double"
+      },
+      {
+        "name": "positive_rate",
+        "type": "double"
+      },
+      {
+        "name": "tests_per_case",
+        "type": "double"
+      },
+      {
+        "name": "tests_units",
+        "type": "string"
+      },
+      {
+        "name": "total_vaccinations",
+        "type": "double"
+      },
+      {
+        "name": "people_vaccinated",
+        "type": "double"
+      },
+      {
+        "name": "people_fully_vaccinated",
+        "type": "double"
+      },
+      {
+        "name": "new_vaccinations",
+        "type": "double"
+      },
+      {
+        "name": "new_vaccinations_smoothed",
+        "type": "double"
+      },
+      {
+        "name": "stringency_index",
+        "type": "double"
+      },
+      {
+        "name": "population",
+        "type": "double"
+      },
+      {
+        "name": "population_density",
+        "type": "double"
+      },
+      {
+        "name": "median_age",
+        "type": "double"
+      },
+      {
+        "name": "aged_65_older",
+        "type": "double"
+      },
+      {
+        "name": "aged_70_older",
+        "type": "double"
+      },
+      {
+        "name": "gdp_per_capita",
+        "type": "double"
+      },
+      {
+        "name": "extreme_poverty",
+        "type": "double"
+      },
+      {
+        "name": "cardiovasc_death_rate",
+        "type": "double"
+      },
+      {
+        "name": "diabetes_prevalence",
+        "type": "double"
+      },
+      {
+        "name": "female_smokers",
+        "type": "double"
+      },
+      {
+        "name": "male_smokers",
+        "type": "double"
+      },
+      {
+        "name": "handwashing_facilities",
+        "type": "double"
+      },
+      {
+        "name": "life_expectancy",
+        "type": "double"
+      },
+      {
+        "name": "human_development_index",
+        "type": "double"
+      },
+      {
+        "name": "excess_mortality",
+        "type": "double"
       }
     ],
-    "userModified": true
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
