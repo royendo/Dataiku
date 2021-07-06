@@ -48,4 +48,5 @@ CJP_output.head()
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 covid_Japan_Python_output = dataiku.Dataset("Covid_Japan_Python_output")
-covid_Japan_Python_output.write_with_schema(covid_Japan_Python_output_df)
+#covid_Japan_Python_output.write_with_schema(covid_Japan_Python_output_df)
+covid_Japan_Python_output.write_with_schema(df)
