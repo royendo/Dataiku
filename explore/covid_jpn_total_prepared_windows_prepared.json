@@ -94,7 +94,7 @@
     "sorting": [
       {
         "column": "Location",
-        "ascending": false
+        "ascending": true
       }
     ],
     "analysisColumnData": {},
