@@ -1,11 +1,10 @@
 {
-  "type": "Filesystem",
-  "managed": true,
+  "type": "UploadedFiles",
+  "managed": false,
   "formatType": "csv",
   "checklists": {
     "checklists": []
   },
-  "checks": [],
   "customMeta": {
     "kv": {}
   },
@@ -24,9 +23,9 @@
     }
   },
   "formatParams": {
-    "style": "unix",
-    "charset": "utf8",
-    "separator": "\t",
+    "style": "excel",
+    "charset": "utf-8",
+    "separator": ",",
     "quoteChar": "\"",
     "escapeChar": "\\",
     "dateSerializationFormat": "ISO",
@@ -41,9 +40,9 @@
       "\b"
     ],
     "skipRowsBeforeHeader": 0,
-    "parseHeaderRow": false,
+    "parseHeaderRow": true,
     "skipRowsAfterHeader": 0,
-    "probableNumberOfRecords": 0,
+    "probableNumberOfRecords": 16,
     "normalizeBooleans": false,
     "normalizeDoubles": true,
     "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
@@ -51,7 +50,7 @@
     "readDataTypeMismatchBehavior": "DISCARD_WARNING",
     "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
     "fileReadFailureBehavior": "FAIL",
-    "compress": "gz"
+    "compress": ""
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -59,23 +58,22 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625128149567
+    "lastModifiedOn": 1623636344563
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625128017564
+    "lastModifiedOn": 1623636104451
   },
   "tags": [],
   "params": {
-    "connection": "filesystem_managed",
-    "path": "${projectKey}/covid_jpn_total_prepared_windows",
+    "uploadConnection": "Default (in DSS data dir.)",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -91,116 +89,64 @@
         "type": "string"
       },
       {
-        "name": "Date_parsed",
-        "type": "date"
-      },
-      {
         "name": "Location",
         "type": "string"
       },
       {
         "name": "Positive",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Tested",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Symptomatic",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Asymptomatic",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Sym-unknown",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Hosp_require",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Hosp_mild",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Hosp_severe",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Hosp_unknown",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Hosp_waiting",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Discharged",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Fatal",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Vaccinated_1st",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Vaccinated_2nd",
-        "type": "bigint"
-      },
-      {
-        "name": "Date_last",
         "type": "string"
-      },
-      {
-        "name": "Date_parsed_last",
-        "type": "date"
-      },
-      {
-        "name": "Location_last",
-        "type": "string"
-      },
-      {
-        "name": "Positive_last",
-        "type": "bigint"
-      },
-      {
-        "name": "Tested_last",
-        "type": "bigint"
-      },
-      {
-        "name": "Symptomatic_last",
-        "type": "bigint"
-      },
-      {
-        "name": "Asymptomatic_last",
-        "type": "bigint"
-      },
-      {
-        "name": "Sym-unknown_last",
-        "type": "bigint"
-      },
-      {
-        "name": "Hosp_require_last",
-        "type": "bigint"
-      },
-      {
-        "name": "Hosp_mild_last",
-        "type": "bigint"
-      },
-      {
-        "name": "Hosp_unknown_last",
-        "type": "bigint"
-      },
-      {
-        "name": "Hosp_waiting_last",
-        "type": "bigint"
       }
     ],
     "userModified": true

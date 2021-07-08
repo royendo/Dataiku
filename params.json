@@ -1,17 +1,7 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": [
-      {
-        "objectRef": {
-          "objectId": "covid_jpn_total_prepared_windows",
-          "objectType": "DATASET"
-        },
-        "modes": [
-          "READ"
-        ]
-      }
-    ]
+    "authorizations": []
   },
   "exposedObjects": {
     "objects": []
@@ -217,11 +207,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625181434822
+    "lastModifiedOn": 1623889368360
   },
   "creationTag": {
     "versionNumber": 0,

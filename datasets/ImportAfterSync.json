@@ -1,11 +1,9 @@
 {
-  "type": "Filesystem",
-  "managed": true,
-  "formatType": "csv",
+  "type": "MongoDB",
+  "managed": false,
   "checklists": {
     "checklists": []
   },
-  "checks": [],
   "customMeta": {
     "kv": {}
   },
@@ -23,66 +21,36 @@
       "rules": []
     }
   },
-  "formatParams": {
-    "style": "unix",
-    "charset": "utf8",
-    "separator": "\t",
-    "quoteChar": "\"",
-    "escapeChar": "\\",
-    "dateSerializationFormat": "ISO",
-    "arrayMapFormat": "json",
-    "hiveSeparators": [
-      "\u0002",
-      "\u0003",
-      "\u0004",
-      "\u0005",
-      "\u0006",
-      "\u0007",
-      "\b"
-    ],
-    "skipRowsBeforeHeader": 0,
-    "parseHeaderRow": false,
-    "skipRowsAfterHeader": 0,
-    "probableNumberOfRecords": 0,
-    "normalizeBooleans": false,
-    "normalizeDoubles": true,
-    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
-    "readMissingColumnsBehavior": "DISCARD_SILENT",
-    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
-    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
-    "fileReadFailureBehavior": "FAIL",
-    "compress": "gz"
-  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625786552701
+    "lastModifiedOn": 1624424261532
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625012827052
+    "lastModifiedOn": 1624424261532
   },
   "tags": [],
   "params": {
-    "connection": "filesystem_managed",
-    "path": "${projectKey}/b",
+    "connection": "MongoDb",
     "notReadyIfEmpty": false,
-    "filesSelectionRules": {
-      "mode": "ALL",
-      "excludeRules": [],
-      "includeRules": [],
-      "explicitFiles": []
-    }
+    "collection": "ToMongo",
+    "importIds": false,
+    "strictInputFormat": false,
+    "strictOutputFormat": false,
+    "partitioned": false,
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING"
   },
   "schema": {
     "columns": [
@@ -111,83 +79,11 @@
         "type": "string"
       },
       {
-        "name": "new_cases_smoothed",
+        "name": "total_cases_per_million",
         "type": "string"
       },
       {
-        "name": "total_deaths",
-        "type": "string"
-      },
-      {
-        "name": "new_deaths",
-        "type": "string"
-      },
-      {
-        "name": "new_deaths_smoothed",
-        "type": "string"
-      },
-      {
-        "name": "reproduction_rate",
-        "type": "string"
-      },
-      {
-        "name": "icu_patients",
-        "type": "string"
-      },
-      {
-        "name": "hosp_patients",
-        "type": "string"
-      },
-      {
-        "name": "weekly_icu_admissions",
-        "type": "string"
-      },
-      {
-        "name": "weekly_hosp_admissions",
-        "type": "string"
-      },
-      {
-        "name": "new_tests",
-        "type": "string"
-      },
-      {
-        "name": "total_tests",
-        "type": "string"
-      },
-      {
-        "name": "new_tests_smoothed",
-        "type": "string"
-      },
-      {
-        "name": "positive_rate",
-        "type": "string"
-      },
-      {
-        "name": "tests_per_case",
-        "type": "string"
-      },
-      {
-        "name": "tests_units",
-        "type": "string"
-      },
-      {
-        "name": "total_vaccinations",
-        "type": "string"
-      },
-      {
-        "name": "people_vaccinated",
-        "type": "string"
-      },
-      {
-        "name": "people_fully_vaccinated",
-        "type": "string"
-      },
-      {
-        "name": "new_vaccinations",
-        "type": "string"
-      },
-      {
-        "name": "new_vaccinations_smoothed",
+        "name": "new_cases_per_million",
         "type": "string"
       },
       {
@@ -219,10 +115,6 @@
         "type": "string"
       },
       {
-        "name": "extreme_poverty",
-        "type": "string"
-      },
-      {
         "name": "cardiovasc_death_rate",
         "type": "string"
       },
@@ -231,15 +123,11 @@
         "type": "string"
       },
       {
-        "name": "female_smokers",
-        "type": "string"
-      },
-      {
-        "name": "male_smokers",
-        "type": "string"
-      },
-      {
         "name": "handwashing_facilities",
+        "type": "string"
+      },
+      {
+        "name": "hospital_beds_per_thousand",
         "type": "string"
       },
       {
@@ -251,11 +139,43 @@
         "type": "string"
       },
       {
-        "name": "excess_mortality",
+        "name": "new_cases_smoothed",
+        "type": "string"
+      },
+      {
+        "name": "new_deaths_smoothed",
+        "type": "string"
+      },
+      {
+        "name": "new_cases_smoothed_per_million",
+        "type": "string"
+      },
+      {
+        "name": "new_deaths_smoothed_per_million",
+        "type": "string"
+      },
+      {
+        "name": "total_deaths",
+        "type": "string"
+      },
+      {
+        "name": "new_deaths",
+        "type": "string"
+      },
+      {
+        "name": "total_deaths_per_million",
+        "type": "string"
+      },
+      {
+        "name": "new_deaths_per_million",
+        "type": "string"
+      },
+      {
+        "name": "reproduction_rate",
         "type": "string"
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {
@@ -325,8 +245,6 @@
       "columns": [],
       "metrics": [
         "basic:COUNT_COLUMNS",
-        "basic:COUNT_FILES",
-        "basic:SIZE",
         "records:COUNT_RECORDS"
       ]
     }

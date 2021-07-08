@@ -55,14 +55,7 @@
       "items": [
         {
           "ref": "Corona",
-          "deps": [
-            {
-              "idim": "date",
-              "func": "all_available",
-              "params": {},
-              "expandVariables": false
-            }
-          ]
+          "deps": []
         }
       ]
     }
@@ -79,11 +72,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625617432210
+    "lastModifiedOn": 1624426677651
   },
   "creationTag": {
     "versionNumber": 0,

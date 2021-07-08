@@ -8,7 +8,11 @@
         "readParams": {
           "mode": "AUTO",
           "autoModeRepartitionInto": 10,
-          "map": {}
+          "map": {
+            "covid_jpn_total": {
+              "repartition": 10
+            }
+          }
         },
         "useGlobalMetastore": false,
         "useNativeProcessors": true,
@@ -50,7 +54,7 @@
     "main": {
       "items": [
         {
-          "ref": "covid_jpn_total_prepared_windows",
+          "ref": "covid_jpn_total",
           "deps": []
         }
       ]
@@ -60,7 +64,7 @@
     "main": {
       "items": [
         {
-          "ref": "covid_jpn_total_prepared_windows_prepared",
+          "ref": "covid_jpn_total_prepared",
           "appendMode": false
         }
       ]
@@ -68,18 +72,18 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625182172666
+    "lastModifiedOn": 1623636415567
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625182172666
+    "lastModifiedOn": 1623636393811
   },
   "tags": [],
   "customFields": {},

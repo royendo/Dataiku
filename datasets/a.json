@@ -59,23 +59,23 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625555955705
+    "lastModifiedOn": 1624946813155
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625182172659
+    "lastModifiedOn": 1624946813155
   },
   "tags": [],
   "params": {
     "connection": "filesystem_managed",
-    "path": "${projectKey}/covid_jpn_total_prepared_windows_prepared",
+    "path": "${projectKey}/a",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -85,177 +85,8 @@
     }
   },
   "schema": {
-    "columns": [
-      {
-        "name": "iso_code",
-        "type": "string"
-      },
-      {
-        "name": "continent",
-        "type": "string"
-      },
-      {
-        "name": "location",
-        "type": "string"
-      },
-      {
-        "name": "date",
-        "type": "string"
-      },
-      {
-        "name": "total_cases",
-        "type": "double"
-      },
-      {
-        "name": "new_cases",
-        "type": "double"
-      },
-      {
-        "name": "new_cases_smoothed",
-        "type": "double"
-      },
-      {
-        "name": "total_deaths",
-        "type": "double"
-      },
-      {
-        "name": "new_deaths",
-        "type": "double"
-      },
-      {
-        "name": "new_deaths_smoothed",
-        "type": "double"
-      },
-      {
-        "name": "reproduction_rate",
-        "type": "double"
-      },
-      {
-        "name": "icu_patients",
-        "type": "double"
-      },
-      {
-        "name": "hosp_patients",
-        "type": "double"
-      },
-      {
-        "name": "weekly_icu_admissions",
-        "type": "double"
-      },
-      {
-        "name": "weekly_hosp_admissions",
-        "type": "double"
-      },
-      {
-        "name": "new_tests",
-        "type": "double"
-      },
-      {
-        "name": "total_tests",
-        "type": "double"
-      },
-      {
-        "name": "new_tests_smoothed",
-        "type": "double"
-      },
-      {
-        "name": "positive_rate",
-        "type": "double"
-      },
-      {
-        "name": "tests_per_case",
-        "type": "double"
-      },
-      {
-        "name": "tests_units",
-        "type": "string"
-      },
-      {
-        "name": "total_vaccinations",
-        "type": "double"
-      },
-      {
-        "name": "people_vaccinated",
-        "type": "double"
-      },
-      {
-        "name": "people_fully_vaccinated",
-        "type": "double"
-      },
-      {
-        "name": "new_vaccinations",
-        "type": "double"
-      },
-      {
-        "name": "new_vaccinations_smoothed",
-        "type": "double"
-      },
-      {
-        "name": "stringency_index",
-        "type": "double"
-      },
-      {
-        "name": "population",
-        "type": "double"
-      },
-      {
-        "name": "population_density",
-        "type": "double"
-      },
-      {
-        "name": "median_age",
-        "type": "double"
-      },
-      {
-        "name": "aged_65_older",
-        "type": "double"
-      },
-      {
-        "name": "aged_70_older",
-        "type": "double"
-      },
-      {
-        "name": "gdp_per_capita",
-        "type": "double"
-      },
-      {
-        "name": "extreme_poverty",
-        "type": "double"
-      },
-      {
-        "name": "cardiovasc_death_rate",
-        "type": "double"
-      },
-      {
-        "name": "diabetes_prevalence",
-        "type": "double"
-      },
-      {
-        "name": "female_smokers",
-        "type": "double"
-      },
-      {
-        "name": "male_smokers",
-        "type": "double"
-      },
-      {
-        "name": "handwashing_facilities",
-        "type": "double"
-      },
-      {
-        "name": "life_expectancy",
-        "type": "double"
-      },
-      {
-        "name": "human_development_index",
-        "type": "double"
-      },
-      {
-        "name": "excess_mortality",
-        "type": "double"
-      }
-    ],
-    "userModified": false
+    "columns": [],
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {
