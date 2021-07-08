@@ -1,8 +1,11 @@
 {
   "name": "ssh_folder",
-  "type": "Filesystem",
+  "type": "FTP",
   "params": {
-    "connection": "test",
+    "timeout": 30000,
+    "urlMode": false,
+    "urlModeUseGlobalProxy": false,
+    "connection": "toGCP",
     "path": "${projectKey}/${odbId}",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
@@ -88,11 +91,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625709323475
+    "lastModifiedOn": 1625709942413
   },
   "creationTag": {
     "versionNumber": 0,
