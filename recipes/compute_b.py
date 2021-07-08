@@ -6,7 +6,7 @@ from dataiku import pandasutils as pdu
 # Read recipe inputs
 toOracle_copy = dataiku.Dataset("ToOracle_copy")
 toOracle_copy_df = toOracle_copy.get_dataframe()
-
+towritefolder = dataiku.Folder("O5vRK79")
 
 # Compute recipe outputs from inputs
 # TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
