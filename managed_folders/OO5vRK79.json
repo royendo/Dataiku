@@ -2,7 +2,7 @@
   "name": "ssh_folder",
   "type": "Filesystem",
   "params": {
-    "connection": "filesystem_folders",
+    "connection": "test",
     "path": "${projectKey}/${odbId}",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
@@ -88,11 +88,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625709140456
+    "lastModifiedOn": 1625709323475
   },
   "creationTag": {
     "versionNumber": 0,
