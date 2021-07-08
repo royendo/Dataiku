@@ -53,25 +53,17 @@
     "compress": ""
   },
   "partitioning": {
-    "filePathPattern": "%M/.*",
+    "filePathPattern": "/.*",
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
-    "dimensions": [
-      {
-        "name": "date",
-        "params": {
-          "period": "MONTH"
-        },
-        "type": "time"
-      }
-    ]
+    "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625617463668
+    "lastModifiedOn": 1625722541070
   },
   "creationTag": {
     "versionNumber": 0,
