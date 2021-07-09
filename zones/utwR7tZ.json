@@ -1,28 +1,7 @@
 {
   "name": "Case 24262",
   "color": "#C82423",
-  "items": [
-    {
-      "objectId": "LpNMhb4E",
-      "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "Ml0oF4Xt",
-      "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "gHvabmHo",
-      "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "compute_LpNMhb4E",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "Corona1",
-      "objectType": "DATASET"
-    }
-  ],
+  "items": [],
   "shared": [],
   "tags": [],
   "customFields": {},
