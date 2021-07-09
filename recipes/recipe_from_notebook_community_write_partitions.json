@@ -27,8 +27,11 @@
             {
               "out": "New_partitioned",
               "idim": "date_parsed_year",
-              "func": "all_available",
+              "func": "values",
               "params": {},
+              "values": [
+                "2020"
+              ],
               "expandVariables": false
             }
           ]
@@ -48,11 +51,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625794868267
+    "lastModifiedOn": 1625795102239
   },
   "creationTag": {
     "versionNumber": 0,
