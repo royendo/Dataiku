@@ -14,6 +14,7 @@ import pandas as pd
 mydataset = dataiku.Dataset("Corona1_partitioned")
 myoutputdataset = dataiku.Dataset("New_partitioned")
 mydataset_df = mydataset.get_dataframe()
+myoutputdataset_df = myoutputdataset.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 #with myoutputdataset.get_writer() as writer:
@@ -22,7 +23,7 @@ for p in mydataset.list_partitions():
     mydataset.read_partitions = [p]
     df = mydataset.get_dataframe()
     print(p, df.shape)
-    myoutputdataset.write_dataframe(df, True, True)
+myoutputdataset_df.write_dataframe(df)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
