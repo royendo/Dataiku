@@ -12,9 +12,7 @@ import pandas as pd
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Example: load a DSS dataset as a Pandas dataframe
 mydataset = dataiku.Dataset("Corona1_partitioned")
-myoutputdataset = dataiku.Dataset("New_partitioned)
 mydataset_df = mydataset.get_dataframe()
-myoutputdataset_df = myoutputdataset.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 #with myoutputdataset.get_writer() as writer:
@@ -22,10 +20,9 @@ for p in mydataset.list_partitions():
     #print(p)
     mydataset.read_partitions = [p]
     df = mydataset.get_dataframe()
-    print(p, df.shape)
-myoutputdataset_df.write_dataframe(df)
+    #print(df)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
-new_partitioned = dataiku.Dataset("New_partitioned")
-new_partitioned.write_with_schema(pandas_dataframe)
+myoutputdataset = dataiku.Dataset("New_partitioned")
+myoutputdataset.write_dataframe(mydataset_df)
