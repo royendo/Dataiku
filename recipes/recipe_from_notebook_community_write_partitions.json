@@ -25,7 +25,6 @@
           "ref": "Corona1_partitioned",
           "deps": [
             {
-              "out": "New_partitioned",
               "idim": "date_parsed_year",
               "func": "all_available",
               "params": {
@@ -46,7 +45,7 @@
     "main": {
       "items": [
         {
-          "ref": "New_partitioned",
+          "ref": "NewPartitions",
           "appendMode": false
         }
       ]
@@ -54,11 +53,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 24,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625796648482
+    "lastModifiedOn": 1625796945929
   },
   "creationTag": {
     "versionNumber": 0,

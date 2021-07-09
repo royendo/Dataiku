@@ -26,7 +26,7 @@ for p in mydataset.list_partitions():
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
-myoutputdataset = dataiku.Dataset("New_partitioned")
+myoutputdataset = dataiku.Dataset("NewPartitions")
 myoutputdataset.write_dataframe(mydf)
 '''
 
