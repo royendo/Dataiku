@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625797048867
+    "lastModifiedOn": 1625810697882
   },
   "creationTag": {
     "versionNumber": 0,
@@ -81,7 +81,9 @@
     },
     "lastModifiedOn": 1625796936566
   },
-  "tags": [],
+  "tags": [
+    "Community_paritioning"
+  ],
   "params": {
     "connection": "filesystem_managed",
     "path": "${projectKey}/NewPartitions",
@@ -348,7 +350,7 @@
         "type": "double"
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {

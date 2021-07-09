@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625790681815
+    "lastModifiedOn": 1625810697875
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,9 @@
     },
     "lastModifiedOn": 1625790653429
   },
-  "tags": [],
+  "tags": [
+    "Community_paritioning"
+  ],
   "params": {
     "connection": "filesystem_managed",
     "path": "${projectKey}/Corona1_prepared",

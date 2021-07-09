@@ -74,11 +74,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625790969450
+    "lastModifiedOn": 1625810697869
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,7 +87,9 @@
     },
     "lastModifiedOn": 1625790697099
   },
-  "tags": [],
+  "tags": [
+    "Community_paritioning"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": []

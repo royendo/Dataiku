@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625790969376
+    "lastModifiedOn": 1625810697871
   },
   "creationTag": {
     "versionNumber": 0,
@@ -81,7 +81,9 @@
     },
     "lastModifiedOn": 1625790697092
   },
-  "tags": [],
+  "tags": [
+    "Community_paritioning"
+  ],
   "params": {
     "connection": "filesystem_managed",
     "path": "${projectKey}/Corona1_partitioned",
