@@ -16,13 +16,13 @@ myoutputdataset = dataiku.Dataset("New_partitioned")
 mydataset_df = mydataset.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-with myoutputdataset.get_writer() as writer:
-    for p in mydataset.list_partitions():
-        #print(p)
-        mydataset.read_partitions = [p]
-        df = mydataset.get_dataframe()
-        print(p, df.shape)
-        writer.write_dataframe(df)
+#with myoutputdataset.get_writer() as writer:
+for p in mydataset.list_partitions():
+    #print(p)
+    mydataset.read_partitions = [p]
+    df = mydataset.get_dataframe()
+    print(p, df.shape)
+    myoutputdataset.write_dataframe(df, True, True)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
