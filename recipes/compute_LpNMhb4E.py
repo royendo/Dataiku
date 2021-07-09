@@ -16,3 +16,15 @@ folder = dataiku.Folder("LpNMhb4E")
 paths = folder.list_paths_in_partition()
 with folder.get_writer("myoutputfile.txt") as w:
     w.write("some data")
+    
+    # Write recipe outputs
+folder = dataiku.Folder("Ml0oF4Xt")
+paths = folder.list_paths_in_partition()
+with folder.get_writer("myoutputfile.txt") as w:
+    w.write("some data")
+    
+    # Write recipe outputs
+folder = dataiku.Folder("gHvabmHo")
+paths = folder.list_paths_in_partition()
+with folder.get_writer("myoutputfile.txt") as w:
+    w.write("some data")
