@@ -1,7 +1,28 @@
 {
   "name": "Case",
   "color": "#C82423",
-  "items": [],
+  "items": [
+    {
+      "objectId": "LpNMhb4E",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "Ml0oF4Xt",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "gHvabmHo",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_LpNMhb4E",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "Corona1",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
