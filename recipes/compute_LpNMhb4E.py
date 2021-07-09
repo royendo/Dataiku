@@ -13,4 +13,6 @@ corona1_df = corona1.get_dataframe()
 
 # Write recipe outputs
 folder = dataiku.Folder("LpNMhb4E")
-folder_info = folder.get_info()
+paths = folder.list_paths_in_partition()
+with folder.get_writer("myoutputfile.txt") as w:
+    w.write("some data")
