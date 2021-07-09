@@ -15,14 +15,14 @@ mydataset = dataiku.Dataset("Corona1_partitioned")
 mydataset_df = mydataset.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-
-
 #with myoutputdataset.get_writer() as writer:
 for p in mydataset.list_partitions():
     #print(p)
     mydataset.read_partitions = [p]
     df = mydataset.get_dataframe()
-    #print(df)
+    print(p, df.shape)
+    if (p == '2021'):
+        mydf = mydataset.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
@@ -43,4 +43,4 @@ with myoutputdataset.get_writer() as writer:
 '''
 
 myoutputdataset = dataiku.Dataset("New_partitioned")
-myoutputdataset.write_dataframe(mydataset_df)
+myoutputdataset.write_dataframe(mydf)
