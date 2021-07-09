@@ -25,4 +25,4 @@ for p in mydataset.list_partitions():
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
 myoutputdataset = dataiku.Dataset("New_partitioned")
-myoutputdataset.write_dataframe(mydataset_df)
+myoutputdataset.write_dataframe(df)
