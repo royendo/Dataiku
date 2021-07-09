@@ -12,7 +12,7 @@ import pandas as pd
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Example: load a DSS dataset as a Pandas dataframe
 mydataset = dataiku.Dataset("Corona1_partitioned")
-myoutputdataset = dataiku.Dataset("New_partitioned")
+myoutputdataset = dataiku.Dataset("New_partitioned)
 mydataset_df = mydataset.get_dataframe()
 myoutputdataset_df = myoutputdataset.get_dataframe()
 
