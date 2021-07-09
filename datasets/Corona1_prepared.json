@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625790653429
+    "lastModifiedOn": 1625790681815
   },
   "creationTag": {
     "versionNumber": 0,
@@ -101,6 +101,22 @@
       {
         "name": "date",
         "type": "string"
+      },
+      {
+        "name": "date_parsed",
+        "type": "date"
+      },
+      {
+        "name": "date_parsed_year",
+        "type": "bigint"
+      },
+      {
+        "name": "date_parsed_month",
+        "type": "bigint"
+      },
+      {
+        "name": "date_parsed_day",
+        "type": "bigint"
       },
       {
         "name": "total_cases",
