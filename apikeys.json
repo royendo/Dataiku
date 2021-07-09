@@ -47,7 +47,108 @@
   },
   {
     "execSQLLike": false,
-    "localDatasets": [],
+    "localDatasets": [
+      {
+        "datasets": [
+          "Corona"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Corona1"
+        ],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      },
+      {
+        "datasets": [
+          "Corona1_partitioned"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Corona1_prepared"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Corona2"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Corona2_partitioned"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Corona_MySQL"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Corona_PostgreSQL"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "Corona_prepared_ColumnLength"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "NewPartitions"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "ToMongo"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "ToOracle"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "ToOracle_copy"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "audit"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "covid_jpn_total_prepared1"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "test"
+        ],
+        "privileges": []
+      }
+    ],
     "projectPrivileges": {
       "admin": false,
       "readProjectContent": false,
