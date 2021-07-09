@@ -27,7 +27,7 @@ for p in mydataset.list_partitions():
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
 myoutputdataset = dataiku.Dataset("New_partitioned")
-myoutputdataset.write_dataframe(df)
+myoutputdataset.write_dataframe(mydf)
 '''
 
 myoutputdataset = dataiku.Dataset("New_partitioned")
@@ -40,7 +40,7 @@ with myoutputdataset.get_writer() as writer:
 
         writer.write_dataframe(df)
 
-'''
+
 
 myoutputdataset = dataiku.Dataset("New_partitioned")
-myoutputdataset.write_dataframe(mydf)
+myoutputdataset.write_dataframe(df)'''
