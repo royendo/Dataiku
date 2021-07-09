@@ -54,25 +54,25 @@
     "compress": "gz"
   },
   "partitioning": {
-    "filePathPattern": "%M/.*",
+    "filePathPattern": "/%Y/.*",
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": [
       {
-        "name": "date_parsed_month",
+        "name": "date_parsed_year",
         "params": {
-          "period": "MONTH"
+          "period": "YEAR"
         },
         "type": "time"
       }
     ]
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625790822048
+    "lastModifiedOn": 1625790907662
   },
   "creationTag": {
     "versionNumber": 0,
