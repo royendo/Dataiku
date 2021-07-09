@@ -5,8 +5,8 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
 # Read recipe inputs
-corona1 = dataiku.Dataset("Corona1")
-corona1_df = corona1.get_dataframe()
+#corona1 = dataiku.Dataset("Corona1")
+#corona1_df = corona1.get_dataframe()
 
 
 
