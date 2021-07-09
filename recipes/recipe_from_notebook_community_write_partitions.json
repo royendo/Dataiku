@@ -27,11 +27,14 @@
             {
               "out": "New_partitioned",
               "idim": "date_parsed_year",
-              "func": "values",
-              "params": {},
-              "values": [
-                "2020"
-              ],
+              "func": "all_available",
+              "params": {
+                "fromMode": "RELATIVE_OFFSET",
+                "fromGranularity": "DAY",
+                "fromOffset": "0",
+                "toGranularity": "DAY",
+                "toOffset": "0"
+              },
               "expandVariables": false
             }
           ]
@@ -51,11 +54,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625795394164
+    "lastModifiedOn": 1625796230744
   },
   "creationTag": {
     "versionNumber": 0,

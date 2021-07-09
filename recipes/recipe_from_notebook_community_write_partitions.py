@@ -15,7 +15,7 @@ mydataset = dataiku.Dataset("Corona1_partitioned")
 mydataset_df = mydataset.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-'''
+
 
 #with myoutputdataset.get_writer() as writer:
 for p in mydataset.list_partitions():
@@ -28,7 +28,7 @@ for p in mydataset.list_partitions():
 # Recipe outputs
 myoutputdataset = dataiku.Dataset("New_partitioned")
 myoutputdataset.write_dataframe(df)
-
+'''
 
 myoutputdataset = dataiku.Dataset("New_partitioned")
 with myoutputdataset.get_writer() as writer:
