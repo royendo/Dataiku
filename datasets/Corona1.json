@@ -53,22 +53,17 @@
     "compress": ""
   },
   "partitioning": {
-    "filePathPattern": "%{Continent}/.*",
+    "filePathPattern": "/.*",
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
-    "dimensions": [
-      {
-        "name": "Continent",
-        "type": "value"
-      }
-    ]
+    "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625789197463
+    "lastModifiedOn": 1625789568534
   },
   "creationTag": {
     "versionNumber": 0,
