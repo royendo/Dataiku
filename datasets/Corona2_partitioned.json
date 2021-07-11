@@ -68,11 +68,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626047486390
+    "lastModifiedOn": 1626047509503
   },
   "creationTag": {
     "versionNumber": 0,
@@ -193,11 +193,11 @@
       },
       {
         "name": "weekly_icu_admissions",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "weekly_icu_admissions_per_million",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "weekly_hosp_admissions",
