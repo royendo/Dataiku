@@ -5,11 +5,11 @@
   "name": "24319 - remove quotes",
   "active": false,
   "versionTag": {
-    "versionNumber": 50,
+    "versionNumber": 51,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626076777215
+    "lastModifiedOn": 1626077061397
   },
   "checklists": {
     "checklists": []
@@ -80,6 +80,30 @@
         }
       },
       {
+        "id": "def_scenar_vars_test",
+        "type": "define_vars",
+        "name": "Step #3",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "variables": {},
+          "definitions": [
+            {
+              "key": "test",
+              "value": "\"testing\""
+            }
+          ],
+          "evaluateValues": true
+        }
+      },
+      {
         "id": "report0260676620c3dfb8cedff7780dade66f",
         "type": "send_report",
         "name": "Step #1",
@@ -105,7 +129,7 @@
               "messageSource": "INLINE",
               "templateFormat": "FREEMARKER",
               "templateName": "default.ftl",
-              "message": "\u003cp\u003e\n   FreeMarker \n\u003c/p\u003e\n\u003cp\u003e\n    ${SYSTEM_NAME.getAsString()}\n    ${EMAIL_SUB_NO_DATA.getAsString()}\n    \n    ${scenarioName}\n\u003c/p\u003e"
+              "message": "\u003cp\u003e\n   FreeMarker \n\u003c/p\u003e\n\u003cp\u003e\n    ${SYSTEM_NAME.is_string}\n    ${test.is_string}\n    ${test}\n    ${SYSTEM_NAME.getAsString()}\n    ${EMAIL_SUB_NO_DATA.getAsString()}\n    \n    ${scenarioName}\n\u003c/p\u003e"
             }
           }
         }
