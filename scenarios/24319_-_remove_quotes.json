@@ -5,11 +5,11 @@
   "name": "24319 - remove quotes",
   "active": false,
   "versionTag": {
-    "versionNumber": 46,
+    "versionNumber": 47,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626076698274
+    "lastModifiedOn": 1626076734763
   },
   "checklists": {
     "checklists": []
@@ -63,7 +63,7 @@
         "maxRetriesOnFail": 0,
         "params": {
           "variables": {
-            "SYSTEN_NAME": "TEST",
+            "SYSTEM_NAME": "TEST",
             "EMAIL_SUB_NO_DATA": "no data"
           },
           "definitions": [
