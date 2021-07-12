@@ -5,11 +5,11 @@
   "name": "24319 - remove quotes",
   "active": false,
   "versionTag": {
-    "versionNumber": 57,
+    "versionNumber": 58,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626077215263
+    "lastModifiedOn": 1626078000805
   },
   "checklists": {
     "checklists": []
@@ -129,7 +129,7 @@
               "messageSource": "INLINE",
               "templateFormat": "FREEMARKER",
               "templateName": "default.ftl",
-              "message": "\u003cp\u003e\n   FreeMarker \n\u003c/p\u003e\n\u003cp\u003e\n    ${test}\n    ${SYSTEM_NAME.getAsString()}\n    ${EMAIL_SUB_NO_DATA.getAsString()}\n    \n    ${scenarioName}\n\u003c/p\u003e"
+              "message": "\u003cp\u003e\n   FreeMarker \n\u003c/p\u003e\n\u003cp\u003e\n    ${test?is_string?c}\n    ${test}\n \n    ${SYSTEM_NAME.getAsString()}\n    ${SYSTEM_NAME.getAsString()?is_string?c}\n    \n    \n    ${EMAIL_SUB_NO_DATA.getAsString()}\n    \n    ${scenarioName}\n\u003c/p\u003e"
             }
           }
         }
