@@ -5,11 +5,11 @@
   "name": "24319 - remove quotes",
   "active": false,
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 18,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626073719673
+    "lastModifiedOn": 1626073732152
   },
   "checklists": {
     "checklists": []
@@ -23,7 +23,7 @@
   "triggers": [],
   "reporters": [
     {
-      "active": true,
+      "active": false,
       "messaging": {
         "type": "mail-scenario",
         "configuration": {
@@ -36,7 +36,7 @@
           "messageSource": "INLINE",
           "templateFormat": "FREEMARKER",
           "templateName": "default.ftl",
-          "message": "\u003cp\u003e\t${scenarioName}\u003c/p\u003e"
+          "message": ""
         }
       },
       "id": "uZmOgEL4",
@@ -74,7 +74,7 @@
               "messageSource": "INLINE",
               "templateFormat": "FREEMARKER",
               "templateName": "default.ftl",
-              "message": "https://support.dataiku.com/a/tickets/24319"
+              "message": "\u003cp\u003e\t${scenarioName}\u003c/p\u003e"
             }
           }
         }
