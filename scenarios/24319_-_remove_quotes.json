@@ -5,11 +5,11 @@
   "name": "24319 - remove quotes",
   "active": false,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626073323942
+    "lastModifiedOn": 1626073384929
   },
   "checklists": {
     "checklists": []
