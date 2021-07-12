@@ -5,11 +5,11 @@
   "name": "24319 - remove quotes",
   "active": false,
   "versionTag": {
-    "versionNumber": 42,
+    "versionNumber": 43,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626076677483
+    "lastModifiedOn": 1626076681737
   },
   "checklists": {
     "checklists": []
@@ -23,7 +23,7 @@
   "triggers": [],
   "reporters": [
     {
-      "active": true,
+      "active": false,
       "messaging": {
         "type": "mail-scenario",
         "configuration": {
