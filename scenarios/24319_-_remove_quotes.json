@@ -5,11 +5,11 @@
   "name": "24319 - remove quotes",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626072858833
+    "lastModifiedOn": 1626072910022
   },
   "checklists": {
     "checklists": []
@@ -21,7 +21,30 @@
   },
   "tags": [],
   "triggers": [],
-  "reporters": [],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "mail-scenario",
+        "configuration": {
+          "subject": "DSS scenario ${scenarioName}: ${outcome}",
+          "sender": "roy.endo@dataiku.com",
+          "recipient": "${scenarioName}",
+          "sendAsHTML": false,
+          "attachments": [],
+          "messageSource": "INLINE",
+          "templateFormat": "FREEMARKER",
+          "templateName": "default.ftl",
+          "message": "\t${scenarioName}"
+        }
+      },
+      "id": "uZmOgEL4",
+      "name": "test",
+      "runConditionEnabled": true,
+      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "phase": "START"
+    }
+  ],
   "params": {
     "steps": []
   },
