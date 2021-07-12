@@ -5,11 +5,11 @@
   "name": "24319 - remove quotes",
   "active": false,
   "versionTag": {
-    "versionNumber": 24,
+    "versionNumber": 25,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626074029500
+    "lastModifiedOn": 1626074048209
   },
   "checklists": {
     "checklists": []
@@ -66,7 +66,7 @@
           "definitions": [
             {
               "key": "SYSTEM_NAME",
-              "value": "NetGen HRBI"
+              "value": "\"NetGen HRBI\""
             },
             {
               "key": "EMAIL_SUB_NO_DATA",
