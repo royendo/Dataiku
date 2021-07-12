@@ -5,11 +5,11 @@
   "name": "24319 - remove quotes",
   "active": false,
   "versionTag": {
-    "versionNumber": 41,
+    "versionNumber": 42,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626075888845
+    "lastModifiedOn": 1626076677483
   },
   "checklists": {
     "checklists": []
@@ -62,7 +62,10 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "variables": {},
+          "variables": {
+            "SYSTEN_NAME": "TEST",
+            "EMAIL_SUB_NO_DATA": "no data"
+          },
           "definitions": [
             {
               "key": "SYSTEM_NAME",
@@ -73,7 +76,7 @@
               "value": "\"No data loaded for\""
             }
           ],
-          "evaluateValues": true
+          "evaluateValues": false
         }
       },
       {
