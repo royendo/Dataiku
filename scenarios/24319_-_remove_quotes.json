@@ -5,11 +5,11 @@
   "name": "24319 - remove quotes",
   "active": false,
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626073573237
+    "lastModifiedOn": 1626073603287
   },
   "checklists": {
     "checklists": []
@@ -31,7 +31,7 @@
           "subject": "DSS scenario ${scenarioName}: ${outcome}",
           "sender": "roy.endo@dataiku.com",
           "recipient": "roy.endo@dataiku.com",
-          "sendAsHTML": false,
+          "sendAsHTML": true,
           "attachments": [],
           "messageSource": "INLINE",
           "templateFormat": "FREEMARKER",
