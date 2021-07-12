@@ -5,11 +5,11 @@
   "name": "24319 - remove quotes",
   "active": false,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626072952388
+    "lastModifiedOn": 1626073150117
   },
   "checklists": {
     "checklists": []
@@ -27,6 +27,7 @@
       "messaging": {
         "type": "mail-scenario",
         "configuration": {
+          "channelId": "my_smtp",
           "subject": "DSS scenario ${scenarioName}: ${outcome}",
           "sender": "roy.endo@dataiku.com",
           "recipient": "roy.endo@dataiku.com",
