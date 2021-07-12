@@ -5,11 +5,11 @@
   "name": "24319 - remove quotes",
   "active": false,
   "versionTag": {
-    "versionNumber": 30,
+    "versionNumber": 31,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626074309680
+    "lastModifiedOn": 1626074314235
   },
   "checklists": {
     "checklists": []
@@ -100,7 +100,7 @@
               "sendAsHTML": true,
               "attachments": [],
               "messageSource": "INLINE",
-              "templateFormat": "FORMULA",
+              "templateFormat": "FREEMARKER",
               "templateName": "default.ftl",
               "message": "\u003cp\u003e${SYSTEM_NAME?js_string}\n    ${EMAIL_SUB_NO_DATA}\n    \n    ${scenarioName}\u003c/p\u003e"
             }
