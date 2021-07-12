@@ -5,11 +5,11 @@
   "name": "24319 - remove quotes",
   "active": false,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626073520186
+    "lastModifiedOn": 1626073573237
   },
   "checklists": {
     "checklists": []
@@ -36,7 +36,7 @@
           "messageSource": "INLINE",
           "templateFormat": "FREEMARKER",
           "templateName": "default.ftl",
-          "message": "\t${scenarioName}"
+          "message": "\u003cp\u003e\t${scenarioName}\u003c/p\u003e"
         }
       },
       "id": "uZmOgEL4",
