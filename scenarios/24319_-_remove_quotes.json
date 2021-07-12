@@ -5,11 +5,11 @@
   "name": "24319 - remove quotes",
   "active": false,
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626073603698
+    "lastModifiedOn": 1626073719673
   },
   "checklists": {
     "checklists": []
@@ -47,7 +47,39 @@
     }
   ],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "report0260676620c3dfb8cedff7780dade66f",
+        "type": "send_report",
+        "name": "Step #1",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "failOnMessageNotSent": true,
+          "messaging": {
+            "type": "mail-scenario",
+            "configuration": {
+              "channelId": "my_smtp",
+              "subject": "DSS scenario ${scenarioName}: ${outcome}",
+              "recipient": "roy.endo@dataiku.com",
+              "sendAsHTML": true,
+              "attachments": [],
+              "messageSource": "INLINE",
+              "templateFormat": "FREEMARKER",
+              "templateName": "default.ftl",
+              "message": "https://support.dataiku.com/a/tickets/24319"
+            }
+          }
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
