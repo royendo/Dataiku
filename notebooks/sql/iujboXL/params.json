@@ -6,7 +6,7 @@
       "id": "itdti9q3jqh",
       "type": "QUERY",
       "querySettings": {
-        "addLimitToStatement": true,
+        "addLimitToStatement": false,
         "statementsOutOfTransaction": false,
         "inheritConf": "default",
         "extraConf": [],
@@ -18,11 +18,11 @@
   ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626253017905
+    "lastModifiedOn": 1626253026064
   },
   "creationTag": {
     "versionNumber": 0,
