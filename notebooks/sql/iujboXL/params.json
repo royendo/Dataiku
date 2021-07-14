@@ -1,14 +1,28 @@
 {
   "connection": "MySQL",
   "name": "testsemicolon",
-  "cells": [],
+  "cells": [
+    {
+      "id": "itdti9q3jqh",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626253004072
+    "lastModifiedOn": 1626253017905
   },
   "creationTag": {
     "versionNumber": 0,
