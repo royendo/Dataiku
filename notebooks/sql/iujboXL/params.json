@@ -11,18 +11,18 @@
         "inheritConf": "default",
         "extraConf": [],
         "addDkuUdf": false,
-        "statementsParseMode": "SPLIT",
+        "statementsParseMode": "RAW",
         "statementsExecutionMode": "PREPARED"
       }
     }
   ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626253026064
+    "lastModifiedOn": 1626253034642
   },
   "creationTag": {
     "versionNumber": 0,
