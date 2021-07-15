@@ -1,0 +1,581 @@
+{
+  "type": "UploadedFiles",
+  "managed": false,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "excel",
+    "charset": "iso-8859-15",
+    "separator": "\u0001",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 102,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1626330120960
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1626330120960
+  },
+  "tags": [],
+  "params": {
+    "uploadBoxId": "6a5269d5019cf50f040da5edada0b95425ba0c28483f2b92efc60664d0365d70",
+    "uploadConnection": "Default (in DSS data dir.)",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "PAR1\u0015\u0000\u0015\b\u0015îÆ",
+        "type": "string"
+      },
+      {
+        "name": ",\u0015-\u0015\u0000\u0015\u0006\u0015\b\u001c\u0018\u001306/18/2016 23:59:47\u0018\u001306/18/2016 00:00:17\u0016\u0000\u0000\u0000\u0000Ç\u0004t\u0003\u0000\u0000\u0000-",
+        "type": "string"
+      },
+      {
+        "name": "06/18/2016 00:00:17R\u0017\u0000\u00004N\u0017\u0000\u00001V.\u0000\u00001V.\u0000\u00002V.\u0000\u00002V.\u0000\u00003V.\u0000\u00003V.\u0000\u00004V.\u0000\u00004V.\u0000\u00005V.\u0000\u00005V.\u0000\u00006V.\u0000\u00006V.\u0000\u00007V.\u0000\u00007V.\u0000\u00008V.\u0000\u00008V.\u0000\u00009V.\u0000\u00009R.\u0000\u00001VÌ",
+        "type": "string"
+      },
+      {
+        "name": "10V.\u0000VÌ",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_2",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_3",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_4",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_5",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_6",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_7",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_8",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_9",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_10",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_11",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_12",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_13",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_14",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_15",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_16",
+        "type": "string"
+      },
+      {
+        "name": "1VÌ_17",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_2",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_3",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_4",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_5",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_6",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_7",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_8",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_9",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_10",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_11",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_12",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_13",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_14",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_15",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_16",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_17",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_18",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_19",
+        "type": "string"
+      },
+      {
+        "name": "2VÌ_20",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_2",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_3",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_4",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_5",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_6",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_7",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_8",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_9",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_10",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_11",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_12",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_13",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_14",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_15",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_16",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_17",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_18",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_19",
+        "type": "string"
+      },
+      {
+        "name": "3VÌ_20",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_2",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_3",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_4",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_5",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_6",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_7",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_8",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_9",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_10",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_11",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_12",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_13",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_14",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_15",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_16",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_17",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_18",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_19",
+        "type": "string"
+      },
+      {
+        "name": "4VÌ_20",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_2",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_3",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_4",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_5",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_6",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_7",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_8",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_9",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_10",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_11",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_12",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_13",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_14",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_15",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_16",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_17",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_18",
+        "type": "string"
+      },
+      {
+        "name": "5VÌ_19",
+        "type": "string"
+      },
+      {
+        "name": "5NÌ",
+        "type": "string"
+      },
+      {
+        "name": "1VÈ",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
