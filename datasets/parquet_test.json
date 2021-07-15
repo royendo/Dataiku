@@ -1,7 +1,7 @@
 {
   "type": "UploadedFiles",
   "managed": false,
-  "formatType": "csv",
+  "formatType": "parquet",
   "checklists": {
     "checklists": []
   },
@@ -23,34 +23,11 @@
     }
   },
   "formatParams": {
-    "style": "excel",
-    "charset": "iso-8859-15",
-    "separator": "\u0001",
-    "quoteChar": "\"",
-    "escapeChar": "\\",
-    "dateSerializationFormat": "ISO",
-    "arrayMapFormat": "json",
-    "hiveSeparators": [
-      "\u0002",
-      "\u0003",
-      "\u0004",
-      "\u0005",
-      "\u0006",
-      "\u0007",
-      "\b"
-    ],
-    "skipRowsBeforeHeader": 0,
-    "parseHeaderRow": true,
-    "skipRowsAfterHeader": 0,
-    "probableNumberOfRecords": 102,
-    "normalizeBooleans": false,
-    "normalizeDoubles": true,
-    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
-    "readMissingColumnsBehavior": "DISCARD_SILENT",
-    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
-    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
-    "fileReadFailureBehavior": "FAIL",
-    "compress": ""
+    "parquetLowerCaseIdentifiers": false,
+    "representsNullFields": false,
+    "parquetCompressionMethod": "SNAPPY",
+    "parquetFlavor": "HIVE",
+    "parquetBlockSizeMB": 128
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -58,11 +35,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626330121363
+    "lastModifiedOn": 1626330179976
   },
   "creationTag": {
     "versionNumber": 0,
