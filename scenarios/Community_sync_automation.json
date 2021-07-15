@@ -5,11 +5,11 @@
   "name": "Community_sync_automation",
   "active": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626304313626
+    "lastModifiedOn": 1626390335653
   },
   "checklists": {
     "checklists": []
@@ -47,6 +47,31 @@
           ],
           "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "check_false_d_Corona",
+        "type": "check_dataset",
+        "name": "Step #2",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "checks": [
+            {
+              "type": "DATASET",
+              "itemId": "Corona",
+              "partitionsSpec": ""
+            }
+          ],
+          "warningsAsErrors": false,
           "proceedOnFailure": false
         }
       }
