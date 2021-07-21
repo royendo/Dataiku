@@ -1,0 +1,910 @@
+{
+  "type": "Filesystem",
+  "managed": true,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "unix",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": "gz"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1626859051140
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1626859051030
+  },
+  "tags": [],
+  "params": {
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/audit_joined",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "severity",
+        "type": "string"
+      },
+      {
+        "name": "logger",
+        "type": "string"
+      },
+      {
+        "name": "topic",
+        "type": "string"
+      },
+      {
+        "name": "message.callPath",
+        "type": "string"
+      },
+      {
+        "name": "message.auditTopic",
+        "type": "string"
+      },
+      {
+        "name": "message.clientIP",
+        "type": "string"
+      },
+      {
+        "name": "message.time",
+        "type": "string"
+      },
+      {
+        "name": "mdc.apiCall",
+        "type": "string"
+      },
+      {
+        "name": "callTime",
+        "type": "string"
+      },
+      {
+        "name": "timestamp",
+        "type": "string"
+      },
+      {
+        "name": "message.xForwardedFor",
+        "type": "string"
+      },
+      {
+        "name": "message.originalIP",
+        "type": "string"
+      },
+      {
+        "name": "message.msgType",
+        "type": "string"
+      },
+      {
+        "name": "message.kernelId",
+        "type": "string"
+      },
+      {
+        "name": "message.login",
+        "type": "string"
+      },
+      {
+        "name": "message.password",
+        "type": "string"
+      },
+      {
+        "name": "message.authSource",
+        "type": "string"
+      },
+      {
+        "name": "message.authUser",
+        "type": "string"
+      },
+      {
+        "name": "mdc.user",
+        "type": "string"
+      },
+      {
+        "name": "message.user",
+        "type": "string"
+      },
+      {
+        "name": "message.maxItems",
+        "type": "string"
+      },
+      {
+        "name": "message.offset",
+        "type": "string"
+      },
+      {
+        "name": "message.projectKey",
+        "type": "string"
+      },
+      {
+        "name": "message.requests",
+        "type": "string"
+      },
+      {
+        "name": "message.requestedSize",
+        "type": "string"
+      },
+      {
+        "name": "message.id",
+        "type": "string"
+      },
+      {
+        "name": "message.type",
+        "type": "string"
+      },
+      {
+        "name": "message.hash",
+        "type": "string"
+      },
+      {
+        "name": "message.tutorialId",
+        "type": "string"
+      },
+      {
+        "name": "message.projectFolderId",
+        "type": "string"
+      },
+      {
+        "name": "message.futureId",
+        "type": "string"
+      },
+      {
+        "name": "message.objectId",
+        "type": "string"
+      },
+      {
+        "name": "message.objectType",
+        "type": "string"
+      },
+      {
+        "name": "message.tagFilter",
+        "type": "string"
+      },
+      {
+        "name": "message.zoneId",
+        "type": "string"
+      },
+      {
+        "name": "message.datasetName",
+        "type": "string"
+      },
+      {
+        "name": "message.contextProjectKey",
+        "type": "string"
+      },
+      {
+        "name": "message.name",
+        "type": "string"
+      },
+      {
+        "name": "message.datasetRef",
+        "type": "string"
+      },
+      {
+        "name": "message.datasetSmartName",
+        "type": "string"
+      },
+      {
+        "name": "message.filters",
+        "type": "string"
+      },
+      {
+        "name": "message.requestedSampleId",
+        "type": "string"
+      },
+      {
+        "name": "message.worksheetId",
+        "type": "string"
+      },
+      {
+        "name": "message.storageType",
+        "type": "string"
+      },
+      {
+        "name": "message.columnName",
+        "type": "string"
+      },
+      {
+        "name": "message.actionIdsData",
+        "type": "string"
+      },
+      {
+        "name": "message.sampleKey.projectKey",
+        "type": "string"
+      },
+      {
+        "name": "message.sampleKey.id",
+        "type": "string"
+      },
+      {
+        "name": "message.sampleKey.type",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.datasetSelection.useMemTable",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.datasetSelection.filter.distinct",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.datasetSelection.filter.enabled",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.datasetSelection.latestPartitionsN",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.datasetSelection.maxRecords",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.datasetSelection.ordering.rules",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.datasetSelection.ordering.enabled",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.datasetSelection.withinFirstN",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.datasetSelection.partitionSelectionMethod",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.datasetSelection.targetRatio",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.datasetSelection.maxReadUncompressedBytes",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.datasetSelection.samplingMethod",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.containerSelection.containerMode",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.autoRefreshSample",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.inputDatasetSmartName",
+        "type": "string"
+      },
+      {
+        "name": "message.dataSpec.refreshTrigger",
+        "type": "string"
+      },
+      {
+        "name": "message.sampleId",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.localProcess.cpuCurrent",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.context.projectKey",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.context.type",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.context.authIdentifier",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.startTime",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.id",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.type",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.localProcess.commandName",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.localProcess.pid",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.localProcess.vmRSSTotalMBS",
+        "type": "string"
+      },
+      {
+        "name": "message.filter",
+        "type": "string"
+      },
+      {
+        "name": "message.role",
+        "type": "string"
+      },
+      {
+        "name": "message.connection",
+        "type": "string"
+      },
+      {
+        "name": "message.recipeName",
+        "type": "string"
+      },
+      {
+        "name": "message.recipeType",
+        "type": "string"
+      },
+      {
+        "name": "message.requestData",
+        "type": "string"
+      },
+      {
+        "name": "message.sequenceId",
+        "type": "string"
+      },
+      {
+        "name": "message.computableType",
+        "type": "string"
+      },
+      {
+        "name": "message.extraOptions",
+        "type": "string"
+      },
+      {
+        "name": "message.computableId",
+        "type": "string"
+      },
+      {
+        "name": "message.commitMessage",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.context.jobId",
+        "type": "string"
+      },
+      {
+        "name": "message.jobId",
+        "type": "string"
+      },
+      {
+        "name": "message.jobUser",
+        "type": "string"
+      },
+      {
+        "name": "message.jobProjectKey",
+        "type": "string"
+      },
+      {
+        "name": "message.jobJekPid",
+        "type": "string"
+      },
+      {
+        "name": "message.authVia",
+        "type": "string"
+      },
+      {
+        "name": "message.datasetFullName",
+        "type": "string"
+      },
+      {
+        "name": "message.privilege",
+        "type": "string"
+      },
+      {
+        "name": "message.permitIdentifier",
+        "type": "string"
+      },
+      {
+        "name": "message.objectProjectKey",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.endTime",
+        "type": "string"
+      },
+      {
+        "name": "message.state",
+        "type": "string"
+      },
+      {
+        "name": "message.analysisId",
+        "type": "string"
+      },
+      {
+        "name": "message.inputDatasetSmartName",
+        "type": "string"
+      },
+      {
+        "name": "message.taskType",
+        "type": "string"
+      },
+      {
+        "name": "message.targetVariable",
+        "type": "string"
+      },
+      {
+        "name": "message.mlBackendName",
+        "type": "string"
+      },
+      {
+        "name": "message.mlTaskId",
+        "type": "string"
+      },
+      {
+        "name": "message.fullSamplePartitionId",
+        "type": "string"
+      },
+      {
+        "name": "message.column",
+        "type": "string"
+      },
+      {
+        "name": "message.userSessionDescription",
+        "type": "string"
+      },
+      {
+        "name": "message.userSessionName",
+        "type": "string"
+      },
+      {
+        "name": "message.sessionId",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.context.analysisId",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.context.mlTaskId",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.context.sessionId",
+        "type": "string"
+      },
+      {
+        "name": "message.modelId",
+        "type": "string"
+      },
+      {
+        "name": "message.fullModelId",
+        "type": "string"
+      },
+      {
+        "name": "message.features",
+        "type": "string"
+      },
+      {
+        "name": "message.testDatasetSmartName",
+        "type": "string"
+      },
+      {
+        "name": "message.trainDatasetSmartName",
+        "type": "string"
+      },
+      {
+        "name": "message.modelName",
+        "type": "string"
+      },
+      {
+        "name": "message.options",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.context.recipeName",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.context.activityId",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.context.recipeType",
+        "type": "string"
+      },
+      {
+        "name": "message.computeResourceUsage.context.activityType",
+        "type": "string"
+      },
+      {
+        "name": "iso_code",
+        "type": "string"
+      },
+      {
+        "name": "continent",
+        "type": "string"
+      },
+      {
+        "name": "location",
+        "type": "string"
+      },
+      {
+        "name": "date",
+        "type": "string"
+      },
+      {
+        "name": "total_cases",
+        "type": "string"
+      },
+      {
+        "name": "new_cases",
+        "type": "string"
+      },
+      {
+        "name": "new_cases_smoothed",
+        "type": "string"
+      },
+      {
+        "name": "total_deaths",
+        "type": "string"
+      },
+      {
+        "name": "new_deaths",
+        "type": "string"
+      },
+      {
+        "name": "new_deaths_smoothed",
+        "type": "string"
+      },
+      {
+        "name": "total_cases_per_million",
+        "type": "string"
+      },
+      {
+        "name": "new_cases_per_million",
+        "type": "string"
+      },
+      {
+        "name": "new_cases_smoothed_per_million",
+        "type": "string"
+      },
+      {
+        "name": "total_deaths_per_million",
+        "type": "string"
+      },
+      {
+        "name": "new_deaths_per_million",
+        "type": "string"
+      },
+      {
+        "name": "new_deaths_smoothed_per_million",
+        "type": "string"
+      },
+      {
+        "name": "reproduction_rate",
+        "type": "string"
+      },
+      {
+        "name": "icu_patients",
+        "type": "string"
+      },
+      {
+        "name": "icu_patients_per_million",
+        "type": "string"
+      },
+      {
+        "name": "hosp_patients",
+        "type": "string"
+      },
+      {
+        "name": "hosp_patients_per_million",
+        "type": "string"
+      },
+      {
+        "name": "weekly_icu_admissions",
+        "type": "string"
+      },
+      {
+        "name": "weekly_icu_admissions_per_million",
+        "type": "string"
+      },
+      {
+        "name": "weekly_hosp_admissions",
+        "type": "string"
+      },
+      {
+        "name": "weekly_hosp_admissions_per_million",
+        "type": "string"
+      },
+      {
+        "name": "new_tests",
+        "type": "string"
+      },
+      {
+        "name": "total_tests",
+        "type": "string"
+      },
+      {
+        "name": "total_tests_per_thousand",
+        "type": "string"
+      },
+      {
+        "name": "new_tests_per_thousand",
+        "type": "string"
+      },
+      {
+        "name": "new_tests_smoothed",
+        "type": "string"
+      },
+      {
+        "name": "new_tests_smoothed_per_thousand",
+        "type": "string"
+      },
+      {
+        "name": "positive_rate",
+        "type": "string"
+      },
+      {
+        "name": "tests_per_case",
+        "type": "string"
+      },
+      {
+        "name": "tests_units",
+        "type": "string"
+      },
+      {
+        "name": "total_vaccinations",
+        "type": "string"
+      },
+      {
+        "name": "people_vaccinated",
+        "type": "string"
+      },
+      {
+        "name": "people_fully_vaccinated",
+        "type": "string"
+      },
+      {
+        "name": "new_vaccinations",
+        "type": "string"
+      },
+      {
+        "name": "new_vaccinations_smoothed",
+        "type": "string"
+      },
+      {
+        "name": "total_vaccinations_per_hundred",
+        "type": "string"
+      },
+      {
+        "name": "people_vaccinated_per_hundred",
+        "type": "string"
+      },
+      {
+        "name": "people_fully_vaccinated_per_hundred",
+        "type": "string"
+      },
+      {
+        "name": "new_vaccinations_smoothed_per_million",
+        "type": "string"
+      },
+      {
+        "name": "stringency_index",
+        "type": "string"
+      },
+      {
+        "name": "population",
+        "type": "string"
+      },
+      {
+        "name": "population_density",
+        "type": "string"
+      },
+      {
+        "name": "median_age",
+        "type": "string"
+      },
+      {
+        "name": "aged_65_older",
+        "type": "string"
+      },
+      {
+        "name": "aged_70_older",
+        "type": "string"
+      },
+      {
+        "name": "gdp_per_capita",
+        "type": "string"
+      },
+      {
+        "name": "extreme_poverty",
+        "type": "string"
+      },
+      {
+        "name": "cardiovasc_death_rate",
+        "type": "string"
+      },
+      {
+        "name": "diabetes_prevalence",
+        "type": "string"
+      },
+      {
+        "name": "female_smokers",
+        "type": "string"
+      },
+      {
+        "name": "male_smokers",
+        "type": "string"
+      },
+      {
+        "name": "handwashing_facilities",
+        "type": "string"
+      },
+      {
+        "name": "hospital_beds_per_thousand",
+        "type": "string"
+      },
+      {
+        "name": "life_expectancy",
+        "type": "string"
+      },
+      {
+        "name": "human_development_index",
+        "type": "string"
+      },
+      {
+        "name": "excess_mortality",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
