@@ -1,0 +1,30 @@
+{
+  "projectKey": "EVERYTHING",
+  "id": "MACROTEST",
+  "type": "step_based",
+  "name": "MACROTEST",
+  "active": false,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1626840974773
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [],
+  "reporters": [],
+  "params": {
+    "steps": []
+  },
+  "automationLocal": false,
+  "customFields": {}
+}
