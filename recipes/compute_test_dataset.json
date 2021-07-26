@@ -9,7 +9,11 @@
     "readParams": {
       "mode": "AUTO",
       "autoModeRepartitionInto": 10,
-      "map": {}
+      "map": {
+        "audit": {
+          "repartition": 10
+        }
+      }
     },
     "sparkConfig": {
       "inheritConf": "default",
@@ -49,11 +53,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1627276968398
+    "lastModifiedOn": 1627277022231
   },
   "creationTag": {
     "versionNumber": 0,

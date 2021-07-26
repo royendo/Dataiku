@@ -1,2 +1,1 @@
-SELECT *
-  FROM `audit`
+SELECT LOCALTIME();
