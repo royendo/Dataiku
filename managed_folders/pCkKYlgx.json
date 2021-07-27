@@ -2,7 +2,7 @@
   "name": "S3",
   "type": "S3",
   "params": {
-    "bucket": "",
+    "bucket": "dss-qa-ireland",
     "metastoreSynchronizationEnabled": true,
     "metastoreTableName": "${odbId}",
     "connection": "S3Bucket",
@@ -91,11 +91,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1627378434457
+    "lastModifiedOn": 1627378501113
   },
   "creationTag": {
     "versionNumber": 0,
