@@ -2,7 +2,7 @@
   "name": "S3",
   "type": "S3",
   "params": {
-    "bucket": "rendobuckettest",
+    "bucket": "",
     "metastoreSynchronizationEnabled": true,
     "metastoreTableName": "${odbId}",
     "connection": "S3Bucket",
@@ -91,11 +91,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1627362614124
+    "lastModifiedOn": 1627378434457
   },
   "creationTag": {
     "versionNumber": 0,
