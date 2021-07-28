@@ -57,6 +57,10 @@
     {
       "objectId": "SakeMongo",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "SakeOutput",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
