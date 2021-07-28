@@ -9,6 +9,14 @@
     {
       "objectId": "raw_sake_prepared",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_SaketoS3__csv",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "SaketoS3__csv",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
