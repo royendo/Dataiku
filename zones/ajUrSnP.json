@@ -33,6 +33,14 @@
     {
       "objectId": "SakeMySQL",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_sakePostGreSQL",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "sakePostGreSQL",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
