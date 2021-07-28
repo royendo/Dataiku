@@ -25,6 +25,14 @@
     {
       "objectId": "SakeS3_avro",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_SakeMySQL",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "SakeMySQL",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
