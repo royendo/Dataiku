@@ -5,11 +5,11 @@
   "name": "DontStopOnFail",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1627450380830
+    "lastModifiedOn": 1627450696187
   },
   "checklists": {
     "checklists": []
@@ -23,7 +23,28 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "custom_python",
+        "type": "custom_python",
+        "name": "Step #1",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "envSelection": {
+            "envMode": "INHERIT"
+          },
+          "proceedOnFailure": true
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
