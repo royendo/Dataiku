@@ -5,6 +5,10 @@
     {
       "objectId": "shogun",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "raw_sake_prepared",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
