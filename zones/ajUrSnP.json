@@ -49,6 +49,14 @@
     {
       "objectId": "SakeOracle",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_SakeMongo",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "SakeMongo",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
