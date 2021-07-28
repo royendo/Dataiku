@@ -41,6 +41,14 @@
     {
       "objectId": "sakePostGreSQL",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_SakeOracle",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "SakeOracle",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
