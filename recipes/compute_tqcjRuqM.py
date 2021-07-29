@@ -13,3 +13,5 @@ managed_folder_info = managed_folder.get_info()
 # Write recipe outputs
 toS3Bucket = dataiku.Folder("tqcjRuqM")
 toS3Bucket_info = toS3Bucket.get_info()
+
+toS3Bucket.upload_file("*", local_xml_path)
