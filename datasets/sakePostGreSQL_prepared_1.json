@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1627534037120
+    "lastModifiedOn": 1627534086702
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,10 +89,6 @@
       {
         "name": "レビュー",
         "type": "string"
-      },
-      {
-        "name": "#ofSentences",
-        "type": "bigint"
       }
     ],
     "userModified": true
