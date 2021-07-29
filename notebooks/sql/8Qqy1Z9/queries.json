@@ -44,6 +44,28 @@
         },
         "sql": "select * from *",
         "expandedSql": "select * from *"
+      },
+      {
+        "mode": "SQL",
+        "id": "jYu0GRvctIvS",
+        "runOn": 1627544739889,
+        "runIn": 29,
+        "runBy": "admin",
+        "connection": "PostgreSQL",
+        "state": "RUNNING",
+        "futureId": "AE6SE4Fg",
+        "hash": "0d352e2f587373ca7cec340a5b4b53c7",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from EVERYTHING_sakepostgresql;",
+        "expandedSql": "select * from EVERYTHING_sakepostgresql;"
       }
     ]
   }
