@@ -71,10 +71,10 @@
         "mode": "SQL",
         "id": "h4VkABMVswHP",
         "runOn": 1627544773228,
-        "runIn": 28,
+        "runIn": 669,
         "runBy": "admin",
         "connection": "PostgreSQL",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "9HxX3NlN",
         "hash": "1f2af2fe4bcc7e20d7a248e888604165",
         "querySettings": {
