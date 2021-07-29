@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1627533131071
+    "lastModifiedOn": 1627533976169
   },
   "creationTag": {
     "versionNumber": 0,
@@ -75,12 +75,12 @@
         "type": "string"
       },
       {
-        "name": "スコア",
-        "type": "double"
-      },
-      {
         "name": "都道府県",
         "type": "string"
+      },
+      {
+        "name": "スコア",
+        "type": "double"
       },
       {
         "name": "レビュー数",
@@ -89,6 +89,10 @@
       {
         "name": "レビュー",
         "type": "string"
+      },
+      {
+        "name": "#ofSentences",
+        "type": "bigint"
       }
     ],
     "userModified": true
