@@ -65,6 +65,10 @@
     {
       "objectId": "compute_SakeOutput",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "SakePGSTest",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
