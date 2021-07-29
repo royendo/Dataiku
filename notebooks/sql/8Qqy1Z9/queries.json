@@ -22,6 +22,28 @@
         },
         "sql": "select * in *",
         "expandedSql": "select * in *"
+      },
+      {
+        "mode": "SQL",
+        "id": "a4AXYSGyiVgI",
+        "runOn": 1627544715619,
+        "runIn": 105,
+        "runBy": "admin",
+        "connection": "PostgreSQL",
+        "state": "RUNNING",
+        "futureId": "NulSc7pk",
+        "hash": "5d4aac5d8061451dfb4a115d2e2cb446",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "select * from *",
+        "expandedSql": "select * from *"
       }
     ]
   }
