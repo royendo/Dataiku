@@ -107,20 +107,6 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
-    },
-    {
-      "preview": true,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "MatchCounter",
-      "params": {
-        "inCol": "レビュー",
-        "outCol": "#ofSentences",
-        "normalizationMode": "EXACT",
-        "matchingMode": "SUBSTRING",
-        "pattern": "。"
-      },
-      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
