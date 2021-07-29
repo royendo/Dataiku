@@ -2,7 +2,7 @@
   "name": "Managed_folder",
   "type": "Filesystem",
   "params": {
-    "connection": "test",
+    "connection": "filesystem_folders",
     "path": "${projectKey}/${odbId}",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
@@ -88,11 +88,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1627517348342
+    "lastModifiedOn": 1627517360350
   },
   "creationTag": {
     "versionNumber": 0,
