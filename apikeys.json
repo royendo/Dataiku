@@ -44,5 +44,28 @@
     "key": "Hd2mbF0sCzUWKwrLm32bZq7H79GNOMrD",
     "label": "Key for Web app Internal Links(1F8seSk)",
     "createdOn": 1624494331966
+  },
+  {
+    "execSQLLike": false,
+    "localDatasets": [],
+    "projectPrivileges": {
+      "admin": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    },
+    "onBehalf": "ZSILvQ1",
+    "id": "XZLaogzv482qEAYe",
+    "key": "HIloPYCKf63nArsDjmPp6GjBMj4ecYLv",
+    "label": "Key for Web app GLoVar(ZSILvQ1)",
+    "createdOn": 1627520223262
   }
 ]
