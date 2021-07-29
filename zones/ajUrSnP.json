@@ -73,6 +73,14 @@
     {
       "objectId": "compute_SakePGSTest",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "sakePostGreSQL_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_sakePostGreSQL_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
