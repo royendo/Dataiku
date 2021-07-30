@@ -1,4 +1,22 @@
 {
+  "uiData": {
+    "mode": "CUSTOM",
+    "conditions": [
+      {
+        "input": "Age",
+        "col": "Weight",
+        "num": 0,
+        "operator": "contains"
+      }
+    ]
+  },
+  "expression": "arrayContains(${ages},val(\"Age\"))",
+  "$status": {
+    "validated": true,
+    "fullyTranslated": false,
+    "ok": true,
+    "sql": "\"Age\" LIKE CONCAT(\u0027%\u0027, REPLACE(REPLACE(REPLACE(\u0027\u0027, \u0027\\\u0027, \u0027\\\\\u0027), \u0027%\u0027, \u0027\\%\u0027), \u0027_\u0027, \u0027\\_\u0027), \u0027%\u0027)"
+  },
   "distinct": false,
-  "enabled": false
+  "enabled": true
 }
