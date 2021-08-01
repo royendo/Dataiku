@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1627860473346
+    "lastModifiedOn": 1627860595497
   },
   "creationTag": {
     "versionNumber": 0,
@@ -246,7 +246,8 @@
       {
         "metricId": "col_stats:MAX:Age",
         "values": [
-          ""
+          "38",
+          "44"
         ],
         "type": "valueSet",
         "meta": {
