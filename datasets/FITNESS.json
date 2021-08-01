@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1627860306130
+    "lastModifiedOn": 1627860473346
   },
   "creationTag": {
     "versionNumber": 0,
@@ -138,7 +138,15 @@
           "aggregates": [
             {
               "column": "Age",
+              "aggregated": "MIN"
+            },
+            {
+              "column": "Age",
               "aggregated": "MAX"
+            },
+            {
+              "column": "Age",
+              "aggregated": "COUNT"
             }
           ]
         }
@@ -238,7 +246,7 @@
       {
         "metricId": "col_stats:MAX:Age",
         "values": [
-          "${Age}"
+          ""
         ],
         "type": "valueSet",
         "meta": {
