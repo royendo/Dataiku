@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626390384130
+    "lastModifiedOn": 1627860187671
   },
   "creationTag": {
     "versionNumber": 0,
@@ -165,7 +165,7 @@
       },
       {
         "type": "verify_col",
-        "enabled": false,
+        "enabled": true,
         "computeOnBuildMode": "NO",
         "meta": {
           "name": "Data validity",
@@ -230,21 +230,6 @@
   "metricsChecks": {
     "runOnBuild": false,
     "checks": [
-      {
-        "minimum": 0.0,
-        "maximum": 0.0,
-        "softMinimum": 0.0,
-        "softMaximum": 0.0,
-        "minimumEnabled": false,
-        "maximumEnabled": false,
-        "softMinimumEnabled": false,
-        "softMaximumEnabled": false,
-        "type": "numericRange",
-        "meta": {
-          "name": "Value in range"
-        },
-        "computeOnBuildMode": "PARTITION"
-      },
       {
         "values": [],
         "type": "valueSet",
