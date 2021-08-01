@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1627860235383
+    "lastModifiedOn": 1627860306130
   },
   "creationTag": {
     "versionNumber": 0,
@@ -236,7 +236,10 @@
     "runOnBuild": false,
     "checks": [
       {
-        "values": [],
+        "metricId": "col_stats:MAX:Age",
+        "values": [
+          "${Age}"
+        ],
         "type": "valueSet",
         "meta": {
           "name": "Value in set"
