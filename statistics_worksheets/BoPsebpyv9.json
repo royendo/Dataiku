@@ -29,16 +29,162 @@
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
     "showConfidenceInterval": false,
-    "cards": [],
+    "cards": [
+      {
+        "type": "univariate_header",
+        "showHistogram": true,
+        "showQuantile": false,
+        "showFrequencyTable": true,
+        "showSummary": true,
+        "showBoxPlot": false,
+        "xColumns": [
+          {
+            "name": "銘柄URL",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "銘柄",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "銘柄URL",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "銘柄URL",
+                  "type": "CATEGORICAL"
+                },
+                "id": "gxxjkCw"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "銘柄URL",
+                  "type": "CATEGORICAL"
+                },
+                "id": "SBo3Tnl"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "銘柄URL",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Zgy1YXB"
+              }
+            ],
+            "id": "jx4ZVNo"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "銘柄",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "銘柄",
+                  "type": "CATEGORICAL"
+                },
+                "id": "M6QRDgd"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "銘柄",
+                  "type": "CATEGORICAL"
+                },
+                "id": "k435g3S"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "銘柄",
+                  "type": "CATEGORICAL"
+                },
+                "id": "M7d92PL"
+              }
+            ],
+            "id": "AZZszmH"
+          }
+        ],
+        "id": "X3TttKh"
+      }
+    ],
     "id": "bNViGJ0"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1627957880554
+    "lastModifiedOn": 1627957889864
   },
   "creationTag": {
     "versionNumber": 0,
