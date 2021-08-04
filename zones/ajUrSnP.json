@@ -93,6 +93,14 @@
     {
       "objectId": "Imports3",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_SakeS3_avro_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "SakeS3_avro_1",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
