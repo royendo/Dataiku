@@ -93,6 +93,14 @@
     {
       "objectId": "Imports3",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_SakeElasticSearch",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "SakeElasticSearch",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
