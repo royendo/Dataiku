@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1628559390057
+    "lastModifiedOn": 1628559426874
   },
   "creationTag": {
     "versionNumber": 0,
@@ -74,7 +74,7 @@
   "tags": [],
   "params": {
     "connection": "filesystem_root",
-    "path": "/Users/rendo/Library/DataScienceStudio/dss_home/timelines/AUDITTEST.mv.db",
+    "path": "/Users/rendo/Library/DataScienceStudio/dss_home/timelines/EVERYTHING.mv.db",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
