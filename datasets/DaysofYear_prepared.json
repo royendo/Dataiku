@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1628646873271
+    "lastModifiedOn": 1628649124046
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,6 +88,18 @@
     "columns": [
       {
         "name": "line",
+        "type": "string"
+      },
+      {
+        "name": "line_parsed",
+        "type": "date"
+      },
+      {
+        "name": "line_parsed_holiday_bank",
+        "type": "string"
+      },
+      {
+        "name": "line_parsed_holiday_school",
         "type": "string"
       }
     ],
