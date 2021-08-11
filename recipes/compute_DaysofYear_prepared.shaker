@@ -26,8 +26,49 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "line_parsed",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "columns": [
+          "line"
+        ],
+        "timezone_id": "Europe/Paris",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "fr_FR"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "HolidaysComputer",
+      "params": {
+        "flagWeekends": false,
+        "inCol": "line_parsed",
+        "calendar_id": "FR",
+        "flagBankHolidays": true,
+        "extractReasons": false,
+        "extractZones": false,
+        "timezone_id": "Europe/Paris",
+        "flagSchoolHolidays": true,
+        "outColPrefix": "line_parsed_holiday_"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +76,31 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "date": 278,
+    "date_holiday_school": 158,
+    "line_parsed_holiday_weekend": 218,
+    "date_year": 100,
+    "line_parsed_holiday_bank": 195,
+    "holiday_weekend": 128,
+    "holiday_zones": 113,
+    "date_month": 100,
+    "holiday_bank_reasons": 165,
+    "date_holiday_weekend": 165,
+    "line": 100,
+    "line_parsed": 183,
+    "date_day": 100,
+    "line_parsed_holiday_school": 210,
+    "holiday_school_reasons": 180,
+    "line_parsed_holiday_zones": 203,
+    "holiday_bank": 105,
+    "date_holiday_bank": 143,
+    "date_formatted": 148,
+    "line_parsed_holiday_school_reasons": 270,
+    "holiday_school": 120,
+    "Day": 100,
+    "line_parsed_holiday_bank_reasons": 255
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
