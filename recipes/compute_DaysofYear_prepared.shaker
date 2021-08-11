@@ -44,7 +44,7 @@
         "columns": [
           "line"
         ],
-        "timezone_id": "Europe/Paris",
+        "timezone_id": "UTC",
         "appliesTo": "SINGLE_COLUMN",
         "lang": "fr_FR"
       },
