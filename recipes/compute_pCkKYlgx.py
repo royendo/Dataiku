@@ -11,5 +11,5 @@ fitness_df = fitness.get_dataframe()
 
 
 # Write recipe outputs
-s3 = dataiku.Folder("pCkKYlgx")
+s3 = dataiku.Folder("smsTHLZN")
 s3_info = s3.get_info()
