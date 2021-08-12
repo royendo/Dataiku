@@ -1,3 +1,4 @@
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
 import dataiku
 import pandas as pd, numpy as np
@@ -20,7 +21,7 @@ with tempfile.TemporaryDirectory() as temp_dir_name:
     print("dir", str(temp_dir_name+os.path.join(folder, "era5.nc")))
     ds = xr.load_dataset(str(temp_dir_name+os.path.join(folder, "era5.nc")), chunks='auto')
     cds_parsed_df = ds.to_dataframe()
-    cds_parsed_df.reset_index(inplace=True)  
+    cds_parsed_df.reset_index(inplace=True)
 
 
     # Write recipe outputs
