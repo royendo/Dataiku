@@ -27,11 +27,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1628731899651
+    "lastModifiedOn": 1628731952045
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,8 +57,7 @@
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "readColsWithUnknownTzAsDates": false,
-    "readSQLDateColsAsDSSDates": true,
-    "assumedTzForUnknownTz": "Europe/Madrid"
+    "readSQLDateColsAsDSSDates": false
   },
   "schema": {
     "columns": [
