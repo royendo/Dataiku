@@ -51,7 +51,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "HolidaysComputer",
@@ -65,6 +65,20 @@
         "timezone_id": "Europe/Paris",
         "flagSchoolHolidays": true,
         "outColPrefix": "line_parsed_holiday_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateFormatter",
+      "params": {
+        "inCol": "line",
+        "outCol": "line_formatted",
+        "format": "yyyy-MM-dd",
+        "timezone_id": "UTC",
+        "lang": "en_US"
       },
       "alwaysShowComment": false
     }
@@ -87,8 +101,9 @@
     "date_month": 100,
     "holiday_bank_reasons": 165,
     "date_holiday_weekend": 165,
-    "line": 100,
+    "line": 60,
     "line_parsed": 183,
+    "line_formatted": 120,
     "date_day": 100,
     "line_parsed_holiday_school": 210,
     "holiday_school_reasons": 180,
