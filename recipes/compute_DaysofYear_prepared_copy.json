@@ -56,7 +56,7 @@
     "main": {
       "items": [
         {
-          "ref": "DaysofYear_prepared",
+          "ref": "s3days",
           "deps": []
         }
       ]
@@ -66,7 +66,7 @@
     "main": {
       "items": [
         {
-          "ref": "DaysofYear_prepared_copy",
+          "ref": "ToRedShift",
           "appendMode": false
         }
       ]
@@ -74,11 +74,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1628725215720
+    "lastModifiedOn": 1628731666805
   },
   "creationTag": {
     "versionNumber": 0,
