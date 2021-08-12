@@ -11,7 +11,7 @@ with tempfile.TemporaryDirectory() as temp_dir_name:
     selected_partition_year = dataiku.dku_flow_variables["DKU_DST_year"]
 
     # Read recipe inputs
-    cds = dataiku.Folder("S3)
+    cds = dataiku.Folder("S3")
     paths = cds.list_paths_in_partition()
     folder = cds.get_partition_folder(selected_partition_year)
 
