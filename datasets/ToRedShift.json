@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1628731647350
+    "lastModifiedOn": 1628731663391
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,7 +61,28 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "2021-01-01",
+        "type": "string",
+        "maxLength": 65000
+      },
+      {
+        "name": "2020-12-31T23:00:00.000Z",
+        "type": "string",
+        "maxLength": 65000
+      },
+      {
+        "name": "false",
+        "type": "string",
+        "maxLength": 65000
+      },
+      {
+        "name": "false_2",
+        "type": "string",
+        "maxLength": 65000
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
