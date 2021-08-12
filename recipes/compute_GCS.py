@@ -27,3 +27,8 @@ with tempfile.TemporaryDirectory() as temp_dir_name:
     # Write recipe outputs
     cds_parsed = dataiku.Dataset("cds_parsed")
     cds_parsed.write_with_schema(cds_parsed_df)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+cds = dataiku.Folder("era5-netcfd")
+paths = cds.list_paths_in_partition()
+ds = xr.load_dataset(str(temp_dir_name+os.path.join(folder, "era5.nc")), chunks='auto')
