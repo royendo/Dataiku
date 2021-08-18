@@ -1,8 +1,9 @@
 {
+  "name": "testapi",
   "endpoints": [
     {
       "modelRef": "GaExzlsn",
-      "useJava": true,
+      "useJava": false,
       "outputExplanations": false,
       "individualExplanationParams": {
         "method": "ICE",
