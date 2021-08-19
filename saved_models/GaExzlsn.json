@@ -3,7 +3,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "asdf",
   "contentType": "prediction/py_memory",
-  "activeVersion": "initial",
+  "activeVersion": "1629356962471",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -1787,11 +1787,11 @@
     "labels": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1627361632362
+    "lastModifiedOn": 1629356969532
   },
   "creationTag": {
     "versionNumber": 0,
