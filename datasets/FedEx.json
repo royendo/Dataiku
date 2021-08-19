@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1628205937710
+    "lastModifiedOn": 1629356964702
   },
   "creationTag": {
     "versionNumber": 0,
@@ -70,67 +70,67 @@
       },
       {
         "name": "total_cases",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "new_cases",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "new_cases_smoothed",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "total_deaths",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "new_deaths",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "new_deaths_smoothed",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "reproduction_rate",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "icu_patients",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "hosp_patients",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "weekly_icu_admissions",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "weekly_hosp_admissions",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "new_tests",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "total_tests",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "new_tests_smoothed",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "positive_rate",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "tests_per_case",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "tests_units",
@@ -138,87 +138,87 @@
       },
       {
         "name": "total_vaccinations",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "people_vaccinated",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "people_fully_vaccinated",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "new_vaccinations",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "new_vaccinations_smoothed",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "stringency_index",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "population",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "population_density",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "median_age",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "aged_65_older",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "aged_70_older",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "gdp_per_capita",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "extreme_poverty",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "cardiovasc_death_rate",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "diabetes_prevalence",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "female_smokers",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "male_smokers",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "handwashing_facilities",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "life_expectancy",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "human_development_index",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "excess_mortality",
-        "type": "double"
+        "type": "string"
       }
     ],
     "userModified": false
