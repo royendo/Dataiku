@@ -32,12 +32,57 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
+        "expression": "max(val(\"2017-01-01\"),a)",
         "column": "newcolumn_expression"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "2017-01-01_parsed",
+        "formats": [
+          "yyyy-dd-MM"
+        ],
+        "columns": [
+          "2017-01-01"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "max(val(\"2017-01-01_parsed\"),a)",
+        "column": "newcolumn_expression1"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "columns": [
+          "newcolumn_expression1"
+        ],
+        "reorderAction": "AT_END",
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
@@ -50,8 +95,11 @@
   },
   "analysisColumnData": {},
   "columnWidthsByName": {
+    "2017-01-01_parsed": 183,
     "a": 100,
-    "2017-01-01": 120
+    "2017-01-01": 120,
+    "newcolumn_expression": 165,
+    "newcolumn_expression1": 197
   },
   "sorting": [],
   "globalSearchQuery": "",
