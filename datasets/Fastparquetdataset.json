@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1628556174467
+    "lastModifiedOn": 1629356989915
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,25 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "Age",
+        "type": "bigint"
+      },
+      {
+        "name": "Weight",
+        "type": "double"
+      },
+      {
+        "name": "Oxygen",
+        "type": "double"
+      },
+      {
+        "name": "RunTime",
+        "type": "double"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
