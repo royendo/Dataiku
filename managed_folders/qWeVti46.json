@@ -3,7 +3,7 @@
   "type": "Filesystem",
   "params": {
     "connection": "testing",
-    "path": "/managed_datasets",
+    "path": "/dss_home",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -88,11 +88,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1629739702788
+    "lastModifiedOn": 1629739880687
   },
   "creationTag": {
     "versionNumber": 0,
