@@ -5,11 +5,11 @@
   "name": "globalvariables",
   "active": false,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1629722466316
+    "lastModifiedOn": 1629723083581
   },
   "checklists": {
     "checklists": []
@@ -38,7 +38,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "script": "import dataiku\nclient \u003d dataiku.api_client()\nclient.set_variables({\"test\":\"31\"})\n\n",
+          "script": "import dataiku\nclient \u003d dataiku.api_client()\nclient.set_variables({\"NOW\":\"31\"})\n\n",
           "envSelection": {
             "envMode": "INHERIT"
           },
