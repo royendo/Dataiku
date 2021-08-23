@@ -2,8 +2,8 @@
   "name": "filesystem",
   "type": "Filesystem",
   "params": {
-    "connection": "test",
-    "path": "${projectKey}/${odbId}",
+    "connection": "testing",
+    "path": "/managed_datasets",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -88,11 +88,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1629739652985
+    "lastModifiedOn": 1629739702788
   },
   "creationTag": {
     "versionNumber": 0,
