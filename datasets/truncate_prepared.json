@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1629902171801
+    "lastModifiedOn": 1629902271907
   },
   "creationTag": {
     "versionNumber": 0,
@@ -91,7 +91,7 @@
     "columns": [
       {
         "name": "line",
-        "type": "string"
+        "type": "int"
       }
     ],
     "userModified": true
