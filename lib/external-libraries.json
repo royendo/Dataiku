@@ -1,7 +1,14 @@
 {
-  "gitReferences": {},
+  "gitReferences": {
+    "/": {
+      "remote": "git@github.com:royendo/Dataiku.git",
+      "checkout": "",
+      "remotePath": ""
+    }
+  },
   "pythonPath": [
-    "python"
+    "python",
+    "/"
   ],
   "rsrcPath": [
     "R"
