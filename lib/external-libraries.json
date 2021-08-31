@@ -8,7 +8,8 @@
     "/test": {
       "remote": "git@github.com:royendo/Dataiku.git",
       "checkout": "",
-      "remotePath": ""
+      "remotePath": "",
+      "lastHash": "719291f35389d1bacf447d692ad9120f75e97b2f"
     }
   },
   "pythonPath": [
