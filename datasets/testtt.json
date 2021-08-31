@@ -1,6 +1,7 @@
 {
   "type": "FilesInFolder",
   "managed": false,
+  "formatType": "excel",
   "checklists": {
     "checklists": []
   },
@@ -21,17 +22,26 @@
       "rules": []
     }
   },
+  "formatParams": {
+    "xlsx": true,
+    "preserveNumberFormatting": false,
+    "parseDatesToISO": false,
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "sheets": "*Sheet1"
+  },
   "partitioning": {
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630421332115
+    "lastModifiedOn": 1630421428149
   },
   "creationTag": {
     "versionNumber": 0,
@@ -52,7 +62,48 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "PassengerId",
+        "type": "string"
+      },
+      {
+        "name": "Survived",
+        "type": "string"
+      },
+      {
+        "name": "Pclass",
+        "type": "string"
+      },
+      {
+        "name": "Name",
+        "type": "string"
+      },
+      {
+        "name": "Age",
+        "type": "string"
+      },
+      {
+        "name": "SibSp",
+        "type": "string"
+      },
+      {
+        "name": "Parch",
+        "type": "string"
+      },
+      {
+        "name": "Ticket",
+        "type": "string"
+      },
+      {
+        "name": "Fare",
+        "type": "string"
+      },
+      {
+        "name": "Cabin",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
