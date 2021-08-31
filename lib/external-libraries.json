@@ -4,11 +4,17 @@
       "remote": "git@github.com:royendo/Dataiku.git",
       "checkout": "",
       "remotePath": ""
+    },
+    "/test": {
+      "remote": "git@github.com:royendo/Dataiku.git",
+      "checkout": "",
+      "remotePath": ""
     }
   },
   "pythonPath": [
     "python",
-    "/"
+    "/",
+    "/test"
   ],
   "rsrcPath": [
     "R"
