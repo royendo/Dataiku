@@ -16,7 +16,7 @@
   "readWriteOptions": {
     "preserveOrder": false,
     "writeBuckets": 1,
-    "forceSingleOutputFile": false,
+    "forceSingleOutputFile": true,
     "defaultReadOrdering": {
       "enabled": false,
       "rules": []
@@ -35,11 +35,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630417431119
+    "lastModifiedOn": 1630417485907
   },
   "creationTag": {
     "versionNumber": 0,
