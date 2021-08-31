@@ -1,9 +1,15 @@
 {
   "name": "ss",
-  "type": "Filesystem",
+  "type": "fsprovider_box-com_box-com_box-com",
   "params": {
-    "connection": "test",
-    "path": "${projectKey}/${odbId}",
+    "config": {
+      "cache_enabled": true,
+      "box_com_connection": {
+        "mode": "PRESET",
+        "name": "Preset 1"
+      }
+    },
+    "path": "/data",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -88,11 +94,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630421022110
+    "lastModifiedOn": 1630421168449
   },
   "creationTag": {
     "versionNumber": 0,
