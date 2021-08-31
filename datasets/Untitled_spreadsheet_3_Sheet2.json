@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630423394874
+    "lastModifiedOn": 1630424275141
   },
   "creationTag": {
     "versionNumber": 0,
@@ -66,7 +66,7 @@
   "schema": {
     "columns": [
       {
-        "name": "9",
+        "name": "1",
         "type": "string"
       }
     ],
