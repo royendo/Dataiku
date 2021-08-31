@@ -29,7 +29,7 @@
     "skipRowsBeforeHeader": 0,
     "parseHeaderRow": false,
     "skipRowsAfterHeader": 0,
-    "sheets": "*newsheet1"
+    "sheets": "*newsheet1\nSheet2"
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630421854556
+    "lastModifiedOn": 1630422608869
   },
   "creationTag": {
     "versionNumber": 0,
