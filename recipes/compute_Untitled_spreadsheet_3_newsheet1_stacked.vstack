@@ -67,6 +67,25 @@
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "1",
+            "type": "string"
+          },
+          {
+            "name": "100",
+            "type": "string"
+          },
+          {
+            "name": "108",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
