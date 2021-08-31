@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630423395242
+    "lastModifiedOn": 1630423395373
   },
   "creationTag": {
     "versionNumber": 0,
@@ -53,15 +53,23 @@
   "tags": [],
   "params": {
     "folderSmartId": "05VbzqdU",
+    "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "EXPLICIT_SELECT_FILES",
+      "excludeRules": [],
+      "includeRules": [],
       "explicitFiles": [
         "Untitled spreadsheet (4).xlsx"
       ]
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "108",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
