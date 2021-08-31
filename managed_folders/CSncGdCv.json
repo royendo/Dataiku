@@ -2,8 +2,8 @@
   "name": "uu",
   "type": "Filesystem",
   "params": {
-    "connection": "test",
-    "path": "${projectKey}/${odbId}",
+    "connection": "testing",
+    "path": "/dss_home/run",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -88,11 +88,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630417973186
+    "lastModifiedOn": 1630418012931
   },
   "creationTag": {
     "versionNumber": 0,
