@@ -158,23 +158,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Average of new_tests, descending"
+                "label": "Count of records, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Average of new_tests, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 2,
-                "label": "Average of positive_rate, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 2,
-                "label": "Average of positive_rate, ascending",
+                "label": "Count of records, ascending",
                 "sortAscending": true
               }
             ],
@@ -221,23 +210,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Average of new_tests, descending"
+                "label": "Count of records, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Average of new_tests, ascending",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 2,
-                "label": "Average of positive_rate, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 2,
-                "label": "Average of positive_rate, ascending",
+                "label": "Count of records, ascending",
                 "sortAscending": true
               }
             ],
@@ -252,28 +230,6 @@
         "genericMeasures": [
           {
             "column": "new_cases",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
-            "column": "new_tests",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          },
-          {
-            "column": "positive_rate",
             "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
@@ -298,7 +254,17 @@
         "colorMeasure": [],
         "sizeMeasure": [],
         "geometry": [],
-        "tooltipMeasures": [],
+        "tooltipMeasures": [
+          {
+            "function": "COUNT",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeModeDim": 0
+          }
+        ],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
         "filters": [],
