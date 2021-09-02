@@ -104,7 +104,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 1
     },
     "vizSampling": {
       "autoRefreshSample": false,
@@ -158,12 +158,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Count of records, descending"
+                "label": "Average of dateint, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Count of records, ascending",
+                "label": "Average of dateint, ascending",
                 "sortAscending": true
               }
             ],
@@ -210,18 +210,19 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Count of records, descending"
+                "label": "Average of dateint, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Count of records, ascending",
+                "label": "Average of dateint, ascending",
                 "sortAscending": true
               }
             ],
             "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of dateint, ascending",
               "sortAscending": true
             }
           }
@@ -256,7 +257,8 @@
         "geometry": [],
         "tooltipMeasures": [
           {
-            "function": "COUNT",
+            "column": "dateint",
+            "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
