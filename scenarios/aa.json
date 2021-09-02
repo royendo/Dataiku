@@ -5,11 +5,11 @@
   "name": "aa",
   "active": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630588424971
+    "lastModifiedOn": 1630588438057
   },
   "checklists": {
     "checklists": []
@@ -21,26 +21,7 @@
   },
   "tags": [],
   "triggers": [],
-  "reporters": [
-    {
-      "active": true,
-      "messaging": {
-        "type": "mail-scenario",
-        "configuration": {
-          "subject": "DSS scenario ${scenarioName}: ${outcome}",
-          "sendAsHTML": false,
-          "attachments": [],
-          "messageSource": "TEMPLATE_FILE",
-          "templateFormat": "FREEMARKER",
-          "templateName": "default.ftl"
-        }
-      },
-      "id": "fFcHgYjt",
-      "runConditionEnabled": true,
-      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
-      "phase": "END"
-    }
-  ],
+  "reporters": [],
   "params": {
     "steps": [
       {
