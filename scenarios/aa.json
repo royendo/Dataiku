@@ -5,11 +5,11 @@
   "name": "aa",
   "active": false,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630588438057
+    "lastModifiedOn": 1630588457601
   },
   "checklists": {
     "checklists": []
@@ -44,6 +44,7 @@
             "configuration": {
               "channelId": "my_smtp",
               "subject": "DSS scenario ${scenarioName}: ${outcome}",
+              "recipient": "roy.endo@dataiku.com",
               "sendAsHTML": false,
               "attachments": [
                 {
