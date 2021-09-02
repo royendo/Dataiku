@@ -13,9 +13,7 @@
     }
   },
   "pythonPath": [
-    "python",
-    "/",
-    "/test"
+    "python"
   ],
   "rsrcPath": [
     "R"
