@@ -5,11 +5,11 @@
   "name": "aa",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630588025042
+    "lastModifiedOn": 1630588424971
   },
   "checklists": {
     "checklists": []
@@ -21,9 +21,67 @@
   },
   "tags": [],
   "triggers": [],
-  "reporters": [],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "mail-scenario",
+        "configuration": {
+          "subject": "DSS scenario ${scenarioName}: ${outcome}",
+          "sendAsHTML": false,
+          "attachments": [],
+          "messageSource": "TEMPLATE_FILE",
+          "templateFormat": "FREEMARKER",
+          "templateName": "default.ftl"
+        }
+      },
+      "id": "fFcHgYjt",
+      "runConditionEnabled": true,
+      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "phase": "END"
+    }
+  ],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "reportadf9d3a4d8377c34a08d287657ff30fa",
+        "type": "send_report",
+        "name": "Step #2",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "failOnMessageNotSent": true,
+          "messaging": {
+            "type": "mail-scenario",
+            "configuration": {
+              "channelId": "my_smtp",
+              "subject": "DSS scenario ${scenarioName}: ${outcome}",
+              "sendAsHTML": false,
+              "attachments": [
+                {
+                  "type": "NOTEBOOK_EXPORT",
+                  "params": {
+                    "mode": "CREATE_NEW",
+                    "execute": true,
+                    "attachedNotebookId": "admin\u0027s Python notebook"
+                  }
+                }
+              ],
+              "messageSource": "TEMPLATE_FILE",
+              "templateFormat": "FREEMARKER",
+              "templateName": "default.ftl"
+            }
+          }
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
