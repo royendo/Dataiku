@@ -5,11 +5,11 @@
   "name": "aa",
   "active": false,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630588822088
+    "lastModifiedOn": 1630588882054
   },
   "checklists": {
     "checklists": []
@@ -25,8 +25,8 @@
   "params": {
     "steps": [
       {
-        "id": "reportadf9d3a4d8377c34a08d287657ff30fa",
-        "type": "send_report",
+        "id": "create_jupyter_export_true_admin\u0027s Python notebook",
+        "type": "create_jupyter_export",
         "name": "Step #2",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
@@ -38,29 +38,9 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "failOnMessageNotSent": true,
-          "messaging": {
-            "type": "mail-scenario",
-            "configuration": {
-              "channelId": "my_smtp",
-              "subject": "DSS scenario ${scenarioName}: ${outcome}",
-              "recipient": "roy.endo@dataiku.com",
-              "sendAsHTML": false,
-              "attachments": [
-                {
-                  "type": "NOTEBOOK_EXPORT",
-                  "params": {
-                    "mode": "CREATE_NEW",
-                    "execute": true,
-                    "attachedNotebookId": "admin\u0027s Python notebook"
-                  }
-                }
-              ],
-              "messageSource": "TEMPLATE_FILE",
-              "templateFormat": "FREEMARKER",
-              "templateName": "default.ftl"
-            }
-          }
+          "notebookId": "admin\u0027s Python notebook",
+          "executeNotebook": true,
+          "proceedOnFailure": false
         }
       }
     ]
