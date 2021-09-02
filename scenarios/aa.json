@@ -5,11 +5,11 @@
   "name": "aa",
   "active": false,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630589533703
+    "lastModifiedOn": 1630589539432
   },
   "checklists": {
     "checklists": []
@@ -24,26 +24,6 @@
   "reporters": [],
   "params": {
     "steps": [
-      {
-        "id": "custom_python",
-        "type": "custom_python",
-        "name": "Step #2",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
-        "params": {
-          "envSelection": {
-            "envMode": "INHERIT"
-          },
-          "proceedOnFailure": false
-        }
-      },
       {
         "id": "report52b99a13014cdbe5bf554e874ea83524",
         "type": "send_report",
