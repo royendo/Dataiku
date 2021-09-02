@@ -101,6 +101,14 @@
     {
       "objectId": "SakeElasticSearch",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_testforlog",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "testforlog",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
