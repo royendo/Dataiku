@@ -67,5 +67,52 @@
     "key": "HIloPYCKf63nArsDjmPp6GjBMj4ecYLv",
     "label": "Key for Web app GLoVar(ZSILvQ1)",
     "createdOn": 1627520223262
+  },
+  {
+    "execSQLLike": false,
+    "localDatasets": [
+      {
+        "datasets": [
+          "__rw__dataset1__",
+          "__rw__dataset2__"
+        ],
+        "privileges": [
+          "READ_DATA",
+          "WRITE_DATA",
+          "READ_METADATA",
+          "WRITE_METADATA",
+          "READ_SCHEMA",
+          "WRITE_SCHEMA"
+        ]
+      },
+      {
+        "datasets": [
+          "__r__dataset__"
+        ],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      }
+    ],
+    "projectPrivileges": {
+      "admin": true,
+      "readProjectContent": true,
+      "writeProjectContent": true,
+      "exportDatasetsData": true,
+      "readDashboards": true,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    },
+    "id": "hyDyMYoXO3G28M3c",
+    "key": "uqXfBDHSWHDQWLT4daDyZDjw284PvXUm",
+    "label": "New key",
+    "createdOn": 1630613327784
   }
 ]
