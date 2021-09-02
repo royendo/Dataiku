@@ -122,11 +122,28 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "grouped_columns",
+        "type": "pivot_table",
         "variant": "normal",
-        "name": "Avg. of new_cases by location",
+        "name": "Avg. of new_cases by location and date_parsed",
         "userEditedName": false,
-        "genericDimension0": [
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [
+          {
+            "column": "new_cases",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          }
+        ],
+        "xDimension": [
           {
             "column": "location",
             "type": "ALPHANUM",
@@ -154,17 +171,6 @@
                 "measureIdx": 0,
                 "label": "Average of new_cases, ascending",
                 "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
-                "label": "Sum of dateint, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
-                "label": "Sum of dateint, ascending",
-                "sortAscending": true
               }
             ],
             "sort": {
@@ -174,8 +180,7 @@
             }
           }
         ],
-        "genericDimension1": [],
-        "facetDimension": [
+        "yDimension": [
           {
             "column": "date_parsed",
             "type": "DATE",
@@ -206,17 +211,6 @@
                 "measureIdx": 0,
                 "label": "Average of new_cases, ascending",
                 "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
-                "label": "Sum of dateint, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 1,
-                "label": "Sum of dateint, ascending",
-                "sortAscending": true
               }
             ],
             "sort": {
@@ -226,22 +220,6 @@
             }
           }
         ],
-        "animationDimension": [],
-        "genericMeasures": [
-          {
-            "column": "new_cases",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          }
-        ],
-        "xDimension": [],
-        "yDimension": [],
         "uaXDimension": [],
         "uaYDimension": [],
         "uaSize": [],
@@ -254,19 +232,7 @@
         "colorMeasure": [],
         "sizeMeasure": [],
         "geometry": [],
-        "tooltipMeasures": [
-          {
-            "column": "dateint",
-            "function": "SUM",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "CUMULATIVE",
-            "computeModeDim": 0
-          }
-        ],
+        "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
         "filters": [
