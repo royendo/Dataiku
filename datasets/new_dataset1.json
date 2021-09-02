@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "api:hyDyMYoXO3G28M3c"
     },
-    "lastModifiedOn": 1630613342513
+    "lastModifiedOn": 1630613342595
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,8 +88,21 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "num_legs",
+        "type": "bigint"
+      },
+      {
+        "name": "num_wings",
+        "type": "bigint"
+      },
+      {
+        "name": "num_specimen_seen",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
