@@ -5,11 +5,11 @@
   "name": "aa",
   "active": false,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630588951213
+    "lastModifiedOn": 1630589533703
   },
   "checklists": {
     "checklists": []
@@ -25,8 +25,8 @@
   "params": {
     "steps": [
       {
-        "id": "create_jupyter_export_true_admin\u0027s Python notebook",
-        "type": "create_jupyter_export",
+        "id": "custom_python",
+        "type": "custom_python",
         "name": "Step #2",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
@@ -38,9 +38,51 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "notebookId": "globalvariable",
-          "executeNotebook": true,
+          "envSelection": {
+            "envMode": "INHERIT"
+          },
           "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "report52b99a13014cdbe5bf554e874ea83524",
+        "type": "send_report",
+        "name": "Step #2",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "failOnMessageNotSent": true,
+          "messaging": {
+            "type": "mail-scenario",
+            "configuration": {
+              "channelId": "my_smtp",
+              "subject": "DSS scenario ${scenarioName}: ${outcome}",
+              "sendAsHTML": false,
+              "attachments": [
+                {
+                  "type": "NOTEBOOK_EXPORT",
+                  "params": {
+                    "mode": "CREATE_NEW",
+                    "attachedNotebookId": "globalvariable",
+                    "execute": true,
+                    "addAsHtmlVariable": true,
+                    "htmlVariable": "results"
+                  }
+                }
+              ],
+              "messageSource": "TEMPLATE_FILE",
+              "templateFormat": "FREEMARKER",
+              "templateName": "default.ftl",
+              "message": "DSS Scenario \u003c${scenarioRunURL}|${scenarioName}\u003e triggered by ${triggerName} : ${outcome} ${if(outcome \u003d\u003d \u0027SUCCESS\u0027, \u0027:white_check_mark:\u0027, \u0027\u0027)}${if(outcome \u003d\u003d \u0027FAILED\u0027, \u0027:red_circle:\u0027, \u0027\u0027)}${if(outcome \u003d\u003d \u0027WARNING\u0027, \u0027:red_circle:\u0027, \u0027\u0027)}${if(outcome \u003d\u003d \u0027\u0027 || outcome \u003d\u003d \u0027N/A\u0027, \u0027:bell:\u0027, \u0027\u0027)}"
+            }
+          }
         }
       }
     ]
