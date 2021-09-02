@@ -124,7 +124,7 @@
       "def": {
         "type": "pivot_table",
         "variant": "normal",
-        "name": "Avg. of new_cases by location and date_parsed",
+        "name": "Avg. of dateint by location and date_parsed",
         "userEditedName": false,
         "genericDimension0": [],
         "genericDimension1": [],
@@ -132,7 +132,7 @@
         "animationDimension": [],
         "genericMeasures": [
           {
-            "column": "new_cases",
+            "column": "dateint",
             "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
@@ -164,12 +164,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of new_cases, descending"
+                "label": "Average of dateint, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of new_cases, ascending",
+                "label": "Average of dateint, ascending",
                 "sortAscending": true
               }
             ],
@@ -204,12 +204,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of new_cases, descending"
+                "label": "Average of dateint, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of new_cases, ascending",
+                "label": "Average of dateint, ascending",
                 "sortAscending": true
               }
             ],
