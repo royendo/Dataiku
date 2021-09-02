@@ -51,7 +51,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "DateComponentsExtractor",
@@ -61,6 +61,22 @@
         "column": "date_parsed",
         "timezone_id": "UTC",
         "outDayColumn": "date_parsed_day"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsConcat",
+      "params": {
+        "outputColumn": "dateint",
+        "columns": [
+          "date_parsed_year",
+          "date_parsed_month",
+          "date_parsed_day"
+        ],
+        "join": ""
       },
       "alwaysShowComment": false
     }
@@ -77,6 +93,7 @@
     "new_deaths_smoothed": 158,
     "new_cases_smoothed_per_million": 240,
     "people_vaccinated_per_hundred": 233,
+    "dateint": 100,
     "population_density": 150,
     "weekly_hosp_admissions_per_million": 270,
     "aged_70_older": 113,
