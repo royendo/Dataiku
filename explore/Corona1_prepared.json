@@ -158,12 +158,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Average of dateint, descending"
+                "label": "Sum of dateint, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Average of dateint, ascending",
+                "label": "Sum of dateint, ascending",
                 "sortAscending": true
               }
             ],
@@ -183,7 +183,7 @@
               "emptyBinsMode": "AVERAGE"
             },
             "dateParams": {
-              "mode": "AUTOMATIC"
+              "mode": "DAY"
             },
             "maxValues": 0,
             "generateOthersCategory": true,
@@ -210,20 +210,19 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Average of dateint, descending"
+                "label": "Sum of dateint, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 1,
-                "label": "Average of dateint, ascending",
+                "label": "Sum of dateint, ascending",
                 "sortAscending": true
               }
             ],
             "sort": {
               "type": "AGGREGATION",
               "measureIdx": 1,
-              "label": "Average of dateint, ascending",
-              "sortAscending": true
+              "label": "Sum of dateint, descending"
             }
           }
         ],
@@ -258,18 +257,31 @@
         "tooltipMeasures": [
           {
             "column": "dateint",
-            "function": "AVG",
+            "function": "SUM",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
             "displayAxis": "axis1",
             "displayType": "column",
+            "computeMode": "CUMULATIVE",
             "computeModeDim": 0
           }
         ],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "DATE_FACET",
+            "column": "date_parsed",
+            "columnType": "DATE",
+            "dateFilterType": "RANGE",
+            "minValue": 1.604241094738E12,
+            "maxValue": 1.608013136842E12,
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -285,7 +297,7 @@
         "hexbinRadius": 20,
         "hexbinNumber": 20,
         "hexbinRadiusMode": "NUM_HEXAGONS",
-        "chartHeight": 200,
+        "chartHeight": 79,
         "singleXAxis": true,
         "multiTooltips": false,
         "animationFrameDuration": 3000,
