@@ -124,7 +124,7 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Sum of new_deaths by location",
+        "name": "Avg. of new_cases by location",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -147,12 +147,34 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Sum of new_deaths, descending"
+                "label": "Average of new_cases, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Sum of new_deaths, ascending",
+                "label": "Average of new_cases, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of new_tests, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of new_tests, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Average of positive_rate, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Average of positive_rate, ascending",
                 "sortAscending": true
               }
             ],
@@ -188,12 +210,34 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Sum of new_deaths, descending"
+                "label": "Average of new_cases, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Sum of new_deaths, ascending",
+                "label": "Average of new_cases, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of new_tests, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of new_tests, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Average of positive_rate, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 2,
+                "label": "Average of positive_rate, ascending",
                 "sortAscending": true
               }
             ],
@@ -207,8 +251,30 @@
         "animationDimension": [],
         "genericMeasures": [
           {
-            "column": "new_deaths",
-            "function": "SUM",
+            "column": "new_cases",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          },
+          {
+            "column": "new_tests",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          },
+          {
+            "column": "positive_rate",
+            "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
