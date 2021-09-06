@@ -29,7 +29,7 @@
         {
           "scenarioId": "WITHNAME",
           "type": "SCENARIO_RUN",
-          "prompt": "o"
+          "prompt": "Scenario Name: With Name"
         }
       ]
     }
