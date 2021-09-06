@@ -1,0 +1,201 @@
+{
+  "type": "Filesystem",
+  "managed": false,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "excel",
+    "charset": "iso-8859-15",
+    "separator": ":",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 7,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 3,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1630936559496
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1630936559496
+  },
+  "tags": [],
+  "params": {
+    "connection": "VAR",
+    "path": "/",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "°\u0006\u0000\u0000\u0000\u0000\u0007DX\u0003\u0000\u0000\u0000\u0003¬\u0001\u0000\u0000\u0000À\u0001\u0011Ö\u0000\u0000\u0000\u0000à\bk\u0000\u0000\u0000\u0000p@5\u0000\u0000\u0000\u00008 Â\u001a\u0000\u0000\u0000\u0000\u001c\u0010a\n\u0000\u0000\u0000\u0000\u000e°\u0006\u0000\u0000\u0000\u0000\u0007DX\u0003\u0000\u0000/œ_OoòâÙ.×óÏ÷ëïò\n\u0000\u001eAX\u0003\u000eí÷õýçë\u001fýrúHS_ç~€IZ÷iêºsú~-ËéúþW~ózy[÷ÿñvŸMù¶~Rþ%ms\tëœÉdÉ¬OKàØz/KÝ£Mv²ç¥Î)jÓŒÔvÎ©í÷Hèöúë|ýçÇ©üÙ.KDí¹ã|ªÖ\u0026Ë\u003e¿Û±¢ºÔÅ?\u001aGkYnÑ]Ó.ªÍ6Æ+;\u0018Wç_ùù9êmÆ`WïTæp¬©öÚ8/ÓeÙ?öÝ8Ôõ©\\œÏ©¿Ì8Ý0ülmº,ÛýQš¶\u0019s©ÿ¬ÌËûì²uÏÚ[¶³Çî¯.»«wë\u000fûjt\u0011\u0012CX\u0003\u000eMnòjB\\\u0027\u003eiRÑnøéÏúæ.\u0013¥èfþž\\ßßÜŒÜäõäá÷Ç:1\t]\u0026\u0014mòµL@ü±×\tEZ¯\u0027Ç\n\u0027\u0012n\u0002Û€÷Íöõõ6Ùë©iÏ+éÊÒÇÜÛZíkÎû6d·­ÔktêŸËÌyž2¥\u003c\t?¹í\u0027€Â_1\u001bGº%èç?­}Çš\u003evZç\u0002ÛlüwõtÛÏÍÛlÚÞ¹ÞzÌHœÕž²ôz¿ýÆy­mµ\b?÷SË¹ùrzúz\u0007Áf`ó³%å¹qÜõÑûŒKÆ |Vgý,å:%\u001beûó-úóëûÎõ\u0019WþZS_û÷+yß~\u001el{\u0003øî\bkÀ·±L®:~R\u0026\u001d\u0026,$ubÑM.Ë€EOØfaÍ\bc¥Iž÷\u0013C18/y¿ôøýGûND\u0013µÄLŸR.çÝ×aSÐ.ëdô6q2!\u00133U¿Öwaßø2ûºÌøÉi\u003cÁË#%jpR¬ûpsüK»re¿úsÞf³öî\u003ekªÖÆÝòçÙy\u001bÎ­õ?cÂÚ\nt¿(¶\u000f×z};\u0011]¿|»· Ô×*:î²µQÝãÏãêÖõeX÷Áötm\u001e_S\u0000|W5àÛèoÊ¹±Ë\nÝOÔ$ÎOŠêkõŸŽä¿Q®?±ÑûN\u0026C\u000b;±íã¿ñ\u001d®wæ_ÑŸ\u0013©\u001eapÐç#u­ç|Ã\u00048\u0026y­ìÇÚD\u0026z{ÿ7ôy}©w¶Ìœ\u0001ª2ã ,}ÿ»óSãHé\u0027£\tª",
+        "type": "string"
+      },
+      {
+        "name": "î·Œ}0ñÊ9eÍÌÛlÖÞó\ts4",
+        "type": "string"
+      },
+      {
+        "name": "ÞÆym5hûn× .Ò^µ¯nøVMêŒùÙãÝSv\u0012\u0005*}\u003d3ýc©ž}ª­²\u0017kÝãÏÎš_µ~(¬õåë\u003eÓÜØÈ}w[»\u000286Â\u001aðm€|0É\u001b{0ÊÒMPÜ€ÅL\fÔ€þMq7iQòäŽÖa4\u0019jd\u0012±Ök\u001cz\u0006ç%ï«ó\u0027v£}\u0027ÂP¢Ï§mÓO¬6¥6µÛ€ô_ÙÉ[ë»š\u000ey_uì\u001bÛÍ c¡ïÿt~;\u0002\u0019GÊœa­SZFc2®ïyÍÚû\u0019amv^\u000f5WßÙg~iÿö¹qÚø\u0017ë¹?ãµ5P¹ÏV^úòGã`^¶\u0027Ç",
+        "type": "string"
+      },
+      {
+        "name": "col_3",
+        "type": "string"
+      },
+      {
+        "name": "col_4",
+        "type": "string"
+      },
+      {
+        "name": "col_5",
+        "type": "string"
+      },
+      {
+        "name": "col_6",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
