@@ -17,13 +17,23 @@
     "exportGitRepository": false
   },
   "instanceFeatures": {
-    "showFlowNavLink": false,
+    "showFlowNavLink": true,
     "showLabNavLink": false,
     "showCodeNavLink": false,
     "showVersionControlFeatures": false
   },
   "useAppHomepage": true,
-  "homepageSections": [],
+  "homepageSections": [
+    {
+      "tiles": [
+        {
+          "scenarioId": "globalvariables",
+          "type": "SCENARIO_RUN",
+          "prompt": "o"
+        }
+      ]
+    }
+  ],
   "label": "Everything",
   "shortDesc": "The template *Everything* was created by Administrator on Sep 06th 2021",
   "tags": [],
