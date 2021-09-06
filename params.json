@@ -45,53 +45,7 @@
     }
   },
   "owner": "admin",
-  "permissions": [
-    {
-      "group": "readers",
-      "admin": false,
-      "readProjectContent": true,
-      "writeProjectContent": false,
-      "exportDatasetsData": true,
-      "readDashboards": false,
-      "writeDashboards": true,
-      "moderateDashboards": true,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": true,
-      "manageExposedElements": true,
-      "manageAdditionalDashboardUsers": true,
-      "executeApp": false
-    },
-    {
-      "group": "data_team",
-      "admin": false,
-      "readProjectContent": true,
-      "writeProjectContent": false,
-      "exportDatasetsData": true,
-      "readDashboards": false,
-      "writeDashboards": false,
-      "moderateDashboards": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": true,
-      "manageExposedElements": true,
-      "manageAdditionalDashboardUsers": true,
-      "executeApp": false
-    },
-    {
-      "group": "administrators",
-      "admin": false,
-      "readProjectContent": false,
-      "writeProjectContent": true,
-      "exportDatasetsData": true,
-      "readDashboards": false,
-      "writeDashboards": false,
-      "moderateDashboards": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false,
-      "executeApp": false
-    }
-  ],
+  "permissions": [],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -259,11 +213,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630944716682
+    "lastModifiedOn": 1630948969628
   },
   "creationTag": {
     "versionNumber": 0,
