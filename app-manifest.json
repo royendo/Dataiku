@@ -27,9 +27,9 @@
     {
       "tiles": [
         {
-          "scenarioId": "WITHNAME",
+          "scenarioId": "globalvariables",
           "type": "SCENARIO_RUN",
-          "prompt": "Scenario Name: With Name"
+          "prompt": "Scenario Name: globalvariables"
         }
       ]
     }
