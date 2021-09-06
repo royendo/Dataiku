@@ -61,8 +61,7 @@
             {
               "out": "Corona1_partitioned_copy",
               "idim": "date_parsed_year",
-              "odim": "date_parsed_year",
-              "func": "equals",
+              "func": "all_available",
               "params": {},
               "expandVariables": false
             }
@@ -83,11 +82,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630938991839
+    "lastModifiedOn": 1630939022093
   },
   "creationTag": {
     "versionNumber": 0,
