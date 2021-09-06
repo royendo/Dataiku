@@ -45,23 +45,7 @@
     }
   },
   "owner": "RoyE",
-  "permissions": [
-    {
-      "group": "readers",
-      "admin": false,
-      "readProjectContent": true,
-      "writeProjectContent": false,
-      "exportDatasetsData": false,
-      "readDashboards": true,
-      "writeDashboards": true,
-      "moderateDashboards": true,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false,
-      "executeApp": false
-    }
-  ],
+  "permissions": [],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -229,11 +213,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 36,
+    "versionNumber": 37,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630949161292
+    "lastModifiedOn": 1630949202589
   },
   "creationTag": {
     "versionNumber": 0,
