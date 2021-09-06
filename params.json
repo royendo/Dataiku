@@ -51,7 +51,7 @@
       "admin": false,
       "readProjectContent": false,
       "writeProjectContent": false,
-      "exportDatasetsData": true,
+      "exportDatasetsData": false,
       "readDashboards": true,
       "writeDashboards": true,
       "moderateDashboards": false,
@@ -229,11 +229,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 33,
+    "versionNumber": 34,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630949107011
+    "lastModifiedOn": 1630949122985
   },
   "creationTag": {
     "versionNumber": 0,
