@@ -49,11 +49,11 @@
     {
       "group": "readers",
       "admin": false,
-      "readProjectContent": false,
+      "readProjectContent": true,
       "writeProjectContent": false,
-      "exportDatasetsData": false,
+      "exportDatasetsData": true,
       "readDashboards": true,
-      "writeDashboards": false,
+      "writeDashboards": true,
       "moderateDashboards": false,
       "runScenarios": false,
       "manageDashboardAuthorizations": false,
@@ -229,11 +229,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 31,
+    "versionNumber": 32,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630949041425
+    "lastModifiedOn": 1630949089546
   },
   "creationTag": {
     "versionNumber": 0,
