@@ -3,7 +3,7 @@
   "type": "Filesystem",
   "params": {
     "connection": "VAR",
-    "path": "${year}/{$month}/${odbId}",
+    "path": "/${year}/{$month}",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -88,11 +88,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630936574313
+    "lastModifiedOn": 1630937280837
   },
   "creationTag": {
     "versionNumber": 0,
