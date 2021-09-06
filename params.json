@@ -7,7 +7,7 @@
     "objects": []
   },
   "projectType": "REGULAR",
-  "projectAppType": "REGULAR",
+  "projectAppType": "APP_TEMPLATE",
   "bundleExporterSettings": {
     "exportOptions": {
       "exportUploads": false,
@@ -234,11 +234,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630678714331
+    "lastModifiedOn": 1630943147021
   },
   "creationTag": {
     "versionNumber": 0,
