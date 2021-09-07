@@ -5,11 +5,11 @@
   "name": "variable",
   "active": false,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631021469575
+    "lastModifiedOn": 1631021485415
   },
   "checklists": {
     "checklists": []
@@ -38,7 +38,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "script": "import dataiku\n\n#define required variables for API\nclient \u003d dataiku.api_client()\nprojects \u003d  client.get_project(\"EVERYTHING\")\ndataset \u003d projects.get_dataset(\"year\")\n\n#Retrieve settings to modify the index value \u0026 clear old datas\nmydataset_md \u003d dataset.get_settings()\ndataset.clear()           \nsettings  \u003d mydataset_md.get_raw()\n\n#modifies the index value by the custom variable, \"year\" and saves\nsettings[\u0027params\u0027][\u0027index\u0027] \u003d dataiku.get_variables()[\"year\"]\nmydataset_md.save()\n\n#build dataset\ndataset.build(job_type\u003d\u0027NON_RECURSIVE_FORCED_BUILD\u0027, partitions\u003dNone, wait\u003dTrue, no_fail\u003dFalse)",
+          "script": "import dataiku\n\n#define required variables for API\nclient \u003d dataiku.api_client()\nprojects \u003d  client.get_project(\"EVERYTHING\")\ndataset \u003d projects.get_dataset(\"year\")\n\n#Retrieve settings to modify the index value \u0026 clear old datas\nmydataset_md \u003d dataset.get_settings()\ndataset.clear()           \nsettings  \u003d mydataset_md.get_raw()\n\n#modifies the index value by the custom variable, \"year\" and saves\nsettings[\u0027params\u0027][\u0027index\u0027] \u003d client.get_variables()[\"year\"]\nmydataset_md.save()\n\n#build dataset\ndataset.build(job_type\u003d\u0027NON_RECURSIVE_FORCED_BUILD\u0027, partitions\u003dNone, wait\u003dTrue, no_fail\u003dFalse)",
           "envSelection": {
             "envMode": "INHERIT"
           },
