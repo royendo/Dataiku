@@ -22,6 +22,28 @@
         },
         "sql": "\nSELECT SLEEP(5);\n",
         "expandedSql": "\nSELECT SLEEP(5);\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "oZNVQvU59uu1",
+        "runOn": 1631029173014,
+        "runIn": 5154,
+        "runBy": "admin",
+        "connection": "MySQL",
+        "state": "RUNNING",
+        "futureId": "q2FL7Ngz",
+        "hash": "ead8cb8b60b45055dc14ae739a4eff86",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "\nSELECT SLEEP(500);\n",
+        "expandedSql": "\nSELECT SLEEP(500);\n"
       }
     ]
   }
