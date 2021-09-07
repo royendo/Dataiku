@@ -27,11 +27,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631022198538
+    "lastModifiedOn": 1631022210559
   },
   "creationTag": {
     "versionNumber": 0,
@@ -44,7 +44,7 @@
   "params": {
     "connection": "MongoDb",
     "notReadyIfEmpty": false,
-    "collection": "SakeMongo",
+    "collection": "ToMongo",
     "importIds": false,
     "strictInputFormat": false,
     "strictOutputFormat": false,
@@ -53,7 +53,128 @@
     "writeDataTypeMismatchBehavior": "DISCARD_WARNING"
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "iso_code",
+        "type": "string"
+      },
+      {
+        "name": "continent",
+        "type": "string"
+      },
+      {
+        "name": "location",
+        "type": "string"
+      },
+      {
+        "name": "date",
+        "type": "string"
+      },
+      {
+        "name": "total_cases",
+        "type": "string"
+      },
+      {
+        "name": "new_cases",
+        "type": "string"
+      },
+      {
+        "name": "total_cases_per_million",
+        "type": "string"
+      },
+      {
+        "name": "new_cases_per_million",
+        "type": "string"
+      },
+      {
+        "name": "stringency_index",
+        "type": "string"
+      },
+      {
+        "name": "population",
+        "type": "string"
+      },
+      {
+        "name": "population_density",
+        "type": "string"
+      },
+      {
+        "name": "median_age",
+        "type": "string"
+      },
+      {
+        "name": "aged_65_older",
+        "type": "string"
+      },
+      {
+        "name": "aged_70_older",
+        "type": "string"
+      },
+      {
+        "name": "gdp_per_capita",
+        "type": "string"
+      },
+      {
+        "name": "cardiovasc_death_rate",
+        "type": "string"
+      },
+      {
+        "name": "diabetes_prevalence",
+        "type": "string"
+      },
+      {
+        "name": "handwashing_facilities",
+        "type": "string"
+      },
+      {
+        "name": "hospital_beds_per_thousand",
+        "type": "string"
+      },
+      {
+        "name": "life_expectancy",
+        "type": "string"
+      },
+      {
+        "name": "human_development_index",
+        "type": "string"
+      },
+      {
+        "name": "new_cases_smoothed",
+        "type": "string"
+      },
+      {
+        "name": "new_deaths_smoothed",
+        "type": "string"
+      },
+      {
+        "name": "new_cases_smoothed_per_million",
+        "type": "string"
+      },
+      {
+        "name": "new_deaths_smoothed_per_million",
+        "type": "string"
+      },
+      {
+        "name": "total_deaths",
+        "type": "string"
+      },
+      {
+        "name": "new_deaths",
+        "type": "string"
+      },
+      {
+        "name": "total_deaths_per_million",
+        "type": "string"
+      },
+      {
+        "name": "new_deaths_per_million",
+        "type": "string"
+      },
+      {
+        "name": "reproduction_rate",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
