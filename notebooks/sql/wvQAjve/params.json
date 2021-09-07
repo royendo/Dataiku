@@ -1,0 +1,25 @@
+{
+  "connection": "MySQL",
+  "name": "admin\u0027s notebook on MySQL",
+  "cells": [],
+  "automationLocal": false,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1631029081173
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1631029081173
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
