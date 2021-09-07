@@ -27,10 +27,10 @@
         "mode": "SQL",
         "id": "oZNVQvU59uu1",
         "runOn": 1631029173014,
-        "runIn": 5154,
+        "runIn": 500173,
         "runBy": "admin",
         "connection": "MySQL",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "q2FL7Ngz",
         "hash": "ead8cb8b60b45055dc14ae739a4eff86",
         "querySettings": {
