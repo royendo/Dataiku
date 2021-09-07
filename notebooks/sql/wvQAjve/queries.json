@@ -5,10 +5,10 @@
         "mode": "SQL",
         "id": "fsKrQAvjARs4",
         "runOn": 1631029142359,
-        "runIn": -1,
+        "runIn": 5154,
         "runBy": "admin",
         "connection": "MySQL",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "QRlC0AZB",
         "hash": "e8dd742555d1bf1e835e02e8d980def0",
         "querySettings": {
