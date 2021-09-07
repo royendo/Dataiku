@@ -5,11 +5,11 @@
   "name": "variable",
   "active": false,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631021078216
+    "lastModifiedOn": 1631021380848
   },
   "checklists": {
     "checklists": []
@@ -59,7 +59,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "script": "import dataiku\nclient \u003d dataiku.api_client()\n\ntemp \u003d client.get_custom_variables()[\u0027year\u0027]\nnew \u003d int(temp) + 1\nclient.set_custom_variables({\u0027year\u0027:str(new)})",
+          "script": "import dataiku\nclient \u003d dataiku.api_client()\n\ntemp \u003d client.get_variables()[\u0027year\u0027]\nnew \u003d int(temp) + 1\nclient.set_variables({\u0027year\u0027:str(new)})",
           "envSelection": {
             "envMode": "INHERIT"
           },
