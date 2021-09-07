@@ -27,11 +27,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631021384412
+    "lastModifiedOn": 1631021488740
   },
   "creationTag": {
     "versionNumber": 0,
@@ -44,7 +44,7 @@
   "params": {
     "connection": "ElasticSearch",
     "notReadyIfEmpty": false,
-    "index": "2020",
+    "index": "2025",
     "frameSize": 10000,
     "partitioned": false
   },
