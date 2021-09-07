@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "opztlv4ih5q": [
+      {
+        "mode": "SQL",
+        "id": "fsKrQAvjARs4",
+        "runOn": 1631029142359,
+        "runIn": -1,
+        "runBy": "admin",
+        "connection": "MySQL",
+        "state": "RUNNING",
+        "futureId": "QRlC0AZB",
+        "hash": "e8dd742555d1bf1e835e02e8d980def0",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "\nSELECT SLEEP(5);\n",
+        "expandedSql": "\nSELECT SLEEP(5);\n"
+      }
+    ]
+  }
+}
