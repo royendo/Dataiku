@@ -27,11 +27,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631022210559
+    "lastModifiedOn": 1631022229347
   },
   "creationTag": {
     "versionNumber": 0,
@@ -44,7 +44,7 @@
   "params": {
     "connection": "MongoDb",
     "notReadyIfEmpty": false,
-    "collection": "ToMongo",
+    "collection": "SakeMongo",
     "importIds": false,
     "strictInputFormat": false,
     "strictOutputFormat": false,
