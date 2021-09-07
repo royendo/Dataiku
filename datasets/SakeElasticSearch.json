@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631019944130
+    "lastModifiedOn": 1631020242196
   },
   "creationTag": {
     "versionNumber": 0,
@@ -45,7 +45,7 @@
   "params": {
     "connection": "ElasticSearch",
     "notReadyIfEmpty": false,
-    "index": "2020",
+    "index": "sakeelasticsearch",
     "type": "sakeelasticsearch",
     "frameSize": 10000,
     "partitioned": false
