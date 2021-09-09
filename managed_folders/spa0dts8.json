@@ -2,8 +2,8 @@
   "name": "a",
   "type": "Filesystem",
   "params": {
-    "connection": "filesystem_folders",
-    "path": "${projectKey}/${odbId}",
+    "connection": "testing",
+    "path": "/AUDITLOGANALYSIS",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -88,11 +88,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631211872942
+    "lastModifiedOn": 1631211993010
   },
   "creationTag": {
     "versionNumber": 0,
