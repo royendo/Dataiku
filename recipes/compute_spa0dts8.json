@@ -7,38 +7,16 @@
     "exportParams": {
       "destinationType": "DOWNLOAD",
       "temporaryFileBehavior": "AUTO",
-      "originatingOptionId": "tsv-excel-header",
+      "originatingOptionId": "excel",
       "format": {
-        "type": "csv",
+        "type": "excel",
         "params": {
-          "style": "excel",
-          "charset": "utf8",
-          "separator": ",",
-          "quoteChar": "\"",
-          "escapeChar": "\\",
-          "dateSerializationFormat": "ISO",
-          "arrayMapFormat": "json",
-          "hiveSeparators": [
-            "\u0002",
-            "\u0003",
-            "\u0004",
-            "\u0005",
-            "\u0006",
-            "\u0007",
-            "\b"
-          ],
+          "xlsx": true,
+          "preserveNumberFormatting": false,
+          "parseDatesToISO": false,
           "skipRowsBeforeHeader": 0,
-          "parseHeaderRow": true,
-          "skipRowsAfterHeader": 0,
-          "probableNumberOfRecords": 0,
-          "normalizeBooleans": false,
-          "normalizeDoubles": true,
-          "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
-          "readMissingColumnsBehavior": "DISCARD_SILENT",
-          "readDataTypeMismatchBehavior": "DISCARD_WARNING",
-          "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
-          "fileReadFailureBehavior": "FAIL",
-          "compress": ""
+          "parseHeaderRow": false,
+          "skipRowsAfterHeader": 0
         }
       },
       "destinationDatasetProjectKey": "EVERYTHING",
@@ -93,11 +71,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631211997104
+    "lastModifiedOn": 1631212022424
   },
   "creationTag": {
     "versionNumber": 0,
