@@ -2,6 +2,7 @@
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
+import time
 '''
 # Read recipe inputs
 coronsES = dataiku.Dataset("CoronsES")
@@ -20,7 +21,7 @@ fedEx = dataiku.Dataset("FedEx")
 fedEx.write_with_schema(fedEx_df)
 
 '''
-
+time.sleep(3000)
 client = dataiku.api_client()
 project = client.get_project("EVERYTHING")
 
