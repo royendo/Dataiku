@@ -3,11 +3,11 @@
     "mode": "\u0026\u0026",
     "conditions": [
       {
-        "input": "iso_code",
-        "col": "iso_code",
+        "input": "date_parsed_year",
+        "col": "continent",
         "string": "Asia",
-        "num": 0,
-        "operator": "\u003d\u003d [string]"
+        "num": 2020,
+        "operator": "\u003d\u003d [number]"
       }
     ]
   },
