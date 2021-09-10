@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631279865356
+    "lastModifiedOn": 1631279871232
   },
   "creationTag": {
     "versionNumber": 0,
@@ -106,7 +106,7 @@
       },
       {
         "name": "total_cases",
-        "type": "smallint"
+        "type": "string"
       },
       {
         "name": "new_cases",
