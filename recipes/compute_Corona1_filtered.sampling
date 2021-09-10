@@ -3,8 +3,8 @@
     "mode": "\u0026\u0026",
     "conditions": [
       {
-        "input": "continent",
-        "col": "continent",
+        "input": "iso_code",
+        "col": "iso_code",
         "string": "Asia",
         "num": 0,
         "operator": "\u003d\u003d [string]"

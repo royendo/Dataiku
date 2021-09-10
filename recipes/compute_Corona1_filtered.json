@@ -68,7 +68,7 @@
     "main": {
       "items": [
         {
-          "ref": "Corona1",
+          "ref": "Corona1_prepared",
           "deps": []
         }
       ]
@@ -86,11 +86,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631279701858
+    "lastModifiedOn": 1631279908930
   },
   "creationTag": {
     "versionNumber": 0,
