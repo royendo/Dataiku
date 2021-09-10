@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631279908816
+    "lastModifiedOn": 1631279991986
   },
   "creationTag": {
     "versionNumber": 0,
@@ -108,7 +108,8 @@
       },
       {
         "name": "date_parsed_year",
-        "type": "smallint"
+        "type": "smallint",
+        "meaning": "Text"
       },
       {
         "name": "date_parsed_month",
