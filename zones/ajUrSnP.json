@@ -109,6 +109,14 @@
     {
       "objectId": "testforlog",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_raw_sake_SQLServer",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "raw_sake_SQLServer",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
