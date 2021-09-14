@@ -5,11 +5,11 @@
   "name": "a",
   "active": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631635411029
+    "lastModifiedOn": 1631635430946
   },
   "checklists": {
     "checklists": []
@@ -20,7 +20,25 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "WFwFUOlQ",
+      "type": "custom_python",
+      "name": "Custom trigger",
+      "delay": 3600,
+      "active": true,
+      "params": {
+        "code": "import dataiku\nfrom dataiku.scenario import Trigger\nt \u003d Trigger()\nif True: # your condition here\n    t.fire()",
+        "envSelection": {
+          "envMode": "INHERIT"
+        }
+      },
+      "graceDelaySettings": {
+        "delay": 0,
+        "checkAgainAfterGraceDelay": false
+      }
+    }
+  ],
   "reporters": [],
   "params": {
     "steps": []
