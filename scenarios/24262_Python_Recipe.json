@@ -5,11 +5,11 @@
   "name": "24262 Python Recipe",
   "active": false,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631709406501
+    "lastModifiedOn": 1631810683510
   },
   "checklists": {
     "checklists": []
@@ -90,6 +90,27 @@
             "envMode": "INHERIT"
           },
           "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "bundle abcd",
+        "type": "prepare_bundle",
+        "name": "Step #3",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "bundleId": "abcd",
+          "transmogrify": false,
+          "targetVariable": "abcd",
+          "publishedProjectKey": "EVERYTHING",
+          "publishOnDeployer": true
         }
       }
     ]
