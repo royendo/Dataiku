@@ -117,6 +117,10 @@
     {
       "objectId": "raw_sake_SQLServer",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "o1",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
