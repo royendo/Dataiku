@@ -125,6 +125,10 @@
     {
       "objectId": "o2",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "o3",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
