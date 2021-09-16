@@ -1,12 +1,7 @@
 {
   "name": "test",
   "color": "#8C2DA7",
-  "items": [
-    {
-      "objectId": "abcd1234",
-      "objectType": "DATASET"
-    }
-  ],
+  "items": [],
   "shared": [],
   "tags": [],
   "customFields": {},
