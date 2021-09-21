@@ -17,25 +17,15 @@
     "exportGitRepository": false
   },
   "instanceFeatures": {
-    "showFlowNavLink": true,
+    "showFlowNavLink": false,
     "showLabNavLink": false,
     "showCodeNavLink": false,
     "showVersionControlFeatures": false
   },
   "useAppHomepage": true,
-  "homepageSections": [
-    {
-      "tiles": [
-        {
-          "scenarioId": "globalvariables",
-          "type": "SCENARIO_RUN",
-          "prompt": "Scenario Name: globalvariables"
-        }
-      ]
-    }
-  ],
+  "homepageSections": [],
   "label": "Everything",
-  "shortDesc": "The template *Everything* was created by Administrator on Sep 06th 2021",
+  "shortDesc": "The template *Everything* was created by Administrator on Sep 21st 2021",
   "tags": [],
   "instantiationPermission": "USE_APP_MASTER_PERMISSIONS"
 }
