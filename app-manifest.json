@@ -27,9 +27,8 @@
     {
       "tiles": [
         {
-          "datasetName": "shogun",
-          "behavior": "INLINE_UPLOAD_AND_REDETECT",
-          "type": "UPLOAD_DATASET_SET_FILE"
+          "behavior": "INLINE_UPLOAD",
+          "type": "MANAGED_FOLDER_ADD_FILE"
         }
       ]
     }
