@@ -5,11 +5,11 @@
   "name": "24262 Python Recipe",
   "active": false,
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1632253753630
+    "lastModifiedOn": 1632253781832
   },
   "checklists": {
     "checklists": []
@@ -26,7 +26,11 @@
       "active": true,
       "messaging": {
         "type": "dataset-scenario",
-        "configuration": {}
+        "configuration": {
+          "projectKey": "EVERYTHING",
+          "datasetName": "FITNESS",
+          "message": "\t${scenarioName}\n\t${triggerName}\n\t${triggerType}"
+        }
       },
       "id": "9fHsyGWU",
       "name": "send to dataset test",
