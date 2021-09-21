@@ -30,6 +30,11 @@
           "folderId": "375D1F5f",
           "behavior": "INLINE_UPLOAD",
           "type": "MANAGED_FOLDER_ADD_FILE"
+        },
+        {
+          "datasetName": "2",
+          "behavior": "INLINE_UPLOAD_REDETECT_AND_INFER",
+          "type": "UPLOAD_DATASET_SET_FILE"
         }
       ]
     }
