@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1632254089464
+    "lastModifiedOn": 1632254188499
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,20 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "col1",
+        "type": "string",
+        "comment": "",
+        "maxLength": 1000
+      },
+      {
+        "name": "col2",
+        "type": "string",
+        "comment": "",
+        "maxLength": 1000
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
