@@ -5,11 +5,11 @@
   "name": "24262 Python Recipe",
   "active": false,
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631810691691
+    "lastModifiedOn": 1632253753223
   },
   "checklists": {
     "checklists": []
@@ -25,19 +25,11 @@
     {
       "active": true,
       "messaging": {
-        "type": "mail-scenario",
-        "configuration": {
-          "channelId": "my_smtp",
-          "subject": "DSS scenario ${scenarioName}: ${outcome}",
-          "sendAsHTML": false,
-          "attachments": [],
-          "messageSource": "INLINE",
-          "templateFormat": "FORMULA",
-          "templateName": "default.ftl",
-          "message": "${scenarioName}, \t${outcome}\n\n${failedEventsSummary}, ${scenarioRunURL}"
-        }
+        "type": "dataset-scenario",
+        "configuration": {}
       },
-      "id": "IFbBS6jx",
+      "id": "9fHsyGWU",
+      "name": "send to dataset test",
       "runConditionEnabled": true,
       "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
       "phase": "END"
@@ -46,9 +38,9 @@
   "params": {
     "steps": [
       {
-        "id": "bundle abcd",
-        "type": "prepare_bundle",
-        "name": "Step #3",
+        "id": "build_0_true_d_FITNESS",
+        "type": "build_flowitem",
+        "name": "Step #1",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
@@ -59,11 +51,16 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "bundleId": "abcd",
-          "transmogrify": false,
-          "targetVariable": "abcd",
-          "publishedProjectKey": "EVERYTHING",
-          "publishOnDeployer": true
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "FITNESS",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
         }
       }
     ]
