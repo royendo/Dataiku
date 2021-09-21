@@ -7,7 +7,7 @@
     "objects": []
   },
   "projectType": "REGULAR",
-  "projectAppType": "APP_TEMPLATE",
+  "projectAppType": "REGULAR",
   "bundleContainerSettings": {
     "remapping": {
       "connections": [],
@@ -229,11 +229,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 43,
+    "versionNumber": 44,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1632247713344
+    "lastModifiedOn": 1632247803996
   },
   "creationTag": {
     "versionNumber": 0,
