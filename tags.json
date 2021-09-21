@@ -1,8 +1,16 @@
 {
   "tags": {
-    "recipe-editor": {},
-    "deleted-recipe-editor": {},
-    "24262": {},
-    "Community_paritioning": {}
+    "deleted-recipe-editor": {
+      "color": "#90a8b7"
+    },
+    "24262": {
+      "color": "#90a8b7"
+    },
+    "recipe-editor": {
+      "color": "#1ac2ab"
+    },
+    "Community_paritioning": {
+      "color": "#1ac2ab"
+    }
   }
 }
