@@ -98,7 +98,9 @@
     },
     "recipeEnginesPreferences": {
       "forbiddenEngines": [],
-      "enginesPreferenceOrder": [],
+      "enginesPreferenceOrder": [
+        "SPARK"
+      ],
       "forbiddenByRecipeType": {},
       "preferenceByRecipeType": {}
     },
@@ -229,11 +231,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 41,
+    "versionNumber": 42,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1630949257085
+    "lastModifiedOn": 1632247371925
   },
   "creationTag": {
     "versionNumber": 0,
