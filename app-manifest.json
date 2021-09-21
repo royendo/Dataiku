@@ -23,7 +23,17 @@
     "showVersionControlFeatures": false
   },
   "useAppHomepage": true,
-  "homepageSections": [],
+  "homepageSections": [
+    {
+      "tiles": [
+        {
+          "datasetName": "shogun",
+          "behavior": "INLINE_UPLOAD_AND_REDETECT",
+          "type": "UPLOAD_DATASET_SET_FILE"
+        }
+      ]
+    }
+  ],
   "label": "Everything",
   "shortDesc": "The template *Everything* was created by Administrator on Sep 21st 2021",
   "tags": [],
