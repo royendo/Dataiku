@@ -5,11 +5,11 @@
   "name": "24262 Python Recipe",
   "active": false,
   "versionTag": {
-    "versionNumber": 19,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1632253908851
+    "lastModifiedOn": 1632254156812
   },
   "checklists": {
     "checklists": []
@@ -28,8 +28,8 @@
         "type": "dataset-scenario",
         "configuration": {
           "projectKey": "EVERYTHING",
-          "datasetName": "abcd1234",
-          "message": "\t${scenarioName}\n\t${triggerName}\n\t${triggerType}"
+          "datasetName": "aaa123",
+          "message": "\t\"col1\":\"${scenarioName}\"\n\t\"col2\":\"$triggerName}\"\n"
         }
       },
       "id": "9fHsyGWU",
