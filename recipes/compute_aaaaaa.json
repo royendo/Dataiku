@@ -3,7 +3,19 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "use_sender_value": false,
+      "use_subject_value": false,
+      "body_encoding": "us-ascii",
+      "use_body_value": false,
+      "attachment_type": "csv",
+      "smtp_host": "smtp.gmail.com",
+      "smtp_port": 587,
+      "recipient_column": "m.royendo@gmail.com",
+      "sender_column": "m.royendo@gmail.com",
+      "subject_column": "Roy",
+      "body_column": "Roy"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +49,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1632270454550
+    "lastModifiedOn": 1632270565021
   },
   "creationTag": {
     "versionNumber": 0,
