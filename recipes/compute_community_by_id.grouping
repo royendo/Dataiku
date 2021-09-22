@@ -5,7 +5,18 @@
   },
   "keys": [
     {
-      "column": "id"
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "last": false,
+      "max": false,
+      "column": "id",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
@@ -15,8 +26,10 @@
       "firstLastNotNull": false,
       "column": "yr",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -31,8 +44,10 @@
       "firstLastNotNull": false,
       "column": "mn",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -47,13 +62,16 @@
       "firstLastNotNull": false,
       "column": "value",
       "count": false,
-      "sum": false,
+      "$idx": 2,
+      "sum": true,
       "concat": false,
+      "type": "int",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     }
@@ -94,8 +112,28 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "value_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
