@@ -9,8 +9,8 @@
       "body_encoding": "us-ascii",
       "use_body_value": false,
       "attachment_type": "csv",
-      "smtp_host": "localhost",
-      "smtp_port": 25,
+      "smtp_host": "smtp.gmail.com",
+      "smtp_port": 587,
       "recipient_column": "m.royendo@gmail.com",
       "sender_column": "m.royendo@gmail.com",
       "subject_column": "Roy",
@@ -49,11 +49,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1632314164673
+    "lastModifiedOn": 1632314247384
   },
   "creationTag": {
     "versionNumber": 0,
