@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1632270452387
+    "lastModifiedOn": 1632313328747
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,25 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "Roy",
+        "type": "string"
+      },
+      {
+        "name": "m.royendo@gmail.com",
+        "type": "string"
+      },
+      {
+        "name": "sendmail_status",
+        "type": "string"
+      },
+      {
+        "name": "sendmail_error",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
