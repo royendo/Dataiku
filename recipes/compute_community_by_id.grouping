@@ -22,7 +22,7 @@
   "values": [
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "yr",
       "count": false,
@@ -35,12 +35,13 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "mn",
       "count": false,
@@ -53,6 +54,7 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -76,7 +78,7 @@
       "first": false
     }
   ],
-  "globalCount": true,
+  "globalCount": false,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -123,11 +125,15 @@
             "type": "string"
           },
           {
-            "name": "value_sum",
-            "type": "bigint"
+            "name": "yr_max",
+            "type": "string"
           },
           {
-            "name": "count",
+            "name": "mn_max",
+            "type": "string"
+          },
+          {
+            "name": "value_sum",
             "type": "bigint"
           }
         ],
