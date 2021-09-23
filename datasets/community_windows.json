@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1632404804090
+    "lastModifiedOn": 1632405611518
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,6 +87,10 @@
   "schema": {
     "columns": [
       {
+        "name": "value",
+        "type": "int"
+      },
+      {
         "name": "yr_max",
         "type": "string"
       },
@@ -95,11 +99,7 @@
         "type": "string"
       },
       {
-        "name": "value_lag",
-        "type": "int"
-      },
-      {
-        "name": "value_lag_diff",
+        "name": "value_lead_diff",
         "type": "int"
       }
     ],
