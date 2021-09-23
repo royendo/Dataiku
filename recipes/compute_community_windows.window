@@ -28,7 +28,7 @@
       "leadValues": "1",
       "$selected": false,
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -54,7 +54,7 @@
       "leadValues": "1",
       "$selected": false,
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -80,7 +80,7 @@
       "leadValues": "1",
       "$selected": false,
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     },
@@ -93,7 +93,7 @@
       "count": false,
       "$idx": 3,
       "lagValues": "1",
-      "sum": true,
+      "sum": false,
       "concat": false,
       "type": "int",
       "lead": false,
@@ -106,7 +106,7 @@
       "leadValues": "1",
       "$selected": false,
       "stddev": false,
-      "value": true,
+      "value": false,
       "leadDiff": false,
       "first": false
     }
@@ -141,32 +141,12 @@
       "schema": {
         "columns": [
           {
-            "name": "id",
-            "type": "string"
-          },
-          {
-            "name": "yr",
-            "type": "string"
-          },
-          {
-            "name": "mn",
-            "type": "string"
-          },
-          {
-            "name": "value",
-            "type": "int"
-          },
-          {
             "name": "yr_max",
             "type": "string"
           },
           {
             "name": "mn_max",
             "type": "string"
-          },
-          {
-            "name": "value_sum",
-            "type": "bigint"
           },
           {
             "name": "value_lag",
