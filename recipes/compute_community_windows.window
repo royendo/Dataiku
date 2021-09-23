@@ -86,7 +86,7 @@
     },
     {
       "last": false,
-      "lagDiff": false,
+      "lagDiff": true,
       "max": false,
       "firstLastNotNull": false,
       "column": "value",
@@ -170,6 +170,10 @@
           },
           {
             "name": "value_lag",
+            "type": "int"
+          },
+          {
+            "name": "value_lag_diff",
             "type": "int"
           }
         ],
