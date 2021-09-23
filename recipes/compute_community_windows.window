@@ -86,7 +86,7 @@
     },
     {
       "last": false,
-      "lagDiff": true,
+      "lagDiff": false,
       "max": false,
       "firstLastNotNull": false,
       "column": "value",
@@ -102,12 +102,12 @@
       "min": false,
       "countDistinct": false,
       "avg": false,
-      "lag": true,
+      "lag": false,
       "leadValues": "1",
       "$selected": false,
       "stddev": false,
-      "value": false,
-      "leadDiff": false,
+      "value": true,
+      "leadDiff": true,
       "first": false
     }
   ],
@@ -141,6 +141,10 @@
       "schema": {
         "columns": [
           {
+            "name": "value",
+            "type": "int"
+          },
+          {
             "name": "yr_max",
             "type": "string"
           },
@@ -149,11 +153,7 @@
             "type": "string"
           },
           {
-            "name": "value_lag",
-            "type": "int"
-          },
-          {
-            "name": "value_lag_diff",
+            "name": "value_lead_diff",
             "type": "int"
           }
         ],
