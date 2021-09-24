@@ -51,7 +51,7 @@
       "engineType": "LINO",
       "def": {
         "type": "admin_map",
-        "variant": "filled_map",
+        "variant": "normal",
         "name": "New chart",
         "userEditedName": false,
         "genericDimension0": [],
@@ -71,7 +71,18 @@
         "xMeasure": [],
         "yMeasure": [],
         "colorMeasure": [],
-        "sizeMeasure": [],
+        "sizeMeasure": [
+          {
+            "column": "SHAPE_Length",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeModeDim": 0
+          }
+        ],
         "geometry": [
           {
             "column": "GeoPoint",
