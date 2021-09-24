@@ -32,12 +32,31 @@
   },
   "steps": [
     {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "GeoPoint",
+        "lat_column": "LAT",
+        "lon_column": "LONG"
+      },
+      "alwaysShowComment": false
+    },
+    {
       "preview": true,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CityLevelReverseGeocoder",
       "params": {
-        "inputCol": "CTYUA21NM"
+        "l4OutCol": "region",
+        "l2OutCol": "country",
+        "l5OutCol": "5",
+        "l7OutCol": "city",
+        "inputCol": "GeoPoint",
+        "l6OutCol": "department",
+        "l3OutCol": "large region",
+        "l8OutCol": "city"
       },
       "alwaysShowComment": false
     }
@@ -50,17 +69,35 @@
   },
   "analysisColumnData": {},
   "columnWidthsByName": {
-    "OBJECTID": 100,
+    "country": 113,
     "SHAPE_Length": 134,
+    "region_enName": 113,
+    "5_enName": 183,
+    "large region": 105,
+    "city": 100,
     "BNG_E": 100,
-    "CTYUA21CD": 113,
     "BNG_N": 100,
-    "SHAPE_Area": 127,
-    "LAT": 100,
+    "GlobalID": 281,
+    "cit": 100,
+    "OBJECTID": 100,
+    "GeoPoint": 218,
+    "city_enName": 100,
+    "cit_enName": 100,
+    "large region_enName": 158,
+    "department": 176,
+    "country_iso": 100,
     "CTYUA21NM": 183,
-    "CTYUA21NMW": 106,
     "LONG": 100,
-    "GlobalID": 281
+    "country_enName": 148,
+    "re_enName": 127,
+    "department_enName": 176,
+    "SHAPE_Area": 127,
+    "CTYUA21NMW": 106,
+    "re": 127,
+    "5": 134,
+    "CTYUA21CD": 113,
+    "region": 127,
+    "LAT": 100
   },
   "sorting": [],
   "globalSearchQuery": "",
