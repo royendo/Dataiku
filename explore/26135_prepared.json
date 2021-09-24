@@ -5,7 +5,33 @@
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "5": 134,
+      "OBJECTID": 100,
+      "CTYUA21CD": 113,
+      "CTYUA21NM": 183,
+      "CTYUA21NMW": 106,
+      "BNG_E": 100,
+      "BNG_N": 100,
+      "LONG": 100,
+      "LAT": 100,
+      "GlobalID": 281,
+      "SHAPE_Length": 134,
+      "SHAPE_Area": 148,
+      "GeoPoint": 218,
+      "city": 176,
+      "city_enName": 176,
+      "department": 176,
+      "department_enName": 176,
+      "5_enName": 183,
+      "region": 127,
+      "region_enName": 113,
+      "large region": 105,
+      "large region_enName": 158,
+      "country_iso": 100,
+      "country": 113,
+      "country_enName": 148
+    },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -40,8 +66,10 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
-    "globalSearchQuery": "",
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "northern Ireland",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
   },
@@ -73,8 +101,7 @@
         "colorMeasure": [],
         "sizeMeasure": [
           {
-            "column": "SHAPE_Length",
-            "function": "AVG",
+            "function": "COUNT",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
