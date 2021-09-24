@@ -5,6 +5,14 @@
     {
       "objectId": "26135",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "26135_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_26135_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
