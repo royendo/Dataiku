@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1632494141698
+    "lastModifiedOn": 1632494861603
   },
   "creationTag": {
     "versionNumber": 0,
@@ -135,6 +135,62 @@
       {
         "name": "SHAPE_Area",
         "type": "double"
+      },
+      {
+        "name": "GeoPoint",
+        "type": "string"
+      },
+      {
+        "name": "city",
+        "type": "string"
+      },
+      {
+        "name": "city_enName",
+        "type": "string"
+      },
+      {
+        "name": "department",
+        "type": "string"
+      },
+      {
+        "name": "department_enName",
+        "type": "string"
+      },
+      {
+        "name": "5",
+        "type": "string"
+      },
+      {
+        "name": "5_enName",
+        "type": "string"
+      },
+      {
+        "name": "region",
+        "type": "string"
+      },
+      {
+        "name": "region_enName",
+        "type": "string"
+      },
+      {
+        "name": "large region",
+        "type": "string"
+      },
+      {
+        "name": "large region_enName",
+        "type": "string"
+      },
+      {
+        "name": "country_iso",
+        "type": "string"
+      },
+      {
+        "name": "country",
+        "type": "string"
+      },
+      {
+        "name": "country_enName",
+        "type": "string"
       }
     ],
     "userModified": true
