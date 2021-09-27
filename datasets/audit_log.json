@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1632749893268
+    "lastModifiedOn": 1632749917444
   },
   "creationTag": {
     "versionNumber": 0,
@@ -77,15 +77,15 @@
       },
       {
         "name": "message",
-        "type": "string"
+        "type": "map"
       },
       {
         "name": "mdc",
-        "type": "string"
+        "type": "map"
       },
       {
         "name": "callTime",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "timestamp",
