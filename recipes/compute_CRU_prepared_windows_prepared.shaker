@@ -1,0 +1,194 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 2,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "UNIXTimestampParser",
+      "params": {
+        "inCol": "startTime",
+        "milliseconds": true
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "UNIXTimestampParser",
+      "params": {
+        "inCol": "endTime",
+        "milliseconds": true
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "duration_sec",
+        "input2": "endTime",
+        "outputUnit": "SECONDS",
+        "input1": "startTime",
+        "compareTo": "COLUMN",
+        "reverse": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "duration_sec",
+        "columns": [
+          "endTime"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "rownumber",
+          "childrenMajorFaults",
+          "type"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "context",
+        "nullAsEmpty": true,
+        "prefixOutputs": false,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "cpuUserTimeMS_avg": 143,
+    "savedModelId": 105,
+    "context_analysisId": 150,
+    "vmHWMMB_avg": 100,
+    "etlaps": 100,
+    "pid": 100,
+    "context_sessionId": 143,
+    "type": 106,
+    "duration_sec": 105,
+    "webappId": 100,
+    "activityId": 183,
+    "commandName": 232,
+    "projectKey": 141,
+    "context_activityId": 183,
+    "context": 300,
+    "id": 127,
+    "since_startTime_days": 165,
+    "mlTaskId": 100,
+    "context_mlTaskId": 135,
+    "context_projectKey": 150,
+    "context_authIdentifier": 180,
+    "elt": 100,
+    "context_webappId": 135,
+    "context_jupyterSessionId": 232,
+    "recipeName": 183,
+    "vmRSSTotalMBS_avg": 143,
+    "jobId": 300,
+    "cpuChildrenSystemTimeMS_avg": 218,
+    "context_recipeName": 183,
+    "analysisId": 100,
+    "vmRSSPeakMB_avg": 128,
+    "context_activityType": 165,
+    "vmDataMB_avg": 105,
+    "msgType": 100,
+    "savedModelVersionId": 158,
+    "cpuCurrent_avg": 162,
+    "cpuChildrenUserTimeMS_avg": 203,
+    "cpuSystemTimeMS_avg": 158,
+    "childrenMajorFaults": 158,
+    "context_jupyterNotebookId": 204,
+    "jupyterNotebookId": 204,
+    "rownumber": 100,
+    "context_type": 176,
+    "startTime": 113,
+    "vmSizePeakMB_avg": 135,
+    "authIdentifier": 120,
+    "timestamp": 211,
+    "recipeType": 176,
+    "sessionId": 100,
+    "context_jobId": 300,
+    "context_savedModelId": 165,
+    "cpuTotalMS_avg": 120,
+    "vmRSSAnonMB_avg": 128,
+    "vmRSSMB_avg": 100,
+    "context_recipeType": 176,
+    "jupyterSessionId": 232,
+    "context_savedModelVersionId": 218,
+    "endTime": 106,
+    "vmSizeMB_avg": 105,
+    "activityType": 105
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "incident analysis",
+  "color": "#C82423",
+  "items": [
+    {
+      "objectId": "login_related",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "download_related",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_generic_audit_prepared_filtered_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_download_related",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_settings_related",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "settings_related",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "login_related_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_login_related_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_project_related",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "project_related",
+      "objectType": "DATASET"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

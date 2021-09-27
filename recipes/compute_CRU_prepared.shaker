@@ -1,0 +1,296 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "mdc",
+          "logger",
+          "severity",
+          "callTime"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "message",
+        "nullAsEmpty": true,
+        "prefixOutputs": false,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "computeResourceUsage",
+        "nullAsEmpty": true,
+        "prefixOutputs": false,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "type"
+        ],
+        "values": [
+          "LOCAL_PROCESS"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "localProcess",
+          "context",
+          "timestamp",
+          "endTime",
+          "startTime",
+          "id",
+          "type",
+          "msgType"
+        ],
+        "keep": true,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "localProcess",
+        "nullAsEmpty": true,
+        "prefixOutputs": false,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "majorFaults",
+          "localProcess"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "logger": 239,
+    "localProcess_cpuCurrent": 188,
+    "context_sessionId": 143,
+    "type": 113,
+    "originalIP": 100,
+    "webappId": 100,
+    "callPath": 169,
+    "projectKey": 183,
+    "cpuCurrent": 100,
+    "clientIP": 100,
+    "context": 300,
+    "majorFaults": 100,
+    "localProcess_vmSizeMB": 173,
+    "id": 127,
+    "mlTaskId": 100,
+    "message_computeResourceUsage_localProcess_vmHWMMB": 494,
+    "cpuUserTimeMS": 113,
+    "context_projectKey": 183,
+    "localProcess_vmRSSTotalMBS": 210,
+    "message_computeResourceUsage": 300,
+    "context_authIdentifier": 180,
+    "vmRSSPeakMB": 100,
+    "context_jupyterSessionId": 300,
+    "recipeName": 100,
+    "message_computeResourceUsage_localProcess_cpuUserTimeMS": 300,
+    "vmRSSAnonMB": 100,
+    "localProcess_vmHWMMB": 165,
+    "vmRSSMB": 100,
+    "vmDataMB": 100,
+    "message_computeResourceUsage_type": 263,
+    "msgType": 232,
+    "authSource": 100,
+    "message_computeResourceUsage_singleK8SJob": 300,
+    "message_computeResourceUsage_localProcess_childrenMajorFaults": 300,
+    "message_callPath": 169,
+    "auditTopic": 169,
+    "message_msgType": 218,
+    "message_originalIP": 150,
+    "context_type": 176,
+    "startTime": 113,
+    "message_computeResourceUsage_localProcess_vmSizeMB": 300,
+    "timestamp": 211,
+    "localProcess_childrenMajorFaults": 255,
+    "message_computeResourceUsage_id": 248,
+    "message_clientIP": 135,
+    "sessionId": 100,
+    "context_jobId": 176,
+    "localProcess_cpuSystemTimeMS": 225,
+    "message_computeResourceUsage_localProcess_vmRSSAnonMB": 300,
+    "jupyterSessionId": 300,
+    "endTime": 100,
+    "xForwardedFor": 113,
+    "localProcess_commandName": 195,
+    "message_auditTopic": 176,
+    "localProcess_majorFaults": 195,
+    "context_analysisId": 150,
+    "pid": 100,
+    "cpuChildrenUserTimeMS": 173,
+    "activityId": 100,
+    "commandName": 155,
+    "message_authSource": 150,
+    "message_computeResourceUsage_localProcess_vmSizePeakMB": 300,
+    "context_activityId": 150,
+    "localProcess_cpuChildrenUserTimeMS": 270,
+    "localProcess_cpuUserTimeMS": 210,
+    "vmSizeMB": 100,
+    "message_computeResourceUsage_localProcess_cpuCurrent": 300,
+    "message_computeResourceUsage_localProcess_pid": 300,
+    "context_mlTaskId": 135,
+    "message_computeResourceUsage_startTime": 300,
+    "message_computeResourceUsage_sparkK8SJob": 300,
+    "cpuChildrenSystemTimeMS": 188,
+    "message_computeResourceUsage_localProcess_vmRSSTotalMBS": 300,
+    "vmSizePeakMB": 105,
+    "localProcess_vmRSSPeakMB": 195,
+    "localProcess_vmRSSMB": 165,
+    "mdc": 300,
+    "context_webappId": 135,
+    "message_computeResourceUsage_context": 300,
+    "vmRSSTotalMBS": 141,
+    "cpuSystemTimeMS": 128,
+    "localProcess": 300,
+    "jobId": 176,
+    "context_recipeName": 150,
+    "topic": 169,
+    "analysisId": 100,
+    "message_xForwardedFor": 173,
+    "message_computeResourceUsage_endTime": 285,
+    "message_computeResourceUsage_localProcess_vmRSSMB": 300,
+    "localProcess_vmSizePeakMB": 203,
+    "context_activityType": 165,
+    "singleK8SJob": 176,
+    "message_computeResourceUsage_localProcess_commandName": 300,
+    "message_computeResourceUsage_localProcess": 300,
+    "message_computeResourceUsage_localProcess_cpuTotalMS": 300,
+    "authUser": 100,
+    "computeResourceUsage": 300,
+    "message_computeResourceUsage_localProcess_cpuSystemTimeMS": 300,
+    "sparkK8SJob": 106,
+    "message_computeResourceUsage_localProcess_cpuChildrenSystemTimeMS": 300,
+    "childrenMajorFaults": 158,
+    "message_computeResourceUsage_localProcess_vmRSSPeakMB": 300,
+    "context_jupyterNotebookId": 203,
+    "jupyterNotebookId": 148,
+    "localProcess_pid": 135,
+    "localProcess_cpuTotalMS": 188,
+    "authIdentifier": 120,
+    "severity": 100,
+    "vmHWMMB": 100,
+    "cpuTotalMS": 100,
+    "recipeType": 100,
+    "message_computeResourceUsage_localProcess_majorFaults": 300,
+    "message_computeResourceUsage_localProcess_cpuChildrenUserTimeMS": 300,
+    "localProcess_vmRSSAnonMB": 195,
+    "message": 300,
+    "message_authUser": 135,
+    "message_computeResourceUsage_localProcess_vmDataMB": 300,
+    "localProcess_vmDataMB": 173,
+    "context_recipeType": 150,
+    "activityType": 105,
+    "callTime": 100,
+    "localProcess_cpuChildrenSystemTimeMS": 285
+  },
+  "sorting": [
+    {
+      "column": "type",
+      "ascending": true
+    }
+  ],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "failure related",
+  "color": "#C82423",
+  "items": [
+    {
+      "objectId": "auth_failure_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_auth_failure_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "generic_failure_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_generic_failure_prepared",
+      "objectType": "RECIPE"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

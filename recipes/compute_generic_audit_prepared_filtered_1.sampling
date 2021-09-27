@@ -1,0 +1,29 @@
+{
+  "uiData": {
+    "mode": "||",
+    "conditions": [
+      {
+        "input": "message_msgType",
+        "col": "message",
+        "string": "login",
+        "num": 0,
+        "operator": "contains"
+      },
+      {
+        "input": "message_msgType",
+        "col": "message",
+        "string": "logout",
+        "num": 0,
+        "operator": "contains"
+      }
+    ]
+  },
+  "$status": {
+    "validated": true,
+    "fullyTranslated": false,
+    "ok": false,
+    "message": "Filter expression is invalid"
+  },
+  "distinct": false,
+  "enabled": true
+}

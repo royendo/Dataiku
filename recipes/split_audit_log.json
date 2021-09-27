@@ -1,0 +1,64 @@
+{
+  "type": "split",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "audit_log",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "CRU",
+          "appendMode": false
+        },
+        {
+          "ref": "auth_failure",
+          "appendMode": false
+        },
+        {
+          "ref": "generic_audit",
+          "appendMode": false
+        },
+        {
+          "ref": "generic_failure",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "versionTag": {
+    "versionNumber": 15,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1626908043917
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1625593708402
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

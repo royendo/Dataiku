@@ -1,0 +1,84 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "msgType": 312,
+      "startTime": 113,
+      "id": 127,
+      "endTime": 106,
+      "type": 106,
+      "pid": 100,
+      "childrenMajorFaults": 158,
+      "commandName": 232,
+      "context": 300,
+      "timestamp": 211,
+      "cpuChildrenSystemTimeMS_avg": 218,
+      "vmHWMMB_avg": 100,
+      "cpuTotalMS_avg": 120,
+      "vmSizePeakMB_avg": 135,
+      "cpuChildrenUserTimeMS_avg": 203,
+      "vmRSSPeakMB_avg": 128,
+      "vmRSSTotalMBS_avg": 143,
+      "cpuSystemTimeMS_avg": 158,
+      "vmRSSAnonMB_avg": 128,
+      "cpuCurrent_avg": 162,
+      "vmSizeMB_avg": 105,
+      "vmRSSMB_avg": 100,
+      "cpuUserTimeMS_avg": 143,
+      "vmDataMB_avg": 105,
+      "rownumber": 100,
+      "vmRSSPeakMB": 100,
+      "vmRSSMB_concat": 300
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [
+      {
+        "column": "pid",
+        "ascending": true
+      }
+    ],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 2
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}

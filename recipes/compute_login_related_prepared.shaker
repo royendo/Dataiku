@@ -1,0 +1,128 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "message",
+        "nullAsEmpty": true,
+        "prefixOutputs": true,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if(isBlank(message_login),message_authUser, message_login )",
+        "column": "message_login"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "message_originalIP",
+          "message_xForwardedFor",
+          "message_clientIP",
+          "message_authSource",
+          "message_auditTopic",
+          "message_callPath",
+          "message_authUser"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RemoveRowsOnEmpty",
+      "params": {
+        "columns": [
+          "message_login"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "message_authUser": 135,
+    "message_msgType": 155,
+    "message_authSource": 150,
+    "message_originalIP": 150,
+    "topic": 100,
+    "message_login": 176,
+    "message_xForwardedFor": 197,
+    "message_callPath": 162,
+    "message_clientIP": 135,
+    "message": 300,
+    "timestamp": 211,
+    "message_auditTopic": 150
+  },
+  "sorting": [
+    {
+      "column": "message_login",
+      "ascending": false
+    }
+  ],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

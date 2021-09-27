@@ -1,0 +1,91 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "severity": 100,
+      "logger": 134,
+      "topic": 100,
+      "message.callPath": 300,
+      "message.auditTopic": 150,
+      "message.clientIP": 135,
+      "message.time": 105,
+      "mdc.apiCall": 300,
+      "callTime": 100,
+      "timestamp": 211,
+      "message.msgType": 232,
+      "message.xForwardedFor": 173,
+      "message.originalIP": 150,
+      "message.authSource": 150,
+      "message.authUser": 135,
+      "mdc.user": 100,
+      "message.errorType": 176,
+      "message.connectionName": 180,
+      "message.errorMsg": 176,
+      "message.type": 105,
+      "message.kernelId": 135,
+      "message.pluginId": 135,
+      "message.futureId": 135,
+      "message.jobId": 141,
+      "message.projectKey": 150,
+      "message": 300,
+      "mdc": 454
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": true,
+          "uiData": {
+            "mode": "\u0026\u0026",
+            "conditions": [
+              {
+                "input": "message",
+                "operator": "contains",
+                "col": "logger",
+                "string": "/api/flow/jobs/get-job-status",
+                "num": 0.0
+              }
+            ]
+          }
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "TAIL_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 9
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}

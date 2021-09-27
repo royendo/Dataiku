@@ -1,0 +1,113 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "severity": 100,
+      "logger": 190,
+      "topic": 120,
+      "message.callPath": 300,
+      "message.auditTopic": 176,
+      "message.clientIP": 135,
+      "message.time": 105,
+      "mdc.apiCall": 300,
+      "callTime": 100,
+      "timestamp": 211,
+      "message.msgType": 204,
+      "message.xForwardedFor": 173,
+      "message.originalIP": 150,
+      "message.authSource": 176,
+      "message.authUser": 135,
+      "mdc.user": 100,
+      "message.errorType": 300,
+      "message.connectionName": 180,
+      "message.errorMsg": 300,
+      "message.type": 105,
+      "message.kernelId": 135,
+      "message.pluginId": 135,
+      "message.futureId": 135,
+      "message.jobId": 113,
+      "message.projectKey": 150,
+      "message": 300,
+      "mdc": 300
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [
+      {
+        "column": "mdc.apiCall",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "mdc.apiCall",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {}
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "mdc.apiCall",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "mdc.apiCall",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}

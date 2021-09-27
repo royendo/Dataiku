@@ -1,0 +1,64 @@
+{
+  "uiData": {
+    "mode": "||",
+    "conditions": [
+      {
+        "input": "message_msgType",
+        "col": "message",
+        "string": "admin-save-settings",
+        "num": 0,
+        "operator": "contains"
+      },
+      {
+        "input": "message_msgType",
+        "col": "message",
+        "string": "security-admin-user-create",
+        "num": 0,
+        "operator": "contains"
+      },
+      {
+        "input": "message_msgType",
+        "col": "message",
+        "string": "security-admin-user-delete",
+        "num": 0,
+        "operator": "contains"
+      },
+      {
+        "input": "message_msgType",
+        "col": "message",
+        "string": "security-admin-user-edit",
+        "num": 0,
+        "operator": "contains"
+      },
+      {
+        "input": "message_msgType",
+        "col": "message",
+        "string": "admin-connection-delete",
+        "num": 0,
+        "operator": "contains"
+      },
+      {
+        "input": "message_msgType",
+        "col": "message",
+        "string": "admin-connection-create",
+        "num": 0,
+        "operator": "contains"
+      },
+      {
+        "input": "message_msgType",
+        "col": "message",
+        "string": "admin-connection-save",
+        "num": 0,
+        "operator": "contains"
+      }
+    ]
+  },
+  "$status": {
+    "validated": true,
+    "fullyTranslated": false,
+    "ok": false,
+    "message": "Filter expression is invalid"
+  },
+  "distinct": false,
+  "enabled": true
+}

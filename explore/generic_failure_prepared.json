@@ -1,0 +1,131 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "topic": 120,
+      "message.callPath": 300,
+      "timestamp": 211,
+      "message.msgType": 204,
+      "message.originalIP": 150,
+      "message.authSource": 176,
+      "message.authUser": 135,
+      "message.errorType": 300,
+      "message.errorMsg": 300,
+      "message.kernelId": 135,
+      "message.pluginId": 135,
+      "message.futureId": 135,
+      "message.jobId": 113,
+      "message.projectKey": 150,
+      "message_callPath": 300,
+      "message_msgType": 204,
+      "message_authUser": 135,
+      "message_originalIP": 150,
+      "message_authSource": 176,
+      "message_errorType": 300,
+      "message_errorMsg": 300,
+      "message_contextProjectKey": 203,
+      "message_importId": 135,
+      "message_fsproviderType": 180,
+      "message_envLang": 128,
+      "message_datasetName": 158,
+      "message_batchId": 128,
+      "message_recipeName": 150,
+      "message_authVia": 300,
+      "message_providerPath": 165,
+      "message_clusterId": 143,
+      "message_connection": 150
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [
+      {
+        "column": "timestamp",
+        "ascending": false
+      }
+    ],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [
+      {
+        "column": "message_callPath",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "message_callPath",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "/publicapi/auth/info-from-browser-headers": true,
+            "/api/shaker/charts/get-pivot-response": true,
+            "/api/shaker/charts/get-columns-summary": true,
+            "/api/flow/recipes/generic/create": true,
+            "/api/clusters/save": true,
+            "/api/code-envs/design/create": true,
+            "/api/fsproviders/test-connection/": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "message_callPath",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "message_callPath",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}

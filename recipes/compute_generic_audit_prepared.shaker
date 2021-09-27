@@ -1,0 +1,193 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 2,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 1000000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "message",
+        "nullAsEmpty": true,
+        "prefixOutputs": true,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "timestamp",
+          "message",
+          "topic",
+          "message_msgType",
+          "message_callPath",
+          "message_authUser"
+        ],
+        "keep": true,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "message_logName": 128,
+    "message_folderId": 135,
+    "logger": 134,
+    "message.futureId": 135,
+    "message_login": 113,
+    "message_path": 105,
+    "message_fsproviderType": 180,
+    "message_jobJekPid": 143,
+    "message_connectionName": 180,
+    "message_query": 113,
+    "message_futureId": 135,
+    "mdc.apiCall": 300,
+    "message_notebookId": 150,
+    "message_commitId": 155,
+    "message.originalIP": 150,
+    "message_datasetType": 158,
+    "message_browsePath": 176,
+    "message_fromTemplate": 165,
+    "message_itemType": 135,
+    "message_type": 105,
+    "message.msgType": 232,
+    "message_batchId": 128,
+    "message_filename": 135,
+    "message_fullDatasetName": 188,
+    "message_facets": 134,
+    "message.auditTopic": 150,
+    "message_projectKey": 150,
+    "message_uploadBoxId": 176,
+    "message.kernelId": 135,
+    "message_providerPath": 176,
+    "message_callPath": 300,
+    "message_dashboardName": 173,
+    "message_newPermissions": 180,
+    "message_msgType": 232,
+    "message_datasetName": 158,
+    "message_jobUser": 128,
+    "message_clusterId": 143,
+    "message_originalIP": 150,
+    "message_user": 105,
+    "message.pluginId": 135,
+    "timestamp": 211,
+    "message.type": 105,
+    "message_envName": 128,
+    "message_fileKind": 135,
+    "message_users": 176,
+    "message_id": 100,
+    "message_clientIP": 135,
+    "message.jobId": 141,
+    "message_insightId": 143,
+    "message.projectKey": 150,
+    "message_importId": 135,
+    "message.errorType": 176,
+    "message_errorType": 176,
+    "message_auditTopic": 150,
+    "message.connectionName": 180,
+    "message_errorMsg": 176,
+    "message_options": 176,
+    "message_tutorialId": 150,
+    "message_recipeName": 150,
+    "message_authSource": 150,
+    "message_folderType": 150,
+    "message_items": 176,
+    "message.errorMsg": 176,
+    "message_jobId": 141,
+    "message_runnableType": 165,
+    "message.xForwardedFor": 173,
+    "message_connectionType": 180,
+    "message_connection": 150,
+    "message_objectProjectKey": 195,
+    "mdc": 300,
+    "mdc.user": 100,
+    "message_objectId": 135,
+    "message_group": 113,
+    "message.authUser": 135,
+    "topic": 100,
+    "message_xForwardedFor": 173,
+    "message_forRecipe": 148,
+    "message_elementId": 143,
+    "message_state": 113,
+    "message_envLang": 128,
+    "message.clientIP": 135,
+    "message_executionId": 158,
+    "message_objectType": 150,
+    "message_jobProjectKey": 173,
+    "message_notebookName": 165,
+    "message_recipeType": 150,
+    "message.callPath": 300,
+    "message_star": 105,
+    "message_paths": 113,
+    "message_authVia": 183,
+    "message_smartId": 128,
+    "severity": 100,
+    "message.authSource": 234,
+    "message_pluginId": 135,
+    "message_datasetRef": 155,
+    "message": 300,
+    "message_authUser": 135,
+    "message_dashboardId": 158,
+    "message.time": 105,
+    "message_callOrigin": 150,
+    "message_contextProjectKey": 203,
+    "callTime": 100,
+    "message_sessionId": 176
+  },
+  "sorting": [
+    {
+      "column": "message_users",
+      "ascending": true
+    }
+  ],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

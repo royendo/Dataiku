@@ -1,0 +1,286 @@
+{
+  "centileShuffle": false,
+  "centileSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "defaultOutputIndex": -1,
+  "seed": 1337,
+  "randomColumns": [],
+  "centileOrders": [],
+  "rangeSetTime": false,
+  "column": "type",
+  "randomSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "randomColumnsSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "computedColumns": [],
+  "writeComputedColumnsInOutput": false,
+  "mode": "VALUES",
+  "centileTDigest": false,
+  "valueSplits": [
+    {
+      "outputIndex": 0,
+      "caseSensitive": false,
+      "value": "JUPYTER_NOTEBOOK_KERNEL"
+    },
+    {
+      "outputIndex": 1,
+      "value": "ANALYSIS_ML_TRAIN"
+    },
+    {
+      "outputIndex": 3,
+      "value": "WEBAPP_BACKEND"
+    },
+    {
+      "outputIndex": 2,
+      "value": "JOB_ACTIVITY"
+    },
+    {
+      "outputIndex": 2,
+      "value": "JOB_MAIN_PROCESS"
+    }
+  ],
+  "rangeSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": []
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "eks-spark-default",
+        "conf": []
+      }
+    }
+  },
+  "filterSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "msgType",
+                "type": "string"
+              },
+              {
+                "name": "startTime",
+                "type": "date"
+              },
+              {
+                "name": "endTime",
+                "type": "date"
+              },
+              {
+                "name": "duration_sec",
+                "type": "bigint"
+              },
+              {
+                "name": "id",
+                "type": "string"
+              },
+              {
+                "name": "pid",
+                "type": "bigint"
+              },
+              {
+                "name": "commandName",
+                "type": "string"
+              },
+              {
+                "mapValues": {
+                  "type": "string"
+                },
+                "name": "context",
+                "mapKeys": {
+                  "type": "string"
+                },
+                "type": "map"
+              },
+              {
+                "name": "projectKey",
+                "type": "string"
+              },
+              {
+                "name": "savedModelId",
+                "type": "string"
+              },
+              {
+                "name": "savedModelVersionId",
+                "type": "bigint"
+              },
+              {
+                "name": "recipeType",
+                "type": "string"
+              },
+              {
+                "name": "analysisId",
+                "type": "string"
+              },
+              {
+                "name": "mlTaskId",
+                "type": "string"
+              },
+              {
+                "name": "sessionId",
+                "type": "string"
+              },
+              {
+                "name": "jupyterNotebookId",
+                "type": "string"
+              },
+              {
+                "name": "jupyterSessionId",
+                "type": "string"
+              },
+              {
+                "name": "type",
+                "type": "string"
+              },
+              {
+                "name": "authIdentifier",
+                "type": "string"
+              },
+              {
+                "name": "activityType",
+                "type": "string"
+              },
+              {
+                "name": "recipeName",
+                "type": "string"
+              },
+              {
+                "name": "jobId",
+                "type": "string"
+              },
+              {
+                "name": "activityId",
+                "type": "string"
+              },
+              {
+                "name": "webappId",
+                "type": "string"
+              },
+              {
+                "name": "timestamp",
+                "type": "date"
+              },
+              {
+                "name": "cpuChildrenSystemTimeMS_avg",
+                "type": "double"
+              },
+              {
+                "name": "vmHWMMB_avg",
+                "type": "double"
+              },
+              {
+                "name": "cpuTotalMS_avg",
+                "type": "double"
+              },
+              {
+                "name": "vmSizePeakMB_avg",
+                "type": "double"
+              },
+              {
+                "name": "cpuChildrenUserTimeMS_avg",
+                "type": "double"
+              },
+              {
+                "name": "vmRSSPeakMB_avg",
+                "type": "double"
+              },
+              {
+                "name": "vmRSSTotalMBS_avg",
+                "type": "double"
+              },
+              {
+                "name": "cpuSystemTimeMS_avg",
+                "type": "double"
+              },
+              {
+                "name": "vmRSSAnonMB_avg",
+                "type": "double"
+              },
+              {
+                "name": "cpuCurrent_avg",
+                "type": "double"
+              },
+              {
+                "name": "vmSizeMB_avg",
+                "type": "double"
+              },
+              {
+                "name": "vmRSSMB_avg",
+                "type": "double"
+              },
+              {
+                "name": "cpuUserTimeMS_avg",
+                "type": "double"
+              },
+              {
+                "name": "vmDataMB_avg",
+                "type": "double"
+              }
+            ]
+          }
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ]
+}

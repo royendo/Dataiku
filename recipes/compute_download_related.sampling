@@ -1,0 +1,57 @@
+{
+  "uiData": {
+    "mode": "||",
+    "conditions": [
+      {
+        "input": "message_msgType",
+        "col": "message",
+        "string": "export-download",
+        "num": 0,
+        "operator": "contains"
+      },
+      {
+        "input": "message_msgType",
+        "col": "message",
+        "string": "design-bundle-download",
+        "num": 0,
+        "operator": "contains"
+      },
+      {
+        "input": "message_msgType",
+        "col": "message",
+        "string": "project-export-download",
+        "num": 0,
+        "operator": "contains"
+      },
+      {
+        "input": "message_msgType",
+        "col": "message",
+        "string": "managedfolder-download",
+        "num": 0,
+        "operator": "contains"
+      },
+      {
+        "input": "message_msgType",
+        "col": "message",
+        "string": "managedfolder-download-folder",
+        "num": 0,
+        "operator": "contains"
+      },
+      {
+        "input": "message_msgType",
+        "col": "message",
+        "string": "managedfolder-download",
+        "num": 0,
+        "operator": "contains"
+      }
+    ]
+  },
+  "$status": {
+    "validated": true,
+    "fullyTranslated": false,
+    "ok": false,
+    "message": "Filter expression is invalid"
+  },
+  "distinct": false,
+  "enabled": true
+}

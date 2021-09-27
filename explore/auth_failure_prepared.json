@@ -1,0 +1,114 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "topic": 100,
+      "message.callPath": 300,
+      "timestamp": 211,
+      "message.msgType": 218,
+      "message.originalIP": 150,
+      "message.authSource": 150,
+      "message.authUser": 135,
+      "message.errorType": 190,
+      "message.errorMsg": 300,
+      "message.kernelId": 135,
+      "message.pluginId": 135,
+      "message.futureId": 135,
+      "message.jobId": 113,
+      "message.projectKey": 150,
+      "message_callPath": 300,
+      "message_msgType": 218,
+      "message_authSource": 150,
+      "message_errorType": 190,
+      "message_requiredPrivileges": 210,
+      "message_authUser": 135,
+      "message_errorMsg": 300,
+      "message_originalIP": 150,
+      "message_authVia": 183
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [
+      {
+        "column": "timestamp",
+        "ascending": false
+      }
+    ],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [
+      {
+        "column": "message_errorType",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "message_errorType",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {}
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "message_errorType",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "message_errorType",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}

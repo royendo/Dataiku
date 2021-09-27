@@ -1,0 +1,36 @@
+{
+  "name": "split audit log",
+  "color": "#31439C",
+  "items": [
+    {
+      "objectId": "auth_failure",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "generic_audit",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "audit_log",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "generic_failure",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "CRU",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "split_audit_log",
+      "objectType": "RECIPE"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

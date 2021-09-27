@@ -1,0 +1,336 @@
+{
+  "type": "Filesystem",
+  "managed": true,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "unix",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": "gz"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1625804561519
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1625804537986
+  },
+  "tags": [],
+  "params": {
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/CRU_job",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "msgType",
+        "type": "string"
+      },
+      {
+        "name": "startTime",
+        "type": "date"
+      },
+      {
+        "name": "endTime",
+        "type": "date"
+      },
+      {
+        "name": "duration_sec",
+        "type": "bigint"
+      },
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "pid",
+        "type": "bigint"
+      },
+      {
+        "name": "commandName",
+        "type": "string"
+      },
+      {
+        "name": "context",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "projectKey",
+        "type": "string"
+      },
+      {
+        "name": "savedModelId",
+        "type": "string"
+      },
+      {
+        "name": "savedModelVersionId",
+        "type": "bigint"
+      },
+      {
+        "name": "recipeType",
+        "type": "string"
+      },
+      {
+        "name": "analysisId",
+        "type": "string"
+      },
+      {
+        "name": "mlTaskId",
+        "type": "string"
+      },
+      {
+        "name": "sessionId",
+        "type": "string"
+      },
+      {
+        "name": "jupyterNotebookId",
+        "type": "string"
+      },
+      {
+        "name": "jupyterSessionId",
+        "type": "string"
+      },
+      {
+        "name": "type",
+        "type": "string"
+      },
+      {
+        "name": "authIdentifier",
+        "type": "string"
+      },
+      {
+        "name": "activityType",
+        "type": "string"
+      },
+      {
+        "name": "recipeName",
+        "type": "string"
+      },
+      {
+        "name": "jobId",
+        "type": "string"
+      },
+      {
+        "name": "activityId",
+        "type": "string"
+      },
+      {
+        "name": "webappId",
+        "type": "string"
+      },
+      {
+        "name": "timestamp",
+        "type": "date"
+      },
+      {
+        "name": "cpuChildrenSystemTimeMS_avg",
+        "type": "double"
+      },
+      {
+        "name": "vmHWMMB_avg",
+        "type": "double"
+      },
+      {
+        "name": "cpuTotalMS_avg",
+        "type": "double"
+      },
+      {
+        "name": "vmSizePeakMB_avg",
+        "type": "double"
+      },
+      {
+        "name": "cpuChildrenUserTimeMS_avg",
+        "type": "double"
+      },
+      {
+        "name": "vmRSSPeakMB_avg",
+        "type": "double"
+      },
+      {
+        "name": "vmRSSTotalMBS_avg",
+        "type": "double"
+      },
+      {
+        "name": "cpuSystemTimeMS_avg",
+        "type": "double"
+      },
+      {
+        "name": "vmRSSAnonMB_avg",
+        "type": "double"
+      },
+      {
+        "name": "cpuCurrent_avg",
+        "type": "double"
+      },
+      {
+        "name": "vmSizeMB_avg",
+        "type": "double"
+      },
+      {
+        "name": "vmRSSMB_avg",
+        "type": "double"
+      },
+      {
+        "name": "cpuUserTimeMS_avg",
+        "type": "double"
+      },
+      {
+        "name": "vmDataMB_avg",
+        "type": "double"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

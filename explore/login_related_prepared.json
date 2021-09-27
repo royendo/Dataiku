@@ -1,0 +1,98 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "topic": 100,
+      "message": 951,
+      "message_msgType": 155,
+      "message_login": 176,
+      "timestamp": 211
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [
+      {
+        "column": "timestamp",
+        "ascending": false
+      }
+    ],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [
+      {
+        "column": "message_msgType",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "message_msgType",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "login-failure": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "message_msgType",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "message_msgType",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}

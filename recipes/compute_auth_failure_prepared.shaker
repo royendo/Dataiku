@@ -1,0 +1,172 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "message",
+        "nullAsEmpty": true,
+        "prefixOutputs": true,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "message",
+          "logger",
+          "severity"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "if( isBlank(val(\"message_originalIP\")),val(\"message_clientIP\"),val(\"message_originalIP\") )",
+        "column": "message_originalIP"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "message_auditTopic",
+          "callTime",
+          "mdc",
+          "message_xForwardedFor",
+          "message_clientIP"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "message_callPath",
+        "columns": [
+          "timestamp"
+        ],
+        "reorderAction": "BEFORE_COLUMN",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "message.connectionName": 180,
+    "message_errorMsg": 300,
+    "message.kernelId": 135,
+    "logger": 141,
+    "message.futureId": 135,
+    "message_callPath": 300,
+    "mdc_user": 100,
+    "message.clientIP": 135,
+    "message_msgType": 218,
+    "message_authSource": 150,
+    "mdc.apiCall": 300,
+    "message_originalIP": 150,
+    "message.errorMsg": 300,
+    "message.callPath": 300,
+    "mdc_apiCall": 300,
+    "message.xForwardedFor": 173,
+    "message.pluginId": 135,
+    "message_authVia": 183,
+    "timestamp": 211,
+    "message.originalIP": 150,
+    "severity": 100,
+    "message.authSource": 150,
+    "message.type": 105,
+    "message_clientIP": 135,
+    "message.msgType": 218,
+    "message": 300,
+    "mdc": 300,
+    "message_requiredPrivileges": 210,
+    "message.jobId": 113,
+    "message_authUser": 135,
+    "message.time": 105,
+    "message.projectKey": 150,
+    "mdc.user": 100,
+    "message.auditTopic": 150,
+    "message.authUser": 135,
+    "topic": 100,
+    "message.errorType": 190,
+    "message_xForwardedFor": 173,
+    "message_errorType": 190,
+    "callTime": 100,
+    "message_auditTopic": 150
+  },
+  "sorting": [
+    {
+      "column": "timestamp",
+      "ascending": false
+    }
+  ],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

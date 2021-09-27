@@ -1,0 +1,64 @@
+{
+  "type": "split",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "CRU_prepared_windows_prepared",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "CRU_notebook",
+          "appendMode": false
+        },
+        {
+          "ref": "CRU_ML",
+          "appendMode": false
+        },
+        {
+          "ref": "CRU_job",
+          "appendMode": false
+        },
+        {
+          "ref": "CRU_webapp",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "versionTag": {
+    "versionNumber": 6,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1625805040143
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1625803758639
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

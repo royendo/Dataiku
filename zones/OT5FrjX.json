@@ -1,0 +1,64 @@
+{
+  "name": "computational resource usage",
+  "color": "#0F786B",
+  "items": [
+    {
+      "objectId": "CRU_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_CRU_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_CRU_filtered_with_date",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "CRU_filtered_with_date",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_CRU_prepared_windows",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "CRU_prepared_windows",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "CRU_prepared_windows_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_CRU_prepared_windows_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "CRU_notebook",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "CRU_webapp",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "CRU_ML",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "split_CRU_prepared_windows_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "CRU_job",
+      "objectType": "DATASET"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

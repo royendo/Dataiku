@@ -1,0 +1,164 @@
+{
+  "centileShuffle": false,
+  "centileSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "preFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "conditions": [
+        {
+          "date": "2021-07-21",
+          "input": "timestamp",
+          "col": "logger",
+          "time2": "00:00",
+          "num": 0,
+          "time": "00:00",
+          "date2": "2021-07-21",
+          "operator": "\u003e\u003c [date]"
+        }
+      ]
+    },
+    "$status": {},
+    "distinct": false,
+    "enabled": false
+  },
+  "defaultOutputIndex": -1,
+  "seed": 1337,
+  "randomColumns": [],
+  "centileOrders": [],
+  "rangeSetTime": false,
+  "column": "topic",
+  "randomSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "randomColumnsSplits": [
+    {
+      "outputIndex": 0,
+      "share": 50
+    }
+  ],
+  "computedColumns": [],
+  "writeComputedColumnsInOutput": true,
+  "mode": "VALUES",
+  "centileTDigest": false,
+  "valueSplits": [
+    {
+      "outputIndex": 0,
+      "caseSensitive": false,
+      "value": "compute-resource-usage"
+    },
+    {
+      "outputIndex": 2,
+      "value": "generic"
+    },
+    {
+      "outputIndex": 3,
+      "value": "generic-failure"
+    },
+    {
+      "outputIndex": 1,
+      "value": "authfail"
+    }
+  ],
+  "rangeSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": []
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "eks-spark-default",
+        "conf": []
+      }
+    }
+  },
+  "filterSplits": [
+    {
+      "filter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "severity",
+                "type": "string"
+              },
+              {
+                "name": "logger",
+                "type": "string"
+              },
+              {
+                "name": "topic",
+                "type": "string"
+              },
+              {
+                "name": "message",
+                "type": "string"
+              },
+              {
+                "name": "mdc",
+                "type": "string"
+              },
+              {
+                "name": "callTime",
+                "type": "string"
+              },
+              {
+                "name": "timestamp",
+                "type": "date"
+              }
+            ]
+          }
+        },
+        "distinct": false,
+        "enabled": true
+      },
+      "outputIndex": 0
+    }
+  ]
+}
