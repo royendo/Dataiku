@@ -476,16 +476,9 @@
             "conditions": [
               {
                 "input": "message",
-                "operator": "contains",
+                "operator": "array contains",
                 "col": "logger",
-                "string": "dsfsdf",
-                "num": 0.0
-              },
-              {
-                "input": "mdc",
-                "operator": "contains",
-                "col": "logger",
-                "string": "dsfsdf",
+                "string": "sendmail",
                 "num": 0.0
               }
             ]
@@ -504,7 +497,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 13
+      "_refreshTrigger": 16
     },
     "vizSampling": {
       "autoRefreshSample": false,
