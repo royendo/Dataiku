@@ -99,24 +99,14 @@
         "xMeasure": [],
         "yMeasure": [],
         "colorMeasure": [],
-        "sizeMeasure": [
-          {
-            "function": "COUNT",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeModeDim": 0
-          }
-        ],
+        "sizeMeasure": [],
         "geometry": [
           {
             "column": "GeoPoint",
             "type": "GEOPOINT",
             "treatAsAlphanum": false,
             "isA": "ua",
-            "adminLevel": 4
+            "adminLevel": 6
           }
         ],
         "tooltipMeasures": [],
