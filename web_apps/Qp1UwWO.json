@@ -2,7 +2,7 @@
   "type": "webapp_a26310_a10",
   "hasLegacyBackendURL": false,
   "params": {
-    "autoStartBackend": false,
+    "autoStartBackend": true,
     "envSelection": {
       "envMode": "INHERIT"
     },
@@ -35,11 +35,11 @@
   },
   "name": "test",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633026958297
+    "lastModifiedOn": 1633026964150
   },
   "creationTag": {
     "versionNumber": 0,
