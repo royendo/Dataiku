@@ -4,7 +4,7 @@
   "params": {
     "autoStartBackend": false,
     "envSelection": {
-      "envMode": "USE_BUILTIN_MODE",
+      "envMode": "EXPLICIT_ENV",
       "envName": "Python37"
     },
     "nbProcesses": 1,
@@ -35,11 +35,11 @@
   "config": {},
   "name": "26310",
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633027035425
+    "lastModifiedOn": 1633027049083
   },
   "creationTag": {
     "versionNumber": 0,
