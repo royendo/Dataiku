@@ -25,7 +25,7 @@
   "useAppHomepage": true,
   "homepageSections": [
     {
-      "sectionTitle": "${month}",
+      "sectionTitle": "\u0027${month}\u0027",
       "sectionText": "${month}",
       "tiles": [
         {
