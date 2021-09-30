@@ -39,6 +39,11 @@
           "behavior": "INLINE_UPLOAD_REDETECT_AND_INFER",
           "type": "UPLOAD_DATASET_SET_FILE",
           "prompt": "${month}"
+        },
+        {
+          "content": "${month}",
+          "type": "VARIABLE_DISPLAY",
+          "prompt": "${month}"
         }
       ]
     }
