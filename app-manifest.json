@@ -25,20 +25,20 @@
   "useAppHomepage": true,
   "homepageSections": [
     {
-      "sectionTitle": "${\"month\"}",
-      "sectionText": "${\"month\"}",
+      "sectionTitle": "${month}",
+      "sectionText": "${month}",
       "tiles": [
         {
           "folderId": "375D1F5f",
           "behavior": "INLINE_UPLOAD",
           "type": "MANAGED_FOLDER_ADD_FILE",
-          "prompt": "${\"month\"}"
+          "prompt": "${month}"
         },
         {
           "datasetName": "2",
           "behavior": "INLINE_UPLOAD_REDETECT_AND_INFER",
           "type": "UPLOAD_DATASET_SET_FILE",
-          "prompt": "${\"month\"}"
+          "prompt": "${month}"
         }
       ]
     }
