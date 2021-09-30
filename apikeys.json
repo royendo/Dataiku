@@ -45,5 +45,28 @@
     "key": "uqXfBDHSWHDQWLT4daDyZDjw284PvXUm",
     "label": "New key",
     "createdOn": 1630613327784
+  },
+  {
+    "execSQLLike": false,
+    "localDatasets": [],
+    "projectPrivileges": {
+      "admin": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    },
+    "onBehalf": "YG91DoS",
+    "id": "E2IDhiJ8fUvxEHiz",
+    "key": "43fP7DgxSrjM9Qo9Ir6tUyg1TErjKRMG",
+    "label": "Key for Web app a(YG91DoS)",
+    "createdOn": 1633025631512
   }
 ]
