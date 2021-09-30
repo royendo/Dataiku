@@ -4,10 +4,12 @@
   "params": {
     "autoStartBackend": false,
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "Python37"
     },
     "nbProcesses": 1,
     "serveLocally": true,
+    "runAs": "admin",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -33,11 +35,11 @@
   "config": {},
   "name": "26310",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633026500809
+    "lastModifiedOn": 1633026531892
   },
   "creationTag": {
     "versionNumber": 0,
