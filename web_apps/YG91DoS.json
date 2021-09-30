@@ -7,7 +7,8 @@
     "autoStartBackend": false,
     "hideJSSecurityPanel": false,
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "24916"
     },
     "nbProcesses": 1,
     "libraries": [
@@ -40,11 +41,11 @@
   "name": "a",
   "apiKey": "43fP7DgxSrjM9Qo9Ir6tUyg1TErjKRMG",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633025653619
+    "lastModifiedOn": 1633025727835
   },
   "creationTag": {
     "versionNumber": 0,
