@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633378337139
+    "lastModifiedOn": 1633378479008
   },
   "creationTag": {
     "versionNumber": 0,
@@ -53,6 +53,7 @@
     "normalizeDoubles": true,
     "table": "${projectKey}_managed_gp",
     "tableCreationMode": "auto",
+    "customPostWriteStatements": "GRANT ALL ON DATABASE gpadmin TO gpadmin;",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "readColsWithUnknownTzAsDates": false,
