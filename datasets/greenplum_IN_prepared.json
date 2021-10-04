@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633378046963
+    "lastModifiedOn": 1633378106375
   },
   "creationTag": {
     "versionNumber": 0,
@@ -54,7 +54,7 @@
     "table": "${projectKey}_greenplum_in_prepared",
     "tableCreationMode": "custom",
     "customCreateStatement": "CREATE TABLE \"EVERYTHING_greenplum_in_prepared\" (\n\t\"iso_code\" varchar(270),\n\t\"continent\" varchar(270),\n\t\"location\" varchar(270),\n\t\"date\" varchar(270),\n\t\"total_cases\" float8,\n\t\"new_cases\" float8,\n\t\"new_cases_smoothed\" float8,\n\t\"total_deaths\" float8,\n\t\"new_deaths\" float8,\n\t\"new_deaths_smoothed\" float8,\n\t\"total_cases_per_million\" float8,\n\t\"new_cases_per_million\" float8,\n\t\"new_cases_smoothed_per_million\" float8,\n\t\"total_deaths_per_million\" varchar(270),\n\t\"new_deaths_per_million\" float8,\n\t\"new_deaths_smoothed_per_million\" float8,\n\t\"reproduction_rate\" float8,\n\t\"icu_patients\" float8,\n\t\"icu_patients_per_million\" float8,\n\t\"hosp_patients\" float8,\n\t\"hosp_patients_per_million\" varchar(270),\n\t\"weekly_icu_admissions\" float8,\n\t\"weekly_icu_admissions_per_million\" float8,\n\t\"weekly_hosp_admissions\" float8,\n\t\"weekly_hosp_admissions_per_million\" float8,\n\t\"new_tests\" float8,\n\t\"total_tests\" float8,\n\t\"total_tests_per_thousand\" float8,\n\t\"new_tests_per_thousand\" float8,\n\t\"new_tests_smoothed\" float8,\n\t\"new_tests_smoothed_per_thousand\" float8,\n\t\"positive_rate\" float8,\n\t\"tests_per_case\" float8,\n\t\"tests_units\" float8,\n\t\"total_vaccinations\" float8,\n\t\"people_vaccinated\" float8,\n\t\"people_fully_vaccinated\" float8,\n\t\"new_vaccinations\" float8,\n\t\"new_vaccinations_smoothed\" float8,\n\t\"total_vaccinations_per_hundred\" float8,\n\t\"people_vaccinated_per_hundred\" float8,\n\t\"people_fully_vaccinated_per_hundred\" float8,\n\t\"new_vaccinations_smoothed_per_million\" varchar(270),\n\t\"stringency_index\" varchar(270),\n\t\"population\" varchar(270),\n\t\"population_density\" varchar(270),\n\t\"median_age\" varchar(270),\n\t\"aged_65_older\" varchar(270),\n\t\"aged_70_older\" varchar(270),\n\t\"gdp_per_capita\" varchar(270),\n\t\"extreme_poverty\" varchar(270),\n\t\"cardiovasc_death_rate\" varchar(270),\n\t\"diabetes_prevalence\" varchar(270),\n\t\"female_smokers\" varchar(270),\n\t\"male_smokers\" varchar(270),\n\t\"handwashing_facilities\" varchar(270),\n\t\"hospital_beds_per_thousand\" varchar(270),\n\t\"life_expectancy\" varchar(270),\n\t\"human_development_index\" varchar(270),\n\t\"excess_mortality\" varchar(270)\n);",
-    "customPostWriteStatements": "GRANT SELECT ON TABLE * TO gpadmin;",
+    "customPostWriteStatements": "GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO gpadmin",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "readColsWithUnknownTzAsDates": false,
