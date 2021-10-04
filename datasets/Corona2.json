@@ -1,5 +1,5 @@
 {
-  "type": "Greenplum",
+  "type": "Filesystem",
   "managed": true,
   "formatType": "csv",
   "checklists": {
@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633378579006
+    "lastModifiedOn": 1633378594542
   },
   "creationTag": {
     "versionNumber": 0,
@@ -74,20 +74,15 @@
   },
   "tags": [],
   "params": {
-    "distributionStrategy": "AUTO",
-    "distributionColumns": [],
-    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
-    "connection": "Greenplum",
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/Corona2",
     "notReadyIfEmpty": false,
-    "mode": "table",
-    "partitioningType": "custom",
-    "normalizeDoubles": true,
-    "table": "${projectKey}_corona2",
-    "tableCreationMode": "auto",
-    "writeInsertBatchSize": 10000,
-    "writeJDBCBadDataBehavior": "DISCARD_ROW",
-    "readColsWithUnknownTzAsDates": false,
-    "readSQLDateColsAsDSSDates": true
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
   },
   "schema": {
     "columns": [
