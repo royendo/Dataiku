@@ -5,11 +5,11 @@
   "name": "redshiftsync",
   "active": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633304749644
+    "lastModifiedOn": 1633319159885
   },
   "checklists": {
     "checklists": []
@@ -28,6 +28,32 @@
         "id": "build_0_true_d_DaysRedShift",
         "type": "build_flowitem",
         "name": "Step #1",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "DaysRedShift",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_0_true_d_DaysRedShift_1",
+        "type": "build_flowitem",
+        "name": "Step #2",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
