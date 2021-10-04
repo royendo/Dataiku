@@ -1,5 +1,5 @@
 {
-  "type": "Filesystem",
+  "type": "Greenplum",
   "managed": true,
   "formatType": "csv",
   "checklists": {
@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1625809085770
+    "lastModifiedOn": 1633378579006
   },
   "creationTag": {
     "versionNumber": 0,
@@ -74,257 +74,322 @@
   },
   "tags": [],
   "params": {
-    "connection": "filesystem_managed",
-    "path": "${projectKey}/Corona2",
+    "distributionStrategy": "AUTO",
+    "distributionColumns": [],
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "Greenplum",
     "notReadyIfEmpty": false,
-    "filesSelectionRules": {
-      "mode": "ALL",
-      "excludeRules": [],
-      "includeRules": [],
-      "explicitFiles": []
-    }
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_corona2",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
   },
   "schema": {
     "columns": [
       {
         "name": "iso_code",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "continent",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "location",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "date",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "total_cases",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "new_cases",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "new_cases_smoothed",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "total_deaths",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "new_deaths",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "new_deaths_smoothed",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "total_cases_per_million",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "new_cases_per_million",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "new_cases_smoothed_per_million",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "total_deaths_per_million",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "new_deaths_per_million",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "new_deaths_smoothed_per_million",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "reproduction_rate",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "icu_patients",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "icu_patients_per_million",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "hosp_patients",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "hosp_patients_per_million",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "weekly_icu_admissions",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "weekly_icu_admissions_per_million",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "weekly_hosp_admissions",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "weekly_hosp_admissions_per_million",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "new_tests",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "total_tests",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "total_tests_per_thousand",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "new_tests_per_thousand",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "new_tests_smoothed",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "new_tests_smoothed_per_thousand",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "positive_rate",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "tests_per_case",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "tests_units",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "total_vaccinations",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "people_vaccinated",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "people_fully_vaccinated",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "new_vaccinations",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "new_vaccinations_smoothed",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "total_vaccinations_per_hundred",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "people_vaccinated_per_hundred",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "people_fully_vaccinated_per_hundred",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "new_vaccinations_smoothed_per_million",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "stringency_index",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "population",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "population_density",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "median_age",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "aged_65_older",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "aged_70_older",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "gdp_per_capita",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "extreme_poverty",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "cardiovasc_death_rate",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "diabetes_prevalence",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "female_smokers",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "male_smokers",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "handwashing_facilities",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "hospital_beds_per_thousand",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "life_expectancy",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "human_development_index",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       },
       {
         "name": "excess_mortality",
-        "type": "string"
+        "type": "string",
+        "maxLength": 32000
       }
     ],
     "userModified": true
