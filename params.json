@@ -56,9 +56,9 @@
       "writeDashboards": false,
       "moderateDashboards": false,
       "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false,
+      "manageDashboardAuthorizations": true,
+      "manageExposedElements": true,
+      "manageAdditionalDashboardUsers": true,
       "executeApp": false
     }
   ],
@@ -229,11 +229,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 57,
+    "versionNumber": 58,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633471984218
+    "lastModifiedOn": 1633471997003
   },
   "creationTag": {
     "versionNumber": 0,
