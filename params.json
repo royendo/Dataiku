@@ -43,7 +43,7 @@
   "permissions": [
     {
       "group": "data_team",
-      "admin": true,
+      "admin": false,
       "readProjectContent": false,
       "writeProjectContent": true,
       "exportDatasetsData": true,
@@ -224,11 +224,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 63,
+    "versionNumber": 64,
     "lastModifiedBy": {
-      "login": "endoroy"
+      "login": "admin"
     },
-    "lastModifiedOn": 1633473080085
+    "lastModifiedOn": 1633473218415
   },
   "creationTag": {
     "versionNumber": 0,
