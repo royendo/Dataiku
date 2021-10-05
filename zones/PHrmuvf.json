@@ -25,6 +25,14 @@
     {
       "objectId": "compute_FR_geopoint_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_FR_geopoint_prepared_stacked",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "FR_geopoint_prepared_stacked",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

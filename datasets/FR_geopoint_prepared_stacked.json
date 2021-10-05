@@ -1,0 +1,408 @@
+{
+  "type": "Filesystem",
+  "managed": true,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "unix",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": "gz"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1633458099531
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1633458099507
+  },
+  "tags": [],
+  "params": {
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/FR_geopoint_prepared_stacked",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "Identifiant_du_site",
+        "type": "string"
+      },
+      {
+        "name": "Libellé_du_site",
+        "type": "string"
+      },
+      {
+        "name": "Adresse",
+        "type": "string"
+      },
+      {
+        "name": "Complément_d_adresse",
+        "type": "string"
+      },
+      {
+        "name": "Lieu_dit",
+        "type": "string"
+      },
+      {
+        "name": "Code_postal",
+        "type": "string"
+      },
+      {
+        "name": "Localité",
+        "type": "string"
+      },
+      {
+        "name": "Code_INSEE",
+        "type": "string"
+      },
+      {
+        "name": "Pays",
+        "type": "string"
+      },
+      {
+        "name": "Latitude",
+        "type": "double"
+      },
+      {
+        "name": "Longitude",
+        "type": "double"
+      },
+      {
+        "name": "Précision_du_géocodage",
+        "type": "string"
+      },
+      {
+        "name": "Numéro_de_téléphone",
+        "type": "bigint"
+      },
+      {
+        "name": "Changeur_de_monnaie",
+        "type": "string"
+      },
+      {
+        "name": "Distributeur_de_billets",
+        "type": "string"
+      },
+      {
+        "name": "Distributeur_de_timbres",
+        "type": "string"
+      },
+      {
+        "name": "Distributeur_Prêt_à_Poster",
+        "type": "string"
+      },
+      {
+        "name": "Affranchissement_Libre_Service",
+        "type": "string"
+      },
+      {
+        "name": "Accessibilité_Absence_de_ressaut_de_plus_de_2_cm_de_haut",
+        "type": "string"
+      },
+      {
+        "name": "Accessibilité_Automate_d_affranchissement_avec_prise_audio",
+        "type": "string"
+      },
+      {
+        "name": "Accessibilité_Boucle_magnétique_en_état_de_fonctionnement",
+        "type": "string"
+      },
+      {
+        "name": "Accessibilité_Distributeur_de_billets_avec_prise_audio",
+        "type": "string"
+      },
+      {
+        "name": "Accessibilité_Entrée_autonome_en_fauteuil_roulant_possible",
+        "type": "string"
+      },
+      {
+        "name": "Accessibilité_Pas_d_escalier_ou_bandes_de_vigilance_présentes",
+        "type": "string"
+      },
+      {
+        "name": "Accessibilité_Présence_d_un_panneau_prioritaire",
+        "type": "string"
+      },
+      {
+        "name": "Accessibilité_Borne_sonore_en_état_de_fonctionnement",
+        "type": "string"
+      },
+      {
+        "name": "Accessibilité_Espace_de_circulation_intérieur_suffisant_pour_PMR",
+        "type": "string"
+      },
+      {
+        "name": "Accessibilité_Présence_d_un_espace_confidentiel_accessible_PMR",
+        "type": "string"
+      },
+      {
+        "name": "Accessibilité_Présence_d_un_GAB_externe_accessible_PMR",
+        "type": "string"
+      },
+      {
+        "name": "Accessibilité_Présence_d_un_guichet_surbaissé_ou_d_un_écritoire",
+        "type": "string"
+      },
+      {
+        "name": "Accessibilité_Présence_d_une_bande_de_guidage_au_sol",
+        "type": "string"
+      },
+      {
+        "name": "latlong",
+        "type": "string"
+      },
+      {
+        "name": "OBJECTID",
+        "type": "bigint"
+      },
+      {
+        "name": "CTYUA21CD",
+        "type": "string"
+      },
+      {
+        "name": "CTYUA21NM",
+        "type": "string"
+      },
+      {
+        "name": "CTYUA21NMW",
+        "type": "string"
+      },
+      {
+        "name": "BNG_E",
+        "type": "bigint"
+      },
+      {
+        "name": "BNG_N",
+        "type": "bigint"
+      },
+      {
+        "name": "LONG",
+        "type": "double"
+      },
+      {
+        "name": "LAT",
+        "type": "double"
+      },
+      {
+        "name": "GlobalID",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "SHAPE_Length",
+        "type": "double"
+      },
+      {
+        "name": "SHAPE_Area",
+        "type": "double"
+      },
+      {
+        "name": "GeoPoint",
+        "type": "string"
+      },
+      {
+        "name": "city",
+        "type": "string"
+      },
+      {
+        "name": "city_enName",
+        "type": "string"
+      },
+      {
+        "name": "department",
+        "type": "string"
+      },
+      {
+        "name": "department_enName",
+        "type": "string"
+      },
+      {
+        "name": "5",
+        "type": "string"
+      },
+      {
+        "name": "5_enName",
+        "type": "string"
+      },
+      {
+        "name": "region",
+        "type": "string"
+      },
+      {
+        "name": "region_enName",
+        "type": "string"
+      },
+      {
+        "name": "large region",
+        "type": "string"
+      },
+      {
+        "name": "large region_enName",
+        "type": "string"
+      },
+      {
+        "name": "country_iso",
+        "type": "string"
+      },
+      {
+        "name": "country",
+        "type": "string"
+      },
+      {
+        "name": "country_enName",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
