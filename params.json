@@ -60,21 +60,6 @@
       "manageExposedElements": true,
       "manageAdditionalDashboardUsers": true,
       "executeApp": false
-    },
-    {
-      "user": "endoroy",
-      "admin": true,
-      "readProjectContent": false,
-      "writeProjectContent": true,
-      "exportDatasetsData": true,
-      "readDashboards": false,
-      "writeDashboards": false,
-      "moderateDashboards": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false,
-      "executeApp": false
     }
   ],
   "additionalDashboardUsers": {
@@ -244,11 +229,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 60,
+    "versionNumber": 61,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633472275906
+    "lastModifiedOn": 1633472307847
   },
   "creationTag": {
     "versionNumber": 0,
