@@ -47,23 +47,8 @@
   "owner": "admin",
   "permissions": [
     {
-      "user": "endoroy",
-      "admin": false,
-      "readProjectContent": true,
-      "writeProjectContent": true,
-      "exportDatasetsData": true,
-      "readDashboards": false,
-      "writeDashboards": true,
-      "moderateDashboards": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": true,
-      "manageAdditionalDashboardUsers": false,
-      "executeApp": false
-    },
-    {
       "group": "data_team",
-      "admin": false,
+      "admin": true,
       "readProjectContent": false,
       "writeProjectContent": true,
       "exportDatasetsData": true,
@@ -244,11 +229,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 55,
+    "versionNumber": 56,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633471948453
+    "lastModifiedOn": 1633471961199
   },
   "creationTag": {
     "versionNumber": 0,
