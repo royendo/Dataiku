@@ -32,12 +32,7 @@
       "exportGitRepository": false,
       "exportInsightsData": false,
       "useManualPluginsInfo": false,
-      "includedDatasetsData": [
-        {
-          "name": "Corona",
-          "type": "UploadedFiles"
-        }
-      ],
+      "includedDatasetsData": [],
       "includedSavedModels": [],
       "includedModelEvaluationStores": [],
       "includedManagedFolders": [],
@@ -229,11 +224,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 62,
+    "versionNumber": 63,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "endoroy"
     },
-    "lastModifiedOn": 1633472450004
+    "lastModifiedOn": 1633473080085
   },
   "creationTag": {
     "versionNumber": 0,
