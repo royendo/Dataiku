@@ -33,6 +33,14 @@
     {
       "objectId": "FR_geopoint_prepared_stacked",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "FR_geopoint_prepareda",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_FR_geopoint_prepareda",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
