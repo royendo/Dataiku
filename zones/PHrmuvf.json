@@ -81,6 +81,14 @@
     {
       "objectId": "compute_26135_preparedaa",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_26135_joined",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "26135_joined",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
