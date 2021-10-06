@@ -113,6 +113,14 @@
     {
       "objectId": "26135_joinednon",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_26135_copyf",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "26135_copyf",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
