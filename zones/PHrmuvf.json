@@ -41,6 +41,14 @@
     {
       "objectId": "compute_FR_geopoint_prepareda",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "FR_geopoint_preparedaa",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_FR_geopoint_preparedaa",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
