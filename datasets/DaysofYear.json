@@ -26,16 +26,25 @@
     "charset": "utf-8"
   },
   "partitioning": {
+    "filePathPattern": "%Y/.*",
     "ignoreNonMatchingFile": false,
     "considerMissingRequestedPartitionsAsEmpty": false,
-    "dimensions": []
+    "dimensions": [
+      {
+        "name": "line",
+        "params": {
+          "period": "YEAR"
+        },
+        "type": "time"
+      }
+    ]
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1628646852737
+    "lastModifiedOn": 1633639944119
   },
   "creationTag": {
     "versionNumber": 0,
@@ -84,6 +93,16 @@
         "meta": {
           "name": "Record count",
           "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "partitioning",
+        "enabled": true,
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "meta": {
+          "name": "Partitioning statistics",
+          "level": 1
         },
         "configuration": {}
       }

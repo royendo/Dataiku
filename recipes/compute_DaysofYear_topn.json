@@ -14,7 +14,14 @@
       "items": [
         {
           "ref": "DaysofYear",
-          "deps": []
+          "deps": [
+            {
+              "idim": "line",
+              "func": "all_available",
+              "params": {},
+              "expandVariables": false
+            }
+          ]
         }
       ]
     }
@@ -31,11 +38,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1632247524781
+    "lastModifiedOn": 1633639944152
   },
   "creationTag": {
     "versionNumber": 0,

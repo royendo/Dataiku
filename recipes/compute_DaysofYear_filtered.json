@@ -69,7 +69,14 @@
       "items": [
         {
           "ref": "DaysofYear",
-          "deps": []
+          "deps": [
+            {
+              "idim": "line",
+              "func": "all_available",
+              "params": {},
+              "expandVariables": false
+            }
+          ]
         }
       ]
     }
@@ -86,11 +93,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1632515087838
+    "lastModifiedOn": 1633639944130
   },
   "creationTag": {
     "versionNumber": 0,
