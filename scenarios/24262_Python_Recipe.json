@@ -5,11 +5,11 @@
   "name": "24262 Python Recipe",
   "active": false,
   "versionTag": {
-    "versionNumber": 24,
+    "versionNumber": 25,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1632254271208
+    "lastModifiedOn": 1633721785097
   },
   "checklists": {
     "checklists": []
@@ -42,9 +42,9 @@
   "params": {
     "steps": [
       {
-        "id": "build_0_true_d_FITNESS",
-        "type": "build_flowitem",
-        "name": "Step #1",
+        "id": "comp_metrics_d_EVERYTHING_aaaaa",
+        "type": "compute_metrics",
+        "name": "Compute Record Count",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
@@ -55,15 +55,34 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "builds": [
+          "computes": [
             {
               "type": "DATASET",
-              "itemId": "FITNESS",
+              "itemId": "EVERYTHING_aaaaa",
               "partitionsSpec": ""
             }
           ],
-          "jobType": "RECURSIVE_BUILD",
-          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "custom_python_VW4jrZyau7FnzU9yUyWgUg",
+        "type": "custom_python",
+        "name": "Step #2",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "script": "import dataiku\nclient \u003d dataiku.api_client()\nprojects \u003d  client.get_project(\"EVERYTHING\")\ndataset \u003d projects.get_dataset(\"EVERYTHING_aaaaa\")\nmetric \u003d projects.get_variables()\n        \nprint(dataset.get_settings())\nmetrics \u003d dataset.get_last_metric_values()\nfor metric in metrics.raw[\u0027metrics\u0027]:\n    try:\n        if (metric[\u0027displayedAsMetric\u0027] \u003d\u003d True):\n            recordCount \u003d metric[\u0027lastValues\u0027][0][\u0027value\u0027]\n            metric[\u0027standard\u0027][\u0027month\u0027] \u003d recordCount\n    except:\n        error \u003d \"uh\"\n\n",
+          "envSelection": {
+            "envMode": "INHERIT"
+          },
           "proceedOnFailure": false
         }
       }
