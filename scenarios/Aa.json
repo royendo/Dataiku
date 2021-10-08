@@ -5,11 +5,11 @@
   "name": "a",
   "active": false,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633727673804
+    "lastModifiedOn": 1633727801605
   },
   "checklists": {
     "checklists": []
@@ -60,10 +60,10 @@
             {
               "type": "DATASET",
               "itemId": "Corona1_partitioned",
-              "partitionsSpec": "2020"
+              "partitionsSpec": "2050"
             }
           ],
-          "jobType": "RECURSIVE_BUILD",
+          "jobType": "RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
