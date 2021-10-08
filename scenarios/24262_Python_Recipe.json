@@ -5,11 +5,11 @@
   "name": "24262 Python Recipe",
   "active": false,
   "versionTag": {
-    "versionNumber": 33,
+    "versionNumber": 34,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633721996394
+    "lastModifiedOn": 1633722049860
   },
   "checklists": {
     "checklists": []
@@ -79,7 +79,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "script": "import dataiku\nclient \u003d dataiku.api_client()\nprojects \u003d  client.get_project(\"EVERYTHING\")\ndataset \u003d projects.get_dataset(\"EVERYTHING_aaaaa\")\nmetric_edit \u003d projects.get_variables()\n        \nprint(dataset.get_settings())\nmetrics \u003d dataset.get_last_metric_values()\nfor metric in metrics.raw[\u0027metrics\u0027]:\n    try:\n        if (metric[\u0027displayedAsMetric\u0027] \u003d\u003d True):\n            recordCount \u003d metric[\u0027lastValues\u0027][0][\u0027value\u0027]\n            metric_edit[\u0027standard\u0027][\u0027month\u0027] \u003d recordCount\n    except:\n        error \u003d \"uh\"\n",
+          "script": "import dataiku\nclient \u003d dataiku.api_client()\nprojects \u003d  client.get_project(\"EVERYTHING\")\ndataset \u003d projects.get_dataset(\"EVERYTHING_aaaaa\")\nmetric_edit \u003d projects.get_variables()\n        \nprint(dataset.get_settings())\nmetrics \u003d dataset.get_last_metric_values()\nfor metric in metrics.raw[\u0027metrics\u0027]:\n    try:\n        if (metric[\u0027displayedAsMetric\u0027] \u003d\u003d True):\n            recordCount \u003d metric[\u0027lastValues\u0027][0][\u0027value\u0027]\n            metric_edit[\u0027standard\u0027][\u0027month\u0027] \u003d recordCount\n            projects.set_variables(metric_edit)\n    except:\n        error \u003d \"uh\"\n",
           "envSelection": {
             "envMode": "INHERIT"
           },
