@@ -5,11 +5,11 @@
   "name": "24262 Python Recipe",
   "active": false,
   "versionTag": {
-    "versionNumber": 43,
+    "versionNumber": 44,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633723114417
+    "lastModifiedOn": 1633723143610
   },
   "checklists": {
     "checklists": []
@@ -37,7 +37,7 @@
       "runConditionEnabled": true,
       "runCondition": "outcome \u003d\u003d \u0027SUCCESS\u0027",
       "phase": "END",
-      "variablesCode": "import json\n\n\n\n# compute your additional variables from the list of report items \n# and return them as a dictionary.\ndef get_variables(items_json, scenario_run_json, step_run_output_json):\n    with open(\"~/Library/DataScienceStudio/dss_home/config/projects/EVERYTHING/variables.json\"):\n        data \u003d json.load(json_file)\n        print(data)\n    return {\"RecordCount\" : x[\u0027standard\u0027][\u0027month\u0027]}"
+      "variablesCode": "import json\n\n\n\n# compute your additional variables from the list of report items \n# and return them as a dictionary.\ndef get_variables(items_json, scenario_run_json, step_run_output_json):\n    with open(\"/Users/rendo/Library/DataScienceStudio/dss_home/config/projects/EVERYTHING/variables.json\"):\n        data \u003d json.load(json_file)\n        print(data)\n    return {\"RecordCount\" : x[\u0027standard\u0027][\u0027month\u0027]}"
     }
   ],
   "params": {
