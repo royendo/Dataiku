@@ -5,11 +5,11 @@
   "name": "24262 Python Recipe",
   "active": false,
   "versionTag": {
-    "versionNumber": 53,
+    "versionNumber": 54,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633723403498
+    "lastModifiedOn": 1633723421603
   },
   "checklists": {
     "checklists": []
@@ -46,6 +46,7 @@
         "configuration": {
           "channelId": "my_smtp",
           "subject": "DSS scenario ${scenarioName}: ${RecordCount}",
+          "recipient": "roy.endo@dataiku.com",
           "sendAsHTML": false,
           "attachments": [],
           "messageSource": "TEMPLATE_FILE",
