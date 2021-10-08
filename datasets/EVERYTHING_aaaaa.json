@@ -27,11 +27,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633639897967
+    "lastModifiedOn": 1633716236266
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,7 +67,7 @@
         "name": "continent",
         "type": "string",
         "originalType": "VARCHAR",
-        "maxLength": 270
+        "maxLength": 4
       },
       {
         "name": "location",
