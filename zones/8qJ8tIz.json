@@ -25,6 +25,10 @@
     {
       "objectId": "split_audit_log",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "audit",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
