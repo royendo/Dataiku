@@ -11,7 +11,7 @@ project = client.get_project("EVERYTHING")
 Oracle = project.get_dataset('ToOracle')
 
 connection = dataikuapi.dss.admin.DSSConnection(client, 'Oracle')
-
+print(connection.get_info())
 # Compute recipe outputs
 # TODO: Write here your actual code that computes the outputs
 # NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.
