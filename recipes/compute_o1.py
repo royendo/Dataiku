@@ -5,7 +5,7 @@ host= 'http://localhost:11200/'
 apiKey = 'TOHkfBiIg2VbPGBVpkqd1Xskf5RKSHSr'
 # Read recipe inputs
 client = dataikuapi.DSSClient(host, apiKey)
-imports3_df = client.get_dataframe()
+imports3_df = client.DSSDataset
 
 
 # Compute recipe outputs
