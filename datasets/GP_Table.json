@@ -27,11 +27,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633913882397
+    "lastModifiedOn": 1633914244150
   },
   "creationTag": {
     "versionNumber": 0,
@@ -47,9 +47,10 @@
     "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
     "connection": "Greenplum",
     "notReadyIfEmpty": false,
-    "mode": "table",
+    "mode": "query",
     "partitioningType": "custom",
     "normalizeDoubles": true,
+    "query": "SELECT * FROM \"public\".\"EVERYTHING_togp_copy\"",
     "table": "EVERYTHING_togp_copy",
     "schema": "public",
     "tableCreationMode": "auto",
@@ -61,7 +62,7 @@
   "schema": {
     "columns": [
       {
-        "name": "id _test_",
+        "name": "id  (test)",
         "type": "string",
         "originalType": "varchar",
         "maxLength": 32000
@@ -73,7 +74,7 @@
         "maxLength": 32000
       },
       {
-        "name": "mn _month_",
+        "name": "mn (month)",
         "type": "string",
         "originalType": "varchar",
         "maxLength": 32000
