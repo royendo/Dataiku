@@ -2,10 +2,10 @@
 import dataikuapi
 
 host= 'http://localhost:11200/'
-apiKey = 'TOHkfBiIg2VbPGBVpkqd1Xskf5RKSaaaHSra'
+apiKey = ''
 print(apiKey)
 # Read recipe inputs
-client = dataikuapi.DSSClient()
+client = dataikuapi.DSSClient(host, apiKey)
 project = client.get_project("EVERYTHING")
 Oracle = project.get_dataset('ToOracle')
 
