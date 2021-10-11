@@ -6,6 +6,7 @@ dataiku.set_remote_dss("http://localhost:11200/", "TOHkfBiIg2VbPGBVpkqd1Xskf5RKS
 client = dataiku.api_client()
 
 connection = dataiku.get_connection("ToOracle")
+
 '''
 host= 'http://localhost:11200/'
 apiKey = 'TOHkfBiIg2VbPGBVpkqd1Xskf5RKSHSr'
