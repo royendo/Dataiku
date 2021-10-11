@@ -27,11 +27,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633914836997
+    "lastModifiedOn": 1633914854562
   },
   "creationTag": {
     "versionNumber": 0,
@@ -62,7 +62,7 @@
   "schema": {
     "columns": [
       {
-        "name": "id _test_",
+        "name": "id (test)",
         "type": "string",
         "originalType": "varchar",
         "maxLength": 65000
@@ -74,7 +74,7 @@
         "maxLength": 65000
       },
       {
-        "name": "mn _month_",
+        "name": "mn (month)",
         "type": "string",
         "originalType": "varchar",
         "maxLength": 65000
