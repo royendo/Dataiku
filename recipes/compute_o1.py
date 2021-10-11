@@ -3,7 +3,7 @@ import dataikuapi
 
 
 host= 'http://localhost:11200/'
-apiKey = ''
+apiKey = 'TOHkfBiIg2VbPGBVpkqd1Xskf5RKSHSr'
 print(apiKey)
 # Read recipe inputs
 client = dataikuapi.DSSClient(host, apiKey)
