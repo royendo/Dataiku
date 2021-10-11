@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 import dataiku
 
-dataiku.set_remote_dss("http://localhost:11200/", "TOHkfBiIg2VbPGBVpkqd1Xskf5RKSHSr")
+#dataiku.set_remote_dss("http://localhost:11200/", "TOHkfBiIg2VbPGBVpkqd1Xskf5RKSHSr")
+client = dataiku.api_client()
 
-connection = dataiku.get_connection("ToOracle")
+connection = client.get_connection("ToOracle")
 
 '''
 host= 'http://localhost:11200/'
