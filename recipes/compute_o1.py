@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import dataiku
+import dataikuapi
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
