@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 import dataikuapi
 
-
+host= 'http://localhost:11200/'
+apiKey = 
 # Read recipe inputs
-imports3 = dataikuapi.DSSClient
+imports3 = dataikuapi.DSSClient(host, apiKey)
 imports3_df = imports3.get_dataframe()
 
 
