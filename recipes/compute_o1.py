@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import dataikuap
-
-
+import dataikuapi.dss.admin
 
 host= 'http://localhost:11200/'
 apiKey = ''
@@ -11,7 +10,7 @@ client = dataikuapi.DSSClient(host, apiKey)
 project = client.get_project("EVERYTHING")
 Oracle = project.get_dataset('ToOracle')
 
-connection = dataikuapi.
+connection = dataikuapi.dss.admin.DSSConnectionInfo('')
 
 # Compute recipe outputs
 # TODO: Write here your actual code that computes the outputs
