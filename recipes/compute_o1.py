@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import dataiku
 
-dataiku.set_remote_dss("http(s)://localhost:12000/", "Your API Key secret")
+dataiku.set_remote_dss("http://localhost:11200/", "Your API Key secret")
 
 client = dataiku.api_client()
 
