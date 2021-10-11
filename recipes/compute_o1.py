@@ -3,7 +3,7 @@ import dataikuapi
 
 
 # Read recipe inputs
-imports3 = dataikuapi.Dataset("Imports3")
+imports3 = dataikuapi.DSSClient
 imports3_df = imports3.get_dataframe()
 
 
