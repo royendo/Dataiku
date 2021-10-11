@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 import dataikuapi
+import dataiku
+
+
 
 host= 'http://localhost:11200/'
 apiKey = ''
