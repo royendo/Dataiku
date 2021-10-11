@@ -51,7 +51,7 @@
   },
   "tags": [],
   "params": {
-    "connection": "testing",
+    "connection": "filesystem_managed",
     "path": "/dss_home/run/audit",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
