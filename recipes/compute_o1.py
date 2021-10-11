@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 import dataiku
 
+client = dataiku.api_client()
 
+connection = dataiku.get_connection("Oracle")
+'''
 host= 'http://localhost:11200/'
 apiKey = 'TOHkfBiIg2VbPGBVpkqd1Xskf5RKSHSr'
 print(apiKey)
@@ -15,3 +18,5 @@ print(connection.get_info())
 # Compute recipe outputs
 # TODO: Write here your actual code that computes the outputs
 # NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.
+'''
+
