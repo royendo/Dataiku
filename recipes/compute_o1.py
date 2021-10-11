@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import dataiku-api-client
+import dataiku
 
 
 # Read recipe inputs
