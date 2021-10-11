@@ -6,7 +6,7 @@ apiKey = 'TOHkfBiIg2VbPGBVpkqd1Xskf5RKSHSr'
 # Read recipe inputs
 client = dataikuapi.DSSClient(host, apiKey)
 project = client.get_project("EVERYTHING")
-imports3_df = project.get_dataset('Imports3')
+imports3_df = project.get_dataset('ToOracle')
 
 
 # Compute recipe outputs
