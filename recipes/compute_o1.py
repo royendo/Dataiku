@@ -10,7 +10,7 @@ client = dataikuapi.DSSClient(host, apiKey)
 project = client.get_project("EVERYTHING")
 Oracle = project.get_dataset('ToOracle')
 
-connection = dataikuapi.dss.admin.DSSConnectionInfo('')
+connection = dataikuapi.dss.admin.DSSConnection('')
 
 # Compute recipe outputs
 # TODO: Write here your actual code that computes the outputs
