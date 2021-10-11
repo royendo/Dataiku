@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-import dataikuap
-import dataikuapi.dss.admin
+import dataikuapi
+
 
 host= 'http://localhost:11200/'
 apiKey = ''
