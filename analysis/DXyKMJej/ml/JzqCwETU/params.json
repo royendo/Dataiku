@@ -1793,7 +1793,7 @@
     ]
   },
   "taskType": "PREDICTION",
-  "name": "Predict Age",
+  "name": "Predict Oxygen",
   "backendType": "PY_MEMORY",
   "maxConcurrentModelTraining": 2,
   "envSelection": {
