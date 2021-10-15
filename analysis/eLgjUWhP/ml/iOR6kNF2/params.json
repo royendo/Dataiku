@@ -1,6 +1,9 @@
 {
+  "predictionType": "MULTICLASS",
   "targetVariable": "line",
-  "weight": {},
+  "weight": {
+    "weightMethod": "CLASS_WEIGHT"
+  },
   "time": {
     "enabled": false,
     "ascending": true
@@ -9,6 +12,3514 @@
     "calibrationMethod": "NO_CALIBRATION"
   },
   "guessPolicy": "DEFAULT",
+  "splitParams": {
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "ssdTrainingRatio": 0.8,
+    "ssdSeed": 1337,
+    "testOnLargerValues": true,
+    "kfold": false,
+    "nFolds": 5,
+    "instanceIdRefresher": 0,
+    "subSamplingSeed": 1337
+  },
+  "preprocessing": {
+    "feature_selection_params": {
+      "method": "NONE",
+      "random_forest_params": {
+        "n_trees": 30,
+        "depth": 10,
+        "n_features": 25
+      },
+      "lasso_params": {
+        "alpha": [
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0
+        ],
+        "cross_validate": true
+      },
+      "pca_params": {
+        "n_features": 25,
+        "variance_proportion": 0.9
+      },
+      "correlation_params": {
+        "min_abs_correlation": 0.0,
+        "max_abs_correlation": 1.0,
+        "n_features": 25
+      },
+      "custom_params": {
+        "code": "# type your code here"
+      }
+    },
+    "target_remapping": [
+      {
+        "sourceValue": "2021-01-24",
+        "mappedValue": 0,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-25",
+        "mappedValue": 1,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-22",
+        "mappedValue": 2,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-23",
+        "mappedValue": 3,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-20",
+        "mappedValue": 4,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-21",
+        "mappedValue": 5,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-10",
+        "mappedValue": 6,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-12",
+        "mappedValue": 7,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-11",
+        "mappedValue": 8,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-14",
+        "mappedValue": 9,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-13",
+        "mappedValue": 10,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-19",
+        "mappedValue": 11,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-16",
+        "mappedValue": 12,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-15",
+        "mappedValue": 13,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-17",
+        "mappedValue": 14,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-18",
+        "mappedValue": 15,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-18",
+        "mappedValue": 16,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-17",
+        "mappedValue": 17,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-15",
+        "mappedValue": 18,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-16",
+        "mappedValue": 19,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-19",
+        "mappedValue": 20,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-13",
+        "mappedValue": 21,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-14",
+        "mappedValue": 22,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-11",
+        "mappedValue": 23,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-12",
+        "mappedValue": 24,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-10",
+        "mappedValue": 25,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-21",
+        "mappedValue": 26,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-20",
+        "mappedValue": 27,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-23",
+        "mappedValue": 28,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-22",
+        "mappedValue": 29,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-25",
+        "mappedValue": 30,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-24",
+        "mappedValue": 31,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-08",
+        "mappedValue": 32,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-27",
+        "mappedValue": 33,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-09",
+        "mappedValue": 34,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-26",
+        "mappedValue": 35,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-06",
+        "mappedValue": 36,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-29",
+        "mappedValue": 37,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-07",
+        "mappedValue": 38,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-28",
+        "mappedValue": 39,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-04",
+        "mappedValue": 40,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-05",
+        "mappedValue": 41,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-14",
+        "mappedValue": 42,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-15",
+        "mappedValue": 43,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-12",
+        "mappedValue": 44,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-13",
+        "mappedValue": 45,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-10",
+        "mappedValue": 46,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-11",
+        "mappedValue": 47,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-19",
+        "mappedValue": 48,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-16",
+        "mappedValue": 49,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-15",
+        "mappedValue": 50,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-18",
+        "mappedValue": 51,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-17",
+        "mappedValue": 52,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-23",
+        "mappedValue": 53,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-22",
+        "mappedValue": 54,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-25",
+        "mappedValue": 55,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-24",
+        "mappedValue": 56,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-20",
+        "mappedValue": 57,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-21",
+        "mappedValue": 58,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-21",
+        "mappedValue": 59,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-22",
+        "mappedValue": 60,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-20",
+        "mappedValue": 61,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-23",
+        "mappedValue": 62,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-24",
+        "mappedValue": 63,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-09",
+        "mappedValue": 64,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-25",
+        "mappedValue": 65,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-26",
+        "mappedValue": 66,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-07",
+        "mappedValue": 67,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-27",
+        "mappedValue": 68,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-08",
+        "mappedValue": 69,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-28",
+        "mappedValue": 70,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-05",
+        "mappedValue": 71,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-29",
+        "mappedValue": 72,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-06",
+        "mappedValue": 73,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-03",
+        "mappedValue": 74,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-04",
+        "mappedValue": 75,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-01",
+        "mappedValue": 76,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-02",
+        "mappedValue": 77,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-31",
+        "mappedValue": 78,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-30",
+        "mappedValue": 79,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-27",
+        "mappedValue": 80,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-26",
+        "mappedValue": 81,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-29",
+        "mappedValue": 82,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-28",
+        "mappedValue": 83,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-30",
+        "mappedValue": 84,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-30",
+        "mappedValue": 85,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-01",
+        "mappedValue": 86,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-31",
+        "mappedValue": 87,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-03",
+        "mappedValue": 88,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-02",
+        "mappedValue": 89,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-05",
+        "mappedValue": 90,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-04",
+        "mappedValue": 91,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-28",
+        "mappedValue": 92,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-07",
+        "mappedValue": 93,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-29",
+        "mappedValue": 94,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-06",
+        "mappedValue": 95,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-26",
+        "mappedValue": 96,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-09",
+        "mappedValue": 97,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-27",
+        "mappedValue": 98,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-08",
+        "mappedValue": 99,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-29",
+        "mappedValue": 100,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-25",
+        "mappedValue": 101,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-26",
+        "mappedValue": 102,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-27",
+        "mappedValue": 103,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-28",
+        "mappedValue": 104,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-01",
+        "mappedValue": 105,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-03",
+        "mappedValue": 106,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-02",
+        "mappedValue": 107,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-30",
+        "mappedValue": 108,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-31",
+        "mappedValue": 109,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-30",
+        "mappedValue": 110,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-01",
+        "mappedValue": 111,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-02",
+        "mappedValue": 112,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-03",
+        "mappedValue": 113,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-04",
+        "mappedValue": 114,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-05",
+        "mappedValue": 115,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-06",
+        "mappedValue": 116,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-07",
+        "mappedValue": 117,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-08",
+        "mappedValue": 118,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-09",
+        "mappedValue": 119,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-09",
+        "mappedValue": 120,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-08",
+        "mappedValue": 121,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-05",
+        "mappedValue": 122,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-04",
+        "mappedValue": 123,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-07",
+        "mappedValue": 124,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-06",
+        "mappedValue": 125,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-12",
+        "mappedValue": 126,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-11",
+        "mappedValue": 127,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-14",
+        "mappedValue": 128,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-13",
+        "mappedValue": 129,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-10",
+        "mappedValue": 130,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-12-10",
+        "mappedValue": 131,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-11",
+        "mappedValue": 132,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-12",
+        "mappedValue": 133,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-13",
+        "mappedValue": 134,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-14",
+        "mappedValue": 135,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-15",
+        "mappedValue": 136,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-16",
+        "mappedValue": 137,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-17",
+        "mappedValue": 138,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-18",
+        "mappedValue": 139,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-06-19",
+        "mappedValue": 140,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-02",
+        "mappedValue": 141,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-08",
+        "mappedValue": 142,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-03",
+        "mappedValue": 143,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-09",
+        "mappedValue": 144,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-01-01",
+        "mappedValue": 145,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-07",
+        "mappedValue": 146,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-08",
+        "mappedValue": 147,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-09",
+        "mappedValue": 148,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-03",
+        "mappedValue": 149,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-04",
+        "mappedValue": 150,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-05",
+        "mappedValue": 151,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-06",
+        "mappedValue": 152,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-10",
+        "mappedValue": 153,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-11",
+        "mappedValue": 154,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-12",
+        "mappedValue": 155,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-13",
+        "mappedValue": 156,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-10",
+        "mappedValue": 157,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-11",
+        "mappedValue": 158,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-12",
+        "mappedValue": 159,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-13",
+        "mappedValue": 160,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-14",
+        "mappedValue": 161,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-15",
+        "mappedValue": 162,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-16",
+        "mappedValue": 163,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-17",
+        "mappedValue": 164,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-18",
+        "mappedValue": 165,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-19",
+        "mappedValue": 166,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-18",
+        "mappedValue": 167,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-19",
+        "mappedValue": 168,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-14",
+        "mappedValue": 169,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-15",
+        "mappedValue": 170,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-16",
+        "mappedValue": 171,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-17",
+        "mappedValue": 172,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-21",
+        "mappedValue": 173,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-22",
+        "mappedValue": 174,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-23",
+        "mappedValue": 175,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-24",
+        "mappedValue": 176,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-20",
+        "mappedValue": 177,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-21",
+        "mappedValue": 178,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-20",
+        "mappedValue": 179,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-22",
+        "mappedValue": 180,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-23",
+        "mappedValue": 181,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-24",
+        "mappedValue": 182,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-25",
+        "mappedValue": 183,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-26",
+        "mappedValue": 184,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-27",
+        "mappedValue": 185,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-28",
+        "mappedValue": 186,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-29",
+        "mappedValue": 187,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-17",
+        "mappedValue": 188,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-16",
+        "mappedValue": 189,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-15",
+        "mappedValue": 190,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-14",
+        "mappedValue": 191,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-13",
+        "mappedValue": 192,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-12",
+        "mappedValue": 193,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-11",
+        "mappedValue": 194,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-10",
+        "mappedValue": 195,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-17",
+        "mappedValue": 196,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-18",
+        "mappedValue": 197,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-19",
+        "mappedValue": 198,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-13",
+        "mappedValue": 199,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-14",
+        "mappedValue": 200,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-15",
+        "mappedValue": 201,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-16",
+        "mappedValue": 202,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-20",
+        "mappedValue": 203,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-21",
+        "mappedValue": 204,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-22",
+        "mappedValue": 205,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-30",
+        "mappedValue": 206,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-23",
+        "mappedValue": 207,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-09",
+        "mappedValue": 208,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-08",
+        "mappedValue": 209,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-07",
+        "mappedValue": 210,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-06",
+        "mappedValue": 211,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-05",
+        "mappedValue": 212,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-04",
+        "mappedValue": 213,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-03",
+        "mappedValue": 214,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-02",
+        "mappedValue": 215,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-01",
+        "mappedValue": 216,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-31",
+        "mappedValue": 217,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-30",
+        "mappedValue": 218,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-28",
+        "mappedValue": 219,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-29",
+        "mappedValue": 220,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-24",
+        "mappedValue": 221,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-25",
+        "mappedValue": 222,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-26",
+        "mappedValue": 223,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-27",
+        "mappedValue": 224,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-31",
+        "mappedValue": 225,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-01",
+        "mappedValue": 226,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-11-02",
+        "mappedValue": 227,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-30",
+        "mappedValue": 228,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-01",
+        "mappedValue": 229,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-02",
+        "mappedValue": 230,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-03",
+        "mappedValue": 231,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-04",
+        "mappedValue": 232,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-05",
+        "mappedValue": 233,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-29",
+        "mappedValue": 234,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-06",
+        "mappedValue": 235,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-28",
+        "mappedValue": 236,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-05-07",
+        "mappedValue": 237,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-30",
+        "mappedValue": 238,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-10",
+        "mappedValue": 239,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-01",
+        "mappedValue": 240,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-13",
+        "mappedValue": 241,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-14",
+        "mappedValue": 242,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-11",
+        "mappedValue": 243,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-12",
+        "mappedValue": 244,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-17",
+        "mappedValue": 245,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-18",
+        "mappedValue": 246,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-15",
+        "mappedValue": 247,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-16",
+        "mappedValue": 248,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-19",
+        "mappedValue": 249,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-29",
+        "mappedValue": 250,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-28",
+        "mappedValue": 251,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-27",
+        "mappedValue": 252,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-26",
+        "mappedValue": 253,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-25",
+        "mappedValue": 254,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-24",
+        "mappedValue": 255,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-23",
+        "mappedValue": 256,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-22",
+        "mappedValue": 257,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-21",
+        "mappedValue": 258,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-20",
+        "mappedValue": 259,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-06",
+        "mappedValue": 260,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-07",
+        "mappedValue": 261,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-08",
+        "mappedValue": 262,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-09",
+        "mappedValue": 263,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-02",
+        "mappedValue": 264,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-03",
+        "mappedValue": 265,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-04",
+        "mappedValue": 266,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-05",
+        "mappedValue": 267,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-20",
+        "mappedValue": 268,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-21",
+        "mappedValue": 269,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-10",
+        "mappedValue": 270,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-11",
+        "mappedValue": 271,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-10-12",
+        "mappedValue": 272,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-24",
+        "mappedValue": 273,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-25",
+        "mappedValue": 274,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-22",
+        "mappedValue": 275,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-23",
+        "mappedValue": 276,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-28",
+        "mappedValue": 277,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-29",
+        "mappedValue": 278,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-26",
+        "mappedValue": 279,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-27",
+        "mappedValue": 280,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-19",
+        "mappedValue": 281,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-04-18",
+        "mappedValue": 282,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-05",
+        "mappedValue": 283,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-04",
+        "mappedValue": 284,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-03",
+        "mappedValue": 285,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-02",
+        "mappedValue": 286,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-01",
+        "mappedValue": 287,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-20",
+        "mappedValue": 288,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-22",
+        "mappedValue": 289,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-21",
+        "mappedValue": 290,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-24",
+        "mappedValue": 291,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-23",
+        "mappedValue": 292,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-26",
+        "mappedValue": 293,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-25",
+        "mappedValue": 294,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-28",
+        "mappedValue": 295,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-27",
+        "mappedValue": 296,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-29",
+        "mappedValue": 297,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-27",
+        "mappedValue": 298,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-28",
+        "mappedValue": 299,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-25",
+        "mappedValue": 300,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-26",
+        "mappedValue": 301,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-23",
+        "mappedValue": 302,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-24",
+        "mappedValue": 303,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-21",
+        "mappedValue": 304,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-22",
+        "mappedValue": 305,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-20",
+        "mappedValue": 306,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-31",
+        "mappedValue": 307,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-30",
+        "mappedValue": 308,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-02",
+        "mappedValue": 309,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-03",
+        "mappedValue": 310,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-01",
+        "mappedValue": 311,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-06",
+        "mappedValue": 312,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-07",
+        "mappedValue": 313,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-04",
+        "mappedValue": 314,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-05",
+        "mappedValue": 315,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-18",
+        "mappedValue": 316,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-19",
+        "mappedValue": 317,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-16",
+        "mappedValue": 318,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-08",
+        "mappedValue": 319,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-02-17",
+        "mappedValue": 320,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-09-09",
+        "mappedValue": 321,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-27",
+        "mappedValue": 322,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-26",
+        "mappedValue": 323,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-25",
+        "mappedValue": 324,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-24",
+        "mappedValue": 325,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-23",
+        "mappedValue": 326,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-22",
+        "mappedValue": 327,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-21",
+        "mappedValue": 328,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-20",
+        "mappedValue": 329,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-30",
+        "mappedValue": 330,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-07-31",
+        "mappedValue": 331,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-02",
+        "mappedValue": 332,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-01",
+        "mappedValue": 333,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-04",
+        "mappedValue": 334,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-03",
+        "mappedValue": 335,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-06",
+        "mappedValue": 336,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-05",
+        "mappedValue": 337,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-08",
+        "mappedValue": 338,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-19",
+        "mappedValue": 339,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-07",
+        "mappedValue": 340,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-18",
+        "mappedValue": 341,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-17",
+        "mappedValue": 342,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-09",
+        "mappedValue": 343,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-16",
+        "mappedValue": 344,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-15",
+        "mappedValue": 345,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-14",
+        "mappedValue": 346,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-13",
+        "mappedValue": 347,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-12",
+        "mappedValue": 348,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-11",
+        "mappedValue": 349,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-10",
+        "mappedValue": 350,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-11",
+        "mappedValue": 351,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-10",
+        "mappedValue": 352,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-13",
+        "mappedValue": 353,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-12",
+        "mappedValue": 354,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-15",
+        "mappedValue": 355,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-14",
+        "mappedValue": 356,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-17",
+        "mappedValue": 357,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-16",
+        "mappedValue": 358,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-09",
+        "mappedValue": 359,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-19",
+        "mappedValue": 360,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-08",
+        "mappedValue": 361,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-08-18",
+        "mappedValue": 362,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-07",
+        "mappedValue": 363,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2021-03-06",
+        "mappedValue": 364,
+        "sampleFreq": 1
+      }
+    ],
+    "preprocessingFitSampleRatio": 1.0,
+    "preprocessingFitSampleSeed": 1337,
+    "per_feature": {
+      "line": {
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "min_samples": 10,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "nb_bins_hashing": 1048576,
+        "hash_whole_categories": true,
+        "dummy_drop": "NONE",
+        "role": "TARGET",
+        "type": "CATEGORY",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DateSource"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      }
+    },
+    "feature_generation": {
+      "pairwise_linear": {
+        "behavior": "DISABLED"
+      },
+      "polynomial_combinations": {
+        "behavior": "DISABLED"
+      },
+      "manual_interactions": {
+        "interactions": []
+      },
+      "numericals_clustering": {
+        "k": 0,
+        "all_features": false,
+        "input_features": [],
+        "behavior": "DISABLED"
+      },
+      "categoricals_count_transformer": {
+        "all_features": false,
+        "input_features": [],
+        "behavior": "DISABLED"
+      }
+    }
+  },
+  "modeling": {
+    "skipExpensiveReports": false,
+    "random_forest_regression": {
+      "n_estimators": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          100
+        ],
+        "range": {
+          "min": 80,
+          "max": 200,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "n_jobs": 1,
+      "max_tree_depth": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          8
+        ],
+        "range": {
+          "min": 10,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_samples_leaf": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "selection_mode": "auto",
+      "max_features": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          5
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "max_feature_prop": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.3
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 0.7,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "enabled": false
+    },
+    "random_forest_classification": {
+      "n_estimators": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          100
+        ],
+        "range": {
+          "min": 80,
+          "max": 200,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "n_jobs": 4,
+      "max_tree_depth": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          6,
+          11
+        ],
+        "range": {
+          "min": 6,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_samples_leaf": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "selection_mode": "auto",
+      "max_features": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          5
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "max_feature_prop": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.3
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 0.7,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "enabled": true
+    },
+    "extra_trees": {
+      "n_estimators": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          100
+        ],
+        "range": {
+          "min": 50,
+          "max": 150,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "n_jobs": 4,
+      "max_tree_depth": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          8
+        ],
+        "range": {
+          "min": 6,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_samples_leaf": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "selection_mode": "auto",
+      "max_features": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          5
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "max_feature_prop": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.3
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 0.7,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "enabled": false
+    },
+    "gbt_classification": {
+      "n_estimators": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          100
+        ],
+        "range": {
+          "min": 80,
+          "max": 300,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "max_depth": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          3
+        ],
+        "range": {
+          "min": 3,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_samples_leaf": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "selection_mode": "auto",
+      "max_features": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          0
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "max_feature_prop": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.3
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 0.7,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "learning_rate": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.1
+        ],
+        "range": {
+          "min": 0.05,
+          "max": 0.5,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "loss": {
+        "values": {
+          "deviance": {
+            "enabled": true
+          },
+          "exponential": {
+            "enabled": false
+          }
+        }
+      },
+      "enabled": false
+    },
+    "gbt_regression": {
+      "n_estimators": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          100
+        ],
+        "range": {
+          "min": 80,
+          "max": 300,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "max_depth": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          3
+        ],
+        "range": {
+          "min": 3,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_samples_leaf": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "selection_mode": "auto",
+      "max_features": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          0
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "max_feature_prop": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.3
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 0.7,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "learning_rate": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.1
+        ],
+        "range": {
+          "min": 0.05,
+          "max": 0.5,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "loss": {
+        "values": {
+          "huber": {
+            "enabled": false
+          },
+          "lad": {
+            "enabled": false
+          },
+          "ls": {
+            "enabled": true
+          }
+        }
+      },
+      "enabled": false
+    },
+    "decision_tree_classification": {
+      "max_depth": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          5
+        ],
+        "range": {
+          "min": 3,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_samples_leaf": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "criterion": {
+        "values": {
+          "entropy": {
+            "enabled": false
+          },
+          "gini": {
+            "enabled": true
+          }
+        }
+      },
+      "splitter": {
+        "values": {
+          "best": {
+            "enabled": true
+          },
+          "random": {
+            "enabled": false
+          }
+        }
+      },
+      "enabled": false
+    },
+    "decision_tree_regression": {
+      "max_depth": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          5
+        ],
+        "range": {
+          "min": 3,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_samples_leaf": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          1
+        ],
+        "range": {
+          "min": 1,
+          "max": 20,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "criterion": {
+        "values": {
+          "entropy": {
+            "enabled": false
+          },
+          "gini": {
+            "enabled": true
+          }
+        }
+      },
+      "splitter": {
+        "values": {
+          "best": {
+            "enabled": true
+          },
+          "random": {
+            "enabled": false
+          }
+        }
+      },
+      "enabled": false
+    },
+    "ridge_regression": {
+      "alphaMode": "MANUAL",
+      "alpha": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23
+        },
+        "values": [
+          0.1,
+          1.0,
+          3.0
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 3.0,
+          "nbValues": 3,
+          "scaling": "LOGARITHMIC"
+        }
+      },
+      "enabled": false
+    },
+    "lasso_regression": {
+      "alphaMode": "AUTO_CV",
+      "alpha": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23
+        },
+        "values": [
+          0.1,
+          1.0,
+          10.0
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 10.0,
+          "nbValues": 3,
+          "scaling": "LOGARITHMIC"
+        }
+      },
+      "enabled": false
+    },
+    "leastsquare_regression": {
+      "n_jobs": 2,
+      "enabled": false
+    },
+    "sgd_regression": {
+      "epsilon": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23
+        },
+        "values": [
+          0.01
+        ],
+        "range": {
+          "min": 0.01,
+          "max": 0.1,
+          "nbValues": 3,
+          "scaling": "LOGARITHMIC"
+        }
+      },
+      "loss": {
+        "values": {
+          "huber": {
+            "enabled": false
+          },
+          "squared_loss": {
+            "enabled": true
+          }
+        }
+      },
+      "penalty": {
+        "values": {
+          "elasticnet": {
+            "enabled": false
+          },
+          "l1": {
+            "enabled": true
+          },
+          "l2": {
+            "enabled": false
+          }
+        }
+      },
+      "alpha": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23
+        },
+        "values": [
+          0.001,
+          1.0E-4,
+          1.0E-5
+        ],
+        "range": {
+          "min": 1.0E-5,
+          "max": 0.001,
+          "nbValues": 3,
+          "scaling": "LOGARITHMIC"
+        }
+      },
+      "l1_ratio": 0.15,
+      "max_iter": 1000,
+      "tol": 0.001,
+      "n_jobs": 2,
+      "enabled": false
+    },
+    "sgd_classifier": {
+      "loss": {
+        "values": {
+          "log": {
+            "enabled": true
+          },
+          "modified_huber": {
+            "enabled": false
+          }
+        }
+      },
+      "penalty": {
+        "values": {
+          "elasticnet": {
+            "enabled": false
+          },
+          "l1": {
+            "enabled": true
+          },
+          "l2": {
+            "enabled": false
+          }
+        }
+      },
+      "alpha": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23
+        },
+        "values": [
+          0.001,
+          1.0E-4,
+          1.0E-5
+        ],
+        "range": {
+          "min": 1.0E-5,
+          "max": 0.001,
+          "nbValues": 3,
+          "scaling": "LOGARITHMIC"
+        }
+      },
+      "l1_ratio": 0.15,
+      "max_iter": 1000,
+      "tol": 0.001,
+      "n_jobs": 2,
+      "enabled": false
+    },
+    "knn": {
+      "k": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          5
+        ],
+        "range": {
+          "min": 3,
+          "max": 7,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "distance_weighting": false,
+      "algorithm": "auto",
+      "p": 2,
+      "leaf_size": 30,
+      "enabled": false
+    },
+    "logistic_regression": {
+      "multi_class": "multinomial",
+      "penalty": {
+        "values": {
+          "l1": {
+            "enabled": false
+          },
+          "l2": {
+            "enabled": true
+          }
+        }
+      },
+      "C": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23
+        },
+        "values": [
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0
+        ],
+        "range": {
+          "min": 0.01,
+          "max": 100.0,
+          "nbValues": 3,
+          "scaling": "LOGARITHMIC"
+        }
+      },
+      "n_jobs": 2,
+      "enabled": true
+    },
+    "neural_network": {
+      "layer_sizes": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          10
+        ],
+        "range": {
+          "min": 8,
+          "max": 16,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "activation": "relu",
+      "solver": "adam",
+      "alpha": 0.001,
+      "batch_size": 200,
+      "auto_batch": true,
+      "max_iter": 200,
+      "seed": 1337,
+      "tol": 1.0E-4,
+      "early_stopping": false,
+      "validation_fraction": 0.1,
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "epsilon": 1.0E-8,
+      "learning_rate": "constant",
+      "power_t": 0.5,
+      "momentum": 0.8,
+      "nesterovs_momentum": true,
+      "shuffle": true,
+      "learning_rate_init": 0.001,
+      "enabled": false
+    },
+    "svc_classifier": {
+      "C": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23
+        },
+        "values": [
+          1.0
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 10.0,
+          "nbValues": 3,
+          "scaling": "LOGARITHMIC"
+        }
+      },
+      "gamma": {
+        "values": {
+          "auto": {
+            "enabled": false
+          },
+          "custom": {
+            "enabled": false
+          },
+          "scale": {
+            "enabled": true
+          }
+        }
+      },
+      "custom_gamma": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23
+        },
+        "values": [
+          0.001
+        ],
+        "range": {
+          "min": 1.0E-4,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LOGARITHMIC"
+        }
+      },
+      "kernel": {
+        "values": {
+          "linear": {
+            "enabled": false
+          },
+          "poly": {
+            "enabled": false
+          },
+          "rbf": {
+            "enabled": true
+          },
+          "sigmoid": {
+            "enabled": false
+          }
+        }
+      },
+      "coef0": 0.0,
+      "tol": 0.001,
+      "max_iter": -1,
+      "enabled": false
+    },
+    "svm_regression": {
+      "C": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23
+        },
+        "values": [
+          1.0
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 10.0,
+          "nbValues": 3,
+          "scaling": "LOGARITHMIC"
+        }
+      },
+      "gamma": {
+        "values": {
+          "auto": {
+            "enabled": false
+          },
+          "custom": {
+            "enabled": false
+          },
+          "scale": {
+            "enabled": true
+          }
+        }
+      },
+      "custom_gamma": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23
+        },
+        "values": [
+          0.001
+        ],
+        "range": {
+          "min": 1.0E-4,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LOGARITHMIC"
+        }
+      },
+      "kernel": {
+        "values": {
+          "linear": {
+            "enabled": false
+          },
+          "poly": {
+            "enabled": false
+          },
+          "rbf": {
+            "enabled": true
+          },
+          "sigmoid": {
+            "enabled": false
+          }
+        }
+      },
+      "coef0": 0.0,
+      "tol": 0.001,
+      "max_iter": -1,
+      "enabled": false
+    },
+    "lars_params": {
+      "max_features": 0,
+      "K": 100,
+      "enabled": false
+    },
+    "xgboost": {
+      "max_depth": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          3
+        ],
+        "range": {
+          "min": 3,
+          "max": 10,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "learning_rate": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.2
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 0.5,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "gamma": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0
+        },
+        "values": [
+          0.0
+        ],
+        "range": {
+          "min": 0.0,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "min_child_weight": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0
+        },
+        "values": [
+          1.0
+        ],
+        "range": {
+          "min": 0.5,
+          "max": 5.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "max_delta_step": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0
+        },
+        "values": [
+          0.0
+        ],
+        "range": {
+          "min": 0.0,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "subsample": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          1.0
+        ],
+        "range": {
+          "min": 0.5,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "colsample_bytree": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          1.0
+        ],
+        "range": {
+          "min": 0.5,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "colsample_bylevel": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          1.0
+        ],
+        "range": {
+          "min": 0.5,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "alpha": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0,
+          "max": 1.0
+        },
+        "values": [
+          0.0
+        ],
+        "range": {
+          "min": 0.0,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "lambda": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          1.0
+        ],
+        "range": {
+          "min": 0.01,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "booster": {
+        "values": {
+          "dart": {
+            "enabled": false
+          },
+          "gbtree": {
+            "enabled": true
+          }
+        }
+      },
+      "objective": {
+        "values": {
+          "binary_logistic": {
+            "enabled": false
+          },
+          "multi_softprob": {
+            "enabled": false
+          },
+          "reg_gamma": {
+            "enabled": false
+          },
+          "reg_linear": {
+            "enabled": true
+          },
+          "reg_logistic": {
+            "enabled": false
+          }
+        }
+      },
+      "n_estimators": 300,
+      "nthread": 4,
+      "scale_pos_weight": 1.0,
+      "base_score": 0.5,
+      "impute_missing": false,
+      "missing": 0.0,
+      "cpu_tree_method": "auto",
+      "gpu_tree_method": "gpu_exact",
+      "enable_cuda": false,
+      "seed": 1337,
+      "enable_early_stopping": true,
+      "early_stopping_rounds": 4,
+      "enabled": false
+    },
+    "deep_learning_sparkling": {
+      "enabled": false,
+      "hidden": [
+        10,
+        10
+      ],
+      "activation": "RECTIFIER",
+      "epochs": 10.0,
+      "l1": 0.0,
+      "l2": 0.0,
+      "max_w2": -1.0,
+      "dropout": false,
+      "input_dropout_ratio": 0.0,
+      "hidden_dropout_ratios": [
+        0.1,
+        0.2
+      ],
+      "use_adaptative": true,
+      "rho": 0.99,
+      "epsilon": 1.0E-8,
+      "rate": 0.005,
+      "rate_annealing": 1.0E-6,
+      "rate_decay": 1.0,
+      "momentum_start": 0.0,
+      "momentum_ramp": 1000000.0,
+      "momentum_stable": 0.0
+    },
+    "gbm_sparkling": {
+      "enabled": false,
+      "learn_rate": 0.1,
+      "ntrees": 50,
+      "max_depth": 5,
+      "min_rows": 10,
+      "family": "AUTO",
+      "nbins": 20,
+      "nbins_cats": 1024,
+      "balance_classes": false,
+      "max_after_balance_size": 2.0,
+      "tweedie_power": 1.5
+    },
+    "glm_sparkling": {
+      "enabled": false,
+      "family": "gaussian",
+      "alpha": 0.5,
+      "lambda": 0.0,
+      "max_iter": 100,
+      "beta_epsilon": 1.0E-4,
+      "tweedie_variance_power": 0.5
+    },
+    "rf_sparkling": {
+      "enabled": false,
+      "ntrees": 50,
+      "max_depth": 5,
+      "min_rows": 1,
+      "mtries": -1,
+      "sample_rate": 0.6666,
+      "nbins": 20,
+      "nbins_cats": 1024
+    },
+    "nb_sparkling": {
+      "enabled": false,
+      "laplace": 0.0,
+      "min_std_dev": 0.001
+    },
+    "mllib_naive_bayes": {
+      "enabled": false,
+      "lambda": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23
+        },
+        "values": [
+          1.0
+        ],
+        "range": {
+          "min": 0.1,
+          "max": 10.0,
+          "nbValues": 3,
+          "scaling": "LOGARITHMIC"
+        }
+      }
+    },
+    "mllib_logit": {
+      "enabled": false,
+      "max_iter": 30,
+      "reg_param": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0
+        },
+        "values": [
+          0.1
+        ],
+        "range": {
+          "min": 0.001,
+          "max": 10.0,
+          "nbValues": 3,
+          "scaling": "LOGARITHMIC"
+        }
+      },
+      "enet_param": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0
+        },
+        "values": [
+          0.0
+        ],
+        "range": {
+          "min": 0.0,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      }
+    },
+    "mllib_linreg": {
+      "enabled": false,
+      "max_iter": 30,
+      "reg_param": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0
+        },
+        "values": [
+          0.1
+        ],
+        "range": {
+          "min": 0.001,
+          "max": 10.0,
+          "nbValues": 3,
+          "scaling": "LOGARITHMIC"
+        }
+      },
+      "enet_param": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 0.0
+        },
+        "values": [
+          0.0
+        ],
+        "range": {
+          "min": 0.0,
+          "max": 1.0,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      }
+    },
+    "mllib_dt": {
+      "enabled": false,
+      "max_depth": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          3
+        ],
+        "range": {
+          "min": 3,
+          "max": 8,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "max_bins": 32,
+      "max_memory_mb": 256,
+      "min_info_gain": 0.0,
+      "min_instance_per_node": 1,
+      "cache_node_ids": false,
+      "checkpoint_interval": 10
+    },
+    "mllib_rf": {
+      "enabled": false,
+      "cache_node_ids": false,
+      "checkpoint_interval": 10,
+      "impurity": "gini",
+      "max_bins": 32,
+      "max_depth": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          3
+        ],
+        "range": {
+          "min": 3,
+          "max": 8,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "max_memory_mb": 256,
+      "min_info_gain": 0.0,
+      "min_instance_per_node": 1,
+      "seed": 1337,
+      "subsampling_rate": 1.0,
+      "num_trees": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          20
+        ],
+        "range": {
+          "min": 10,
+          "max": 50,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "subset_strategy": "auto",
+      "step_size": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.1
+        ],
+        "range": {
+          "min": 0.05,
+          "max": 0.5,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      }
+    },
+    "mllib_gbt": {
+      "enabled": false,
+      "cache_node_ids": false,
+      "checkpoint_interval": 10,
+      "impurity": "gini",
+      "max_bins": 32,
+      "max_depth": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          3
+        ],
+        "range": {
+          "min": 3,
+          "max": 8,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "max_memory_mb": 256,
+      "min_info_gain": 0.0,
+      "min_instance_per_node": 1,
+      "seed": 1337,
+      "subsampling_rate": 1.0,
+      "num_trees": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1
+        },
+        "values": [
+          20
+        ],
+        "range": {
+          "min": 10,
+          "max": 50,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      },
+      "subset_strategy": "auto",
+      "step_size": {
+        "gridMode": "EXPLICIT",
+        "randomMode": "RANGE",
+        "limit": {
+          "min": 1.0E-23,
+          "max": 1.0
+        },
+        "values": [
+          0.1
+        ],
+        "range": {
+          "min": 0.05,
+          "max": 0.5,
+          "nbValues": 3,
+          "scaling": "LINEAR"
+        }
+      }
+    },
+    "vertica_linear_regression": {
+      "enabled": false,
+      "maxIterations": 200,
+      "epsilon": 1.0E-6,
+      "optimizer": "BFGS"
+    },
+    "vertica_logistic_regression": {
+      "enabled": false,
+      "maxIterations": 200,
+      "epsilon": 1.0E-6,
+      "optimizer": "BFGS"
+    },
+    "custom_python": [],
+    "plugin_python": {},
+    "keras": {
+      "epochs": 10,
+      "batchSize": 32,
+      "trainOnAllData": true,
+      "stepsPerEpoch": 100,
+      "shuffleData": true,
+      "useGPU": false,
+      "gpuList": [
+        0
+      ],
+      "perGPUMemoryFraction": 0.5,
+      "gpuAllowGrowth": false,
+      "advancedFitMode": false,
+      "enabled": false,
+      "kerasInputs": [
+        "main"
+      ]
+    },
+    "grid_search": true,
+    "gridSearchParams": {
+      "mode": "KFOLD",
+      "splitRatio": 0.8,
+      "shuffleIterations": 1,
+      "nFolds": 5,
+      "cvSeed": 1337,
+      "stratified": true,
+      "strategy": "GRID",
+      "bayesianOptimizer": "SCIKIT_OPTIMIZE",
+      "randomized": true,
+      "seed": 1337,
+      "nIter": 0,
+      "nIterRandom": 5,
+      "timeout": 0,
+      "nJobs": 4,
+      "distributed": false,
+      "nContainers": 4
+    },
+    "metrics": {
+      "evaluationMetric": "ROC_AUC",
+      "customEvaluationMetricGIB": true,
+      "customEvaluationMetricNeedsProba": false,
+      "costMatrixWeights": {
+        "tpGain": 1.0,
+        "tnGain": 0.0,
+        "fpGain": -0.3,
+        "fnGain": 0.0
+      },
+      "liftPoint": 0.4
+    },
+    "custom_mllib": [],
+    "max_ensemble_nodes_serialized": 6000
+  },
   "assertionsParams": {
     "assertions": []
   },
