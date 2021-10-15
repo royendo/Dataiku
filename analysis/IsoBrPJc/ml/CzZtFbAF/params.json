@@ -296,7 +296,7 @@
           "scaling": "LINEAR"
         }
       },
-      "n_jobs": 4,
+      "n_jobs": 1,
       "max_tree_depth": {
         "gridMode": "EXPLICIT",
         "randomMode": "RANGE",
@@ -1735,7 +1735,7 @@
       "mode": "KFOLD",
       "splitRatio": 0.8,
       "shuffleIterations": 1,
-      "nFolds": 5,
+      "nFolds": 2,
       "cvSeed": 1337,
       "stratified": true,
       "strategy": "GRID",
@@ -1745,7 +1745,7 @@
       "nIter": 0,
       "nIterRandom": 5,
       "timeout": 0,
-      "nJobs": 4,
+      "nJobs": 1,
       "distributed": false,
       "nContainers": 4
     },
