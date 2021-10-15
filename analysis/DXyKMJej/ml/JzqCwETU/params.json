@@ -1,6 +1,6 @@
 {
   "predictionType": "REGRESSION",
-  "targetVariable": "Oxygen",
+  "targetVariable": "Weight",
   "weight": {
     "weightMethod": "NO_WEIGHTING"
   },
@@ -79,11 +79,15 @@
     "per_feature": {
       "Oxygen": {
         "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "TARGET",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -138,15 +142,11 @@
       },
       "Weight": {
         "generate_derivative": false,
-        "numerical_handling": "REGULAR",
-        "missing_handling": "IMPUTE",
-        "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "INPUT",
+        "role": "TARGET",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
