@@ -1,6 +1,6 @@
 {
   "predictionType": "BINARY_CLASSIFICATION",
-  "targetVariable": "id",
+  "targetVariable": "mn",
   "weight": {
     "weightMethod": "CLASS_WEIGHT"
   },
@@ -75,12 +75,12 @@
     },
     "target_remapping": [
       {
-        "sourceValue": "3",
+        "sourceValue": "jan",
         "mappedValue": 0,
         "sampleFreq": 3
       },
       {
-        "sourceValue": "1",
+        "sourceValue": "dec",
         "mappedValue": 1,
         "sampleFreq": 2
       }
@@ -89,9 +89,6 @@
     "preprocessingFitSampleSeed": 1337,
     "per_feature": {
       "mn": {
-        "category_handling": "DUMMIFY",
-        "missing_handling": "NONE",
-        "missing_impute_with": "MODE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "min_samples": 10,
@@ -99,8 +96,8 @@
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
-        "dummy_drop": "AUTO",
-        "role": "INPUT",
+        "dummy_drop": "NONE",
+        "role": "TARGET",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -134,11 +131,15 @@
       },
       "id": {
         "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "role": "TARGET",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
