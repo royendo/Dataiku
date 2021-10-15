@@ -1842,7 +1842,7 @@
     ]
   },
   "taskType": "PREDICTION",
-  "name": "Predict 2017-01-01_parsed",
+  "name": "Predict a",
   "backendType": "PY_MEMORY",
   "maxConcurrentModelTraining": 2,
   "envSelection": {
