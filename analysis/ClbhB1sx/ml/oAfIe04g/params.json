@@ -1735,7 +1735,7 @@
       "mode": "KFOLD",
       "splitRatio": 0.8,
       "shuffleIterations": 1,
-      "nFolds": 5,
+      "nFolds": 3,
       "cvSeed": 1337,
       "stratified": true,
       "strategy": "GRID",
