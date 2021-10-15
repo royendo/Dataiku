@@ -1805,7 +1805,7 @@
     ]
   },
   "taskType": "PREDICTION",
-  "name": "Predict id",
+  "name": "Predict mn",
   "backendType": "PY_MEMORY",
   "maxConcurrentModelTraining": 2,
   "envSelection": {
