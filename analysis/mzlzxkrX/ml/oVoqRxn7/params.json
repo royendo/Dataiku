@@ -1,6 +1,6 @@
 {
   "predictionType": "BINARY_CLASSIFICATION",
-  "targetVariable": "newcolumn_expression",
+  "targetVariable": "2017-01-01_parsed",
   "weight": {
     "weightMethod": "CLASS_WEIGHT"
   },
@@ -75,83 +75,98 @@
     },
     "target_remapping": [
       {
-        "sourceValue": "2017-04-04",
+        "sourceValue": "2019-05-04T00:00:00.000Z",
         "mappedValue": 0,
         "sampleFreq": 1
       },
       {
-        "sourceValue": "2017-04-05",
+        "sourceValue": "���\u0019�.\f蓨ў\t[�\u003e\u0004�\u0000��Qq�EB���8�C|�",
         "mappedValue": 1,
         "sampleFreq": 1
       },
       {
-        "sourceValue": "2021-04-05",
+        "sourceValue": "2019-01-01T00:00:00.000Z",
         "mappedValue": 2,
         "sampleFreq": 1
       },
       {
-        "sourceValue": "2021-04-04",
+        "sourceValue": "2021-05-04T00:00:00.000Z",
         "mappedValue": 3,
         "sampleFreq": 1
       },
       {
-        "sourceValue": "2021-01-01",
+        "sourceValue": "�l�d�\u0011�A\u0027\\��\u000fFW\u003e௩�xGq�[���ۦڗ]D(�kZܙ[D5�{�$C\u0007~��4{Ao�)��Y��\u0002�w�@�q�%Ѡ$j�1�:�vՓ�_�W����:��D�S\u0027\u001fP�:\u001d�����ĥ_r����u\\̪�\u0011��¥�\u000f�WI.�X�\fJ.\u0003���~��*;��¥�\u000f�W��\\v:��6dLht��$��N\u0026T�t�\u0001�*I��$",
         "mappedValue": 4,
         "sampleFreq": 1
       },
       {
-        "sourceValue": "2020-01-01",
+        "sourceValue": "2021-01-01T00:00:00.000Z",
         "mappedValue": 5,
         "sampleFreq": 1
       },
       {
-        "sourceValue": "2020-04-05",
+        "sourceValue": "2017-04-04T00:00:00.000Z",
         "mappedValue": 6,
         "sampleFreq": 1
       },
       {
-        "sourceValue": "test",
+        "sourceValue": "2017-05-04T00:00:00.000Z",
         "mappedValue": 7,
         "sampleFreq": 1
       },
       {
-        "sourceValue": "2020-04-04",
+        "sourceValue": "^�{Va�^K\u001b\u003c4�\u00076�N\u0016�\bXQ�ǆ�9�\u0007!P��$�\u0010�\u0013҆�d�c�D�j);\u0010��ѝP�g��E�M\u0027O�ʕ����H7L�h���R���G��^�\u0027�\u0003\u0007{\u0013�\b�zސʮ\u001bB��3\u001c�\u000b˙��h.�h�W�жF�\u000ej娄CQՠ똈���}ιL�U:\u0012\u0014D�\u0013����%އ����",
         "mappedValue": 8,
         "sampleFreq": 1
       },
       {
-        "sourceValue": "2019-01-01",
+        "sourceValue": "Z\u003c�-Z2�kF��u�\u0006\u001f�\u0011�4?��y��\u003dHo_�\u0013�U�߲o��\t%�",
         "mappedValue": 9,
         "sampleFreq": 1
       },
       {
-        "sourceValue": "2018-04-05",
+        "sourceValue": "2020-05-04T00:00:00.000Z",
         "mappedValue": 10,
         "sampleFreq": 1
       },
       {
-        "sourceValue": "2018-01-01",
+        "sourceValue": "2020-01-01T00:00:00.000Z",
         "mappedValue": 11,
         "sampleFreq": 1
       },
       {
-        "sourceValue": "gry�~\u0003PK\u0007\b�����\u0000\u0000\u0000]\u0001\u0000\u0000PK\u0003\u0004\u0014\u0000\b\b\b\u0000vs)S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u001a\u0000\u0000\u0000xl/_rels/workbook.xml.rels��Mk�0\f@���}q��\u0018�n/c����\u0000c+qh\u0019K�迟���@\u0007;�$��{\u000f��~Γy�#���i� \u0005�#",
+        "sourceValue": "2021-04-04T00:00:00.000Z",
         "mappedValue": 12,
         "sampleFreq": 1
       },
       {
-        "sourceValue": "2018-04-04",
+        "sourceValue": "2018-04-04T00:00:00.000Z",
         "mappedValue": 13,
         "sampleFreq": 1
       },
       {
-        "sourceValue": "2019-04-04",
+        "sourceValue": "2018-05-04T00:00:00.000Z",
         "mappedValue": 14,
         "sampleFreq": 1
       },
       {
-        "sourceValue": "2019-04-05",
+        "sourceValue": "���\u0003ߐ\b�2;\u001aᣚ�:Y�\u0016Y�q\u0002��\f��u\u0003�@�\u0000\u000fP�t�\u0002�Z���\u0004`�ϐy�ک�Ț�\u0015P3p7+��\u0015\u001b�J",
         "mappedValue": 15,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2020-04-04T00:00:00.000Z",
+        "mappedValue": 16,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2019-04-04T00:00:00.000Z",
+        "mappedValue": 17,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "2018-01-01T00:00:00.000Z",
+        "mappedValue": 18,
         "sampleFreq": 1
       }
     ],
@@ -159,9 +174,6 @@
     "preprocessingFitSampleSeed": 1337,
     "per_feature": {
       "2017-01-01_parsed": {
-        "category_handling": "DUMMIFY",
-        "missing_handling": "NONE",
-        "missing_impute_with": "MODE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "min_samples": 10,
@@ -169,8 +181,8 @@
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
-        "dummy_drop": "AUTO",
-        "role": "INPUT",
+        "dummy_drop": "NONE",
+        "role": "TARGET",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -230,6 +242,9 @@
         "sendToInput": "main"
       },
       "newcolumn_expression": {
+        "category_handling": "DUMMIFY",
+        "missing_handling": "NONE",
+        "missing_impute_with": "MODE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "min_samples": 10,
@@ -237,8 +252,8 @@
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
-        "dummy_drop": "NONE",
-        "role": "TARGET",
+        "dummy_drop": "AUTO",
+        "role": "INPUT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
