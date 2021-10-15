@@ -100,7 +100,7 @@
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
         "dummy_drop": "AUTO",
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -296,7 +296,7 @@
           "scaling": "LINEAR"
         }
       },
-      "n_jobs": 1,
+      "n_jobs": 4,
       "max_tree_depth": {
         "gridMode": "EXPLICIT",
         "randomMode": "RANGE",
@@ -1005,7 +1005,7 @@
         }
       },
       "n_jobs": 2,
-      "enabled": false
+      "enabled": true
     },
     "neural_network": {
       "layer_sizes": {
@@ -1735,7 +1735,7 @@
       "mode": "KFOLD",
       "splitRatio": 0.8,
       "shuffleIterations": 1,
-      "nFolds": 2,
+      "nFolds": 5,
       "cvSeed": 1337,
       "stratified": true,
       "strategy": "GRID",
@@ -1745,7 +1745,7 @@
       "nIter": 0,
       "nIterRandom": 5,
       "timeout": 0,
-      "nJobs": 1,
+      "nJobs": 4,
       "distributed": false,
       "nContainers": 4
     },
