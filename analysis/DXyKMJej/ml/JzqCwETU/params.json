@@ -1,8 +1,8 @@
 {
-  "predictionType": "REGRESSION",
+  "predictionType": "BINARY_CLASSIFICATION",
   "targetVariable": "Age",
   "weight": {
-    "weightMethod": "NO_WEIGHTING"
+    "weightMethod": "CLASS_WEIGHT"
   },
   "time": {
     "enabled": false,
@@ -73,7 +73,78 @@
         "code": "# type your code here"
       }
     },
-    "target_remapping": [],
+    "target_remapping": [
+      {
+        "sourceValue": "44",
+        "mappedValue": 0,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "51",
+        "mappedValue": 1,
+        "sampleFreq": 4
+      },
+      {
+        "sourceValue": "49",
+        "mappedValue": 2,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "54",
+        "mappedValue": 3,
+        "sampleFreq": 3
+      },
+      {
+        "sourceValue": "45",
+        "mappedValue": 4,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "57",
+        "mappedValue": 5,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "47",
+        "mappedValue": 6,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "48",
+        "mappedValue": 7,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "38",
+        "mappedValue": 8,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "40",
+        "mappedValue": 9,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "52",
+        "mappedValue": 10,
+        "sampleFreq": 2
+      },
+      {
+        "sourceValue": "50",
+        "mappedValue": 11,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "42",
+        "mappedValue": 12,
+        "sampleFreq": 1
+      },
+      {
+        "sourceValue": "43",
+        "mappedValue": 13,
+        "sampleFreq": 1
+      }
+    ],
     "preprocessingFitSampleRatio": 1.0,
     "preprocessingFitSampleSeed": 1337,
     "per_feature": {
@@ -208,8 +279,7 @@
           "min": 1
         },
         "values": [
-          6,
-          12
+          8
         ],
         "range": {
           "min": 10,
@@ -268,7 +338,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "random_forest_classification": {
       "n_estimators": {
@@ -295,7 +365,8 @@
           "min": 1
         },
         "values": [
-          8
+          6,
+          12
         ],
         "range": {
           "min": 6,
@@ -354,7 +425,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "extra_trees": {
       "n_estimators": {
@@ -799,7 +870,7 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "lasso_regression": {
       "alphaMode": "AUTO_CV",
@@ -995,7 +1066,7 @@
         }
       },
       "n_jobs": 2,
-      "enabled": false
+      "enabled": true
     },
     "neural_network": {
       "layer_sizes": {
@@ -1202,8 +1273,8 @@
           0.2
         ],
         "range": {
-          "min": 0.01,
-          "max": 0.1,
+          "min": 0.1,
+          "max": 0.5,
           "nbValues": 3,
           "scaling": "LINEAR"
         }
@@ -1219,7 +1290,7 @@
         ],
         "range": {
           "min": 0.0,
-          "max": 0.4,
+          "max": 1.0,
           "nbValues": 3,
           "scaling": "LINEAR"
         }
@@ -1733,16 +1804,17 @@
       "randomized": true,
       "seed": 1337,
       "nIter": 0,
-      "nIterRandom": 3,
+      "nIterRandom": 5,
       "timeout": 0,
       "nJobs": 4,
       "distributed": false,
       "nContainers": 4
     },
     "metrics": {
-      "evaluationMetric": "R2",
+      "evaluationMetric": "ROC_AUC",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
+      "thresholdOptimizationMetric": "F1",
       "costMatrixWeights": {
         "tpGain": 1.0,
         "tnGain": 0.0,
