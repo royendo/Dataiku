@@ -1793,7 +1793,7 @@
     ]
   },
   "taskType": "PREDICTION",
-  "name": "Predict Oxygen",
+  "name": "Predict Weight",
   "backendType": "PY_MEMORY",
   "maxConcurrentModelTraining": 2,
   "envSelection": {
