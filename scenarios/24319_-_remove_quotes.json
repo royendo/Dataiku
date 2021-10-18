@@ -5,11 +5,11 @@
   "name": "24319 - remove quotes",
   "active": false,
   "versionTag": {
-    "versionNumber": 66,
+    "versionNumber": 67,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1626078262532
+    "lastModifiedOn": 1634537349378
   },
   "checklists": {
     "checklists": []
@@ -132,6 +132,23 @@
               "message": "\u003cp\u003e\n   FreeMarker \n\u003c/p\u003e\n\u003cp\u003e\n    \n    ${test}\u003cbr\u003e\n    /$/{test}\u003cbr\u003e\n    is String?: \n    ${test?is_string?c}\u003cbr\u003e\u003cbr\u003e\n    \n    \n    \n    ${SYSTEM_NAME.getAsString()}\u003cbr\u003e\n    /$/{SYSTEM_NAME.getAsString()}\u003cbr\u003e\n    is String?: \n    ${SYSTEM_NAME.getAsString()?is_string?c}\u003cbr\u003e\u003cbr\u003e\n    \n    \n    ${EMAIL_SUB_NO_DATA.getAsString()}\n    \n    ${scenarioName}\n\u003c/p\u003e"
             }
           }
+        }
+      },
+      {
+        "id": "run_scenario_null.null",
+        "type": "run_scenario",
+        "name": "Step #4",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "proceedOnFailure": false
         }
       }
     ]
