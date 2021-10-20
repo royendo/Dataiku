@@ -27,11 +27,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634719079345
+    "lastModifiedOn": 1634719192255
   },
   "creationTag": {
     "versionNumber": 0,
@@ -48,7 +48,7 @@
     "partitioningType": "custom",
     "normalizeDoubles": true,
     "catalog": "INTEGRATION_TESTS",
-    "table": "DKU_TUTORIAL_BASICS_101_WINE_QUALITY__2__COPY",
+    "table": "BIGQUERY_TITANIC_WITH_DATES",
     "schema": "PUBLIC",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
