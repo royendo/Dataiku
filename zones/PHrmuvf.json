@@ -103,10 +103,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_26135_joinednon",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "26135_joinednon",
       "objectType": "DATASET"
     },
