@@ -1,7 +1,12 @@
 {
   "name": "26135",
   "color": "#31439C",
-  "items": [],
+  "items": [
+    {
+      "objectId": "DKU_TUTORIAL_BASICS_101_WINE_QUALITY__2__COPY",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
