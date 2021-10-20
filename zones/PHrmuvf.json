@@ -19,10 +19,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "26135_preparedaa",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_26135_joineds",
       "objectType": "RECIPE"
     },
