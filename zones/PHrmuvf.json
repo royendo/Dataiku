@@ -13,10 +13,6 @@
     {
       "objectId": "compute_26135_joineds",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "26135_joinedaaa",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
