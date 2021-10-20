@@ -31,10 +31,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_26135_filtered",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "26135_preparedaa",
       "objectType": "DATASET"
     },
