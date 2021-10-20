@@ -15,10 +15,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "FR_geopoint_prepared",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_FR_geopoint_prepared",
       "objectType": "RECIPE"
     },
