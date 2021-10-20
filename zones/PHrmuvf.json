@@ -1,12 +1,7 @@
 {
   "name": "26135",
   "color": "#31439C",
-  "items": [
-    {
-      "objectId": "compute_26135_joineds",
-      "objectType": "RECIPE"
-    }
-  ],
+  "items": [],
   "shared": [],
   "tags": [],
   "customFields": {},
