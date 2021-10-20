@@ -3,10 +3,6 @@
   "color": "#31439C",
   "items": [
     {
-      "objectId": "compute_FR_geopoint_prepared_stacked",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "compute_FR_geopoint_preparedaa",
       "objectType": "RECIPE"
     },
