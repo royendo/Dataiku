@@ -27,11 +27,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634719192255
+    "lastModifiedOn": 1634719207082
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,76 +59,74 @@
   "schema": {
     "columns": [
       {
-        "name": "fixed acidity",
+        "name": "PassengerId",
+        "type": "bigint",
+        "originalType": "NUMBER"
+      },
+      {
+        "name": "Survived",
+        "type": "bigint",
+        "originalType": "NUMBER"
+      },
+      {
+        "name": "Pclass",
+        "type": "bigint",
+        "originalType": "NUMBER"
+      },
+      {
+        "name": "Name",
         "type": "string",
         "originalType": "VARCHAR",
         "maxLength": 4194304
       },
       {
-        "name": "volatile acidity",
+        "name": "Sex",
         "type": "string",
         "originalType": "VARCHAR",
         "maxLength": 4194304
       },
       {
-        "name": "citric acid",
+        "name": "Age",
+        "type": "double",
+        "originalType": "DOUBLE"
+      },
+      {
+        "name": "SibSp",
+        "type": "bigint",
+        "originalType": "NUMBER"
+      },
+      {
+        "name": "Parch",
+        "type": "bigint",
+        "originalType": "NUMBER"
+      },
+      {
+        "name": "Ticket",
         "type": "string",
         "originalType": "VARCHAR",
         "maxLength": 4194304
       },
       {
-        "name": "residual sugar",
+        "name": "Fare",
+        "type": "double",
+        "originalType": "DOUBLE"
+      },
+      {
+        "name": "Cabin",
         "type": "string",
         "originalType": "VARCHAR",
         "maxLength": 4194304
       },
       {
-        "name": "chlorides",
+        "name": "Embarked",
         "type": "string",
         "originalType": "VARCHAR",
         "maxLength": 4194304
       },
       {
-        "name": "free sulfur dioxide",
-        "type": "string",
-        "originalType": "VARCHAR",
-        "maxLength": 4194304
-      },
-      {
-        "name": "total sulfur dioxide",
-        "type": "string",
-        "originalType": "VARCHAR",
-        "maxLength": 4194304
-      },
-      {
-        "name": "density",
-        "type": "string",
-        "originalType": "VARCHAR",
-        "maxLength": 4194304
-      },
-      {
-        "name": "pH",
-        "type": "string",
-        "originalType": "VARCHAR",
-        "maxLength": 4194304
-      },
-      {
-        "name": "sulphates",
-        "type": "string",
-        "originalType": "VARCHAR",
-        "maxLength": 4194304
-      },
-      {
-        "name": "alcohol",
-        "type": "string",
-        "originalType": "VARCHAR",
-        "maxLength": 4194304
-      },
-      {
-        "name": "quality",
-        "type": "string",
-        "originalType": "VARCHAR",
-        "maxLength": 4194304
+        "name": "date du jour",
+        "type": "date",
+        "originalType": "TIMESTAMPTZ"
       }
     ],
     "userModified": true
