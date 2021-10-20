@@ -47,10 +47,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_26135_copy",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "26135_copy",
       "objectType": "DATASET"
     },
