@@ -4,12 +4,13 @@
   "type": "step_based",
   "name": "24262 Python Recipe",
   "active": false,
+  "runAsUser": "user1",
   "versionTag": {
-    "versionNumber": 68,
+    "versionNumber": 69,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633725238439
+    "lastModifiedOn": 1635464201586
   },
   "checklists": {
     "checklists": []
