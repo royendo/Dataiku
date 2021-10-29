@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1635466035349
+    "lastModifiedOn": 1635466081958
   },
   "creationTag": {
     "versionNumber": 0,
@@ -50,7 +50,7 @@
     "normalizeDoubles": true,
     "table": "${projectKey}_DKU_TUTORIAL_BASICS_101_WINE_QUALITY__2__COPY_PREPARED",
     "tableCreationMode": "auto",
-    "customPreWriteStatements": "use schema;",
+    "customPreWriteStatements": "\nUSE SCHEMA",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "readColsWithUnknownTzAsDates": false,
