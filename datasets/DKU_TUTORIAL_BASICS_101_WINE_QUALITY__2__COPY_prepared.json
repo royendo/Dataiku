@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1635466094376
+    "lastModifiedOn": 1635466124673
   },
   "creationTag": {
     "versionNumber": 0,
@@ -50,7 +50,7 @@
     "normalizeDoubles": true,
     "table": "${projectKey}_DKU_TUTORIAL_BASICS_101_WINE_QUALITY__2__COPY_PREPARED",
     "tableCreationMode": "custom",
-    "customCreateStatement": "USE SCHEMA\nCREATE TABLE \"EVERYTHING_DKU_TUTORIAL_BASICS_101_WINE_QUALITY__2__COPY_PREPARED\" (\n\t\"PassengerId\" bigint,\n\t\"Survived\" bigint,\n\t\"Pclass\" bigint,\n\t\"Name\" varchar(4194304),\n\t\"Sex\" varchar(4194304),\n\t\"newcolumn_expression\" varchar(4194304),\n\t\"Age\" double,\n\t\"SibSp\" bigint,\n\t\"Parch\" bigint,\n\t\"Ticket\" varchar(4194304),\n\t\"Fare\" double,\n\t\"Cabin\" varchar(4194304),\n\t\"Embarked\" varchar(4194304),\n\t\"date du jour\" timestamptz\n)",
+    "customCreateStatement": "USE SCHEMA;\nCREATE TABLE \"EVERYTHING_DKU_TUTORIAL_BASICS_101_WINE_QUALITY__2__COPY_PREPARED\" (\n\t\"PassengerId\" bigint,\n\t\"Survived\" bigint,\n\t\"Pclass\" bigint,\n\t\"Name\" varchar(4194304),\n\t\"Sex\" varchar(4194304),\n\t\"newcolumn_expression\" varchar(4194304),\n\t\"Age\" double,\n\t\"SibSp\" bigint,\n\t\"Parch\" bigint,\n\t\"Ticket\" varchar(4194304),\n\t\"Fare\" double,\n\t\"Cabin\" varchar(4194304),\n\t\"Embarked\" varchar(4194304),\n\t\"date du jour\" timestamptz\n)",
     "customPreWriteStatements": "",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
