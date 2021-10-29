@@ -5,6 +5,14 @@
     {
       "objectId": "DKU_TUTORIAL_BASICS_101_WINE_QUALITY__2__COPY",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "DKU_TUTORIAL_BASICS_101_WINE_QUALITY__2__COPY_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_DKU_TUTORIAL_BASICS_101_WINE_QUALITY__2__COPY_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
