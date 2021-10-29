@@ -26,8 +26,23 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "val(\"Name\")+val(\"Sex\")",
+        "column": "newcolumn_expression"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +50,22 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Embarked": 100,
+    "Survived": 100,
+    "Pclass": 100,
+    "Ticket": 100,
+    "PassengerId": 100,
+    "Sex": 100,
+    "newcolumn_expression": 300,
+    "SibSp": 100,
+    "Name": 300,
+    "Fare": 100,
+    "Parch": 100,
+    "Cabin": 100,
+    "date du jour": 183,
+    "Age": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
