@@ -1,24 +1,30 @@
 {
   "data": [
     [
-      "2021-10-23"
+      "2021-10-23",
+      "A"
     ],
     [
-      "2021-10-24"
+      "2021-10-24",
+      "B"
     ],
     [
-      "2021-10-25"
+      "2021-10-25",
+      "C"
     ],
     [
-      "2021-10-23"
+      "2021-10-23",
+      "D"
     ],
     [
+      null,
       null
     ]
   ],
   "schema": {
     "columns": [
-      {"name":"new_column","type":"date"}
+      {"name":"new_column","type":"date"},
+      {"name":"data","type":"string"}
     ],
     "userModified": false
   }
