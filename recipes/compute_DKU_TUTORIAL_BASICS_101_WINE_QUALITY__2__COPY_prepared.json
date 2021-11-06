@@ -18,7 +18,7 @@
         "useGlobalMetastore": false,
         "useNativeProcessors": true,
         "sparkConfig": {
-          "inheritConf": "test",
+          "inheritConf": "default",
           "conf": []
         },
         "executionEngine": "SPARK_SUBMIT",
@@ -73,11 +73,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1636162751089
+    "lastModifiedOn": 1636163286728
   },
   "creationTag": {
     "versionNumber": 0,
