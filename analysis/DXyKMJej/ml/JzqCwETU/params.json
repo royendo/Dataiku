@@ -160,13 +160,20 @@
     },
     "feature_generation": {
       "pairwise_linear": {
-        "behavior": "DISABLED"
+        "behavior": "ENABLED_MANUAL"
       },
       "polynomial_combinations": {
-        "behavior": "DISABLED"
+        "behavior": "ENABLED_MANUAL"
       },
       "manual_interactions": {
-        "interactions": []
+        "interactions": [
+          {
+            "column_1": "Oxygen",
+            "column_2": "RunTime",
+            "max_features": 100,
+            "rescale": true
+          }
+        ]
       },
       "numericals_clustering": {
         "k": 0,
