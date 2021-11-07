@@ -38,6 +38,25 @@
       "auditPostEnrichData": false,
       "id": "d",
       "type": "STD_PREDICTION"
+    },
+    {
+      "modelRef": "Ss58uzNQ",
+      "useJava": true,
+      "outputExplanations": false,
+      "individualExplanationParams": {
+        "method": "ICE",
+        "nbExplanations": 3,
+        "drawInScoredSet": false,
+        "subChunkSize": 5000,
+        "shapleyBackgroundSize": 100
+      },
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "returnPostEnrichData": false,
+      "auditPostEnrichData": false,
+      "id": "Clustering",
+      "type": "STD_PREDICTION"
     }
   ],
   "publicAccess": true,
@@ -45,11 +64,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1636269598692
+    "lastModifiedOn": 1636269706830
   },
   "tags": [],
   "customFields": {},
