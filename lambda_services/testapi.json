@@ -3,7 +3,7 @@
   "endpoints": [
     {
       "modelRef": "Ss58uzNQ",
-      "useJava": false,
+      "useJava": true,
       "outputExplanations": false,
       "individualExplanationParams": {
         "method": "ICE",
@@ -64,11 +64,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1636269709970
+    "lastModifiedOn": 1636269720372
   },
   "tags": [],
   "customFields": {},
