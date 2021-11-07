@@ -19,11 +19,37 @@
       "auditPostEnrichData": false,
       "id": "d",
       "type": "STD_PREDICTION"
+    },
+    {
+      "modelRef": "3lFCzHDn",
+      "useJava": true,
+      "outputExplanations": false,
+      "individualExplanationParams": {
+        "method": "ICE",
+        "nbExplanations": 3,
+        "drawInScoredSet": false,
+        "subChunkSize": 5000,
+        "shapleyBackgroundSize": 100
+      },
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "returnPostEnrichData": false,
+      "auditPostEnrichData": false,
+      "id": "d",
+      "type": "STD_PREDICTION"
     }
   ],
   "publicAccess": true,
   "authRealm": {
     "queryKeys": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1636269585233
   },
   "tags": [],
   "customFields": {},
