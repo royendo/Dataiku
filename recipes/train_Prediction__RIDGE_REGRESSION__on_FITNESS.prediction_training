@@ -10,9 +10,7 @@
       "alpha": {
         "randomMode": "RANGE",
         "values": [
-          0.1,
-          1.0,
-          3.0
+          1.0
         ],
         "limit": {
           "min": 1.0E-23
@@ -62,9 +60,9 @@
     },
     "skipExpensiveReports": false,
     "algorithm": "RIDGE_REGRESSION",
-    "gridLength": 3
+    "gridLength": 1
   },
-  "generatingModelId": "A-EVERYTHING-DXyKMJej-JzqCwETU-s1-pp2-m1",
+  "generatingModelId": "A-EVERYTHING-DXyKMJej-JzqCwETU-s4-pp1-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -156,10 +154,17 @@
     "skipPreprocessing": false,
     "feature_generation": {
       "polynomial_combinations": {
-        "behavior": "DISABLED"
+        "behavior": "ENABLED_MANUAL"
       },
       "manual_interactions": {
-        "interactions": []
+        "interactions": [
+          {
+            "max_features": 100,
+            "rescale": true,
+            "column_2": "RunTime",
+            "column_1": "Oxygen"
+          }
+        ]
       },
       "numericals_clustering": {
         "all_features": false,
@@ -173,7 +178,7 @@
         "behavior": "DISABLED"
       },
       "pairwise_linear": {
-        "behavior": "DISABLED"
+        "behavior": "ENABLED_MANUAL"
       }
     },
     "preprocessingFitSampleRatio": 1.0,
@@ -232,6 +237,7 @@
     "userModified": false
   },
   "script": {
+    "contextProjectKey": "EVERYTHING",
     "columnsSelection": {
       "mode": "ALL"
     },
