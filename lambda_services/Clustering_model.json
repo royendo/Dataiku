@@ -1,8 +1,36 @@
 {
-  "endpoints": [],
+  "name": "Clustering_model",
+  "endpoints": [
+    {
+      "modelRef": "Ss58uzNQ",
+      "useJava": true,
+      "outputExplanations": false,
+      "individualExplanationParams": {
+        "method": "ICE",
+        "nbExplanations": 3,
+        "drawInScoredSet": false,
+        "subChunkSize": 5000,
+        "shapleyBackgroundSize": 100
+      },
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "returnPostEnrichData": false,
+      "auditPostEnrichData": false,
+      "id": "test",
+      "type": "STD_PREDICTION"
+    }
+  ],
   "publicAccess": true,
   "authRealm": {
     "queryKeys": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1636270516676
   },
   "tags": [],
   "customFields": {},
