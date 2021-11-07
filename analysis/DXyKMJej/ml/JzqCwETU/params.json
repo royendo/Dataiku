@@ -1,8 +1,8 @@
 {
-  "predictionType": "BINARY_CLASSIFICATION",
-  "targetVariable": "Weight",
+  "predictionType": "REGRESSION",
+  "targetVariable": "Age",
   "weight": {
-    "weightMethod": "CLASS_WEIGHT"
+    "weightMethod": "NO_WEIGHTING"
   },
   "time": {
     "enabled": false,
@@ -73,143 +73,7 @@
         "code": "# type your code here"
       }
     },
-    "target_remapping": [
-      {
-        "sourceValue": "73.37",
-        "mappedValue": 0,
-        "sampleFreq": 2
-      },
-      {
-        "sourceValue": "91.63",
-        "mappedValue": 1,
-        "sampleFreq": 2
-      },
-      {
-        "sourceValue": "76.32",
-        "mappedValue": 2,
-        "sampleFreq": 2
-      },
-      {
-        "sourceValue": "81.42",
-        "mappedValue": 3,
-        "sampleFreq": 2
-      },
-      {
-        "sourceValue": "67.25",
-        "mappedValue": 4,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "68.15",
-        "mappedValue": 5,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "77.91",
-        "mappedValue": 6,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "75.07",
-        "mappedValue": 7,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "73.03",
-        "mappedValue": 8,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "79.38",
-        "mappedValue": 9,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "81.19",
-        "mappedValue": 10,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "79.15",
-        "mappedValue": 11,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "59.08",
-        "mappedValue": 12,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "83.12",
-        "mappedValue": 13,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "61.24",
-        "mappedValue": 14,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "69.63",
-        "mappedValue": 15,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "85.84",
-        "mappedValue": 16,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "89.02",
-        "mappedValue": 17,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "87.66",
-        "mappedValue": 18,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "70.87",
-        "mappedValue": 19,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "77.45",
-        "mappedValue": 20,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "75.98",
-        "mappedValue": 21,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "73.71",
-        "mappedValue": 22,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "81.87",
-        "mappedValue": 23,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "82.78",
-        "mappedValue": 24,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "66.45",
-        "mappedValue": 25,
-        "sampleFreq": 1
-      },
-      {
-        "sourceValue": "89.47",
-        "mappedValue": 26,
-        "sampleFreq": 1
-      }
-    ],
+    "target_remapping": [],
     "preprocessingFitSampleRatio": 1.0,
     "preprocessingFitSampleSeed": 1337,
     "per_feature": {
@@ -257,6 +121,23 @@
       },
       "Age": {
         "generate_derivative": false,
+        "impute_constant_value": 0.0,
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "role": "TARGET",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Weight": {
+        "generate_derivative": false,
         "numerical_handling": "REGULAR",
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
@@ -270,23 +151,6 @@
         "state": {
           "userModified": false,
           "autoModifiedByDSS": false,
-          "recordedMeaning": "LongMeaning"
-        },
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
-        "sendToInput": "main"
-      },
-      "Weight": {
-        "generate_derivative": false,
-        "impute_constant_value": 0.0,
-        "quantile_bin_nb_bins": 4,
-        "binarize_threshold_mode": "MEDIAN",
-        "binarize_constant_threshold": 0.0,
-        "role": "TARGET",
-        "type": "NUMERIC",
-        "state": {
-          "userModified": false,
-          "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning"
         },
         "customHandlingCode": "",
@@ -296,20 +160,13 @@
     },
     "feature_generation": {
       "pairwise_linear": {
-        "behavior": "ENABLED_MANUAL"
+        "behavior": "DISABLED"
       },
       "polynomial_combinations": {
-        "behavior": "ENABLED_MANUAL"
+        "behavior": "DISABLED"
       },
       "manual_interactions": {
-        "interactions": [
-          {
-            "column_1": "Oxygen",
-            "column_2": "RunTime",
-            "max_features": 100,
-            "rescale": true
-          }
-        ]
+        "interactions": []
       },
       "numericals_clustering": {
         "k": 0,
@@ -343,7 +200,7 @@
           "scaling": "LINEAR"
         }
       },
-      "n_jobs": 1,
+      "n_jobs": 4,
       "max_tree_depth": {
         "gridMode": "EXPLICIT",
         "randomMode": "RANGE",
@@ -437,8 +294,7 @@
           "min": 1
         },
         "values": [
-          6,
-          12
+          8
         ],
         "range": {
           "min": 6,
@@ -497,7 +353,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "extra_trees": {
       "n_estimators": {
@@ -931,9 +787,7 @@
           "min": 1.0E-23
         },
         "values": [
-          0.1,
-          1.0,
-          3.0
+          1.0
         ],
         "range": {
           "min": 0.1,
@@ -942,7 +796,7 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "lasso_regression": {
       "alphaMode": "AUTO_CV",
@@ -1138,7 +992,7 @@
         }
       },
       "n_jobs": 2,
-      "enabled": true
+      "enabled": false
     },
     "neural_network": {
       "layer_sizes": {
@@ -1345,8 +1199,8 @@
           0.2
         ],
         "range": {
-          "min": 0.1,
-          "max": 0.5,
+          "min": 0.01,
+          "max": 0.1,
           "nbValues": 3,
           "scaling": "LINEAR"
         }
@@ -1362,7 +1216,7 @@
         ],
         "range": {
           "min": 0.0,
-          "max": 1.0,
+          "max": 0.4,
           "nbValues": 3,
           "scaling": "LINEAR"
         }
@@ -1863,7 +1717,7 @@
         "main"
       ]
     },
-    "grid_search": true,
+    "grid_search": false,
     "gridSearchParams": {
       "mode": "KFOLD",
       "splitRatio": 0.8,
@@ -1876,17 +1730,16 @@
       "randomized": true,
       "seed": 1337,
       "nIter": 0,
-      "nIterRandom": 5,
+      "nIterRandom": 3,
       "timeout": 0,
       "nJobs": 4,
       "distributed": false,
       "nContainers": 4
     },
     "metrics": {
-      "evaluationMetric": "ROC_AUC",
+      "evaluationMetric": "R2",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
-      "thresholdOptimizationMetric": "F1",
       "costMatrixWeights": {
         "tpGain": 1.0,
         "tnGain": 0.0,
@@ -1937,7 +1790,7 @@
     ]
   },
   "taskType": "PREDICTION",
-  "name": "Predict Weight",
+  "name": "Predict Age",
   "backendType": "PY_MEMORY",
   "maxConcurrentModelTraining": 2,
   "envSelection": {
