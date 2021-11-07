@@ -5,6 +5,14 @@
     {
       "objectId": "curated_zone_s3_bucket",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_result_zone_s3_bucket_copy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "result_zone_s3_bucket_copy",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
