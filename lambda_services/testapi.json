@@ -2,7 +2,7 @@
   "name": "testapi",
   "endpoints": [
     {
-      "modelRef": "GaExzlsn",
+      "modelRef": "Ss58uzNQ",
       "useJava": false,
       "outputExplanations": false,
       "individualExplanationParams": {
@@ -45,11 +45,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1636269585233
+    "lastModifiedOn": 1636269595915
   },
   "tags": [],
   "customFields": {},
