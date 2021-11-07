@@ -21,6 +21,10 @@
     {
       "objectId": "DKU_TUTORIAL_BASICS_101_WINE_QUALITY__2__COPY_copy",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "curated_zone_s3_bucket",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
