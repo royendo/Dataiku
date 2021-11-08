@@ -25,6 +25,10 @@
     {
       "objectId": "compute_time_series_forecasting",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "7i2NN3Sc",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [],
