@@ -1,7 +1,12 @@
 {
   "name": "27291",
   "color": "#0F786B",
-  "items": [],
+  "items": [
+    {
+      "objectId": "DATE_UX_TESTS_bq_titanic_with_dates",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
