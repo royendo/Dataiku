@@ -33,6 +33,10 @@
     {
       "objectId": "metrics",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_7i2NN3Sc",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
