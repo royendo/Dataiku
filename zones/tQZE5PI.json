@@ -33,6 +33,10 @@
     {
       "objectId": "compute_7i2NN3Sc",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_time_series_forecasting",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
