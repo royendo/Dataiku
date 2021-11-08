@@ -34,17 +34,21 @@
         {
           "ref": "output_dataset",
           "appendMode": false
+        },
+        {
+          "ref": "iMaxicFP",
+          "appendMode": false
         }
       ]
     }
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1636356520887
+    "lastModifiedOn": 1636356787607
   },
   "creationTag": {
     "versionNumber": 0,
