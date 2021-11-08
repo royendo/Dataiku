@@ -37,10 +37,6 @@
     {
       "objectId": "compute_7i2NN3Sc",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "forecast",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
