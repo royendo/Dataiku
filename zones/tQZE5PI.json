@@ -29,6 +29,10 @@
     {
       "objectId": "7i2NN3Sc",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "metrics",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
