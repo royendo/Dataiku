@@ -3,7 +3,7 @@
   "endpoints": [
     {
       "modelRef": "nxdHFRNH",
-      "useJava": true,
+      "useJava": false,
       "outputExplanations": false,
       "individualExplanationParams": {
         "method": "ICE",
@@ -83,11 +83,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1636335574364
+    "lastModifiedOn": 1636335590527
   },
   "tags": [],
   "customFields": {},
