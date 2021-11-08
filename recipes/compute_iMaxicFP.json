@@ -32,7 +32,7 @@
     "main": {
       "items": [
         {
-          "ref": "iMaxicFP",
+          "ref": "output_dataset",
           "appendMode": false
         }
       ]
@@ -40,11 +40,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1636356176613
+    "lastModifiedOn": 1636356520887
   },
   "creationTag": {
     "versionNumber": 0,
