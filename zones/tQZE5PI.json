@@ -23,10 +23,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_time_series_forecasting",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "evaluation_dataset",
       "objectType": "DATASET"
     }
