@@ -41,6 +41,10 @@
     {
       "objectId": "forecast",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_forecast",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
