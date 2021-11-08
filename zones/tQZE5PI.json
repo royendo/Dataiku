@@ -5,6 +5,10 @@
     {
       "objectId": "DATE_UX_TESTS_bq_titanic_with_dates",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "iMaxicFP",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [],
