@@ -21,6 +21,10 @@
     {
       "objectId": "time_series_forecasting",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_time_series_forecasting",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
