@@ -106,15 +106,23 @@
           "appendMode": false
         }
       ]
+    },
+    "evaluation_forecasts_dataset": {
+      "items": [
+        {
+          "ref": "evaluation_dataset",
+          "appendMode": false
+        }
+      ]
     }
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1636357416520
+    "lastModifiedOn": 1636357636929
   },
   "creationTag": {
     "versionNumber": 0,
