@@ -9,6 +9,10 @@
     {
       "objectId": "iMaxicFP",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_iMaxicFP",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
