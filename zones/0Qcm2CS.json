@@ -1,7 +1,20 @@
 {
   "name": "27291_2",
   "color": "#C82423",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_rZqm8wTZ",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "rZqm8wTZ",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "DATE_UX_TESTS_bq_titanic_with_dates",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},

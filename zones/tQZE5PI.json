@@ -3,10 +3,6 @@
   "color": "#0F786B",
   "items": [
     {
-      "objectId": "DATE_UX_TESTS_bq_titanic_with_dates",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "7i2NN3Sc",
       "objectType": "MANAGED_FOLDER"
     },
@@ -21,14 +17,6 @@
     {
       "objectId": "evaluation_dataset",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "rZqm8wTZ",
-      "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "compute_rZqm8wTZ",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
