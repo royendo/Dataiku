@@ -2,7 +2,7 @@
   "name": "Clustering_model",
   "endpoints": [
     {
-      "modelRef": "3lFCzHDn",
+      "modelRef": "nxdHFRNH",
       "useJava": true,
       "outputExplanations": false,
       "individualExplanationParams": {
@@ -83,11 +83,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1636335564183
+    "lastModifiedOn": 1636335574364
   },
   "tags": [],
   "customFields": {},
