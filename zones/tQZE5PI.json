@@ -7,10 +7,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "iMaxicFP",
-      "objectType": "MANAGED_FOLDER"
-    },
-    {
       "objectId": "output_dataset",
       "objectType": "DATASET"
     },
