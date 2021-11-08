@@ -11,10 +11,6 @@
       "objectType": "MANAGED_FOLDER"
     },
     {
-      "objectId": "compute_iMaxicFP",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "output_dataset",
       "objectType": "DATASET"
     },
