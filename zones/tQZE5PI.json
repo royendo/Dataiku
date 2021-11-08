@@ -21,6 +21,10 @@
     {
       "objectId": "evaluation_dataset",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "rZqm8wTZ",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [],
