@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1636693086228
+    "lastModifiedOn": 1636693810054
   },
   "creationTag": {
     "versionNumber": 0,
@@ -75,7 +75,7 @@
   "params": {
     "metastoreSynchronizationEnabled": true,
     "connection": "GCS",
-    "path": "/dataiku/23721/11/out-s0.csv.gz",
+    "path": "/clean_sake.csv",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -132,6 +132,22 @@
       },
       {
         "name": "col_11",
+        "type": "string"
+      },
+      {
+        "name": "col_12",
+        "type": "string"
+      },
+      {
+        "name": "col_13",
+        "type": "string"
+      },
+      {
+        "name": "col_14",
+        "type": "string"
+      },
+      {
+        "name": "col_15",
         "type": "string"
       }
     ],
