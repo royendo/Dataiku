@@ -7,10 +7,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "Books2",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "out",
       "objectType": "DATASET"
     },
