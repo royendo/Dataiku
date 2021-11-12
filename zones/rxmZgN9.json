@@ -7,10 +7,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_out",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "clean_sake",
       "objectType": "DATASET"
     }
