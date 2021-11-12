@@ -5,6 +5,10 @@
     {
       "objectId": "out_s0",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "Books2",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
