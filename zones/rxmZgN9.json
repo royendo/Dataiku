@@ -7,10 +7,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "out",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_out",
       "objectType": "RECIPE"
     },
