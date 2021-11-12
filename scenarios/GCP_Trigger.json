@@ -3,20 +3,20 @@
   "id": "GCP_Trigger",
   "type": "step_based",
   "name": "GCP_Trigger",
-  "active": false,
+  "active": true,
   "creationTag": {
-    "versionNumber": 4,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1636693918724
-  },
-  "versionTag": {
     "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1636693919060
+  },
+  "versionTag": {
+    "versionNumber": 6,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1636708502939
   },
   "checklists": {
     "checklists": []
