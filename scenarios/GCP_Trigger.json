@@ -12,11 +12,11 @@
     "lastModifiedOn": 1636693374473
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1636693374473
+    "lastModifiedOn": 1636693401114
   },
   "checklists": {
     "checklists": []
@@ -27,7 +27,29 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "pgSu8rby",
+      "type": "ds_modified",
+      "name": "Dataset modified",
+      "delay": 60,
+      "active": true,
+      "params": {
+        "watches": [
+          {
+            "type": "DATASET",
+            "itemId": "out_s0",
+            "partitionsSpec": ""
+          }
+        ],
+        "triggerWhenAllFire": false
+      },
+      "graceDelaySettings": {
+        "delay": 60,
+        "checkAgainAfterGraceDelay": true
+      }
+    }
+  ],
   "reporters": [],
   "params": {
     "steps": []
