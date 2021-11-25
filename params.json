@@ -1,7 +1,15 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": []
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "Corona",
+          "objectType": "DATASET"
+        },
+        "modes": []
+      }
+    ]
   },
   "exposedObjects": {
     "objects": [
@@ -244,11 +252,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 68,
+    "versionNumber": 69,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1637814664127
+    "lastModifiedOn": 1637814872916
   },
   "creationTag": {
     "versionNumber": 0,
