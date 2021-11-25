@@ -1,10 +1,29 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": []
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "Corona",
+          "objectType": "DATASET"
+        },
+        "modes": []
+      }
+    ]
   },
   "exposedObjects": {
-    "objects": []
+    "objects": [
+      {
+        "type": "DATASET",
+        "localName": "Corona",
+        "rules": [
+          {
+            "targetProject": "NEW",
+            "appearOnFlow": true
+          }
+        ]
+      }
+    ]
   },
   "projectType": "REGULAR",
   "projectAppType": "APP_TEMPLATE",
@@ -63,6 +82,10 @@
   "tutorialProject": false,
   "settings": {
     "flowAnchorSourcesAndSinks": true,
+    "flowDisplaySettings": {
+      "zonesGraphRenderingAlgorithm": "DOT_OLDRANK",
+      "zonesGraphConnectZones": true
+    },
     "gitCommitMode": "AUTO",
     "useRemoteGit": true,
     "disableAutomaticTriggers": false,
@@ -225,11 +248,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 66,
+    "versionNumber": 67,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1633922730284
+    "lastModifiedOn": 1637814558135
   },
   "creationTag": {
     "versionNumber": 0,
