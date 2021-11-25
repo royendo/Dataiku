@@ -1,15 +1,7 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": [
-      {
-        "objectRef": {
-          "objectId": "Corona",
-          "objectType": "DATASET"
-        },
-        "modes": []
-      }
-    ]
+    "authorizations": []
   },
   "exposedObjects": {
     "objects": [
@@ -19,6 +11,10 @@
         "rules": [
           {
             "targetProject": "NEW",
+            "appearOnFlow": true
+          },
+          {
+            "targetProject": "NEW_NEW_BRANCH",
             "appearOnFlow": true
           }
         ]
@@ -248,11 +244,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 67,
+    "versionNumber": 68,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1637814558135
+    "lastModifiedOn": 1637814664127
   },
   "creationTag": {
     "versionNumber": 0,
