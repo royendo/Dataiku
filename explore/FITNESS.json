@@ -202,7 +202,9 @@
           "paletteType": "CONTINUOUS",
           "quantizationMode": "NONE",
           "numQuantizeSteps": 5,
-          "paletteMiddleValue": 0.0
+          "paletteMiddleValue": 0.0,
+          "heatDensityMapIntensity": 0.5,
+          "heatDensityMapRadius": 0.5
         },
         "bubblesOptions": {
           "defaultRadius": 5.0,
