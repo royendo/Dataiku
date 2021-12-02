@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1638425293340
+    "lastModifiedOn": 1638425314778
   },
   "creationTag": {
     "versionNumber": 0,
@@ -285,7 +285,14 @@
     ],
     "displayedState": {
       "partition": "NP",
-      "checks": []
+      "checks": [
+        "Value in set of col_stats:MAX:Age",
+        "Value in set of null",
+        "Custom check",
+        "Value in set of col_stats:COUNT:Age",
+        "Check dataset against a reference",
+        "Value in range of null"
+      ]
     }
   },
   "customFields": {}
