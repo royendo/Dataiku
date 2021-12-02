@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1627860602416
+    "lastModifiedOn": 1638425265837
   },
   "creationTag": {
     "versionNumber": 0,
@@ -260,6 +260,24 @@
         "type": "valueSet",
         "meta": {
           "name": "Value in set"
+        },
+        "computeOnBuildMode": "PARTITION"
+      },
+      {
+        "config": {
+          "input_mode": "dataset",
+          "message_type": "error_message",
+          "tolerance": 0.01,
+          "range_mode": "absolute_range",
+          "columns_dataset": [
+            "Age"
+          ],
+          "columns_model": [],
+          "ds_ref": "FITNESS"
+        },
+        "type": "custom_python_model-data-compliance_check-against-reference",
+        "meta": {
+          "name": "Check dataset against a reference"
         },
         "computeOnBuildMode": "PARTITION"
       }
