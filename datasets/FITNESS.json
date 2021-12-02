@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1638425314778
+    "lastModifiedOn": 1638425330132
   },
   "creationTag": {
     "versionNumber": 0,
@@ -244,7 +244,8 @@
         "col_stats:COUNT:Age",
         "col_stats:MAX:Age",
         "reporting:METRICS_COMPUTATION_DURATION",
-        "col_stats:MIN:Age"
+        "col_stats:MIN:Age",
+        "check:CHECK:Custom check"
       ]
     }
   },
