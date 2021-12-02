@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1638425287135
+    "lastModifiedOn": 1638425293340
   },
   "creationTag": {
     "versionNumber": 0,
@@ -285,9 +285,7 @@
     ],
     "displayedState": {
       "partition": "NP",
-      "checks": [
-        "Custom check"
-      ]
+      "checks": []
     }
   },
   "customFields": {}
