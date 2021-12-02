@@ -62,7 +62,15 @@
       "partition": "NP",
       "columns": [],
       "metrics": [
-        "reporting:BUILD_DURATION"
+        "reporting:BUILD_DURATION",
+        "model_perf:EVS",
+        "model_perf:MAE",
+        "model_perf:MAPE",
+        "model_perf:MSE",
+        "model_perf:PEARSON",
+        "model_perf:R2",
+        "model_perf:RMSE",
+        "model_perf:RMSLE"
       ]
     }
   },
@@ -1787,11 +1795,11 @@
     "labels": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1636269674881
+    "lastModifiedOn": 1638424898086
   },
   "creationTag": {
     "versionNumber": 0,
