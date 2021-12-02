@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1638425275568
+    "lastModifiedOn": 1638425287135
   },
   "creationTag": {
     "versionNumber": 0,
@@ -277,7 +277,8 @@
         },
         "type": "custom_python_model-data-compliance_check-against-reference",
         "meta": {
-          "name": "Check dataset against a reference"
+          "name": "Check dataset against a reference",
+          "label": "aaaa"
         },
         "computeOnBuildMode": "PARTITION"
       }
