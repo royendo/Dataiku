@@ -3,7 +3,28 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "time_reference_type": "fixed_timestamp",
+      "input_features_definition": "auto",
+      "use_temporal_window": false,
+      "num_windows_per_type": 1,
+      "whole_history_window_enabled": false,
+      "advance_activate": false,
+      "encoding_feature": false,
+      "population_definition_method": "whole_dataset",
+      "num_populations": 0,
+      "manual_populations_dict_11": {},
+      "manual_populations_dict_12": {},
+      "manual_populations_dict_13": {},
+      "manual_populations_dict_14": {},
+      "manual_populations_dict_15": {},
+      "brute_force_populations_dict": {},
+      "aggregation_keys": [
+        "スコア"
+      ],
+      "numerical_columns": [],
+      "categorical_columns": []
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +58,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1638517781553
+    "lastModifiedOn": 1638517785899
   },
   "creationTag": {
     "versionNumber": 0,
