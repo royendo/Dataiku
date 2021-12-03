@@ -141,6 +141,10 @@
     {
       "objectId": "as",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_as",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
