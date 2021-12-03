@@ -137,6 +137,10 @@
     {
       "objectId": "AeNr7pzZ",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "as",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
