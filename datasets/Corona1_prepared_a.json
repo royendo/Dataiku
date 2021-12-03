@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1638517928660
+    "lastModifiedOn": 1638517939144
   },
   "creationTag": {
     "versionNumber": 0,
@@ -76,6 +76,10 @@
         "name": "date",
         "type": "string",
         "maxLength": 2000
+      },
+      {
+        "name": "date_parsed",
+        "type": "date"
       },
       {
         "name": "total_cases",
