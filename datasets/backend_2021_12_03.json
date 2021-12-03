@@ -23,7 +23,7 @@
     }
   },
   "formatParams": {
-    "style": "no_escape_no_quote",
+    "style": "unix",
     "charset": "utf-8",
     "separator": ":",
     "quoteChar": "\"",
@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1638509510344
+    "lastModifiedOn": 1638509629320
   },
   "creationTag": {
     "versionNumber": 0,
