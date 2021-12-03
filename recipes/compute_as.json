@@ -23,7 +23,8 @@
         "スコア"
       ],
       "numerical_columns": [],
-      "categorical_columns": []
+      "categorical_columns": [],
+      "timestamp_column": "住所"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -58,11 +59,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1638517785899
+    "lastModifiedOn": 1638518026743
   },
   "creationTag": {
     "versionNumber": 0,
