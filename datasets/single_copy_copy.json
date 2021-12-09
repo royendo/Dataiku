@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639031992589
+    "lastModifiedOn": 1639032015739
   },
   "creationTag": {
     "versionNumber": 0,
@@ -51,7 +51,7 @@
     "normalizeDoubles": true,
     "table": "${projectKey}_single_copy_copy",
     "tableCreationMode": "auto",
-    "customPreWriteStatements": "SELECT\n  EVERYTHING_single_copy_copy.*\nFROM\n  EVERYTHING_single_copy_copy",
+    "customPreWriteStatements": "SELECT\n  \"EVERYTHING_single_copy_copy\".*\nFROM\n  \"EVERYTHING_single_copy_copy\"",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "readColsWithUnknownTzAsDates": false,
