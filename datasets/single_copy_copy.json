@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639031686161
+    "lastModifiedOn": 1639031782005
   },
   "creationTag": {
     "versionNumber": 0,
@@ -51,7 +51,7 @@
     "normalizeDoubles": true,
     "table": "${projectKey}_single_copy_copy",
     "tableCreationMode": "auto",
-    "customPreWriteStatements": "CASE\n  WHEN\n    EVERYTHING_single_copy_copy.flag \u003d 1\n      THEN\n        0\n \n  ELSE\n    2\nEND AS locale",
+    "customPreWriteStatements": "SELECT\n  IIF(\n    EVERYTHING_single_copy_copy.flag \u003d 1,\n    \u00270\u0027,\n    \u00272\u0027)\n  AS locale,\n  EVERYTHING_single_copy_copy.*\nFROM\n  EVERYTHING_single_copy_copy",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "readColsWithUnknownTzAsDates": false,
