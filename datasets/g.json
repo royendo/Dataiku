@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639033816885
+    "lastModifiedOn": 1639033898091
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,18 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "flag",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "flag_1",
+        "type": "string",
+        "originalType": "text"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
