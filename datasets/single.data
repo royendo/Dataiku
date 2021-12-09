@@ -1,3 +1,13 @@
 {
-  "data": []
+  "data": [
+    [
+      "0"
+    ]
+  ],
+  "schema": {
+    "columns": [
+      {"name":"flag","type":"bigint"}
+    ],
+    "userModified": false
+  }
 }
