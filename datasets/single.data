@@ -6,8 +6,8 @@
   ],
   "schema": {
     "columns": [
-      {"name":"flag","type":"bigint"}
+      {"name":"flag","type":"string"}
     ],
-    "userModified": false
+    "userModified": true
   }
 }
