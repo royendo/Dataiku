@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 19,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639033054275
+    "lastModifiedOn": 1639033075227
   },
   "creationTag": {
     "versionNumber": 0,
@@ -51,8 +51,8 @@
     "normalizeDoubles": true,
     "table": "${projectKey}_single_copy_copy",
     "tableCreationMode": "auto",
-    "customPreWriteStatements": "",
-    "customPostWriteStatements": "SELECT\n    CASE\n        WHEN\n            \"EVERYTHING_single_copy_copy\".flag \u003d \u00270\u0027\n                THEN\n                    \u00271\u0027\n        ELSE \n            \u00273\u0027\n    END AS flag,\n  \"EVERYTHING_single_copy_copy\".*\nFROM\n  \"EVERYTHING_single_copy_copy\"",
+    "customPreWriteStatements": "SELECT\n    CASE\n        WHEN\n            \"EVERYTHING_single_copy_copy\".flag \u003d \u00270\u0027\n                THEN\n                    \u00271\u0027\n        ELSE \n            \u00273\u0027\n    END AS flag,\n  \"EVERYTHING_single_copy_copy\".*\nFROM\n  \"EVERYTHING_single_copy_copy\"",
+    "customPostWriteStatements": "",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "readColsWithUnknownTzAsDates": false,
