@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639031821637
+    "lastModifiedOn": 1639031894369
   },
   "creationTag": {
     "versionNumber": 0,
@@ -51,7 +51,7 @@
     "normalizeDoubles": true,
     "table": "${projectKey}_single_copy_copy",
     "tableCreationMode": "auto",
-    "customPreWriteStatements": "SELECT\n  IIF(\n    EVERYTHING_single_copy_copy.flag \u003d 1,\n    \u00270\u0027,\n    \u00272\u0027)\nFROM\n  EVERYTHING_single_copy_copy",
+    "customPreWriteStatements": "SELECT flag\nFROM EVERYTHING_single_copy_copy\nORDER BY\n(CASE\n    WHEN flag IS 1 THEN 0\n    ELSE 2\nEND);",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "readColsWithUnknownTzAsDates": false,
