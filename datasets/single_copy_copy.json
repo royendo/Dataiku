@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639033124802
+    "lastModifiedOn": 1639033655265
   },
   "creationTag": {
     "versionNumber": 0,
@@ -51,7 +51,7 @@
     "normalizeDoubles": true,
     "table": "${projectKey}_single_copy_copy",
     "tableCreationMode": "auto",
-    "customPreWriteStatements": "SELECT\n    CASE\n        WHEN\n            \"EVERYTHING_single_copy_copy\".flag \u003d 0\n                THEN\n                    1\n        ELSE \n            \u00273\u0027\n    END AS flag,\n  \"EVERYTHING_single_copy_copy\".*\nFROM\n  \"EVERYTHING_single_copy_copy\"",
+    "customPreWriteStatements": "",
     "customPostWriteStatements": "",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
