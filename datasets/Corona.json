@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639717503515
+    "lastModifiedOn": 1639717524757
   },
   "creationTag": {
     "versionNumber": 0,
@@ -271,7 +271,7 @@
       {
         "type": "records",
         "enabled": true,
-        "computeOnBuildMode": "NO",
+        "computeOnBuildMode": "PARTITION",
         "meta": {
           "name": "Record count",
           "level": 0
@@ -280,8 +280,8 @@
       },
       {
         "type": "col_stats",
-        "enabled": false,
-        "computeOnBuildMode": "NO",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
         "meta": {
           "name": "Columns statistics",
           "level": 2
@@ -292,8 +292,8 @@
       },
       {
         "type": "adv_col_stats",
-        "enabled": false,
-        "computeOnBuildMode": "NO",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
         "meta": {
           "name": "Most frequent values",
           "level": 3
@@ -305,8 +305,8 @@
       },
       {
         "type": "percentile_stats",
-        "enabled": false,
-        "computeOnBuildMode": "NO",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
         "meta": {
           "name": "Columns percentiles",
           "level": 4
@@ -317,8 +317,8 @@
       },
       {
         "type": "verify_col",
-        "enabled": false,
-        "computeOnBuildMode": "NO",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
         "meta": {
           "name": "Data validity",
           "level": 4
