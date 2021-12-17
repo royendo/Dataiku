@@ -66,6 +66,28 @@
         },
         "sql": "SELECT `スコア` FROM \"EVERYTHING_raw_sake_sqlserver\"",
         "expandedSql": "SELECT `スコア` FROM \"EVERYTHING_raw_sake_sqlserver\""
+      },
+      {
+        "mode": "SQL",
+        "id": "RS2Nv7geIHhp",
+        "runOn": 1639724572690,
+        "runIn": 5108,
+        "runBy": "admin",
+        "connection": "SQLServer",
+        "state": "RUNNING",
+        "futureId": "4sDRwi5E",
+        "hash": "7ffab645e9694609ec76800c5dbcb816",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_postgresql\"\nWHERE \"new_cases\" \u003e \u00270.0\u0027\n",
+        "expandedSql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_postgresql\"\nWHERE \"new_cases\" \u003e \u00270.0\u0027\n"
       }
     ]
   }
