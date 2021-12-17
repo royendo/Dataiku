@@ -11,6 +11,12 @@
       "code": "\n# Insert here initialization code\n\n# This function is the entry point for your Python function API\n# You can call this function with passing \"param1\", \"param2\",\n# \"param3\" as arguments to the API call\n# (see REST API documentation)\ndef api_py_function(param1, param2, param3):\n    return param1 + param2 * param3\n",
       "id": "python1",
       "type": "PY_FUNCTION"
+    },
+    {
+      "testQueries": [],
+      "lookups": [],
+      "id": "lookup1",
+      "type": "DATASETS_LOOKUP"
     }
   ],
   "publicAccess": true,
@@ -18,11 +24,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639706950965
+    "lastModifiedOn": 1639706962000
   },
   "creationTag": {
     "versionNumber": 0,
