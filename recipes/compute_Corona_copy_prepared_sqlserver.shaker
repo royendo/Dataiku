@@ -26,8 +26,29 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RoundProcessor",
+      "params": {
+        "mode": "ROUND",
+        "places": 0,
+        "columns": [
+          "total_cases",
+          "new_cases"
+        ],
+        "precision": 0,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -39,7 +60,50 @@
       "meaning": "LongMeaning"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "continent": 113,
+    "date": 100,
+    "new_deaths_smoothed": 158,
+    "population_density": 150,
+    "life_expectancy": 128,
+    "new_vaccinations": 135,
+    "aged_65_older": 141,
+    "aged_70_older": 141,
+    "cardiovasc_death_rate": 173,
+    "total_vaccinations": 150,
+    "extreme_poverty": 128,
+    "diabetes_prevalence": 158,
+    "excess_mortality": 135,
+    "human_development_index": 188,
+    "female_smokers": 120,
+    "positive_rate": 113,
+    "handwashing_facilities": 180,
+    "icu_patients": 105,
+    "tests_units": 100,
+    "people_vaccinated": 143,
+    "gdp_per_capita": 148,
+    "total_cases": 100,
+    "median_age": 100,
+    "hosp_patients": 113,
+    "new_cases": 100,
+    "new_cases_smoothed": 150,
+    "weekly_icu_admissions": 173,
+    "weekly_hosp_admissions": 180,
+    "stringency_index": 135,
+    "population": 120,
+    "male_smokers": 105,
+    "new_tests": 100,
+    "new_tests_smoothed": 150,
+    "total_deaths": 105,
+    "new_deaths": 100,
+    "people_fully_vaccinated": 188,
+    "reproduction_rate": 143,
+    "location": 141,
+    "total_tests": 100,
+    "iso_code": 100,
+    "tests_per_case": 120,
+    "new_vaccinations_smoothed": 203
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
