@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639717524757
+    "lastModifiedOn": 1639717544970
   },
   "creationTag": {
     "versionNumber": 0,
@@ -394,7 +394,7 @@
         "type": "python",
         "meta": {
           "name": "Custom check",
-          "label": "aa"
+          "label": "aaa"
         },
         "computeOnBuildMode": "PARTITION"
       },
