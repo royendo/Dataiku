@@ -88,6 +88,28 @@
         },
         "sql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_postgresql\"\nWHERE \"new_cases\" \u003e \u00270.0\u0027\n",
         "expandedSql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_postgresql\"\nWHERE \"new_cases\" \u003e \u00270.0\u0027\n"
+      },
+      {
+        "mode": "SQL",
+        "id": "pc5x7JuKTj09",
+        "runOn": 1639724583549,
+        "runIn": 5098,
+        "runBy": "admin",
+        "connection": "SQLServer",
+        "state": "RUNNING",
+        "futureId": "Xn2GCHal",
+        "hash": "5053489b4b013dd4606543eda65aa037",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_copy\"\nWHERE \"new_cases\" \u003e \u00270.0\u0027\n",
+        "expandedSql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_copy\"\nWHERE \"new_cases\" \u003e \u00270.0\u0027\n"
       }
     ]
   }
