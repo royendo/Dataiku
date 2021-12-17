@@ -1,0 +1,312 @@
+{
+  "type": "SQLServer",
+  "managed": true,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1639724814287
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1639724814287
+  },
+  "tags": [],
+  "params": {
+    "connection": "SQLServer",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_corona_copy_prepared",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "iso_code",
+        "type": "string"
+      },
+      {
+        "name": "continent",
+        "type": "string"
+      },
+      {
+        "name": "location",
+        "type": "string"
+      },
+      {
+        "name": "date",
+        "type": "string"
+      },
+      {
+        "name": "total_cases",
+        "type": "string"
+      },
+      {
+        "name": "new_cases",
+        "type": "string",
+        "meaning": "LongMeaning"
+      },
+      {
+        "name": "new_cases_smoothed",
+        "type": "string"
+      },
+      {
+        "name": "total_deaths",
+        "type": "string"
+      },
+      {
+        "name": "new_deaths",
+        "type": "string"
+      },
+      {
+        "name": "new_deaths_smoothed",
+        "type": "string"
+      },
+      {
+        "name": "reproduction_rate",
+        "type": "string"
+      },
+      {
+        "name": "icu_patients",
+        "type": "string"
+      },
+      {
+        "name": "hosp_patients",
+        "type": "string"
+      },
+      {
+        "name": "weekly_icu_admissions",
+        "type": "string"
+      },
+      {
+        "name": "weekly_hosp_admissions",
+        "type": "string"
+      },
+      {
+        "name": "new_tests",
+        "type": "string"
+      },
+      {
+        "name": "total_tests",
+        "type": "string"
+      },
+      {
+        "name": "new_tests_smoothed",
+        "type": "string"
+      },
+      {
+        "name": "positive_rate",
+        "type": "string"
+      },
+      {
+        "name": "tests_per_case",
+        "type": "string"
+      },
+      {
+        "name": "tests_units",
+        "type": "string"
+      },
+      {
+        "name": "total_vaccinations",
+        "type": "string"
+      },
+      {
+        "name": "people_vaccinated",
+        "type": "string"
+      },
+      {
+        "name": "people_fully_vaccinated",
+        "type": "string"
+      },
+      {
+        "name": "new_vaccinations",
+        "type": "string"
+      },
+      {
+        "name": "new_vaccinations_smoothed",
+        "type": "string"
+      },
+      {
+        "name": "stringency_index",
+        "type": "string"
+      },
+      {
+        "name": "population",
+        "type": "string"
+      },
+      {
+        "name": "population_density",
+        "type": "string"
+      },
+      {
+        "name": "median_age",
+        "type": "string"
+      },
+      {
+        "name": "aged_65_older",
+        "type": "string"
+      },
+      {
+        "name": "aged_70_older",
+        "type": "string"
+      },
+      {
+        "name": "gdp_per_capita",
+        "type": "string"
+      },
+      {
+        "name": "extreme_poverty",
+        "type": "string"
+      },
+      {
+        "name": "cardiovasc_death_rate",
+        "type": "string"
+      },
+      {
+        "name": "diabetes_prevalence",
+        "type": "string"
+      },
+      {
+        "name": "female_smokers",
+        "type": "string"
+      },
+      {
+        "name": "male_smokers",
+        "type": "string"
+      },
+      {
+        "name": "handwashing_facilities",
+        "type": "string"
+      },
+      {
+        "name": "life_expectancy",
+        "type": "string"
+      },
+      {
+        "name": "human_development_index",
+        "type": "string"
+      },
+      {
+        "name": "excess_mortality",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
