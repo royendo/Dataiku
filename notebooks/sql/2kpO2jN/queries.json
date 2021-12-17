@@ -27,10 +27,10 @@
         "mode": "SQL",
         "id": "HPOrLbSC8IFJ",
         "runOn": 1639724428184,
-        "runIn": 5110,
+        "runIn": 5096,
         "runBy": "admin",
         "connection": "SQLServer",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "r7KyJHt2",
         "hash": "2ce16e2dd561d1e66347cc5c1e1d038a",
         "querySettings": {
