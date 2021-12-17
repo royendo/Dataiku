@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639717544970
+    "lastModifiedOn": 1639717583611
   },
   "creationTag": {
     "versionNumber": 0,
@@ -387,9 +387,9 @@
     "runOnBuild": true,
     "checks": [
       {
-        "code": "# Define here a function that returns the outcome of the check.\ndef process(last_values, dataset, partition_id):\n    # last_values is a dict of the last values of the metrics,\n    # with the values as a dataiku.metrics.MetricDataPoint.\n    # dataset is a dataiku.Dataset object\n    fail()\n    return \u0027OK\u0027, \u0027optional message\u0027 # or \u0027WARNING\u0027 or \u0027ERROR\u0027\n",
+        "code": "# Define here a function that returns the outcome of the check.\ndef process(last_values, dataset, partition_id):\n    # last_values is a dict of the last values of the metrics,\n    # with the values as a dataiku.metrics.MetricDataPoint.\n    # dataset is a dataiku.Dataset object\n    return \u0027ERROR\u0027\n",
         "envSelection": {
-          "envMode": "INHERIT"
+          "envMode": "USE_BUILTIN_MODE"
         },
         "type": "python",
         "meta": {
@@ -425,7 +425,9 @@
     "displayedState": {
       "partition": "NP",
       "checks": [
-        "Value in set of null"
+        "Value in set of null",
+        "Value in range of null",
+        "aaa"
       ]
     }
   },
