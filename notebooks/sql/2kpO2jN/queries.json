@@ -203,10 +203,10 @@
         "mode": "SQL",
         "id": "4PQw74m5EEpp",
         "runOn": 1639724931883,
-        "runIn": 5380,
+        "runIn": 7381,
         "runBy": "admin",
         "connection": "SQLServer",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "aqXlP8om",
         "hash": "eac8e5c161398f220086ba2fa60ea4ac",
         "querySettings": {
