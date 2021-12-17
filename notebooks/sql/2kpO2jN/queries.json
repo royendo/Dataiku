@@ -44,6 +44,28 @@
         },
         "sql": "SELECT \u0027スコア\u0027 FROM \"EVERYTHING_raw_sake_sqlserver\"",
         "expandedSql": "SELECT \u0027スコア\u0027 FROM \"EVERYTHING_raw_sake_sqlserver\""
+      },
+      {
+        "mode": "SQL",
+        "id": "PuZBGyIrRhuH",
+        "runOn": 1639724440710,
+        "runIn": 5096,
+        "runBy": "admin",
+        "connection": "SQLServer",
+        "state": "RUNNING",
+        "futureId": "Csak4tdA",
+        "hash": "e38c86949742d4e6ed8b74f60b025a75",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT `スコア` FROM \"EVERYTHING_raw_sake_sqlserver\"",
+        "expandedSql": "SELECT `スコア` FROM \"EVERYTHING_raw_sake_sqlserver\""
       }
     ]
   }
