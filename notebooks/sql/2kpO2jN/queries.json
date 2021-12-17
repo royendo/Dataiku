@@ -181,10 +181,10 @@
         "mode": "SQL",
         "id": "myfGMVRv3LWm",
         "runOn": 1639724657014,
-        "runIn": 5112,
+        "runIn": 5380,
         "runBy": "admin",
         "connection": "SQLServer",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "4apRi6vb",
         "hash": "453f57648c9d91557197495730bcf36a",
         "querySettings": {
