@@ -176,6 +176,28 @@
         },
         "sql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_copy\"\nWHERE \"new_cases\" \u003e \u00270.0\u0027\nOPTION (FORCE ORDER)",
         "expandedSql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_copy\"\nWHERE \"new_cases\" \u003e \u00270.0\u0027\nOPTION (FORCE ORDER)"
+      },
+      {
+        "mode": "SQL",
+        "id": "myfGMVRv3LWm",
+        "runOn": 1639724657014,
+        "runIn": 5112,
+        "runBy": "admin",
+        "connection": "SQLServer",
+        "state": "RUNNING",
+        "futureId": "4apRi6vb",
+        "hash": "453f57648c9d91557197495730bcf36a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_copy\"\nWHERE \"new_cases\" \u003e 0\nOPTION (FORCE ORDER)",
+        "expandedSql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_copy\"\nWHERE \"new_cases\" \u003e 0\nOPTION (FORCE ORDER)"
       }
     ]
   }
