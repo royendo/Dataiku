@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "q10zwnee5q": [
+      {
+        "mode": "SQL",
+        "id": "eg0vXgiL7XNd",
+        "runOn": 1639723748120,
+        "runIn": -1,
+        "runBy": "admin",
+        "connection": "PostgreSQL",
+        "state": "RUNNING",
+        "futureId": "d8BV4EXF",
+        "hash": "5e2fc044bb9f65ee1e39582da0e6277f",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_postgresql\"\nwhere \"total_deaths\" \u003c\u003d 10",
+        "expandedSql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_postgresql\"\nwhere \"total_deaths\" \u003c\u003d 10"
+      }
+    ]
+  }
+}
