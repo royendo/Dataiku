@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639728596062
+    "lastModifiedOn": 1639728617172
   },
   "creationTag": {
     "versionNumber": 0,
@@ -56,7 +56,23 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "new_deaths",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "total_deaths",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "new_cases",
+        "type": "string",
+        "originalType": "text"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
