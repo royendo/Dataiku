@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639717394904
+    "lastModifiedOn": 1639717486007
   },
   "creationTag": {
     "versionNumber": 0,
@@ -394,6 +394,29 @@
         "meta": {
           "name": "Custom check",
           "label": "aa"
+        },
+        "computeOnBuildMode": "PARTITION"
+      },
+      {
+        "values": [],
+        "type": "valueSet",
+        "meta": {
+          "name": "Value in set"
+        },
+        "computeOnBuildMode": "PARTITION"
+      },
+      {
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "softMinimum": 0.0,
+        "softMaximum": 0.0,
+        "minimumEnabled": false,
+        "maximumEnabled": false,
+        "softMinimumEnabled": false,
+        "softMaximumEnabled": false,
+        "type": "numericRange",
+        "meta": {
+          "name": "Value in range"
         },
         "computeOnBuildMode": "PARTITION"
       }
