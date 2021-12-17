@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639717490644
+    "lastModifiedOn": 1639717496113
   },
   "creationTag": {
     "versionNumber": 0,
@@ -378,7 +378,8 @@
         "records:COUNT_RECORDS",
         "reporting:METRICS_COMPUTATION_DURATION",
         "partitioning:COUNT_PARTITIONS",
-        "partitioning:PARTITIONS_LIST"
+        "partitioning:PARTITIONS_LIST",
+        "check:CHECK:Value in set of null"
       ]
     }
   },
