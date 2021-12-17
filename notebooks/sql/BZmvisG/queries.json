@@ -330,6 +330,28 @@
         },
         "sql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_postgresql\"\nWHERE \"new_cases\" \u003e \u00270.0\u0027\nOPTION (FORCE ORDER, EMBED ERRORS, ALLOW EXPENSIVE)",
         "expandedSql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_postgresql\"\nWHERE \"new_cases\" \u003e \u00270.0\u0027\nOPTION (FORCE ORDER, EMBED ERRORS, ALLOW EXPENSIVE)"
+      },
+      {
+        "mode": "SQL",
+        "id": "vH35csGn8HSY",
+        "runOn": 1639728398561,
+        "runIn": 23,
+        "runBy": "admin",
+        "connection": "PostgreSQL",
+        "state": "RUNNING",
+        "futureId": "RBqLp8wN",
+        "hash": "8f20d41f79490be8be90c3a8fd08bba8",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_postgresql\"\nWHERE \"new_cases\" \u003e \u00270.0\u0027\nOPTION (FORCE ORDER, EMBED ERRORS, ALLOW EXPENSIVE)",
+        "expandedSql": "SELECT \"new_deaths\",\"total_deaths\",\"new_cases\" FROM \"EVERYTHING_corona_postgresql\"\nWHERE \"new_cases\" \u003e \u00270.0\u0027\nOPTION (FORCE ORDER, EMBED ERRORS, ALLOW EXPENSIVE)"
       }
     ]
   }
