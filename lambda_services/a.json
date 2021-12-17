@@ -1,15 +1,30 @@
 {
-  "endpoints": [],
+  "name": "a",
+  "endpoints": [
+    {
+      "modelType": "CLASSIFICATION",
+      "envSelection": {
+        "envMode": "INHERIT"
+      },
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "returnPostEnrichData": false,
+      "auditPostEnrichData": false,
+      "id": "test",
+      "type": "CUSTOM_PREDICTION"
+    }
+  ],
   "publicAccess": true,
   "authRealm": {
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639704159453
+    "lastModifiedOn": 1639704169629
   },
   "creationTag": {
     "versionNumber": 0,
