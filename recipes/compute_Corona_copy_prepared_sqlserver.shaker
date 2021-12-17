@@ -32,7 +32,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "RoundProcessor",
@@ -45,6 +45,25 @@
         ],
         "precision": 0,
         "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "date_parsed",
+        "formats": [
+          "yyyy-MM-dd"
+        ],
+        "columns": [
+          "date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
       },
       "alwaysShowComment": false
     }
@@ -80,6 +99,7 @@
     "handwashing_facilities": 180,
     "icu_patients": 105,
     "tests_units": 100,
+    "date_parsed": 183,
     "people_vaccinated": 143,
     "gdp_per_capita": 148,
     "total_cases": 100,
