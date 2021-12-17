@@ -269,10 +269,10 @@
         "mode": "SQL",
         "id": "QMMbdZLWX9t1",
         "runOn": 1639724165526,
-        "runIn": 90,
+        "runIn": 43,
         "runBy": "admin",
         "connection": "PostgreSQL",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "SasMqIFK",
         "hash": "7b855515bbc0de9196506e9ec2332321",
         "querySettings": {
