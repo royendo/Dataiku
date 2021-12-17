@@ -137,10 +137,10 @@
         "mode": "SQL",
         "id": "08FIGms3GrOp",
         "runOn": 1639723908077,
-        "runIn": 27,
+        "runIn": 28,
         "runBy": "admin",
         "connection": "PostgreSQL",
-        "state": "RUNNING",
+        "state": "FAILED",
         "futureId": "VnJtKV2M",
         "hash": "456b8ea9d5c6c3ddb518869a6145cf13",
         "querySettings": {
