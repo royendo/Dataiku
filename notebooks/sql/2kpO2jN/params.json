@@ -1,14 +1,28 @@
 {
   "connection": "SQLServer",
   "name": "admin\u0027s notebook on SQLServer",
-  "cells": [],
+  "cells": [
+    {
+      "id": "9c1a149p8a6",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639724394303
+    "lastModifiedOn": 1639724401097
   },
   "creationTag": {
     "versionNumber": 0,
