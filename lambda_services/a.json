@@ -14,7 +14,24 @@
     },
     {
       "testQueries": [],
-      "lookups": [],
+      "lookups": [
+        {
+          "datasetRef": "Corona",
+          "packagingType": "BUNDLED_TOCONNECTION",
+          "on": [
+            {
+              "inputLookupKey": "ds",
+              "resourceLookupCol": "continent"
+            }
+          ],
+          "missingLookupKeyBehavior": "IGNORE",
+          "notFoundBehavior": "IGNORE",
+          "multiMatchBehavior": "KEEP_FIRST",
+          "columnsMapping": {
+            "iso_code": "iso_code"
+          }
+        }
+      ],
       "id": "lookup1",
       "type": "DATASETS_LOOKUP"
     }
@@ -24,11 +41,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639706962000
+    "lastModifiedOn": 1639706997527
   },
   "creationTag": {
     "versionNumber": 0,
