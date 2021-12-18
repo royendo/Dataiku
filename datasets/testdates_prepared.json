@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639816455123
+    "lastModifiedOn": 1639816461490
   },
   "creationTag": {
     "versionNumber": 0,
@@ -252,7 +252,9 @@
     ],
     "displayedState": {
       "partition": "NP",
-      "checks": []
+      "checks": [
+        "Value in range of Column count"
+      ]
     }
   },
   "customFields": {}
