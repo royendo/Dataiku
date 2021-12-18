@@ -23,7 +23,7 @@
     "main": {
       "items": [
         {
-          "ref": "no_input",
+          "ref": "no_input_pgsql",
           "appendMode": false
         }
       ]
@@ -31,11 +31,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639787622662
+    "lastModifiedOn": 1639787664100
   },
   "creationTag": {
     "versionNumber": 0,
