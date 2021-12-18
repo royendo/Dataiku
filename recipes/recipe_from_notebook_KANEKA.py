@@ -1,9 +1,3 @@
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE_MAGIC_CELL
-# Automatically replaced inline charts by "no-op" charts
-# %pylab inline
-import matplotlib
-matplotlib.use("Agg")
-
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 from dataiku import SQLExecutor2
 
