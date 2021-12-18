@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639816325557
+    "lastModifiedOn": 1639816330441
   },
   "creationTag": {
     "versionNumber": 0,
@@ -234,7 +234,10 @@
     ],
     "displayedState": {
       "partition": "NP",
-      "checks": []
+      "checks": [
+        "Value in range of File count",
+        "Value in range of Build date"
+      ]
     }
   },
   "customFields": {}
