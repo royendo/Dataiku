@@ -3,7 +3,8 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "allowMultipleConnections": false,
+    "allowMultipleConnections": true,
+    "mainConnectionDataset": "no_input",
     "displayExecutionPlan": true,
     "sqlPipelineParams": {
       "pipelineAllowStart": true,
@@ -23,7 +24,7 @@
     "main": {
       "items": [
         {
-          "ref": "no_input_pgsql",
+          "ref": "no_input",
           "appendMode": false
         }
       ]
@@ -31,11 +32,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639787917337
+    "lastModifiedOn": 1639788252143
   },
   "creationTag": {
     "versionNumber": 0,
