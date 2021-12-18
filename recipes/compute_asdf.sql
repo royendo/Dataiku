@@ -1,0 +1,1 @@
+SELECT * FROM "public"."DKU_TUTORIAL_PARTITIONED_MODELS_partitioned_postgre"
