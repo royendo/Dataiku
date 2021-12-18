@@ -115,10 +115,10 @@
         "mode": "SQL",
         "id": "KAGjrbjbl075",
         "runOn": 1639789550979,
-        "runIn": 170,
+        "runIn": 78,
         "runBy": "admin",
         "connection": "PostgreSQL",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "w0MrneI1",
         "hash": "bc1c4874108bd1499b9cad289c55a943",
         "querySettings": {
