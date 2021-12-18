@@ -18,4 +18,4 @@ df = executor.query_to_df('SELECT * FROM "public"."DKU_TUTORIAL_PARTITIONED_MODE
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Recipe outputs
 no_input_python_sqlserver = dataiku.Dataset("no_input_python_sqlserver")
-no_input_python_sqlserver.write_with_schema(pandas_dataframe)
+no_input_python_sqlserver.write_with_schema(df)
