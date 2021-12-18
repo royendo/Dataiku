@@ -1,14 +1,28 @@
 {
   "connection": "PostgreSQL",
   "name": "admin\u0027s notebook on PostgreSQL 1",
-  "cells": [],
+  "cells": [
+    {
+      "id": "4tjzgj18orr",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639787036964
+    "lastModifiedOn": 1639787042325
   },
   "creationTag": {
     "versionNumber": 0,
