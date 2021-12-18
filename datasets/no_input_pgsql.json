@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639787657277
+    "lastModifiedOn": 1639787662894
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,168 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "flight_id",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "fl_date",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "fl_date_dep",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "dep_delay",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "has_dep_delay",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "arr_delay",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "dep_day_of_year",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "dep_day_of_month",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "dep_day_of_week",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "estimated_flight_time_min",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "fl_date_arr",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "is_holiday",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "airline_id",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "origin",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "origin_city",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "origin_state",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "dest",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "dest_city",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "dest_state",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "origin_latitude",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "origin_longitude",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "dest_latitude",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "dest_longitude",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "distance_km",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "airlines_last_days_dep_delay_avg",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "airlines_last_days_dep_delay_stddev",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "airlines_last_days_has_dep_delay_avg",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "airlines_last_days_has_dep_delay_stddev",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "airports_last_days_dep_delay_avg",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "airports_last_days_has_dep_delay_avg",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "airports_last_hours_dep_delay_avg",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "airports_last_hours_has_dep_delay_avg",
+        "type": "string",
+        "originalType": "text"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
