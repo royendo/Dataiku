@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639789273161
+    "lastModifiedOn": 1639789322261
   },
   "creationTag": {
     "versionNumber": 0,
@@ -56,8 +56,137 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "flight_id",
+        "type": "bigint"
+      },
+      {
+        "name": "fl_date",
+        "type": "string"
+      },
+      {
+        "name": "fl_date_dep",
+        "type": "string"
+      },
+      {
+        "name": "dep_delay",
+        "type": "double"
+      },
+      {
+        "name": "has_dep_delay",
+        "type": "bigint"
+      },
+      {
+        "name": "arr_delay",
+        "type": "double"
+      },
+      {
+        "name": "dep_day_of_year",
+        "type": "bigint"
+      },
+      {
+        "name": "dep_day_of_month",
+        "type": "bigint"
+      },
+      {
+        "name": "dep_day_of_week",
+        "type": "bigint"
+      },
+      {
+        "name": "estimated_flight_time_min",
+        "type": "bigint"
+      },
+      {
+        "name": "fl_date_arr",
+        "type": "string"
+      },
+      {
+        "name": "is_holiday",
+        "type": "boolean"
+      },
+      {
+        "name": "airline_id",
+        "type": "bigint"
+      },
+      {
+        "name": "origin",
+        "type": "string"
+      },
+      {
+        "name": "origin_city",
+        "type": "string"
+      },
+      {
+        "name": "origin_state",
+        "type": "string"
+      },
+      {
+        "name": "dest",
+        "type": "string"
+      },
+      {
+        "name": "dest_city",
+        "type": "string"
+      },
+      {
+        "name": "dest_state",
+        "type": "string"
+      },
+      {
+        "name": "origin_latitude",
+        "type": "double"
+      },
+      {
+        "name": "origin_longitude",
+        "type": "double"
+      },
+      {
+        "name": "dest_latitude",
+        "type": "double"
+      },
+      {
+        "name": "dest_longitude",
+        "type": "double"
+      },
+      {
+        "name": "distance_km",
+        "type": "double"
+      },
+      {
+        "name": "airlines_last_days_dep_delay_avg",
+        "type": "double"
+      },
+      {
+        "name": "airlines_last_days_dep_delay_stddev",
+        "type": "double"
+      },
+      {
+        "name": "airlines_last_days_has_dep_delay_avg",
+        "type": "double"
+      },
+      {
+        "name": "airlines_last_days_has_dep_delay_stddev",
+        "type": "double"
+      },
+      {
+        "name": "airports_last_days_dep_delay_avg",
+        "type": "double"
+      },
+      {
+        "name": "airports_last_days_has_dep_delay_avg",
+        "type": "double"
+      },
+      {
+        "name": "airports_last_hours_dep_delay_avg",
+        "type": "double"
+      },
+      {
+        "name": "airports_last_hours_has_dep_delay_avg",
+        "type": "double"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
