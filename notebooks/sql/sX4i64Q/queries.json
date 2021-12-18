@@ -93,10 +93,10 @@
         "mode": "SQL",
         "id": "g2kppHSql5J1",
         "runOn": 1639789239212,
-        "runIn": 30,
+        "runIn": 170,
         "runBy": "admin",
         "connection": "PostgreSQL",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "vjLCywqN",
         "hash": "bc1c4874108bd1499b9cad289c55a943",
         "querySettings": {
