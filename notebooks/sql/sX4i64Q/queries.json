@@ -1,0 +1,28 @@
+{
+  "queries": {
+    "4tjzgj18orr": [
+      {
+        "mode": "SQL",
+        "id": "KTHQwxKrN1PO",
+        "runOn": 1639787129379,
+        "runIn": -1,
+        "runBy": "admin",
+        "connection": "PostgreSQL",
+        "state": "RUNNING",
+        "futureId": "5nBvNEmD",
+        "hash": "8c4d0eec1ceade734801b06287a7e35e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * FROM \"EVERYTHING_sakepgstest\"",
+        "expandedSql": "SELECT * FROM \"EVERYTHING_sakepgstest\""
+      }
+    ]
+  }
+}
