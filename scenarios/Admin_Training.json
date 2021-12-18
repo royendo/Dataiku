@@ -5,18 +5,18 @@
   "name": "Admin_Training",
   "active": false,
   "creationTag": {
-    "versionNumber": 9,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1639717602564
-  },
-  "versionTag": {
     "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1639717602837
+  },
+  "versionTag": {
+    "versionNumber": 11,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1639816494690
   },
   "checklists": {
     "checklists": []
@@ -48,7 +48,7 @@
           "builds": [
             {
               "type": "DATASET",
-              "itemId": "Corona",
+              "itemId": "test_dataset",
               "partitionsSpec": ""
             }
           ],
