@@ -22,6 +22,28 @@
         },
         "sql": "SELECT * FROM \"EVERYTHING_sakepgstest\"",
         "expandedSql": "SELECT * FROM \"EVERYTHING_sakepgstest\""
+      },
+      {
+        "mode": "SQL",
+        "id": "8ECyC9bEIuBy",
+        "runOn": 1639787392460,
+        "runIn": 102,
+        "runBy": "admin",
+        "connection": "PostgreSQL",
+        "state": "RUNNING",
+        "futureId": "H1ntGL96",
+        "hash": "bc1c4874108bd1499b9cad289c55a943",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * FROM \"public\".\"DKU_TUTORIAL_PARTITIONED_MODELS_partitioned_postgre\"",
+        "expandedSql": "SELECT * FROM \"public\".\"DKU_TUTORIAL_PARTITIONED_MODELS_partitioned_postgre\""
       }
     ]
   }
