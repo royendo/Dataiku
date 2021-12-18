@@ -66,6 +66,28 @@
         },
         "sql": "SELECT * FROM public.DKU_TUTORIAL_PARTITIONED_MODELS_partitioned_postgre",
         "expandedSql": "SELECT * FROM public.DKU_TUTORIAL_PARTITIONED_MODELS_partitioned_postgre"
+      },
+      {
+        "mode": "SQL",
+        "id": "uAGlI53y4gcp",
+        "runOn": 1639789232990,
+        "runIn": 55,
+        "runBy": "admin",
+        "connection": "PostgreSQL",
+        "state": "RUNNING",
+        "futureId": "KWV6w3jl",
+        "hash": "dcd168b8fc0648788644cde58668f377",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * FROM \u0027public\".\"DKU_TUTORIAL_PARTITIONED_MODELS_partitioned_postgre\"",
+        "expandedSql": "SELECT * FROM \u0027public\".\"DKU_TUTORIAL_PARTITIONED_MODELS_partitioned_postgre\""
       }
     ]
   }
