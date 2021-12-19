@@ -3,7 +3,8 @@
   "endpoints": [
     {
       "envSelection": {
-        "envMode": "INHERIT"
+        "envMode": "EXPLICIT_ENV",
+        "envName": "Python36"
       },
       "testQueries": [],
       "inputFolderRefs": [],
@@ -18,11 +19,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639885837397
+    "lastModifiedOn": 1639885848741
   },
   "creationTag": {
     "versionNumber": 0,
