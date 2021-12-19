@@ -1,40 +1,16 @@
 {
   "name": "a",
-  "endpoints": [
-    {
-      "testQueries": [],
-      "lookups": [
-        {
-          "datasetRef": "Corona",
-          "packagingType": "BUNDLED_TOCONNECTION",
-          "on": [
-            {
-              "inputLookupKey": "ds",
-              "resourceLookupCol": "continent"
-            }
-          ],
-          "missingLookupKeyBehavior": "IGNORE",
-          "notFoundBehavior": "IGNORE",
-          "multiMatchBehavior": "KEEP_FIRST",
-          "columnsMapping": {
-            "iso_code": "iso_code"
-          }
-        }
-      ],
-      "id": "lookup1",
-      "type": "DATASETS_LOOKUP"
-    }
-  ],
+  "endpoints": [],
   "publicAccess": true,
   "authRealm": {
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639707069034
+    "lastModifiedOn": 1639885832453
   },
   "creationTag": {
     "versionNumber": 0,
