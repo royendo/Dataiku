@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639728425180
+    "lastModifiedOn": 1640250685177
   },
   "creationTag": {
     "versionNumber": 0,
@@ -70,7 +70,8 @@
       {
         "name": "new_cases",
         "type": "string",
-        "originalType": "text"
+        "originalType": "text",
+        "meaning": "LongMeaning"
       }
     ],
     "userModified": true
