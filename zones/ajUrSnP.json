@@ -149,6 +149,14 @@
     {
       "objectId": "shogun_copy",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_shogun_copp",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "shogun_copp",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
