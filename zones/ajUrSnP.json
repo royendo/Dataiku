@@ -141,6 +141,14 @@
     {
       "objectId": "ig7at9dF",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_shogun_copy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "shogun_copy",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
