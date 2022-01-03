@@ -5,6 +5,14 @@
     {
       "objectId": "EVERYTHING_corona_mysql",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_EVERYTHING_corona_s3",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "EVERYTHING_corona_s3",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

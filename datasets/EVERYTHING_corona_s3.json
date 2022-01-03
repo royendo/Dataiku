@@ -1,0 +1,537 @@
+{
+  "type": "S3",
+  "managed": true,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "excel",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": "gz"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1641190026232
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1641190026223
+  },
+  "tags": [],
+  "params": {
+    "bucket": "dss-qa-ireland",
+    "metastoreSynchronizationEnabled": true,
+    "metastoreTableName": "EVERYTHING_corona_s3",
+    "connection": "S3Bucket",
+    "path": "/dataiku/${projectKey}/EVERYTHING_corona_s3",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "iso_code",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "continent",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "location",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "date",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "total_cases",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "new_cases",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "new_cases_smoothed",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "total_deaths",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "new_deaths",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "new_deaths_smoothed",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "total_cases_per_million",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "new_cases_per_million",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "new_cases_smoothed_per_million",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "total_deaths_per_million",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "new_deaths_per_million",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "new_deaths_smoothed_per_million",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "reproduction_rate",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "icu_patients",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "icu_patients_per_million",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "hosp_patients",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "hosp_patients_per_million",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "weekly_icu_admissions",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "weekly_icu_admissions_per_million",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "weekly_hosp_admissions",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "weekly_hosp_admissions_per_million",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "new_tests",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "total_tests",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "total_tests_per_thousand",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "new_tests_per_thousand",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "new_tests_smoothed",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "new_tests_smoothed_per_thousand",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "positive_rate",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "tests_per_case",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "tests_units",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "total_vaccinations",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "people_vaccinated",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "people_fully_vaccinated",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "new_vaccinations",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "new_vaccinations_smoothed",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "total_vaccinations_per_hundred",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "people_vaccinated_per_hundred",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "people_fully_vaccinated_per_hundred",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "new_vaccinations_smoothed_per_million",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "stringency_index",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "population",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "population_density",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "median_age",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "aged_65_older",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "aged_70_older",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "gdp_per_capita",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "extreme_poverty",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "cardiovasc_death_rate",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "diabetes_prevalence",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "female_smokers",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "male_smokers",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "handwashing_facilities",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "hospital_beds_per_thousand",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "life_expectancy",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "human_development_index",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      },
+      {
+        "name": "excess_mortality",
+        "type": "string",
+        "originalType": "VARCHAR",
+        "maxLength": 270
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
