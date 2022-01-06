@@ -6,11 +6,11 @@
   "active": false,
   "runAsUser": "test",
   "versionTag": {
-    "versionNumber": 88,
+    "versionNumber": 89,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1641456300268
+    "lastModifiedOn": 1641456337662
   },
   "checklists": {
     "checklists": []
@@ -96,7 +96,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "scenarioId": "Admin_Training",
+          "scenarioId": "24811",
           "proceedOnFailure": false
         }
       },
@@ -114,7 +114,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "scenarioId": "Admin_Training",
+          "scenarioId": "Aa",
           "proceedOnFailure": false
         }
       }
