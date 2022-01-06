@@ -5,18 +5,18 @@
   "name": "Admin_Training",
   "active": false,
   "creationTag": {
-    "versionNumber": 11,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1639816494690
-  },
-  "versionTag": {
     "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1639816553920
+  },
+  "versionTag": {
+    "versionNumber": 13,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1641450927669
   },
   "checklists": {
     "checklists": []
@@ -28,7 +28,23 @@
   },
   "tags": [],
   "triggers": [],
-  "reporters": [],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "dataset-scenario",
+        "configuration": {
+          "projectKey": "EVERYTHING",
+          "datasetName": "aaa123",
+          "message": "{\n\t\"col1\":\"${RecordCount}\",\n\t\"col2\":\"${triggerType}\"\n}"
+        }
+      },
+      "id": "EIFfRMsj",
+      "runConditionEnabled": true,
+      "runCondition": "outcome !\u003d \u0027FAIL\u0027",
+      "phase": "END"
+    }
+  ],
   "params": {
     "steps": [
       {
