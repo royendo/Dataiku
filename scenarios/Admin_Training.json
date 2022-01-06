@@ -5,18 +5,18 @@
   "name": "Admin_Training",
   "active": false,
   "creationTag": {
-    "versionNumber": 24,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1641451157106
-  },
-  "versionTag": {
     "versionNumber": 25,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1641451207731
+  },
+  "versionTag": {
+    "versionNumber": 26,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1641451208112
   },
   "checklists": {
     "checklists": []
