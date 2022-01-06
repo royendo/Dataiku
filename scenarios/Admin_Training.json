@@ -5,18 +5,18 @@
   "name": "Admin_Training",
   "active": false,
   "creationTag": {
-    "versionNumber": 17,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1641450991790
-  },
-  "versionTag": {
     "versionNumber": 18,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1641451002181
+  },
+  "versionTag": {
+    "versionNumber": 19,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1641451042480
   },
   "checklists": {
     "checklists": []
@@ -42,7 +42,7 @@
       },
       "id": "EIFfRMsj",
       "name": "aa",
-      "runConditionEnabled": true,
+      "runConditionEnabled": false,
       "runCondition": "outcome \u003d\u003d \u0027FAIL\u0027",
       "phase": "END"
     }
