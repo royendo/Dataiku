@@ -6,11 +6,11 @@
   "active": false,
   "runAsUser": "test",
   "versionTag": {
-    "versionNumber": 78,
+    "versionNumber": 79,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1641450779164
+    "lastModifiedOn": 1641450785021
   },
   "checklists": {
     "checklists": []
@@ -36,7 +36,7 @@
       "id": "9fHsyGWU",
       "name": "send to dataset test",
       "runConditionEnabled": true,
-      "runCondition": "outcome \u003d\u003d \u0027SUCCESS\u0027",
+      "runCondition": "outcome \u003d\u003d \u0027FAIL\u0027",
       "phase": "START",
       "variablesCode": "import json\n\n\n\n# compute your additional variables from the list of report items \n# and return them as a dictionary.\ndef get_variables(items_json, scenario_run_json, step_run_output_json):\n    with open(\"/Users/rendo/Library/DataScienceStudio/dss_home/config/projects/EVERYTHING/variables.json\") as json_file:\n        data \u003d json.load(json_file)\n        print(data)\n    return {\"RecordCount\" : data[\u0027month\u0027]}"
     },
