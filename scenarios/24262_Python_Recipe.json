@@ -6,11 +6,11 @@
   "active": false,
   "runAsUser": "test",
   "versionTag": {
-    "versionNumber": 85,
+    "versionNumber": 86,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1641451236865
+    "lastModifiedOn": 1641455516131
   },
   "checklists": {
     "checklists": []
@@ -79,6 +79,40 @@
         "maxRetriesOnFail": 0,
         "params": {
           "scenarioId": "Admin_Training",
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "run_scenario_null.null",
+        "type": "run_scenario",
+        "name": "Step #2",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "run_scenario_null.null_1",
+        "type": "run_scenario",
+        "name": "Step #3",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
           "proceedOnFailure": false
         }
       }
