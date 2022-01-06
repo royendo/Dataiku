@@ -2,8 +2,8 @@
   "name": "lll",
   "type": "Filesystem",
   "params": {
-    "connection": "VAR",
-    "path": "${year}/${month}/${odbId}",
+    "connection": "filesystem_folders",
+    "path": "/EVERYTHING",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -88,11 +88,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1641433614965
+    "lastModifiedOn": 1641433644338
   },
   "creationTag": {
     "versionNumber": 0,
