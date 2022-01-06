@@ -5,18 +5,18 @@
   "name": "New",
   "active": false,
   "creationTag": {
-    "versionNumber": 5,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1641456874942
-  },
-  "versionTag": {
     "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1641459185578
+  },
+  "versionTag": {
+    "versionNumber": 7,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1641459186144
   },
   "checklists": {
     "checklists": []
