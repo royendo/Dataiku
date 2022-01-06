@@ -6,11 +6,11 @@
   "active": false,
   "runAsUser": "test",
   "versionTag": {
-    "versionNumber": 81,
+    "versionNumber": 82,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1641450831301
+    "lastModifiedOn": 1641450841376
   },
   "checklists": {
     "checklists": []
@@ -30,7 +30,7 @@
         "configuration": {
           "projectKey": "EVERYTHING",
           "datasetName": "aaa123",
-          "message": "{\n\t\"col1\":\"${RecordCount}\",\n\t\"col2\":\"${triggerName}\"\n}"
+          "message": "{\n\t\"col1\":\"${RecordCount}\",\n\t\"col2\":\"${triggerType}\"\n}"
         }
       },
       "id": "9fHsyGWU",
