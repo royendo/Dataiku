@@ -6,11 +6,11 @@
   "active": false,
   "runAsUser": "test",
   "versionTag": {
-    "versionNumber": 83,
+    "versionNumber": 84,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1641450841749
+    "lastModifiedOn": 1641450930082
   },
   "checklists": {
     "checklists": []
@@ -24,7 +24,7 @@
   "triggers": [],
   "reporters": [
     {
-      "active": true,
+      "active": false,
       "messaging": {
         "type": "dataset-scenario",
         "configuration": {
