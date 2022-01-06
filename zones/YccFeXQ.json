@@ -13,6 +13,10 @@
     {
       "objectId": "EVERYTHING_corona_s3",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "8JBMGZIC",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [],
