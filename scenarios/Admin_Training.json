@@ -5,18 +5,18 @@
   "name": "Admin_Training",
   "active": false,
   "creationTag": {
-    "versionNumber": 22,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1641451113727
-  },
-  "versionTag": {
     "versionNumber": 23,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1641451143739
+  },
+  "versionTag": {
+    "versionNumber": 24,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1641451157106
   },
   "checklists": {
     "checklists": []
@@ -36,7 +36,7 @@
         "configuration": {
           "projectKey": "EVERYTHING",
           "datasetName": "aaa123",
-          "timestampColumn": "timestamp",
+          "timestampColumn": "",
           "message": "{\n\t\"col1\":\"${RecordCount}\",\n\t\"col2\":\"${triggerType}\"\n}"
         }
       },
