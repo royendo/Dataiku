@@ -5,18 +5,18 @@
   "name": "New",
   "active": false,
   "creationTag": {
-    "versionNumber": 1,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1641456692348
-  },
-  "versionTag": {
     "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1641456692896
+  },
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1641456753537
   },
   "checklists": {
     "checklists": []
@@ -63,7 +63,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "scenarioId": "24811",
+          "scenarioId": "Admin_Training",
           "proceedOnFailure": false
         }
       }
