@@ -6,11 +6,11 @@
   "active": false,
   "runAsUser": "test",
   "versionTag": {
-    "versionNumber": 92,
+    "versionNumber": 93,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1641456360504
+    "lastModifiedOn": 1641602398977
   },
   "checklists": {
     "checklists": []
@@ -21,7 +21,27 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "GBv7ChIN",
+      "type": "temporal",
+      "name": "Time-based",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "repeatFrequency": 1,
+        "frequency": "Monthly",
+        "startingFrom": "2022-01-07T00:38:00.000Z",
+        "daysOfWeek": [
+          "Friday"
+        ],
+        "monthlyRunOn": "FIRST_WEEK",
+        "minute": 38,
+        "hour": 9,
+        "timezone": "SERVER"
+      }
+    }
+  ],
   "reporters": [
     {
       "active": false,
