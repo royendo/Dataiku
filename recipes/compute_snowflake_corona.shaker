@@ -30,7 +30,41 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "date_parsed",
+        "formats": [
+          "yyyy-MM"
+        ],
+        "columns": [
+          "date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateFormatter",
+      "params": {
+        "inCol": "date_parsed",
+        "outCol": "date_parsed_formatted",
+        "format": "yyyy-MM",
+        "timezone_id": "UTC",
+        "lang": "en_US"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -39,7 +73,7 @@
   },
   "analysisColumnData": {},
   "columnWidthsByName": {
-    "date": 100,
+    "date": 142,
     "new_deaths_smoothed": 158,
     "new_cases_smoothed_per_million": 240,
     "people_vaccinated_per_hundred": 233,
@@ -83,12 +117,14 @@
     "icu_patients": 105,
     "tests_units": 100,
     "hospital_beds_per_thousand": 210,
+    "date_parsed": 183,
     "people_vaccinated": 143,
     "icu_patients_per_million": 195,
     "people_fully_vaccinated_per_hundred": 278,
     "hosp_patients": 113,
     "new_cases": 100,
     "new_cases_smoothed": 150,
+    "date_parsed_formatted": 197,
     "weekly_icu_admissions_per_million": 263,
     "stringency_index": 135,
     "new_tests_smoothed": 150,
