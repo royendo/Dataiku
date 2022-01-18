@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642549890769
+    "lastModifiedOn": 1642550236811
   },
   "creationTag": {
     "versionNumber": 0,
@@ -49,6 +49,7 @@
     "partitioningType": "custom",
     "normalizeDoubles": true,
     "table": "${projectKey}_CORONA_PARTITION_TEST",
+    "schema": "PUBLIC",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
