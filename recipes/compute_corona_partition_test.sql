@@ -1,4 +1,4 @@
- delete from
+delete from
     "PUBLIC"."EVERYTHING_SNOWFLAKE_CORONA"
 where
     date_parsed_formatted like '2021-%' ;commit;
