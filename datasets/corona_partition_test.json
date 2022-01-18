@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642550236811
+    "lastModifiedOn": 1642550325391
   },
   "creationTag": {
     "versionNumber": 0,
@@ -51,6 +51,7 @@
     "table": "${projectKey}_CORONA_PARTITION_TEST",
     "schema": "PUBLIC",
     "tableCreationMode": "auto",
+    "customCreateStatement": "CREATE TABLE \"PUBLIC\".\"EVERYTHING_SNOWFLAKE_CORONA_TEST\" (\n\t\"iso_code\" varchar(4194304),\n\t\"continent\" varchar(4194304),\n\t\"location\" varchar(4194304),\n\t\"date\" varchar(4194304),\n\t\"date_parsed\" timestamptz,\n\t\"date_parsed_formatted\" varchar(4194304),\n\t\"total_cases\" double,\n\t\"new_cases\" double,\n\t\"new_cases_smoothed\" double,\n\t\"total_deaths\" double,\n\t\"new_deaths\" double,\n\t\"new_deaths_smoothed\" double,\n\t\"total_cases_per_million\" double,\n\t\"new_cases_per_million\" double,\n\t\"new_cases_smoothed_per_million\" double,\n\t\"total_deaths_per_million\" double,\n\t\"new_deaths_per_million\" double,\n\t\"new_deaths_smoothed_per_million\" double,\n\t\"reproduction_rate\" double,\n\t\"icu_patients\" double,\n\t\"icu_patients_per_million\" double,\n\t\"hosp_patients\" double,\n\t\"hosp_patients_per_million\" double,\n\t\"weekly_icu_admissions\" varchar(4194304),\n\t\"weekly_icu_admissions_per_million\" varchar(4194304),\n\t\"weekly_hosp_admissions\" double,\n\t\"weekly_hosp_admissions_per_million\" double,\n\t\"new_tests\" double,\n\t\"total_tests\" double,\n\t\"total_tests_per_thousand\" double,\n\t\"new_tests_per_thousand\" double,\n\t\"new_tests_smoothed\" double,\n\t\"new_tests_smoothed_per_thousand\" double,\n\t\"positive_rate\" double,\n\t\"tests_per_case\" double,\n\t\"tests_units\" varchar(4194304),\n\t\"total_vaccinations\" double,\n\t\"people_vaccinated\" double,\n\t\"people_fully_vaccinated\" double,\n\t\"new_vaccinations\" double,\n\t\"new_vaccinations_smoothed\" double,\n\t\"total_vaccinations_per_hundred\" double,\n\t\"people_vaccinated_per_hundred\" double,\n\t\"people_fully_vaccinated_per_hundred\" double,\n\t\"new_vaccinations_smoothed_per_million\" double,\n\t\"stringency_index\" double,\n\t\"population\" double,\n\t\"population_density\" double,\n\t\"median_age\" double,\n\t\"aged_65_older\" double,\n\t\"aged_70_older\" double,\n\t\"gdp_per_capita\" double,\n\t\"extreme_poverty\" double,\n\t\"cardiovasc_death_rate\" double,\n\t\"diabetes_prevalence\" double,\n\t\"female_smokers\" double,\n\t\"male_smokers\" double,\n\t\"handwashing_facilities\" double,\n\t\"hospital_beds_per_thousand\" double,\n\t\"life_expectancy\" double,\n\t\"human_development_index\" double,\n\t\"excess_mortality\" double\n)",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
     "readColsWithUnknownTzAsDates": false,
