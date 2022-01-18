@@ -1,5 +1,5 @@
 delete from
-    "PUBLIC"."EVERYTHING_SNOWFLAKE_CORONA"
+    "PUBLIC"."EVERYTHING_SNOWFLAKE_CORONA_TEST"
 where
     date_parsed_formatted like '2021-%' ;commit;
 insert into
