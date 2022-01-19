@@ -30,7 +30,7 @@
     "main": {
       "items": [
         {
-          "ref": "corona_partition_test",
+          "ref": "snowflake_corona_copy",
           "appendMode": false
         }
       ]
@@ -38,11 +38,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642550359440
+    "lastModifiedOn": 1642550572544
   },
   "creationTag": {
     "versionNumber": 0,
