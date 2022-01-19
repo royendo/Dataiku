@@ -1,5 +1,5 @@
 insert into
-    "EVERYTHING_CORONA_PARTITION_TEST"(
+    "PUBLIC"."EVERYTHING_SNOWFLAKE_CORONA_COPY"(
         SELECT
             *
         FROM
