@@ -33,11 +33,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642551352807
+    "lastModifiedOn": 1642555121673
   },
   "creationTag": {
     "versionNumber": 0,
@@ -380,9 +380,14 @@
         "name": "excess_mortality",
         "type": "double",
         "originalType": "DOUBLE"
+      },
+      {
+        "name": "YYYYMM",
+        "type": "string",
+        "maxLength": 4194304
       }
     ],
-    "userModified": true
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
