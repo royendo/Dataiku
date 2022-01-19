@@ -1,3 +1,13 @@
 {
-  "data": []
+  "data": [
+    [
+      null
+    ]
+  ],
+  "schema": {
+    "columns": [
+      {"name":"new_column","type":"string"}
+    ],
+    "userModified": false
+  }
 }
