@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642550547067
+    "lastModifiedOn": 1642550718572
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,261 +61,323 @@
       {
         "name": "iso_code",
         "type": "string",
+        "originalType": "VARCHAR",
         "maxLength": 4194304
       },
       {
         "name": "continent",
         "type": "string",
+        "originalType": "VARCHAR",
         "maxLength": 4194304
       },
       {
         "name": "location",
         "type": "string",
+        "originalType": "VARCHAR",
         "maxLength": 4194304
       },
       {
         "name": "date",
         "type": "string",
+        "originalType": "VARCHAR",
         "maxLength": 4194304
       },
       {
         "name": "date_parsed",
-        "type": "date"
+        "type": "date",
+        "originalType": "TIMESTAMPTZ"
       },
       {
         "name": "date_parsed_formatted",
         "type": "string",
+        "originalType": "VARCHAR",
         "maxLength": 4194304
       },
       {
         "name": "total_cases",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "new_cases",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "new_cases_smoothed",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "total_deaths",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "new_deaths",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "new_deaths_smoothed",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "total_cases_per_million",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "new_cases_per_million",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "new_cases_smoothed_per_million",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "total_deaths_per_million",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "new_deaths_per_million",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "new_deaths_smoothed_per_million",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "reproduction_rate",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "icu_patients",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "icu_patients_per_million",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "hosp_patients",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "hosp_patients_per_million",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "weekly_icu_admissions",
         "type": "string",
+        "originalType": "VARCHAR",
         "maxLength": 4194304
       },
       {
         "name": "weekly_icu_admissions_per_million",
         "type": "string",
+        "originalType": "VARCHAR",
         "maxLength": 4194304
       },
       {
         "name": "weekly_hosp_admissions",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "weekly_hosp_admissions_per_million",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "new_tests",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "total_tests",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "total_tests_per_thousand",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "new_tests_per_thousand",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "new_tests_smoothed",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "new_tests_smoothed_per_thousand",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "positive_rate",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "tests_per_case",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "tests_units",
         "type": "string",
+        "originalType": "VARCHAR",
         "maxLength": 4194304
       },
       {
         "name": "total_vaccinations",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "people_vaccinated",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "people_fully_vaccinated",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "new_vaccinations",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "new_vaccinations_smoothed",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "total_vaccinations_per_hundred",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "people_vaccinated_per_hundred",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "people_fully_vaccinated_per_hundred",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "new_vaccinations_smoothed_per_million",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "stringency_index",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "population",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "population_density",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "median_age",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "aged_65_older",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "aged_70_older",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "gdp_per_capita",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "extreme_poverty",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "cardiovasc_death_rate",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "diabetes_prevalence",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "female_smokers",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "male_smokers",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "handwashing_facilities",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "hospital_beds_per_thousand",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "life_expectancy",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "human_development_index",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       },
       {
         "name": "excess_mortality",
-        "type": "double"
+        "type": "double",
+        "originalType": "DOUBLE"
       }
     ],
-    "userModified": true
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
