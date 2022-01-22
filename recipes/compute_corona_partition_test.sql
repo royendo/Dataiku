@@ -5,3 +5,6 @@ insert into
         FROM
             "PUBLIC"."EVERYTHING_SNOWFLAKE_CORONA"
     );
+
+
+
