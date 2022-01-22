@@ -13,7 +13,7 @@ import pandas as pd
 # Example: load a DSS dataset as a Pandas dataframe
 mydataset = dataiku.Dataset("Corona1_partitioned")
 mydataset_df = mydataset.get_dataframe()
-
+print "I am working for year %s" % (dataiku.dku_flow_variables["DKU_DST_YEAR"])
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 #with myoutputdataset.get_writer() as writer:
 for p in mydataset.list_partitions():
