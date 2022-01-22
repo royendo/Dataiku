@@ -14,33 +14,3 @@ import pandas as pd
 mydataset = dataiku.Dataset("Corona1_partitioned")
 mydataset_df = mydataset.get_dataframe()
 print "I am working for year %s" % (dataiku.dku_flow_variables["DKU_DST_YEAR"])
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-#with myoutputdataset.get_writer() as writer:
-for p in mydataset.list_partitions():
-    #print(p)
-    mydataset.read_partitions = [p]
-    df = mydataset.get_dataframe()
-    print(p, df.shape)
-    if (p == '2021'):
-        mydf = mydataset.get_dataframe()
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# Recipe outputs
-myoutputdataset = dataiku.Dataset("NewPartitions")
-myoutputdataset.write_with_schema(mydf)
-'''
-
-myoutputdataset = dataiku.Dataset("New_partitioned")
-with myoutputdataset.get_writer() as writer:
-    for p in mydataset.list_partitions():
-        #print(p)
-        mydataset.read_partitions = [p]
-        df = mydataset.get_dataframe()
-        #print(df)
-
-        writer.write_dataframe(df)
-
-
-
-myoutputdataset = dataiku.Dataset("New_partitioned")
-myoutputdataset.write_dataframe(df)'''
