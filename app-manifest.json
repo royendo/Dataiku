@@ -25,82 +25,14 @@
   "useAppHomepage": true,
   "homepageSections": [
     {
-      "sectionTitle": "\u0027${month}\u0027",
+      "sectionTitle": "29483",
       "sectionText": "${month}",
       "tiles": [
         {
-          "folderId": "375D1F5f",
+          "folderId": "pCkKYlgx",
           "behavior": "INLINE_UPLOAD",
           "type": "MANAGED_FOLDER_ADD_FILE",
-          "prompt": "${month}"
-        },
-        {
-          "datasetName": "2",
-          "behavior": "INLINE_UPLOAD_REDETECT_AND_INFER",
-          "type": "UPLOAD_DATASET_SET_FILE",
-          "prompt": "${month}"
-        },
-        {
-          "content": "${month}",
-          "type": "VARIABLE_DISPLAY",
-          "prompt": "${month}"
-        },
-        {
-          "type": "INLINE_DATASET_EDIT"
-        },
-        {
-          "behavior": "MODAL",
-          "params": [
-            {
-              "name": "variable1",
-              "type": "STRING",
-              "label": "nice label in the form",
-              "description": "Help text for the variable",
-              "mandatory": false,
-              "canSelectForeign": false,
-              "markCreatedAsBuilt": false,
-              "allowDuplicates": true,
-              "getChoicesFromPython": false,
-              "canCreateDataset": false
-            },
-            {
-              "name": "variable2",
-              "type": "INT",
-              "label": "another label",
-              "mandatory": false,
-              "canSelectForeign": false,
-              "markCreatedAsBuilt": false,
-              "allowDuplicates": true,
-              "getChoicesFromPython": false,
-              "canCreateDataset": false
-            },
-            {
-              "name": "variable3",
-              "type": "SELECT",
-              "label": "some selector",
-              "mandatory": false,
-              "canSelectForeign": false,
-              "markCreatedAsBuilt": false,
-              "allowDuplicates": true,
-              "selectChoices": [
-                {
-                  "value": "val1",
-                  "label": "First",
-                  "showInColumnPreview": false,
-                  "selected": false
-                },
-                {
-                  "value": "val2",
-                  "label": "Second",
-                  "showInColumnPreview": false,
-                  "selected": false
-                }
-              ],
-              "getChoicesFromPython": false,
-              "canCreateDataset": false
-            }
-          ],
-          "type": "PROJECT_VARIABLES_EDIT"
+          "prompt": "Upload"
         }
       ]
     }
