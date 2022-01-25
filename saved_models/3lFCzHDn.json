@@ -3,7 +3,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "Prediction (RANDOM_FOREST_REGRESSION) on FITNESS",
   "contentType": "prediction/py_memory",
-  "activeVersion": "1643085255707",
+  "activeVersion": "1643085310185",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -1787,11 +1787,11 @@
     "labels": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643085263421
+    "lastModifiedOn": 1643085319363
   },
   "creationTag": {
     "versionNumber": 0,
