@@ -6,11 +6,11 @@
   "active": false,
   "runAsUser": "test",
   "versionTag": {
-    "versionNumber": 93,
+    "versionNumber": 94,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1641602398977
+    "lastModifiedOn": 1643093617235
   },
   "checklists": {
     "checklists": []
@@ -85,10 +85,36 @@
   "params": {
     "steps": [
       {
+        "id": "build_0_true_d_2_prepared_scored",
+        "type": "build_flowitem",
+        "name": "Step #4",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "2_prepared_scored",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
         "id": "run_scenario_null.Admin_Training",
         "type": "run_scenario",
         "name": "Step #1",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
@@ -106,7 +132,7 @@
         "id": "run_scenario_null.null",
         "type": "run_scenario",
         "name": "Step #2",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
@@ -124,7 +150,7 @@
         "id": "run_scenario_null.null_1",
         "type": "run_scenario",
         "name": "Step #3",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
