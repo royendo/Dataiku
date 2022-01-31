@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1638425330132
+    "lastModifiedOn": 1643613503100
   },
   "creationTag": {
     "versionNumber": 0,
@@ -233,19 +233,7 @@
       "partition": "NP",
       "columns": [],
       "metrics": [
-        "basic:COUNT_COLUMNS",
-        "basic:COUNT_FILES",
-        "basic:SIZE",
-        "records:COUNT_RECORDS",
-        "check:CHECK:Value in range of null",
-        "check:CHECK:Value in set of col_stats::COUNT::Age",
-        "check:CHECK:Value in set of col_stats::MAX::Age",
-        "check:CHECK:Value in set of null",
-        "col_stats:COUNT:Age",
-        "col_stats:MAX:Age",
-        "reporting:METRICS_COMPUTATION_DURATION",
-        "col_stats:MIN:Age",
-        "check:CHECK:Custom check"
+        "basic:SIZE"
       ]
     }
   },
