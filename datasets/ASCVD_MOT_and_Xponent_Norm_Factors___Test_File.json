@@ -1,7 +1,7 @@
 {
   "type": "UploadedFiles",
   "managed": false,
-  "formatType": "excel",
+  "formatType": "csv",
   "checklists": {
     "checklists": []
   },
@@ -23,13 +23,34 @@
     }
   },
   "formatParams": {
-    "xlsx": true,
-    "preserveNumberFormatting": true,
-    "parseDatesToISO": false,
+    "style": "excel",
+    "charset": "utf-8",
+    "separator": ",",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
     "skipRowsBeforeHeader": 0,
     "parseHeaderRow": true,
     "skipRowsAfterHeader": 0,
-    "sheets": "*Sheet2"
+    "probableNumberOfRecords": 6,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -37,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1644299503268
+    "lastModifiedOn": 1644301244756
   },
   "creationTag": {
     "versionNumber": 0,
