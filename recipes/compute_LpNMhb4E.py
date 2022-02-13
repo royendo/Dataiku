@@ -15,7 +15,8 @@ from dataiku import pandasutils as pdu
 folder = dataiku.Folder("LpNMhb4E")
 paths = folder.list_paths_in_partition()
 with folder.get_writer("myoutputfile.txt") as w:
-    w.write("some data")
+    w.write("some, data")
+    w.write("1, 3")
     
     # Write recipe outputs
 folder = dataiku.Folder("Ml0oF4Xt")
