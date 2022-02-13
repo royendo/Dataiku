@@ -23,8 +23,9 @@
     }
   },
   "formatParams": {
-    "charset": "utf8",
-    "separator": "\t",
+    "style": "excel",
+    "charset": "utf-8",
+    "separator": ",",
     "quoteChar": "\"",
     "escapeChar": "\\",
     "dateSerializationFormat": "ISO",
@@ -39,9 +40,9 @@
       "\b"
     ],
     "skipRowsBeforeHeader": 0,
-    "parseHeaderRow": false,
+    "parseHeaderRow": true,
     "skipRowsAfterHeader": 0,
-    "probableNumberOfRecords": 0,
+    "probableNumberOfRecords": 2,
     "normalizeBooleans": false,
     "normalizeDoubles": true,
     "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
@@ -57,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1644726973614
+    "lastModifiedOn": 1644727544009
   },
   "creationTag": {
     "versionNumber": 0,
@@ -82,7 +83,16 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "some",
+        "type": "string"
+      },
+      {
+        "name": "data",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
