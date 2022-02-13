@@ -16,6 +16,7 @@ folder = dataiku.Folder("LpNMhb4E")
 paths = folder.list_paths_in_partition()
 with folder.get_writer("myoutputfile.txt") as w:
     w.write("some, data")
+    w.write("\n")
     w.write("1, 3")
     
     # Write recipe outputs
