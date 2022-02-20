@@ -6,7 +6,7 @@
     "metastoreSynchronizationEnabled": true,
     "metastoreTableName": "${odbId}",
     "connection": "S3Bucket",
-    "path": "/dataiku/${projectKey}/${odbId}",
+    "path": "/dataiku/EVERYTHING/KcAhzFTk",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -91,11 +91,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1645344187214
+    "lastModifiedOn": 1645344211175
   },
   "creationTag": {
     "versionNumber": 0,
