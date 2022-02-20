@@ -6,49 +6,145 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "col_0",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "col_0",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "col_1",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "col_1",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "col_2",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "col_2",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "col_3",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "col_3",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "col_4",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "col_4",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "col_0",
+      "type": "string",
       "table": 0
     },
     {
       "name": "col_1",
-      "table": 0
-    },
-    {
-      "name": "col_2",
+      "type": "string",
       "table": 0
     },
     {
       "name": "col_3",
+      "type": "string",
       "table": 0
     },
     {
       "name": "col_4",
+      "type": "string",
       "table": 0
     },
     {
       "name": "col_5",
+      "type": "string",
       "table": 0
     },
     {
       "name": "col_6",
+      "type": "string",
       "table": 0
     },
     {
       "name": "col_7",
+      "type": "string",
       "table": 0
     },
     {
       "name": "col_8",
+      "type": "string",
       "table": 0
     },
     {
       "name": "col_9",
+      "type": "string",
       "table": 0
+    },
+    {
+      "name": "col_2",
+      "type": "string",
+      "table": 1
     }
   ],
   "engineParams": {
@@ -105,5 +201,55 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "col_0",
+            "type": "string"
+          },
+          {
+            "name": "col_1",
+            "type": "string"
+          },
+          {
+            "name": "col_3",
+            "type": "string"
+          },
+          {
+            "name": "col_4",
+            "type": "string"
+          },
+          {
+            "name": "col_5",
+            "type": "string"
+          },
+          {
+            "name": "col_6",
+            "type": "string"
+          },
+          {
+            "name": "col_7",
+            "type": "string"
+          },
+          {
+            "name": "col_8",
+            "type": "string"
+          },
+          {
+            "name": "col_9",
+            "type": "string"
+          },
+          {
+            "name": "col_2",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
