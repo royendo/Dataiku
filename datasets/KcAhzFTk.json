@@ -33,11 +33,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1645335522644
+    "lastModifiedOn": 1645335850351
   },
   "creationTag": {
     "versionNumber": 0,
@@ -52,7 +52,7 @@
     "metastoreSynchronizationEnabled": true,
     "connection": "S3Bucket",
     "path": "/dataiku/EVERYTHING/KcAhzFTk",
-    "notReadyIfEmpty": false,
+    "notReadyIfEmpty": true,
     "filesSelectionRules": {
       "mode": "RULES_ALL_BUT_EXCLUDED",
       "excludeRules": [
