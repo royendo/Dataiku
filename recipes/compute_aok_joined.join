@@ -184,8 +184,26 @@
   "virtualInputs": [
     {
       "preFilter": {
+        "uiData": {
+          "mode": "CUSTOM",
+          "conditions": [
+            {
+              "input": "col_0",
+              "col": "col_1",
+              "num": 0,
+              "operator": "contains"
+            }
+          ]
+        },
+        "expression": "contains(strval(\u0027col_0\u0027), \u0027\u0027)",
+        "$status": {
+          "validated": true,
+          "fullyTranslated": true,
+          "ok": true,
+          "sql": "\"col_0\" LIKE CONCAT(\u0027%\u0027, REPLACE(REPLACE(REPLACE(\u0027\u0027, \u0027\\\u0027, \u0027\\\\\u0027), \u0027%\u0027, \u0027\\%\u0027), \u0027_\u0027, \u0027\\_\u0027), \u0027%\u0027)"
+        },
         "distinct": false,
-        "enabled": false
+        "enabled": true
       },
       "autoSelectColumns": false,
       "index": 0,
