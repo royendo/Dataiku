@@ -33,11 +33,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1645335850351
+    "lastModifiedOn": 1645335865857
   },
   "creationTag": {
     "versionNumber": 0,
@@ -54,7 +54,7 @@
     "path": "/dataiku/EVERYTHING/KcAhzFTk",
     "notReadyIfEmpty": true,
     "filesSelectionRules": {
-      "mode": "RULES_ALL_BUT_EXCLUDED",
+      "mode": "ALL",
       "excludeRules": [
         {
           "matchingMode": "FILENAME",
