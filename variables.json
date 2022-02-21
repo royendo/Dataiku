@@ -1,4 +1,5 @@
 {
+  "var": "WAREHOUSE1",
   "Devicelist": "(\u0027d001\u0027,\u0027d002\u0027)",
   "test": {
     "a": 1,
