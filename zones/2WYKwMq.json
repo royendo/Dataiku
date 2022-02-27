@@ -1,12 +1,7 @@
 {
   "name": "asdf",
   "color": "#2ab1ac",
-  "items": [
-    {
-      "objectId": "Untitled_spreadsheet__1__1",
-      "objectType": "DATASET"
-    }
-  ],
+  "items": [],
   "shared": [],
   "tags": [],
   "customFields": {},
