@@ -1,0 +1,30 @@
+{
+  "type": "web_app",
+  "params": {
+    "webAppSmartId": "ZoSEHRl",
+    "webAppType": "DASH"
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "26310",
+  "dashboardCreationId": "XTyhvn6",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646090641066
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646090641066
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

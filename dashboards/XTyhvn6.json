@@ -17,6 +17,25 @@
             "showTitle": "MOUSEOVER",
             "displayMode": "IMAGE",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": -1,
+              "left": -1,
+              "width": 3,
+              "height": 3
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "loadTimeoutInSeconds": 0
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "insightId": "DlVvVwA",
+            "insightType": "web_app",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -28,11 +47,11 @@
   "name": "Everything\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1628151976942
+    "lastModifiedOn": 1646090641068
   },
   "creationTag": {
     "versionNumber": 0,
