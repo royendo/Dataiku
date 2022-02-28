@@ -5,6 +5,10 @@
     {
       "objectId": "dataset_1",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dataset_2",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
