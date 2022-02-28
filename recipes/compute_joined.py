@@ -1,3 +1,4 @@
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # -*- coding: utf-8 -*-
 import dataiku
 import pandas as pd, numpy as np
@@ -16,7 +17,7 @@ dataset_1_df = dataset_1.get_dataframe()
 # TODO: Write here your actual code that computes the outputs
 # NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.
 
-joined_df = DataFrame.join(other, on=None, how='left', lsuffix='', rsuffix='', sort=False)[source]
+joined_df = dataset_2_df.join(dataset_1_df, on="joining", how='left', lsuffix='', rsuffix='', sort=False)[source]
 
 
 # Write recipe outputs
