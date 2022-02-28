@@ -12,7 +12,7 @@ dataset_1 = dataiku.Dataset("dataset_1")
 dataset_1_df = dataset_1.get_dataframe()
 
 
-joined_df = dataset_2_df.join(dataset_1_df)[source]
+joined_df = pd.merge(dataset_2_df,dataset_1_df,on='joining')
 
 
 # Write recipe outputs
