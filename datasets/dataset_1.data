@@ -1,3 +1,31 @@
 {
-  "data": []
+  "data": [
+    [
+      "a",
+      "val1"
+    ],
+    [
+      "b",
+      "val"
+    ],
+    [
+      "c",
+      "val3"
+    ],
+    [
+      "d",
+      "vl4"
+    ],
+    [
+      "e",
+      "val5"
+    ]
+  ],
+  "schema": {
+    "columns": [
+      {"name":"joining","type":"string"},
+      {"name":"new_column","type":"string"}
+    ],
+    "userModified": false
+  }
 }
