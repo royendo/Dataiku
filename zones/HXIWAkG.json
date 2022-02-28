@@ -9,6 +9,10 @@
     {
       "objectId": "dataset_2",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "joined",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
