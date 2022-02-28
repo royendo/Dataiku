@@ -40,25 +40,6 @@ sidebar = html.Div(
 )
 content = html.Div(id="page-content", style=CONTENT_STYLE)
 app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
-@app.callback(Output("page-content", "children"), [Input("url", "pathname")])
-
-def render_page_content(pathname):
-    if pathname == pathname:
-        return html.P("This is the content of the home page!")
-    elif pathname == "/page-1":
-        return html.P("This is the content of page 1. Yay!")
-    elif pathname == "/page-2":
-        return html.P("Oh cool, this is page 2!")
-    # If the user tries to reach a different page, return a 404 message
-    return dbc.Jumbotron(
-        [
-            html.H1("404: Not found", className="text-danger"),
-            html.Hr(),
-            html.P(f"The pathname {pathname} was not recognised..."),
-        ]
-    )
-
-
 from flask import request
 @app.callback(
     Output(component_id='my-output', component_property='children'),
