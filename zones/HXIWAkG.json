@@ -17,6 +17,14 @@
     {
       "objectId": "compute_joined",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_joined_plugin",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "joined_plugin",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
