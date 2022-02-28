@@ -8,6 +8,15 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "ZoSEHRl",
+          "objectType": "WEB_APP"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -252,11 +261,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 72,
+    "versionNumber": 73,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643009441711
+    "lastModifiedOn": 1646090640819
   },
   "creationTag": {
     "versionNumber": 0,
