@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646016031586
+    "lastModifiedOn": 1646016495981
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,7 +64,8 @@
       },
       {
         "name": "dataset_2_col",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       }
     ],
     "userModified": true
