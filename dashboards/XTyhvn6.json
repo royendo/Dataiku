@@ -21,9 +21,9 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
-              "width": 3,
+              "top": 0,
+              "left": 3,
+              "width": 6,
               "height": 3
             },
             "clickAction": "DO_NOTHING",
@@ -47,11 +47,11 @@
   "name": "Everything\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646090641671
+    "lastModifiedOn": 1646090653301
   },
   "creationTag": {
     "versionNumber": 0,
