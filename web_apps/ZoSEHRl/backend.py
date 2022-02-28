@@ -42,7 +42,7 @@ content = html.Div(id="page-content", style=CONTENT_STYLE)
 app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
 @app.callback(Output("page-content", "children"), [Input("url", "pathname")])
 def render_page_content(pathname):
-    if pathname == "/":
+    if pathname == "/web-apps-backends/EVERYTHING/OWxOtRB6/":
         return html.P("This is the content of the home page!")
     elif pathname == "/page-1":
         return html.P("This is the content of page 1. Yay!")
