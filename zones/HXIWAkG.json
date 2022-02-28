@@ -1,7 +1,12 @@
 {
   "name": "30684 - pandas join",
   "color": "#465A64",
-  "items": [],
+  "items": [
+    {
+      "objectId": "dataset_1",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
