@@ -4,10 +4,12 @@
   "params": {
     "autoStartBackend": false,
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "24916"
     },
-    "nbProcesses": 1,
+    "nbProcesses": 2,
     "serveLocally": true,
+    "runAs": "admin",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -33,11 +35,11 @@
   "config": {},
   "name": "a",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646098304284
+    "lastModifiedOn": 1646098333464
   },
   "creationTag": {
     "versionNumber": 0,
