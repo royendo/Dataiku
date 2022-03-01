@@ -47,11 +47,11 @@
   "name": "Everything\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646090653301
+    "lastModifiedOn": 1646096973738
   },
   "creationTag": {
     "versionNumber": 0,
