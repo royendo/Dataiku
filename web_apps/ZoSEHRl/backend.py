@@ -76,3 +76,7 @@ def render_page_content(pathname):
             html.P(f"The pathname {pathname} was not recognised..."),
         ]
     )
+
+
+if __name__ == "__main__":
+    app.run_server(port=8888)
