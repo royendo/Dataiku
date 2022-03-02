@@ -3,14 +3,14 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
-  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": -1,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
@@ -18,22 +18,24 @@
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
+  "mode": "FILTERS",
   "centileTDigest": false,
   "valueSplits": [
     {
       "outputIndex": 0,
-      "caseSensitive": false
+      "caseSensitive": false,
+      "value": ""
     }
   ],
   "rangeSplits": [
@@ -87,8 +89,31 @@
     {
       "filter": {
         "uiData": {
-          "mode": "\u0026\u0026",
+          "mode": "CUSTOM",
           "conditions": []
+        },
+        "expression": "now()",
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "joining",
+                "type": "string"
+              },
+              {
+                "name": "dataset_2_col",
+                "type": "bigint"
+              },
+              {
+                "name": "new_column",
+                "type": "string"
+              }
+            ]
+          },
+          "validated": true,
+          "fullyTranslated": false,
+          "ok": false,
+          "message": "SQL database does not support \"NOW\"."
         },
         "distinct": false,
         "enabled": true
