@@ -25,6 +25,10 @@
     {
       "objectId": "kkkk",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "split_joined",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
