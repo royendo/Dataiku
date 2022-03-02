@@ -6,11 +6,11 @@
   "active": false,
   "runAsUser": "test",
   "versionTag": {
-    "versionNumber": 98,
+    "versionNumber": 99,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1644392129016
+    "lastModifiedOn": 1646212137522
   },
   "checklists": {
     "checklists": []
@@ -162,6 +162,32 @@
         "params": {
           "scenarioId": "Aa",
           "proceedOnFailure": true
+        }
+      },
+      {
+        "id": "build_0_true_d_paritionined_prepared_copy",
+        "type": "build_flowitem",
+        "name": "asd",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "paritionined_prepared_copy",
+              "partitionsSpec": "2021/2022"
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
         }
       }
     ]
