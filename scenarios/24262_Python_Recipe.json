@@ -6,11 +6,11 @@
   "active": false,
   "runAsUser": "test",
   "versionTag": {
-    "versionNumber": 99,
+    "versionNumber": 100,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646212137522
+    "lastModifiedOn": 1646212413746
   },
   "checklists": {
     "checklists": []
@@ -88,7 +88,7 @@
         "id": "build_0_true_d_2_prepared_scored",
         "type": "build_flowitem",
         "name": "Step #4",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
@@ -182,7 +182,7 @@
             {
               "type": "DATASET",
               "itemId": "paritionined_prepared_copy",
-              "partitionsSpec": "2021/2022"
+              "partitionsSpec": "2020/2022"
             }
           ],
           "jobType": "RECURSIVE_BUILD",
