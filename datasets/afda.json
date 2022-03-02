@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646201210030
+    "lastModifiedOn": 1646201227237
   },
   "creationTag": {
     "versionNumber": 0,
@@ -56,7 +56,65 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "PassengerId",
+        "type": "bigint"
+      },
+      {
+        "name": "Survived",
+        "type": "bigint"
+      },
+      {
+        "name": "Pclass",
+        "type": "bigint"
+      },
+      {
+        "name": "Name",
+        "type": "string",
+        "maxLength": 4194304
+      },
+      {
+        "name": "Sex",
+        "type": "string",
+        "maxLength": 4194304
+      },
+      {
+        "name": "Age",
+        "type": "double"
+      },
+      {
+        "name": "SibSp",
+        "type": "bigint"
+      },
+      {
+        "name": "Parch",
+        "type": "bigint"
+      },
+      {
+        "name": "Ticket",
+        "type": "string",
+        "maxLength": 4194304
+      },
+      {
+        "name": "Fare",
+        "type": "double"
+      },
+      {
+        "name": "Cabin",
+        "type": "string",
+        "maxLength": 4194304
+      },
+      {
+        "name": "Embarked",
+        "type": "string",
+        "maxLength": 4194304
+      },
+      {
+        "name": "date du jour",
+        "type": "date"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
