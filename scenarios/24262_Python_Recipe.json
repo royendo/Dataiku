@@ -6,11 +6,11 @@
   "active": false,
   "runAsUser": "test",
   "versionTag": {
-    "versionNumber": 105,
+    "versionNumber": 106,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646212544761
+    "lastModifiedOn": 1646213069744
   },
   "checklists": {
     "checklists": []
@@ -182,7 +182,7 @@
             {
               "type": "DATASET",
               "itemId": "paritionined_prepared_copy",
-              "partitionsSpec": "\"2020\"/\"2022\""
+              "partitionsSpec": "2020,2021"
             }
           ],
           "jobType": "NON_RECURSIVE_FORCED_BUILD",
