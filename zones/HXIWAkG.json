@@ -21,6 +21,10 @@
     {
       "objectId": "joined_plugin",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "kkkk",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
