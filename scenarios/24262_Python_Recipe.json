@@ -6,11 +6,11 @@
   "active": false,
   "runAsUser": "test",
   "versionTag": {
-    "versionNumber": 112,
+    "versionNumber": 113,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646436872698
+    "lastModifiedOn": 1646436881802
   },
   "checklists": {
     "checklists": []
@@ -48,7 +48,7 @@
       "delay": 15,
       "active": true,
       "params": {
-        "code": "from dataiku.scenario import Trigger\nimport dataiku\nimport pandas as pd, numpy as np\nfrom dataiku import pandasutils as pdu\nrun \u003d dataiku.Dataset(\"run\")\nrun_df \u003d run.get_dataframe()\nt \u003d Trigger()\nif run_df[\u0027line\u0027].values[0] \u003d\u003d \u00272017-01-01\u0027:\n    t.fire()",
+        "code": "from dataiku.scenario import Trigger\nimport dataiku\nimport pandas as pd, numpy as np\nfrom dataiku import pandasutils as pdu\nrun \u003d dataiku.Dataset(\"testdates\")\nrun_df \u003d run.get_dataframe()\nt \u003d Trigger()\nif run_df[\u0027line\u0027].values[0] \u003d\u003d \u00272017-01-01\u0027:\n    t.fire()",
         "envSelection": {
           "envMode": "INHERIT"
         }
