@@ -6,11 +6,11 @@
   "active": true,
   "runAsUser": "admin",
   "versionTag": {
-    "versionNumber": 117,
+    "versionNumber": 118,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646436932835
+    "lastModifiedOn": 1646436955956
   },
   "checklists": {
     "checklists": []
@@ -185,7 +185,7 @@
         "id": "build_0_true_d_paritionined_prepared_copy",
         "type": "build_flowitem",
         "name": "asd",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
