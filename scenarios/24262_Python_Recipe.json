@@ -6,11 +6,11 @@
   "active": false,
   "runAsUser": "test",
   "versionTag": {
-    "versionNumber": 110,
+    "versionNumber": 111,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646436728718
+    "lastModifiedOn": 1646436866749
   },
   "checklists": {
     "checklists": []
@@ -45,10 +45,10 @@
       "id": "izYgh46u",
       "type": "custom_python",
       "name": "Custom trigger",
-      "delay": 3600,
+      "delay": 15,
       "active": true,
       "params": {
-        "code": "from dataiku.scenario import Trigger\nimport dataiku\nimport pandas as pd, numpy as np\nfrom dataiku import pandasutils as pdu\nrun \u003d dataiku.Dataset(\"testdates\")\nrun_df \u003d run.get_dataframe()\nt \u003d Trigger()\nif run_df[\u0027RUN\u0027].values[0]\u003d\u003d1\n    t.fire()",
+        "code": "from dataiku.scenario import Trigger\nimport dataiku\nimport pandas as pd, numpy as np\nfrom dataiku import pandasutils as pdu\nrun \u003d dataiku.Dataset(\"run\")\nrun_df \u003d run.get_dataframe()\nt \u003d Trigger()\nif run_df[\u0027line\u0027].values[0] \u003d\u003d \u00272017-01-01\u0027:    t.fire()",
         "envSelection": {
           "envMode": "INHERIT"
         }
