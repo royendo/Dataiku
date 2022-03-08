@@ -32,11 +32,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646701429443
+    "lastModifiedOn": 1646701436265
   },
   "creationTag": {
     "versionNumber": 0,
@@ -76,6 +76,10 @@
       },
       {
         "name": "holePar",
+        "type": "string"
+      },
+      {
+        "name": "linkid",
         "type": "string"
       }
     ],
