@@ -51,7 +51,7 @@
       {
         "column": "name",
         "type": "columnFilter",
-        "currentMode": "FACET",
+        "currentMode": "SIMPLE_ALPHANUM",
         "active": true,
         "facet": {
           "type": "facet",
@@ -64,9 +64,11 @@
         "alphanumFilter": {
           "type": "alphanum",
           "column": "name",
-          "values": [],
+          "values": [
+            "Gulf"
+          ],
           "params": {
-            "mode": "full_string",
+            "mode": "substring",
             "normalization": "exact"
           }
         },
