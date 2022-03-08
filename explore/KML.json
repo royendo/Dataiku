@@ -7,8 +7,11 @@
     },
     "columnWidthsByName": {
       "name": 204,
-      "geom": 2220,
-      "description": 1562
+      "geom": 389,
+      "description": 1562,
+      "holeNumber": 100,
+      "holeYardage": 100,
+      "holePar": 100
     },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
@@ -48,43 +51,7 @@
       "autoRefresh": true
     },
     "globalSearchQuery": "",
-    "explorationFilters": [
-      {
-        "column": "name",
-        "type": "columnFilter",
-        "currentMode": "SIMPLE_ALPHANUM",
-        "active": true,
-        "facet": {
-          "type": "facet",
-          "column": "name",
-          "columnType": "ALPHANUM",
-          "currentMode": "ALPHANUM",
-          "sort": "count",
-          "selectedValues": {}
-        },
-        "alphanumFilter": {
-          "type": "alphanum",
-          "column": "name",
-          "values": [
-            "Gulf"
-          ],
-          "params": {
-            "mode": "substring",
-            "normalization": "exact"
-          }
-        },
-        "validityFilter": {
-          "type": "validity",
-          "column": "name",
-          "params": {
-            "type": "Text",
-            "ok": true,
-            "nok": true,
-            "empty": true
-          }
-        }
-      }
-    ],
+    "explorationFilters": [],
     "previewMode": "ALL_ROWS"
   },
   "charts": []
