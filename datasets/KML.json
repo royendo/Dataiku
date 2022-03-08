@@ -1,7 +1,7 @@
 {
   "type": "UploadedFiles",
   "managed": false,
-  "formatType": "csv",
+  "formatType": "jformat_kml-format_kml-format_kml",
   "checklists": {
     "checklists": []
   },
@@ -23,33 +23,7 @@
     }
   },
   "formatParams": {
-    "style": "excel",
-    "charset": "utf-8",
-    "separator": ":",
-    "quoteChar": "\"",
-    "escapeChar": "\\",
-    "dateSerializationFormat": "ISO",
-    "arrayMapFormat": "json",
-    "hiveSeparators": [
-      "\u0002",
-      "\u0003",
-      "\u0004",
-      "\u0005",
-      "\u0006",
-      "\u0007",
-      "\b"
-    ],
-    "skipRowsBeforeHeader": 0,
-    "parseHeaderRow": true,
-    "skipRowsAfterHeader": 0,
-    "probableNumberOfRecords": 3,
-    "normalizeBooleans": false,
-    "normalizeDoubles": true,
-    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
-    "readMissingColumnsBehavior": "DISCARD_SILENT",
-    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
-    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
-    "fileReadFailureBehavior": "FAIL",
+    "config": {},
     "compress": ""
   },
   "partitioning": {
@@ -58,11 +32,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646698802863
+    "lastModifiedOn": 1646698868852
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,15 +59,11 @@
   "schema": {
     "columns": [
       {
-        "name": "\u003ckml xmlns",
+        "name": "name",
         "type": "string"
       },
       {
-        "name": "xsi\u003dhttp://www.w3.org/2001/XMLSchema-instance xmlns\u003dhttp://www.opengis.net/kml/2.2 xmlns",
-        "type": "string"
-      },
-      {
-        "name": "gx\u003dhttp://www.google.com/kml/ext/2.2\u003e",
+        "name": "geom",
         "type": "string"
       }
     ],
