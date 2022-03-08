@@ -32,11 +32,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646698868852
+    "lastModifiedOn": 1646699522239
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,6 +64,10 @@
       },
       {
         "name": "geom",
+        "type": "string"
+      },
+      {
+        "name": "description",
         "type": "string"
       }
     ],
