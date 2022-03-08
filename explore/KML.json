@@ -7,7 +7,8 @@
     },
     "columnWidthsByName": {
       "name": 204,
-      "geom": 300
+      "geom": 300,
+      "description": 1562
     },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
