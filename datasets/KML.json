@@ -32,11 +32,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646701370323
+    "lastModifiedOn": 1646701375802
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,6 +64,18 @@
       },
       {
         "name": "geom",
+        "type": "string"
+      },
+      {
+        "name": "holeNumber",
+        "type": "string"
+      },
+      {
+        "name": "holeYardage",
+        "type": "string"
+      },
+      {
+        "name": "holePar",
         "type": "string"
       }
     ],
