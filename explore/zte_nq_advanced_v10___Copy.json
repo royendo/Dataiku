@@ -7,7 +7,9 @@
     },
     "columnWidthsByName": {
       "name": 176,
-      "geom": 596
+      "geom": 91,
+      "anode": 100,
+      "bnode": 100
     },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
