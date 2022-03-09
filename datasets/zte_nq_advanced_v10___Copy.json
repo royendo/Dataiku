@@ -32,11 +32,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646787704757
+    "lastModifiedOn": 1646787814804
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,6 +64,14 @@
       },
       {
         "name": "geom",
+        "type": "string"
+      },
+      {
+        "name": "anode",
+        "type": "string"
+      },
+      {
+        "name": "bnode",
         "type": "string"
       }
     ],
