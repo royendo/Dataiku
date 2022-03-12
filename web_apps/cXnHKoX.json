@@ -2,7 +2,7 @@
   "type": "DASH",
   "hasLegacyBackendURL": false,
   "params": {
-    "autoStartBackend": false,
+    "autoStartBackend": true,
     "envSelection": {
       "envMode": "EXPLICIT_ENV",
       "envName": "24916"
@@ -35,11 +35,11 @@
   "config": {},
   "name": "a",
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647051556216
+    "lastModifiedOn": 1647051612703
   },
   "creationTag": {
     "versionNumber": 0,
