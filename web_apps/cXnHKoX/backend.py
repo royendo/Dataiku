@@ -1,3 +1,3 @@
-from test import construct_app
+import test
 
-construct_app(app)
+test.construct_app(app)
