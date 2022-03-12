@@ -30,16 +30,16 @@
       },
       "deploymentModifier": {}
     },
-    "forceAuthentication": false
+    "forceAuthentication": true
   },
   "config": {},
   "name": "a",
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647051259818
+    "lastModifiedOn": 1647051282742
   },
   "creationTag": {
     "versionNumber": 0,
