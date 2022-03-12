@@ -27,11 +27,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 610,
+    "versionNumber": 611,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647127632558
+    "lastModifiedOn": 1647127642596
   },
   "creationTag": {
     "versionNumber": 0,
@@ -54,7 +54,7 @@
     "normalizeDoubles": true,
     "catalog": "dataiku-dev",
     "table": "BIGQUERY_TEST_top10_baby_names_filtered",
-    "schema": "test",
+    "schema": "testinggg",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
