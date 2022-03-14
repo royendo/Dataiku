@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647234553966
+    "lastModifiedOn": 1647234619921
   },
   "creationTag": {
     "versionNumber": 0,
@@ -74,8 +74,8 @@
   },
   "tags": [],
   "params": {
-    "connection": "filesystem_managed",
-    "path": "${projectKey}/accc",
+    "connection": "filesystem_root",
+    "path": "/Users/rendo/Library/DataScienceStudio/dss_home/run/audit",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -85,7 +85,12 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "col_0",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
