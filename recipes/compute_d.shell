@@ -1,1 +1,2 @@
-ls -l 
+cd ~/Desktop/SlackApp 
+python app.py
