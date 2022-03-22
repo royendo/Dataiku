@@ -5,11 +5,11 @@
   "name": "24811",
   "active": false,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1629723482178
+    "lastModifiedOn": 1647907330216
   },
   "checklists": {
     "checklists": []
@@ -25,8 +25,8 @@
   "params": {
     "steps": [
       {
-        "id": "build_0_true_d_CoronaSync",
-        "type": "build_flowitem",
+        "id": "reporta183ffb1ccf1b6389d589369348d281e",
+        "type": "send_report",
         "name": "Step #1",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
@@ -38,36 +38,21 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "builds": [
-            {
-              "type": "DATASET",
-              "itemId": "CoronaSync",
-              "partitionsSpec": ""
+          "failOnMessageNotSent": true,
+          "messaging": {
+            "type": "mail-scenario",
+            "configuration": {
+              "channelId": "my_smtp",
+              "subject": "DSS scenario ${scenarioName}: ${outcome}",
+              "recipient": "a",
+              "sendAsHTML": false,
+              "attachments": [],
+              "messageSource": "INLINE",
+              "templateFormat": "FORMULA",
+              "templateName": "default.ftl",
+              "message": "${var}"
             }
-          ],
-          "jobType": "RECURSIVE_BUILD",
-          "refreshHiveMetastore": true,
-          "proceedOnFailure": false
-        }
-      },
-      {
-        "id": "custom_python",
-        "type": "custom_python",
-        "name": "${NOW}",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
-        "params": {
-          "envSelection": {
-            "envMode": "INHERIT"
-          },
-          "proceedOnFailure": false
+          }
         }
       }
     ]
