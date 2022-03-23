@@ -15,7 +15,7 @@
       },
       "auth_type": "site-app-permissions"
     },
-    "path": "/${projectKey}/${odbId}",
+    "path": "/AndrewM",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -100,11 +100,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1648019357973
+    "lastModifiedOn": 1648019410892
   },
   "creationTag": {
     "versionNumber": 0,
