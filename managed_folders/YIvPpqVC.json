@@ -2,7 +2,19 @@
   "name": "tesaa",
   "type": "fsprovider_sharepoint-online_sharepoint-online_shared-documents",
   "params": {
-    "config": {},
+    "config": {
+      "sharepoint_oauth": {
+        "mode": "NONE"
+      },
+      "sharepoint_sharepy": {
+        "mode": "NONE"
+      },
+      "site_app_permissions": {
+        "mode": "PRESET",
+        "name": "Preset 2"
+      },
+      "auth_type": "site-app-permissions"
+    },
     "path": "/${projectKey}/${odbId}",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
@@ -88,11 +100,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1648019345510
+    "lastModifiedOn": 1648019357973
   },
   "creationTag": {
     "versionNumber": 0,
