@@ -1,0 +1,175 @@
+{
+    "meta" : {
+        "label": "LightGBM Regression",
+        "description": "LightGBM is a gradient boosting framework that uses tree based learning algorithms. It is designed to be distributed and efficient. This custom algorithm needs to be used with an appropriate code-env.",
+        "icon": "icon-list-ol"
+    },
+    "predictionTypes": ["REGRESSION"],
+    "gridSearchMode": "MANAGED",
+    "supportsSampleWeights": true,
+    "acceptsSparseMatrix": false,
+    "params": [
+        {
+            "name": "boosting_type",
+            "label": "Boosting type",
+            "description": "",
+            "type": "MULTISELECT",
+            "defaultValue": ["gbdt"],
+            "selectChoices": [
+                {
+                    "value":"gbdt",
+                    "label":"Traditional Gradient Boosting Decision Tree"
+                },
+                {
+                    "value":"dart",
+                    "label":"Dropouts meet Multiple Additive Regression Trees"
+                },
+                {
+                    "value":"goss",
+                    "label": "Gradient-based One-Side Sampling"
+                },
+                {
+                    "value":"rf",
+                    "label": "Random Forest"
+                }
+            ],
+            "gridParam": true
+        },
+        {
+            "name": "num_leaves",
+            "label": "Num leaves",
+            "description": "Maximum tree leaves for base learners.",
+            "type": "DOUBLES",
+            "defaultValue": [50, 100],
+            "allowDuplicates": false,
+            "gridParam": true
+        },
+        {
+            "name": "max_depth",
+            "label": "Max depth",
+            "description": "Maximum tree depth for base learners, <=0 means no limit",
+            "type": "DOUBLES",
+            "defaultValue": [50, 100],
+            "allowDuplicates": false,
+            "gridParam": true
+        },
+        {
+            "name": "learning_rate",
+            "label": "Learning rate",
+            "description":"Lower values slow down convergence and can make the model more robust. Typical values: 0.01 - 0.3",
+            "type": "DOUBLES",
+            "defaultValue": [0.2],
+            "allowDuplicates": false,
+            "gridParam": true
+        },
+        {
+            "name": "n_estimators",
+            "label": "Num estimators",
+            "description": "The maximum number of estimators at which boosting is terminated. In case of perfect fit, the learning procedure is stopped early.",
+            "type": "DOUBLES",
+            "defaultValue": [50, 100],
+            "allowDuplicates": false,
+            "gridParam": true
+        },
+        {
+            "name": "early_stopping",
+            "label": "Early stopping",
+            "description": " Use LightGBM built-in early stop mechanism so the exact number of trees will be optimized.",
+            "type": "BOOLEAN"
+        },
+        {
+            "name": "early_stopping_rounds",
+            "label": "Early stopping rounds",
+            "description": "The optimizer stops if the loss never decreases for this consecutive number of iterations. Typical values: 1 - 100",
+            "type": "INT",
+            "defaultValue": 4,
+            "visibilityCondition": "model.early_stopping"
+        },
+        {
+            "name": "min_split_gain",
+            "label": "Min split gain",
+            "description":"Minimum loss reduction required to make a further partition on a leaf node of the tree.",
+            "type": "DOUBLES",
+            "defaultValue": [0],
+            "allowDuplicates": false,
+            "gridParam": true
+        },
+        {
+            "name": "min_child_weight",
+            "label": "Min child weight",
+            "description":"Minimum sum of instance weight (hessian) needed in a child (leaf).",
+            "type": "DOUBLES",
+            "defaultValue": [0.001],
+            "allowDuplicates": false,
+            "gridParam": true
+        },
+        {
+            "name": "min_child_samples",
+            "label": "Min child samples",
+            "description":"Minimum number of data needed in a child (leaf).",
+            "type": "DOUBLES",
+            "defaultValue": [20],
+            "allowDuplicates": false,
+            "gridParam": true
+        },
+        {
+            "name": "subsample",
+            "label": "Subsample",
+            "description":"Subsample ratio of the training instance.",
+            "type": "DOUBLES",
+            "defaultValue": [1.0],
+            "allowDuplicates": false,
+            "gridParam": true
+        },
+        {
+            "name": "subsample_freq",
+            "label": "Subsample freq",
+            "description":"Frequence of subsample, <=0 means no enable.",
+            "type": "DOUBLES",
+            "defaultValue": [0],
+            "allowDuplicates": false,
+            "gridParam": true
+        },
+        {
+            "name": "colsample_bytree",
+            "label": "Col sample by tree",
+            "description":"Subsample ratio of columns when constructing each tree.",
+            "type": "DOUBLES",
+            "defaultValue": [1.0],
+            "allowDuplicates": false,
+            "gridParam": true
+        },
+        {
+            "name": "reg_alpha",
+            "label": "Reg alpha",
+            "description":"L1 regularization term on weights.",
+            "type": "DOUBLES",
+            "defaultValue": [0.0],
+            "allowDuplicates": false,
+            "gridParam": true
+        },
+        {
+            "name": "reg_lambda",
+            "label": "Reg lambda",
+            "description":"L2 regularization term on weights.",
+            "type": "DOUBLES",
+            "defaultValue": [0.0],
+            "allowDuplicates": false,
+            "gridParam": true
+        },
+        {
+            "name": "random_state",
+            "label": "Random state",
+            "description": "Using a fixed random seed allows for reproducible result.",
+            "type": "DOUBLE",
+            "defaultValue": 1337
+        },
+        {
+            "name": "n_jobs",
+            "label": "Parallelism",
+            "description": "Number of cores used for parallel training. Using more cores leads to faster training but at the expense of more memory consumption, especially for large training datasets. (-1 means 'all cores')",
+            "type": "DOUBLE",
+            "defaultValue": 4
+        }
+    ]
+}
