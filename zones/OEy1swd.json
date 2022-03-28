@@ -1,7 +1,12 @@
 {
   "name": "Pre-trained Models",
   "color": "#4B8021",
-  "items": [],
+  "items": [
+    {
+      "objectId": "kywYUiQe",
+      "objectType": "MANAGED_FOLDER"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
