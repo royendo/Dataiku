@@ -4,6 +4,12 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {},
+        "maxMatches": 1,
+        "type": "KEEP_LARGEST",
+        "enabled": false
+      },
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
       "on": [
@@ -74,6 +80,17 @@
           "normalizeText": false,
           "type": "EQ",
           "strict": false
+        },
+        {
+          "column1": {
+            "name": "id",
+            "table": 0
+          },
+          "column2": {
+            "name": "id",
+            "table": 1
+          },
+          "type": "EQ"
         }
       ]
     }
@@ -178,7 +195,8 @@
         ],
         "userModified": false
       }
-    }
+    },
+    "distinct": false
   },
   "enableAutoCastInJoinConditions": false
 }
