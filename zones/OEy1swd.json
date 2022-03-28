@@ -15,10 +15,6 @@
       "objectType": "MANAGED_FOLDER"
     },
     {
-      "objectId": "asfdf",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_asfdf",
       "objectType": "RECIPE"
     }
