@@ -5,82 +5,17 @@
       "table1": 0,
       "conditionsMode": "AND",
       "rightLimit": {
-        "decisionColumn": {},
+        "decisionColumn": {
+          "name": "id",
+          "table": 1
+        },
         "maxMatches": 1,
         "type": "KEEP_LARGEST",
         "enabled": false
       },
-      "type": "LEFT",
-      "outerJoinOnTheLeft": true,
+      "type": "ADVANCED",
+      "outerJoinOnTheLeft": false,
       "on": [
-        {
-          "column1": {
-            "name": "id",
-            "table": 0
-          },
-          "dateDiffUnit": "DAY",
-          "column2": {
-            "name": "id",
-            "table": 1
-          },
-          "maxMatches": 1,
-          "caseInsensitive": false,
-          "maxDistance": 0,
-          "normalizeText": false,
-          "type": "EQ",
-          "strict": false
-        },
-        {
-          "column1": {
-            "name": "yr",
-            "table": 0
-          },
-          "dateDiffUnit": "DAY",
-          "column2": {
-            "name": "yr",
-            "table": 1
-          },
-          "maxMatches": 1,
-          "caseInsensitive": false,
-          "maxDistance": 0,
-          "normalizeText": false,
-          "type": "EQ",
-          "strict": false
-        },
-        {
-          "column1": {
-            "name": "mn",
-            "table": 0
-          },
-          "dateDiffUnit": "DAY",
-          "column2": {
-            "name": "mn",
-            "table": 1
-          },
-          "maxMatches": 1,
-          "caseInsensitive": false,
-          "maxDistance": 0,
-          "normalizeText": false,
-          "type": "EQ",
-          "strict": false
-        },
-        {
-          "column1": {
-            "name": "value",
-            "table": 0
-          },
-          "dateDiffUnit": "DAY",
-          "column2": {
-            "name": "value",
-            "table": 1
-          },
-          "maxMatches": 1,
-          "caseInsensitive": false,
-          "maxDistance": 0,
-          "normalizeText": false,
-          "type": "EQ",
-          "strict": false
-        },
         {
           "column1": {
             "name": "id",
@@ -173,6 +108,17 @@
   ],
   "computedColumns": [],
   "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "conditions": [
+        {
+          "input": "id",
+          "col": "mn",
+          "num": 0,
+          "operator": "regex"
+        }
+      ]
+    },
     "$status": {
       "schema": {
         "columns": [
@@ -196,7 +142,8 @@
         "userModified": false
       }
     },
-    "distinct": false
+    "distinct": false,
+    "enabled": false
   },
   "enableAutoCastInJoinConditions": false
 }
