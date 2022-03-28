@@ -13,6 +13,10 @@
     {
       "objectId": "ESSCafve",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "asfdf",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
