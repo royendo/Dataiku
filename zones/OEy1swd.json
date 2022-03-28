@@ -13,10 +13,6 @@
     {
       "objectId": "ESSCafve",
       "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "compute_asfdf",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
