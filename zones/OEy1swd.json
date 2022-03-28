@@ -17,6 +17,10 @@
     {
       "objectId": "asfdf",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_asfdf",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
