@@ -108,7 +108,7 @@
             "label": "Min child samples",
             "description":"Minimum number of data needed in a child (leaf).",
             "type": "DOUBLES",
-            "defaultValue": [20],
+            "defaultValue": [10],
             "allowDuplicates": false,
             "gridParam": true
         },
