@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651642499343
+    "lastModifiedOn": 1651642556214
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,57 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "transaction_id",
+        "type": "bigint"
+      },
+      {
+        "name": "card_id",
+        "type": "string"
+      },
+      {
+        "name": "item_category",
+        "type": "string"
+      },
+      {
+        "name": "purchase_date",
+        "type": "string"
+      },
+      {
+        "name": "purchase_amount",
+        "type": "double"
+      },
+      {
+        "name": "authorized_flag",
+        "type": "double"
+      },
+      {
+        "name": "signature_provided",
+        "type": "bigint"
+      },
+      {
+        "name": "merchant_id",
+        "type": "string"
+      },
+      {
+        "name": "merchant_state",
+        "type": "string"
+      },
+      {
+        "name": "card_state",
+        "type": "string"
+      },
+      {
+        "name": "purchase_amount_avg",
+        "type": "double"
+      },
+      {
+        "name": "rank",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
