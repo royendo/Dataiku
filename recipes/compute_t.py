@@ -8,5 +8,10 @@ from dataiku import pandasutils as pdu
 a = dataiku.Dataset("26698_purchase_amount_ranked_1")
 adf = a.get_dataframe()
 
-t = dataiku.Dataset("t")
-t.write
+
+
+py_recipe_output = dataiku.Dataset("t")
+py_recipe_output.write_with_schema(adf)
+
+
+
