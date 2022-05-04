@@ -7,3 +7,6 @@ from dataiku import pandasutils as pdu
 # Read recipe inputs
 a = dataiku.Dataset("26698_purchase_amount_ranked_1")
 adf = a.get_dataframe()
+
+t = dataiku.Dataset("t")
+t.write
