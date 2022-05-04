@@ -10,7 +10,7 @@ adf = a.get_dataframe()
 
 
 
-py_recipe_output = dataiku.Dataset("t")
+py_recipe_output = dataiku.Dataset("a")
 py_recipe_output.write_with_schema(adf)
 
 
