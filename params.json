@@ -42,7 +42,7 @@
     },
     {
       "user": "endoroy",
-      "admin": false,
+      "admin": true,
       "readProjectContent": false,
       "writeProjectContent": true,
       "exportDatasetsData": true,
@@ -227,11 +227,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652070961337
+    "lastModifiedOn": 1652071133785
   },
   "creationTag": {
     "versionNumber": 0,
