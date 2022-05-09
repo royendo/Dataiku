@@ -4,19 +4,20 @@
   "type": "step_based",
   "name": "new",
   "active": false,
+  "runAsUser": "endoroy",
   "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1652070798960
-  },
-  "versionTag": {
     "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1652070808364
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1652071068530
   },
   "checklists": {
     "checklists": []
