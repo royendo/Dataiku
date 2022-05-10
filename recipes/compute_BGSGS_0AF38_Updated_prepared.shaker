@@ -26,8 +26,112 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArrayFold",
+      "params": {
+        "column": "FinancialInformation"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "FinancialInformation",
+        "nullAsEmpty": true,
+        "prefixOutputs": true,
+        "flattenArrays": true,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArrayFold",
+      "params": {
+        "column": "FinancialInformation_Availability"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "FinancialInformation_Availability",
+        "nullAsEmpty": true,
+        "prefixOutputs": true,
+        "flattenArrays": true,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArrayFold",
+      "params": {
+        "column": "FinancialInformation_FinancialsLayout"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "FinancialInformation_FinancialsLayout",
+        "nullAsEmpty": true,
+        "prefixOutputs": true,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArrayFold",
+      "params": {
+        "column": "FinancialInformation_FinancialsLayout_MapItem"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "FinancialInformation_FinancialsLayout_MapItem",
+        "nullAsEmpty": true,
+        "prefixOutputs": true,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +139,23 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "FinancialInformation_Availability": 300,
+    "FinancialInformation": 300,
+    "FinancialInformation_FinancialStatements": 300,
+    "ReferenceInformation": 300,
+    "RepNo": 100,
+    "FinancialInformation_Availability_BusinessSegment": 300,
+    "FinancialInformation_FinancialsLayout_MapItem_LineID": 300,
+    "FinancialInformation_FinancialsLayout_MapItem": 300,
+    "Major": 100,
+    "Revision": 106,
+    "FinancialInformation_FinancialsLayout": 300,
+    "Minor": 100,
+    "FinancialInformation_FinancialsLayout_MapItem_COA": 300,
+    "FinancialInformation_FinancialsLayout_MapItem_xml_text": 300,
+    "FinancialInformation_Availability_GeographicSegment": 300
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
