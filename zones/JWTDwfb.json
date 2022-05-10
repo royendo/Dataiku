@@ -1,7 +1,20 @@
 {
   "name": "32846",
   "color": "#8C2DA7",
-  "items": [],
+  "items": [
+    {
+      "objectId": "BGSGS_0AF38_Updated",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_BGSGS_0AF38_Updated_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "BGSGS_0AF38_Updated_prepared",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
