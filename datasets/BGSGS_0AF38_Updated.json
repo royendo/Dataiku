@@ -27,7 +27,7 @@
     "shortTextMode": true,
     "retrievalMode": "simple",
     "ancestorCapture": "none",
-    "rootPath": "/BGSInformation",
+    "rootPath": "/BGSInformation/FinancialInformation/FinancialsLayout/MapItem",
     "charset": "utf-8",
     "overrideFileCharset": false,
     "cellContentMapping": [],
@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652143510269
+    "lastModifiedOn": 1652161005629
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,27 +67,15 @@
   "schema": {
     "columns": [
       {
-        "name": "Major",
+        "name": "LineID",
         "type": "string"
       },
       {
-        "name": "Revision",
+        "name": "COA",
         "type": "string"
       },
       {
-        "name": "Minor",
-        "type": "string"
-      },
-      {
-        "name": "RepNo",
-        "type": "string"
-      },
-      {
-        "name": "FinancialInformation",
-        "type": "string"
-      },
-      {
-        "name": "ReferenceInformation",
+        "name": "xml_text",
         "type": "string"
       }
     ],
