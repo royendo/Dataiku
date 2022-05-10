@@ -7,10 +7,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_BGSGS_0AF38_Updated_prepared",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "BGSGS_0AF38_Updated_prepared",
       "objectType": "DATASET"
     }
