@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652172370856
+    "lastModifiedOn": 1652172882865
   },
   "creationTag": {
     "versionNumber": 0,
@@ -104,6 +104,69 @@
       },
       {
         "name": "FinancialInformation",
+        "type": "array",
+        "arrayContent": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformation_Availability",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformation_Availability_BusinessSegment",
+        "type": "array",
+        "arrayContent": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformation_Availability_GeographicSegment",
+        "type": "array",
+        "arrayContent": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformation_FinancialsLayout",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformation_FinancialsLayout_MapItem",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformation_FinancialsLayout_MapItem_LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformation_FinancialsLayout_MapItem_COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformation_FinancialsLayout_MapItem_xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformation_FinancialStatements",
         "type": "array",
         "arrayContent": {
           "type": "string"
