@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652143522014
+    "lastModifiedOn": 1652144177158
   },
   "creationTag": {
     "versionNumber": 0,
@@ -103,11 +103,884 @@
         "type": "string"
       },
       {
-        "name": "FinancialInformation",
-        "type": "array",
-        "arrayContent": {
+        "name": "FinancialInformationAvailability0BusinessSegment0Code",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationAvailability0GeographicSegment0Code",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem0LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem0COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem0xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem1LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem1COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem1xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem2LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem2COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem2xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem3LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem3COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem3xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem4LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem4COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem4xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem5LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem5COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem5xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem6LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem6COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem6xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem7LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem7COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem7xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem8LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem8COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem8xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem9LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem9COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem9xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem10LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem10COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem10xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem11LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem11COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem11xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem12LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem12COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem12xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem13LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem13COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem13xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem14LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem14COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem14xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem15LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem15COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem15xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem16LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem16COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem16xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem17LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem17COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem17xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem18LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem18COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem18xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem19LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem19COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem19xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem20LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem20COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem20xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem21LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem21COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem21xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem22LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem22COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem22xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem23LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem23COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem23xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem24LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem24COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem24xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem25LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem25COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem25xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem26LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem26COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem26xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem27LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem27COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem27xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem28LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem28COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem28xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem29LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem29COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem29xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem30LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem30COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem30xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem31LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem31COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem31xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem32LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem32COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem32xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem33LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem33COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem33xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem34LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem34COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem34xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem35LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem35COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem35xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem36LineID",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem36COA",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem36xml_text",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period0PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period0PeriodHeader0FiscalPeriod0FiscalMonth",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period0PeriodHeader0FiscalPeriod0Year",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period0Statements0Statement0PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period0Statements0Statement0Type",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period0Statements0Statement0FinancialValues0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
           "type": "string"
         }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period0Statements0Statement0StatementHeader0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period0Statements0Statement0StatementDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period0Statements0Statement0PeriodEndDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period0PeriodEndDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period1PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period1PeriodHeader0FiscalPeriod0FiscalMonth",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period1PeriodHeader0FiscalPeriod0Year",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period1Statements0Statement0PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period1Statements0Statement0Type",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period1Statements0Statement0FinancialValues0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period1Statements0Statement0StatementHeader0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period1Statements0Statement0StatementDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period1Statements0Statement0PeriodEndDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period1PeriodEndDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period2PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period2PeriodHeader0FiscalPeriod0FiscalMonth",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period2PeriodHeader0FiscalPeriod0Year",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period2Statements0Statement0PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period2Statements0Statement0Type",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period2Statements0Statement0FinancialValues0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period2Statements0Statement0StatementHeader0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period2Statements0Statement0StatementDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period2Statements0Statement0PeriodEndDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period2PeriodEndDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period3PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period3PeriodHeader0FiscalPeriod0FiscalMonth",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period3PeriodHeader0FiscalPeriod0Year",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period3Statements0Statement0PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period3Statements0Statement0Type",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period3Statements0Statement0FinancialValues0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period3Statements0Statement0StatementHeader0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period3Statements0Statement0StatementDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period3Statements0Statement0PeriodEndDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period3PeriodEndDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period4PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period4PeriodHeader0FiscalPeriod0FiscalMonth",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period4PeriodHeader0FiscalPeriod0Year",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period4Statements0Statement0PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period4Statements0Statement0Type",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period4Statements0Statement0FinancialValues0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period4Statements0Statement0StatementHeader0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period4Statements0Statement0StatementDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period4Statements0Statement0PeriodEndDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period4PeriodEndDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period5PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period5PeriodHeader0FiscalPeriod0FiscalMonth",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period5PeriodHeader0FiscalPeriod0Year",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period5PeriodHeader0FiscalPeriod0InterimNumber",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period5Statements0Statement0PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period5Statements0Statement0Type",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period5Statements0Statement0FinancialValues0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period5Statements0Statement0StatementHeader0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period5Statements0Statement0StatementDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period5Statements0Statement0PeriodEndDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period5PeriodEndDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period6PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period6PeriodHeader0FiscalPeriod0FiscalMonth",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period6PeriodHeader0FiscalPeriod0Year",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period6PeriodHeader0FiscalPeriod0InterimNumber",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period6Statements0Statement0PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period6Statements0Statement0Type",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period6Statements0Statement0FinancialValues0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period6Statements0Statement0StatementHeader0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period6Statements0Statement0StatementDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period6Statements0Statement0PeriodEndDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period6PeriodEndDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period7PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period7PeriodHeader0FiscalPeriod0FiscalMonth",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period7PeriodHeader0FiscalPeriod0Year",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period7PeriodHeader0FiscalPeriod0InterimNumber",
+        "type": "bigint"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period7Statements0Statement0PeriodType",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period7Statements0Statement0Type",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period7Statements0Statement0FinancialValues0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period7Statements0Statement0StatementHeader0",
+        "type": "map",
+        "mapKeys": {
+          "type": "string"
+        },
+        "mapValues": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period7Statements0Statement0StatementDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period7Statements0Statement0PeriodEndDate",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period7PeriodEndDate",
+        "type": "string"
       },
       {
         "name": "ReferenceInformation",
@@ -115,6 +988,178 @@
         "arrayContent": {
           "type": "string"
         }
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem1",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem2",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem3",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem4",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem5",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem6",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem7",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem8",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem9",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem10",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem11",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem12",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem13",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem14",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem15",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem16",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem17",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem18",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem19",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem20",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem21",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem22",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem23",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem24",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem25",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem26",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem27",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem28",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem29",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem30",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem31",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem32",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem33",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem34",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem35",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialsLayout0MapItem36",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period1",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period2",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period3",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period4",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period5",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period6",
+        "type": "string"
+      },
+      {
+        "name": "FinancialInformationFinancialStatements0Period7",
+        "type": "string"
       }
     ],
     "userModified": true
