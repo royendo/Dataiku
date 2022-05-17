@@ -1,23 +1,16 @@
 {
   "name": "test",
-  "endpoints": [
-    {
-      "testQueries": [],
-      "lookups": [],
-      "id": "a",
-      "type": "DATASETS_LOOKUP"
-    }
-  ],
+  "endpoints": [],
   "publicAccess": true,
   "authRealm": {
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652765796480
+    "lastModifiedOn": 1652765819014
   },
   "creationTag": {
     "versionNumber": 0,
