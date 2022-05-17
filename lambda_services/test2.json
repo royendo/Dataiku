@@ -1,15 +1,16 @@
 {
+  "name": "test2",
   "endpoints": [],
   "publicAccess": true,
   "authRealm": {
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652766063977
+    "lastModifiedOn": 1652766073588
   },
   "creationTag": {
     "versionNumber": 0,
