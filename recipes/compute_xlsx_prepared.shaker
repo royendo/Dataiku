@@ -26,7 +26,10 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "steps": [],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
@@ -35,7 +38,34 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "A": 100,
+    "Note EGx": 100,
+    "Thème EAQS": 239,
+    "Industriel": 120,
+    "I": 100,
+    "Identifiant Action stocké": 225,
+    "SAMI": 100,
+    "M": 100,
+    "EG1": 100,
+    "EG0": 100,
+    "EG3": 100,
+    "EG2": 100,
+    "S": 100,
+    "Programme Affaire": 143,
+    "Population": 120,
+    "Année": 100,
+    "EAQS": 300,
+    "MOI": 100,
+    "Numéro Affaire": 120,
+    "Poids Thème": 100,
+    "Poids UO": 100,
+    "Périmètre POV": 113,
+    "Date Fin Réalisé Action": 188,
+    "Lettre": 100,
+    "ID Composant catalogue Action": 253,
+    "Description Composant cat. Action": 300
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
