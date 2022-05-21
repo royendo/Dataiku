@@ -27,7 +27,7 @@
     "style": "unix",
     "charset": "utf8",
     "separator": "\t",
-    "quoteChar": "\"",
+    "quoteChar": "\" ",
     "escapeChar": "\\",
     "dateSerializationFormat": "ISO",
     "arrayMapFormat": "json",
@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652172882865
+    "lastModifiedOn": 1653117213138
   },
   "creationTag": {
     "versionNumber": 0,
