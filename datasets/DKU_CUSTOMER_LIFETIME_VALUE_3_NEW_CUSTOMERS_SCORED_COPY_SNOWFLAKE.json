@@ -27,11 +27,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652171428281
+    "lastModifiedOn": 1653357529787
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,7 @@
       },
       {
         "name": "tz",
-        "type": "string",
+        "type": "boolean",
         "originalType": "VARCHAR",
         "maxLength": 4194304
       },
