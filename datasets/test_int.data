@@ -1,3 +1,51 @@
 {
-  "data": []
+  "data": [
+    [
+      "5",
+      "test"
+    ],
+    [
+      "3",
+      "hello"
+    ],
+    [
+      "2",
+      "abcd"
+    ],
+    [
+      "1",
+      "1"
+    ],
+    [
+      "5",
+      "5"
+    ],
+    [
+      "2",
+      "but"
+    ],
+    [
+      "3",
+      "more"
+    ],
+    [
+      "1",
+      "strings"
+    ],
+    [
+      "10",
+      "hi"
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "schema": {
+    "columns": [
+      {"name":"int_as_str","type":"string"},
+      {"name":"actual strings","type":"string"}
+    ],
+    "userModified": false
+  }
 }

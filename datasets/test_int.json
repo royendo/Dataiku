@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1653435751114
+    "lastModifiedOn": 1653435806738
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,16 @@
     "importProjectKey": "EVERYTHING"
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "int_as_str",
+        "type": "string"
+      },
+      {
+        "name": "actual strings",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
