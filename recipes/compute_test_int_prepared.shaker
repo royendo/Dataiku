@@ -10,7 +10,7 @@
         "enabled": false
       },
       "latestPartitionsN": 1,
-      "maxRecords": 10000,
+      "maxRecords": 3,
       "ordering": {
         "rules": [],
         "enabled": false
