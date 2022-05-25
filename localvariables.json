@@ -1,1 +1,5 @@
-{}
+{
+  "BQ_table": "26698_purchase_amount_ranked_1",
+  "BQ_project": "atsao-290417",
+  "BQ_dataset": "dgraham"
+}
