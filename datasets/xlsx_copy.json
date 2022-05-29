@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651274935397
+    "lastModifiedOn": 1653807788231
   },
   "creationTag": {
     "versionNumber": 0,
@@ -78,7 +78,7 @@
     "metastoreSynchronizationEnabled": true,
     "metastoreTableName": "xlsx_copy",
     "connection": "SupportS3",
-    "path": "/dataiku/${projectKey}/xlsx_copy",
+    "path": "/test",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
