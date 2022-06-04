@@ -1,16 +1,19 @@
 {
   "data": [
     [
-      "12-01-01"
+      "2020-01-01"
     ],
     [
-      null
+      "2020-01-02"
+    ],
+    [
+      "2020-01-03"
     ]
   ],
   "schema": {
     "columns": [
       {"name":"new_column","type":"date"}
     ],
-    "userModified": false
+    "userModified": true
   }
 }
