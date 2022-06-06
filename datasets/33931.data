@@ -5,6 +5,12 @@
       "b",
       "c",
       "c"
+    ],
+    [
+      "second",
+      "row",
+      "values",
+      "test"
     ]
   ],
   "schema": {
