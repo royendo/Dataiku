@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654474063441
+    "lastModifiedOn": 1654474097961
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,24 @@
     "importProjectKey": "EVERYTHING"
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "new_column",
+        "type": "string"
+      },
+      {
+        "name": "new_column_1",
+        "type": "string"
+      },
+      {
+        "name": "new_column_2",
+        "type": "string"
+      },
+      {
+        "name": "new_column_3",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
