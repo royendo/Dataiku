@@ -14,14 +14,14 @@
     ],
     [
       "true",
-      "true"
+      null
     ],
     [
       "false",
       "true"
     ],
     [
-      "false",
+      null,
       "false"
     ]
   ],
@@ -30,6 +30,6 @@
       {"name":"boolean","type":"boolean"},
       {"name":"boolean_str","type":"string"}
     ],
-    "userModified": false
+    "userModified": true
   }
 }
