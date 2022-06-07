@@ -1,3 +1,35 @@
 {
-  "data": []
+  "data": [
+    [
+      "true",
+      "true"
+    ],
+    [
+      "false",
+      "false"
+    ],
+    [
+      "true",
+      "true"
+    ],
+    [
+      "true",
+      "true"
+    ],
+    [
+      "false",
+      "true"
+    ],
+    [
+      "false",
+      "false"
+    ]
+  ],
+  "schema": {
+    "columns": [
+      {"name":"boolean","type":"boolean"},
+      {"name":"boolean_str","type":"string"}
+    ],
+    "userModified": false
+  }
 }
