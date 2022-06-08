@@ -1,48 +1,15 @@
 {
-  "type": "shaker",
+  "type": "sql_query",
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "engineType": "SQL",
-    "engineParams": {
-      "spark": {
-        "readParams": {
-          "mode": "AUTO",
-          "autoModeRepartitionInto": 10,
-          "map": {
-            "booleanss": {
-              "repartition": 10
-            }
-          }
-        },
-        "useGlobalMetastore": false,
-        "useNativeProcessors": true,
-        "sparkConfig": {
-          "inheritConf": "default",
-          "conf": []
-        },
-        "executionEngine": "SPARK_SUBMIT",
-        "pipelineAllowStart": true,
-        "pipelineAllowMerge": true,
-        "skipPrerunValidate": false
-      },
-      "hive": {
-        "inheritConf": "default",
-        "hiveconf": [],
-        "executionEngine": "HIVESERVER2",
-        "addDkuUdf": false,
-        "skipPrerunValidate": false
-      },
-      "impala": {
-        "forceStreamMode": true
-      },
-      "hadoopConfigKeys": [],
-      "sqlPipelineParams": {
-        "pipelineAllowStart": true,
-        "pipelineAllowMerge": true
-      },
-      "maxThreads": 8
-    }
+    "allowMultipleConnections": false,
+    "displayExecutionPlan": true,
+    "sqlPipelineParams": {
+      "pipelineAllowStart": true,
+      "pipelineAllowMerge": true
+    },
+    "skipPrerunValidate": false
   },
   "customMeta": {
     "kv": {}
@@ -73,11 +40,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654646664355
+    "lastModifiedOn": 1654646664475
   },
   "creationTag": {
     "versionNumber": 0,
