@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654647286833
+    "lastModifiedOn": 1654648121466
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,13 +64,13 @@
     "columns": [
       {
         "name": "boolean",
-        "type": "string",
+        "type": "boolean",
         "meaning": "Text",
         "maxLength": 65000
       },
       {
         "name": "boolean_str",
-        "type": "boolean",
+        "type": "string",
         "meaning": "Text",
         "maxLength": 65000
       }
