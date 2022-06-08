@@ -14,14 +14,14 @@
     ],
     [
       "true",
-      null
+      "a"
     ],
     [
       "false",
       "true"
     ],
     [
-      "a",
+      "true",
       "false"
     ]
   ],
