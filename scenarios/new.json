@@ -6,18 +6,18 @@
   "active": false,
   "runAsUser": "endoroy",
   "creationTag": {
-    "versionNumber": 3,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1656377154083
-  },
-  "versionTag": {
     "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1656377163520
+  },
+  "versionTag": {
+    "versionNumber": 5,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1656377201069
   },
   "checklists": {
     "checklists": []
@@ -46,6 +46,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
+          "webAppId": "wllx2bg",
           "proceedOnFailure": false
         }
       }
