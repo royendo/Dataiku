@@ -6,18 +6,18 @@
   "active": false,
   "runAsUser": "endoroy",
   "creationTag": {
-    "versionNumber": 2,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1652071068530
-  },
-  "versionTag": {
     "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1656377154083
+  },
+  "versionTag": {
+    "versionNumber": 4,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1656377163520
   },
   "checklists": {
     "checklists": []
@@ -32,32 +32,6 @@
   "reporters": [],
   "params": {
     "steps": [
-      {
-        "id": "build_0_true_f_PExuz1em",
-        "type": "build_flowitem",
-        "name": "Step #1",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
-        "params": {
-          "builds": [
-            {
-              "type": "MANAGED_FOLDER",
-              "itemId": "PExuz1em",
-              "partitionsSpec": ""
-            }
-          ],
-          "jobType": "RECURSIVE_BUILD",
-          "refreshHiveMetastore": true,
-          "proceedOnFailure": false
-        }
-      },
       {
         "id": "restart_webapp_null",
         "type": "restart_webapp",
