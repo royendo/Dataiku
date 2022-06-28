@@ -6,18 +6,18 @@
   "active": false,
   "runAsUser": "endoroy",
   "creationTag": {
-    "versionNumber": 7,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1656458315272
-  },
-  "versionTag": {
     "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1656458316676
+  },
+  "versionTag": {
+    "versionNumber": 9,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1656458411820
   },
   "checklists": {
     "checklists": []
@@ -45,7 +45,7 @@
       },
       "id": "clOr0OCn",
       "name": "test",
-      "runConditionEnabled": false,
+      "runConditionEnabled": true,
       "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
       "phase": "END"
     }
