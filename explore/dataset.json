@@ -137,9 +137,15 @@
             "column": "Order_DateTime",
             "columnType": "DATE",
             "dateFilterType": "RANGE",
-            "maxValue": 1.389323865789E12,
+            "minValue": 1.392718627579E12,
             "isA": "filter",
-            "excludedValues": {},
+            "excludedValues": {
+              "1": true,
+              "2": true,
+              "3": true,
+              "4": true,
+              "5": true
+            },
             "explicitExclude": false
           },
           {
@@ -212,7 +218,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAaJJREFUaEPtmT1OwzAUgFM6IiYkGGkHpxyAc8QCCQ7AxMhEHAGqKkB1mBiZOABIoJdzcAASD5QRJCbUsRixMbTiOf6Jkybzey/+3mc7TtIJluzqLBlv0AI33XgjDZMEpBjTuWyNAyYMZoLT7qKZ2hjgkIEs+Hyrf+EbAUwYTAWnq5j9p9bAhIEUCKuNMExi+BAp3cBYrTVwyDJZ8Kj0zCydqNpZE/GEwbvgdFOnVi2ASQxSpP/vwJhGeA9M4uxOpNEhBgYT4y0wYZkUGmu1VgcPwuBIcHqLMaYa45Vh7GlJFdLLx1Lv+Kk3udmd6MBgcis37MKqN4a3LrL+23n0ijFjKqYSw7Z2YExTnAMPTmAtv6ZfmMHZiHEGXKVV92t4OFwJRqNvG8ZUa1o17ItV+4b377vBw8FMtfsu4o0b9tGqFcPbyeP6y3jv04UlnXsYMVzm25LOoHVytYAHZ1k/v3R7UtKB/c0tDez7WjX2Pjw4hZ38ij7rdrqqfCXDYQKyWPDPpioA1fsqAasW9zG+BfbRiskxtYZNdtPHWq1hH62YHNMPkEhyKV9Pkb0AAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAZFJREFUaEPtmL1OwzAQgFuQEGJBDGys9tOQ+HF6ETOK+zh2eBp77caAWBCq1BixIUTw+SeO7SZrztZ998l3TrabM3u2Z8a7WYFrN16lYfokX9Vze/+XvOqAKUijeDvJVQ0w3cmD2rcPtiNZBbDN6s8iFA1M4GXU/PHCZrUKYArCKM6chTkvcKnmHLGkE2+6Z3e+excFTDppdD/dgTFFKAKYwPCpeXONAbLFZA9MQBr9z1y1Af5+ny0wBfmheHvjCmSLzxKYdtKowLM6BZ4VMOnESffs0mYp5H02wC63paKBCYh3zdltCITL2kUNx+7AGPBFgCmIo+LsCpNg7JjkwHQnjdqH3ZZCipAMmMJwVLxZxGryr6VUHRhjflbDBMRJ83nnKgYyieElOjAGPrphCsOoeOP0FwKTaKyYqMAxvldjgc16l57zsh+7AMGGCQijPf4txQbB7ucNnNOowcJ+x3kBl2bVeywREKPmLNsOjDGNNpzrXMVAeht23TzHeLThHJP3yWkF9qlaSWtWwyXZ8sn1C3+peCl8uN5IAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
