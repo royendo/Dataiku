@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1656989583689
+    "lastModifiedOn": 1656998962513
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,11 +87,19 @@
   "schema": {
     "columns": [
       {
-        "name": "X",
-        "type": "string"
+        "name": "Order_DateTime",
+        "type": "date"
       },
       {
-        "name": "Value",
+        "name": "Exec_DateTime",
+        "type": "date"
+      },
+      {
+        "name": "Hold_Time",
+        "type": "bigint"
+      },
+      {
+        "name": "User_Id",
         "type": "bigint"
       }
     ],
