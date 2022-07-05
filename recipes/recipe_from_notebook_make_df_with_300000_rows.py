@@ -23,5 +23,5 @@ df = pd.DataFrame(data)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
-output_ds = dataiku.Dataset("work3")
+output_ds = dataiku.Dataset("dataset")
 output_ds.write_with_schema(df)
