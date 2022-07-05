@@ -137,15 +137,10 @@
             "column": "Order_DateTime",
             "columnType": "DATE",
             "dateFilterType": "RANGE",
-            "minValue": 1.392718627579E12,
+            "minValue": 1.391344898211E12,
+            "maxValue": 1.392892265684E12,
             "isA": "filter",
-            "excludedValues": {
-              "1": true,
-              "2": true,
-              "3": true,
-              "4": true,
-              "5": true
-            },
+            "excludedValues": {},
             "explicitExclude": false
           },
           {
@@ -218,7 +213,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAbBJREFUaEPtmbFOwzAURRMhAUIdGRATi92FhU9AzEnKh8BaW0ICJJDdFT6ExJmRmFmYay+MDIwMFQiZFSHSZydxaqfpavv1nnfi1lbiaM0+8ZrxRgNw34330jCaFi9qlh39J693wJgWWrKskqs3wJgILXkK8oATQtjTiIpvxdINk6xBA5ta/d2IYIExEW+Sp3smVoMGrmM1UGAdH1w+bb1eHy9srQYHjGih1ZK/GpsGeL2H0fThTM1O722AoLneArdp1etHGpHiXfFsFzJVd9wrw4jmWrGJ00xOi5taQERoZXAsNK23bN7KgTEtPiXLNtuAMamxMuCmBwgTOG+uh5iKR8nSk7qhm6zr1DCmQksGX+GaAEFrOwHevyp3Rl/RobxNnqFArsedA3f5C2zSLGfAY5qfz9nkziREl3OcAPuwV6ua2CowJuJD8nTUpTHb72oN2GerrV4eMMm15G7Pv7YWnR0tERULxdLtNgO5rlXrkcak1JIntda6BoLqW4ce0/JizpIbqLCv48bAiBRa8epXGL4C/s1lDBwKEJRzAIY6FPr4YDh0g1D+wTDUodDHfwDma3YppoYRWgAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAAXNSR0IArs4c6QAAAZpJREFUaEPtmDFOxDAQRZ2FI1BCBXZFyw2oEEnEZRYHiQqkeLkMsoOoOAI9kk1HCRdAAoy2QKLYKDOJ7djZpPVk/N98eyZKRrbsybaMl8zAU3d8kg4zLj+0KPc2mTc5YMqlNaJs5ZoMcBfon9uTAGZcfmlR7kL6T9LAlCtrRIFiQAVDKhgoZq3b9tkrOWDGldVIV/8XJhlgxtWJrvNnkmW9nE2qaUE7MOSIR+0w5erHiGIBAYHGRAvMKmV1jevAEOjogPuMGgholHeYcvlmRHmAAcDGRuGwy6bUVYBRgY+Wj/tkh3y+1mfvXUJdrY8GTCtljYem1FWY4MB0eX9t7i5uuoT5Wg8KPJarwT8tfY8azGnw7jCtGmvq3Ps+UGhvQkKOGijsOs4LML1snswqP8UICRXrFNjX96/LYjgBPrx6OF4syLe5PX9xKc5HrsHArJJW1+2/RX2IHpKzNzDlqjGiyIdsPsa7vYBTuKttxUQB00pak9Dx3QQNBo51rmKvBRgYmzjW+Bk4Vmdc6ZoddlXJWPPMDsfqjCtdv3NEdClOhfRmAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
