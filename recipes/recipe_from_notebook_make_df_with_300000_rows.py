@@ -18,8 +18,3 @@ df
 
 py_recipe_output = dataiku.Dataset("dataset")
 py_recipe_output.write_with_schema(df)
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# Recipe outputs
-dataset = dataiku.Dataset("dataset")
-dataset.write_with_schema(pandas_dataframe)
