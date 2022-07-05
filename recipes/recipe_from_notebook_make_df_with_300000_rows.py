@@ -10,7 +10,7 @@ np.random.seed(0)
 order_date = pd.date_range('2014-01-01 00:00:00', '2021-12-31 23:59:59', freq='min')  # For 8 years
 exec_date  = pd.date_range('2014-01-02 00:00:00', '2022-01-01 23:59:59', freq='min') 
 num_row = len(order_date) #  4.2M
-hold_time = [np.random.randint(1, 1540000) for _ in range(num_row)]  # Random Int 
+hold_time = [i for i in range(num_row)]  # Random Int 
 user_id = [np.random.randint(10000, 10020) for _ in range(num_row)]
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
