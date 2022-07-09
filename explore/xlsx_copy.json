@@ -5,7 +5,34 @@
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "Population": 120,
+      "Année": 100,
+      "Date Fin Réalisé Action": 188,
+      "MOI": 100,
+      "Industriel": 120,
+      "Identifiant Action stocké": 225,
+      "Poids UO": 100,
+      "SAMI": 100,
+      "S": 100,
+      "A": 100,
+      "M": 100,
+      "I": 100,
+      "EG0": 100,
+      "EG3": 100,
+      "EG2": 100,
+      "EG1": 100,
+      "EAQS": 300,
+      "ID Composant catalogue Action": 253,
+      "Description Composant cat. Action": 300,
+      "Note EGx": 100,
+      "Lettre": 100,
+      "Thème EAQS": 239,
+      "Poids Thème": 100,
+      "Numéro Affaire": 120,
+      "Programme Affaire": 143,
+      "Périmètre POV": 113
+    },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -33,14 +60,16 @@
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
-      "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "autoRefreshSample": true,
+      "_refreshTrigger": 1
     },
     "vizSampling": {
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
@@ -50,63 +79,15 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "stacked_columns",
+        "type": "grouped_columns",
         "variant": "normal",
-        "name": "Avg. of SAMI by Industriel",
+        "name": "New chart",
         "userEditedName": false,
-        "genericDimension0": [
-          {
-            "column": "Industriel",
-            "type": "ALPHANUM",
-            "numParams": {
-              "emptyBinsMode": "ZEROS"
-            },
-            "maxValues": 20,
-            "generateOthersCategory": true,
-            "oneTickPerBin": false,
-            "filters": [],
-            "isA": "dimension",
-            "possibleSorts": [
-              {
-                "type": "NATURAL",
-                "label": "Natural ordering",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of SAMI, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Average of SAMI, ascending",
-                "sortAscending": true
-              }
-            ],
-            "sort": {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Average of SAMI, descending"
-            }
-          }
-        ],
+        "genericDimension0": [],
         "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
-        "genericMeasures": [
-          {
-            "column": "SAMI",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeMode": "NORMAL",
-            "computeModeDim": 0
-          }
-        ],
+        "genericMeasures": [],
         "xDimension": [],
         "yDimension": [],
         "uaXDimension": [],
@@ -124,7 +105,6 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
