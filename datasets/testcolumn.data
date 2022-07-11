@@ -1,13 +1,13 @@
 {
   "data": [
     [
-      "1"
+      null
     ]
   ],
   "schema": {
     "columns": [
       {"name":"new_column","type":"string"}
     ],
-    "userModified": true
+    "userModified": false
   }
 }
