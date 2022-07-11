@@ -1,12 +1,18 @@
 {
   "data": [
     [
+      "1"
+    ],
+    [
+      "2"
+    ],
+    [
       null
     ]
   ],
   "schema": {
     "columns": [
-      {"name":"new_column","type":"string"}
+      {"name":"new_column","type":"string","meaning":"Text"}
     ],
     "userModified": true
   }
