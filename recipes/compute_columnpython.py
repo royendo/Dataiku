@@ -9,10 +9,9 @@ testcolumn = dataiku.Dataset("testcolumn")
 schema = testcolumn.read_schema()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-schema[0]['type'] = 'string'
+schema[0]['type'] = 'int'
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-
 testcolumn_df = testcolumn.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
