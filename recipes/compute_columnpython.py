@@ -6,9 +6,6 @@ from dataiku import pandasutils as pdu
 
 # Read recipe inputs
 testcolumn = dataiku.Dataset("testcolumn")
-
-
-
 schema = testcolumn.read_schema()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
@@ -17,6 +14,9 @@ schema[0]['type'] = 'string'
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 testcolumn.write_schema(schema)
 testcolumn_df = testcolumn.get_dataframe()
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+testcolumn
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Compute recipe outputs from inputs
