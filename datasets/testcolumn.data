@@ -1,12 +1,12 @@
 {
   "data": [
     [
-      null
+      "1"
     ]
   ],
   "schema": {
     "columns": [
-      {"name":"new_column","type":"int","meaning":"LongMeaning"}
+      {"name":"new_column","type":"string"}
     ],
     "userModified": true
   }
