@@ -12,11 +12,8 @@ schema = testcolumn.read_schema()
 schema[0]['type'] = 'string'
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-testcolumn.write_schema(schema)
-testcolumn_df = testcolumn.get_dataframe()
 
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-testcolumn
+testcolumn_df = testcolumn.get_dataframe()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Compute recipe outputs from inputs
@@ -28,4 +25,5 @@ columnpython_df = testcolumn_df # For this sample code, simply copy input to out
 
 # Write recipe outputs
 columnpython = dataiku.Dataset("columnpython")
+columnpython.write_schema(schema)
 columnpython.write_with_schema(columnpython_df)
