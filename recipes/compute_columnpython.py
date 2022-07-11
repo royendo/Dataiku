@@ -25,5 +25,6 @@ columnpython_df = testcolumn_df # For this sample code, simply copy input to out
 
 # Write recipe outputs
 columnpython = dataiku.Dataset("columnpython")
-#columnpython.write_schema(schema)
-columnpython.write_dataframe(columnpython_df, infer_schema=False)
+
+columnpython.write_dataframe(columnpython_df)
+columnpython.write_schema(schema)
