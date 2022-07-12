@@ -51,7 +51,7 @@
     "readDataTypeMismatchBehavior": "DISCARD_WARNING",
     "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
     "fileReadFailureBehavior": "FAIL",
-    "compress": "gz"
+    "compress": ""
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1657667869818
+    "lastModifiedOn": 1657668678385
   },
   "creationTag": {
     "versionNumber": 0,
