@@ -44,7 +44,7 @@
   "permissions": [
     {
       "user": "endoroy",
-      "admin": false,
+      "admin": true,
       "readProjectContent": false,
       "writeProjectContent": true,
       "exportDatasetsData": true,
@@ -229,11 +229,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1657601424521
+    "lastModifiedOn": 1657601439413
   },
   "creationTag": {
     "versionNumber": 0,
