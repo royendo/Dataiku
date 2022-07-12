@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1657667832672
+    "lastModifiedOn": 1657667869818
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,7 +88,64 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "employee_id",
+        "type": "string"
+      },
+      {
+        "name": "status",
+        "type": "string"
+      },
+      {
+        "name": "full_legal_name",
+        "type": "string"
+      },
+      {
+        "name": "preferred_name",
+        "type": "string"
+      },
+      {
+        "name": "email",
+        "type": "string"
+      },
+      {
+        "name": "business_title",
+        "type": "string"
+      },
+      {
+        "name": "team",
+        "type": "string"
+      },
+      {
+        "name": "time_zone",
+        "type": "string"
+      },
+      {
+        "name": "location",
+        "type": "string"
+      },
+      {
+        "name": "city",
+        "type": "string"
+      },
+      {
+        "name": "state",
+        "type": "string"
+      },
+      {
+        "name": "country",
+        "type": "string"
+      },
+      {
+        "name": "continent",
+        "type": "string"
+      },
+      {
+        "name": "slack_user_id",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
