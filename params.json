@@ -41,23 +41,7 @@
     }
   },
   "owner": "admin",
-  "permissions": [
-    {
-      "user": "endoroy",
-      "admin": true,
-      "readProjectContent": false,
-      "writeProjectContent": true,
-      "exportDatasetsData": true,
-      "readDashboards": false,
-      "writeDashboards": false,
-      "moderateDashboards": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": true,
-      "manageExposedElements": true,
-      "manageAdditionalDashboardUsers": true,
-      "executeApp": false
-    }
-  ],
+  "permissions": [],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -229,11 +213,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1657601439413
+    "lastModifiedOn": 1657601669455
   },
   "creationTag": {
     "versionNumber": 0,
