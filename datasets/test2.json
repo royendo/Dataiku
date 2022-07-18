@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658108136502
+    "lastModifiedOn": 1658108708129
   },
   "creationTag": {
     "versionNumber": 0,
@@ -53,8 +53,9 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
+    "catalog": "rendo-mysql",
     "table": "${projectKey}_test2",
-    "schema": "dgraham",
+    "schema": "rendo",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
@@ -118,7 +119,7 @@
         "type": "bigint"
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {
