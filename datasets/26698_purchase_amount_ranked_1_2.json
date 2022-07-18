@@ -27,11 +27,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658107875486
+    "lastModifiedOn": 1658108786376
   },
   "creationTag": {
     "versionNumber": 0,
@@ -52,9 +52,9 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "catalog": "atsao-290417",
-    "table": "26698_purchase_amount_ranked_1",
-    "schema": "dgraham",
+    "catalog": "rendo-mysql",
+    "table": "EVERYTHING_test2",
+    "schema": "rendo",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
@@ -65,8 +65,7 @@
     "columns": [
       {
         "name": "transaction_id",
-        "type": "string",
-        "maxLength": 16200
+        "type": "bigint"
       },
       {
         "name": "card_id",
@@ -85,18 +84,15 @@
       },
       {
         "name": "purchase_amount",
-        "type": "string",
-        "maxLength": 16200
+        "type": "double"
       },
       {
         "name": "authorized_flag",
-        "type": "string",
-        "maxLength": 16200
+        "type": "double"
       },
       {
         "name": "signature_provided",
-        "type": "string",
-        "maxLength": 16200
+        "type": "bigint"
       },
       {
         "name": "merchant_id",
@@ -115,13 +111,11 @@
       },
       {
         "name": "purchase_amount_avg",
-        "type": "string",
-        "maxLength": 16200
+        "type": "double"
       },
       {
         "name": "rank",
-        "type": "string",
-        "maxLength": 16200
+        "type": "bigint"
       }
     ],
     "userModified": true
