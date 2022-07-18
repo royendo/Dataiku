@@ -1,14 +1,28 @@
 {
   "connection": "bigquery",
   "name": "admin\u0027s notebook on bigquery",
-  "cells": [],
+  "cells": [
+    {
+      "id": "czdrayibpdw",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658117713835
+    "lastModifiedOn": 1658117725011
   },
   "creationTag": {
     "versionNumber": 0,
