@@ -3,7 +3,8 @@
   "endpoints": [
     {
       "envSelection": {
-        "envMode": "INHERIT"
+        "envMode": "EXPLICIT_ENV",
+        "envName": "Dash"
       },
       "testQueries": [
         {
@@ -12,7 +13,7 @@
       ],
       "inputFolderRefs": [],
       "userFunctionName": "api_py_function",
-      "code": "\n# Insert here initialization code\nimport tester\n# This function is the entry point for your Python function API\n# You can call this function with passing \"param1\", \"param2\",\n# \"param3\" as arguments to the API call\n# (see REST API documentation)\ndef api_py_function():\n    return tester.foo()\n",
+      "code": "\n# Insert here initialization code\nimport tester\nimport cv2\n# This function is the entry point for your Python function API\n# You can call this function with passing \"param1\", \"param2\",\n# \"param3\" as arguments to the API call\n# (see REST API documentation)\ndef api_py_function():\n    return tester.foo()\n",
       "id": "libraries",
       "type": "PY_FUNCTION"
     }
@@ -22,11 +23,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1657592492951
+    "lastModifiedOn": 1658106056687
   },
   "creationTag": {
     "versionNumber": 0,
