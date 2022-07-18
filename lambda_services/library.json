@@ -4,7 +4,7 @@
     {
       "envSelection": {
         "envMode": "EXPLICIT_ENV",
-        "envName": "Dash"
+        "envName": "MLFLOW"
       },
       "testQueries": [
         {
@@ -23,11 +23,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658106056687
+    "lastModifiedOn": 1658107027059
   },
   "creationTag": {
     "versionNumber": 0,
