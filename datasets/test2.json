@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658107887572
+    "lastModifiedOn": 1658107970019
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,8 +61,63 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "transaction_id",
+        "type": "bigint"
+      },
+      {
+        "name": "card_id",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "item_category",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "purchase_date",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "purchase_amount",
+        "type": "double"
+      },
+      {
+        "name": "authorized_flag",
+        "type": "double"
+      },
+      {
+        "name": "signature_provided",
+        "type": "bigint"
+      },
+      {
+        "name": "merchant_id",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "merchant_state",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "card_state",
+        "type": "string",
+        "maxLength": 16200
+      },
+      {
+        "name": "purchase_amount_avg",
+        "type": "double"
+      },
+      {
+        "name": "rank",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
