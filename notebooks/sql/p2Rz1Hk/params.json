@@ -6,7 +6,7 @@
       "id": "czdrayibpdw",
       "type": "QUERY",
       "querySettings": {
-        "addLimitToStatement": true,
+        "addLimitToStatement": false,
         "statementsOutOfTransaction": false,
         "inheritConf": "default",
         "extraConf": [],
@@ -18,11 +18,11 @@
   ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658117725011
+    "lastModifiedOn": 1658117944435
   },
   "creationTag": {
     "versionNumber": 0,
