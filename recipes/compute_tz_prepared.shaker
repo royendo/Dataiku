@@ -40,7 +40,7 @@
         "inCol": "new_column",
         "outCol": "new_column_formatted",
         "format": "yyyy-MM-dd HH:mm:ss",
-        "timezone_id": "Europe/London",
+        "timezone_id": "UTC",
         "lang": "en_US"
       },
       "alwaysShowComment": false
