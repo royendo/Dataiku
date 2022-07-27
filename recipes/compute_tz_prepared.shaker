@@ -30,7 +30,22 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateFormatter",
+      "params": {
+        "inCol": "new_column",
+        "outCol": "new_column_formatted",
+        "format": "yyyy-MM-dd HH:mm:ss",
+        "timezone_id": "Europe/London",
+        "lang": "en_US"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -39,7 +54,8 @@
   },
   "analysisColumnData": {},
   "columnWidthsByName": {
-    "new_column": 183
+    "new_column": 183,
+    "new_column_formatted": 190
   },
   "sorting": [],
   "globalSearchQuery": "",
