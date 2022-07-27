@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1658880333864
+    "lastModifiedOn": 1658880430633
   },
   "creationTag": {
     "versionNumber": 0,
@@ -48,7 +48,9 @@
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
+    "catalog": "INTEGRATION_TESTS",
     "table": "${projectKey}_DATE-TEST_PREPARED_COPY",
+    "schema": "PUBLIC",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
