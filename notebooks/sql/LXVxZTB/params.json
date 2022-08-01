@@ -1,14 +1,28 @@
 {
   "connection": "snowflake",
   "name": "admin\u0027s notebook on snowflake",
-  "cells": [],
+  "cells": [
+    {
+      "id": "k69wxnsk00d",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1659315781823
+    "lastModifiedOn": 1659318005003
   },
   "creationTag": {
     "versionNumber": 0,
