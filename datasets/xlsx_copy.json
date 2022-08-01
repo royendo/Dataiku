@@ -1,0 +1,248 @@
+{
+  "type": "PostgreSQL",
+  "managed": true,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1659315673726
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1659315673722
+  },
+  "tags": [],
+  "params": {
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "PostGreSQL",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_xlsx_copy",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "Population",
+        "type": "string"
+      },
+      {
+        "name": "Année",
+        "type": "string"
+      },
+      {
+        "name": "Date Fin Réalisé Action",
+        "type": "string"
+      },
+      {
+        "name": "MOI",
+        "type": "string"
+      },
+      {
+        "name": "Industriel",
+        "type": "string"
+      },
+      {
+        "name": "Identifiant Action stocké",
+        "type": "string"
+      },
+      {
+        "name": "Poids UO",
+        "type": "string"
+      },
+      {
+        "name": "SAMI",
+        "type": "string"
+      },
+      {
+        "name": "S",
+        "type": "string"
+      },
+      {
+        "name": "A",
+        "type": "string"
+      },
+      {
+        "name": "M",
+        "type": "string"
+      },
+      {
+        "name": "I",
+        "type": "string"
+      },
+      {
+        "name": "EG0",
+        "type": "string"
+      },
+      {
+        "name": "EG3",
+        "type": "string"
+      },
+      {
+        "name": "EG2",
+        "type": "string"
+      },
+      {
+        "name": "EG1",
+        "type": "string"
+      },
+      {
+        "name": "EAQS",
+        "type": "string"
+      },
+      {
+        "name": "ID Composant catalogue Action",
+        "type": "string"
+      },
+      {
+        "name": "Description Composant cat. Action",
+        "type": "string"
+      },
+      {
+        "name": "Note EGx",
+        "type": "string"
+      },
+      {
+        "name": "Lettre",
+        "type": "string"
+      },
+      {
+        "name": "Thème EAQS",
+        "type": "string"
+      },
+      {
+        "name": "Poids Thème",
+        "type": "string"
+      },
+      {
+        "name": "Numéro Affaire",
+        "type": "string"
+      },
+      {
+        "name": "Programme Affaire",
+        "type": "string"
+      },
+      {
+        "name": "Périmètre POV",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
