@@ -5,18 +5,18 @@
   "name": "a",
   "active": false,
   "creationTag": {
-    "versionNumber": 5,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1662425228286
-  },
-  "versionTag": {
     "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1662425312370
+  },
+  "versionTag": {
+    "versionNumber": 7,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1662425323193
   },
   "checklists": {
     "checklists": []
@@ -42,7 +42,7 @@
           "Tuesday"
         ],
         "monthlyRunOn": "ON_THE_DAY",
-        "minute": 0,
+        "minute": 2,
         "hour": 4,
         "timezone": "UTC"
       }
