@@ -5,18 +5,18 @@
   "name": "a",
   "active": false,
   "creationTag": {
-    "versionNumber": 6,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1662425312370
-  },
-  "versionTag": {
     "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1662425323193
+  },
+  "versionTag": {
+    "versionNumber": 8,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1662425361361
   },
   "checklists": {
     "checklists": []
@@ -45,6 +45,25 @@
         "minute": 2,
         "hour": 4,
         "timezone": "UTC"
+      }
+    },
+    {
+      "id": "ssFYEeyo",
+      "type": "temporal",
+      "name": "test",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "repeatFrequency": 1,
+        "frequency": "Monthly",
+        "startingFrom": "2022-09-29T00:49:00.000Z",
+        "daysOfWeek": [
+          "Tuesday"
+        ],
+        "monthlyRunOn": "ON_THE_DAY",
+        "minute": 49,
+        "hour": 9,
+        "timezone": "SERVER"
       }
     }
   ],
