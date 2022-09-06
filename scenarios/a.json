@@ -5,18 +5,18 @@
   "name": "a",
   "active": false,
   "creationTag": {
-    "versionNumber": 4,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1662425200888
-  },
-  "versionTag": {
     "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1662425228286
+  },
+  "versionTag": {
+    "versionNumber": 6,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1662425312370
   },
   "checklists": {
     "checklists": []
@@ -37,7 +37,7 @@
       "params": {
         "repeatFrequency": 1,
         "frequency": "Monthly",
-        "startingFrom": "2022-09-06T00:44:00.000Z",
+        "startingFrom": "2022-09-04T00:44:00.000Z",
         "daysOfWeek": [
           "Tuesday"
         ],
