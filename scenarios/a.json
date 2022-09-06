@@ -5,18 +5,18 @@
   "name": "a",
   "active": false,
   "creationTag": {
-    "versionNumber": 8,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1662425361361
-  },
-  "versionTag": {
     "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1662425389361
+  },
+  "versionTag": {
+    "versionNumber": 10,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1662425408370
   },
   "checklists": {
     "checklists": []
@@ -27,46 +27,7 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [
-    {
-      "id": "lZAabfMx",
-      "type": "temporal",
-      "name": "Time-based",
-      "delay": 5,
-      "active": true,
-      "params": {
-        "repeatFrequency": 1,
-        "frequency": "Monthly",
-        "startingFrom": "2022-09-04T00:44:00.000Z",
-        "daysOfWeek": [
-          "Tuesday"
-        ],
-        "monthlyRunOn": "ON_THE_DAY",
-        "minute": 2,
-        "hour": 4,
-        "timezone": "UTC"
-      }
-    },
-    {
-      "id": "ssFYEeyo",
-      "type": "temporal",
-      "name": "test",
-      "delay": 5,
-      "active": true,
-      "params": {
-        "repeatFrequency": 1,
-        "frequency": "Monthly",
-        "startingFrom": "2022-09-29T00:49:00.000Z",
-        "daysOfWeek": [
-          "Tuesday"
-        ],
-        "monthlyRunOn": "ON_THE_DAY",
-        "minute": 43,
-        "hour": 5,
-        "timezone": "SERVER"
-      }
-    }
-  ],
+  "triggers": [],
   "reporters": [],
   "params": {
     "steps": []
