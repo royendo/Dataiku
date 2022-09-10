@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1662768761835
+    "lastModifiedOn": 1662768820075
   },
   "creationTag": {
     "versionNumber": 0,
@@ -43,12 +43,14 @@
   },
   "tags": [],
   "params": {
+    "tableDistributionMode": "ROUND_ROBIN",
     "connection": "SQL_Server",
     "notReadyIfEmpty": false,
     "mode": "table",
     "partitioningType": "custom",
     "normalizeDoubles": true,
     "table": "${projectKey}_sqlserver",
+    "schema": "fdfd",
     "tableCreationMode": "auto",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
