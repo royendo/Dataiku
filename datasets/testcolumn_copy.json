@@ -65,11 +65,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1662939191405
+    "lastModifiedOn": 1662939207259
   },
   "creationTag": {
     "versionNumber": 0,
@@ -92,11 +92,6 @@
   },
   "schema": {
     "columns": [
-      {
-        "name": "new_column",
-        "type": "string",
-        "meaning": "Text"
-      },
       {
         "name": "new_column_1",
         "type": "string"
