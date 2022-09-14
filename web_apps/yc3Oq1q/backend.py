@@ -2,14 +2,16 @@ from bokeh.plotting import figure
 from bokeh.models import ColumnDataSource, Select
 from bokeh.layouts import column
 from bokeh.io import curdoc
-import pandas as pd
+
+import dataiku
 
 # load the dataframe from a CSV file
-df = pd.read_csv('AAPL.csv', parse_dates=['Date'])
+dataset = dataiku.Dataset("dnb_api_prepared")
+df = dataset.get_dataframe()
 
 # extract the columns
-Date = df['Date']
-Close = df['Close']
+Date = df['SAMI']
+Close = df['Poids UO']
 AdjClose = df['Adj Close']
 
 # create the data source
