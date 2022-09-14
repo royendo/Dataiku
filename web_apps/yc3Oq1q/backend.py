@@ -7,7 +7,7 @@ dataset = dataiku.Dataset("xlsx")
 df = dataset.get_dataframe()
 
 x = df['S']
-y = df['SAMI'
+y = df['SAMI']
       
 p = figure()
 p.line(x=x, y=y)]
