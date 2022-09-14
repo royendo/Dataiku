@@ -1,5 +1,5 @@
 from bokeh.io import curdoc
-from bokeh.plotting import figure
+from bokeh.plotting import figure, show
 
 #Import data
 import dataiku
