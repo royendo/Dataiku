@@ -6,7 +6,7 @@ from bokeh.io import curdoc
 import dataiku
 
 # load the dataframe from a CSV file
-dataset = dataiku.Dataset("dnb_api_prepared")
+dataset = dataiku.Dataset("xlsx")
 df = dataset.get_dataframe()
 
 # extract the columns
