@@ -2,6 +2,7 @@ from bokeh.plotting import figure
 from bokeh.models import ColumnDataSource, Select
 from bokeh.layouts import column
 from bokeh.io import curdoc
+import pandas as pd
 
 # load the dataframe from a CSV file
 df = pd.read_csv('AAPL.csv', parse_dates=['Date'])
