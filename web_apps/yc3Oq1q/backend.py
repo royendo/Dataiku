@@ -10,4 +10,4 @@ x = df['S']
 y = df['SAMI']
       
 p = figure()
-p.line(x=x, y=y)]
+p.line(x=x, y=y)
