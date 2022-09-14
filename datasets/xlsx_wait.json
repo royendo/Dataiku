@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1663120362213
+    "lastModifiedOn": 1663121147561
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,113 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "Population",
+        "type": "string"
+      },
+      {
+        "name": "Année",
+        "type": "bigint"
+      },
+      {
+        "name": "Date Fin Réalisé Action",
+        "type": "string"
+      },
+      {
+        "name": "MOI",
+        "type": "string"
+      },
+      {
+        "name": "Industriel",
+        "type": "string"
+      },
+      {
+        "name": "Identifiant Action stocké",
+        "type": "string"
+      },
+      {
+        "name": "Poids UO",
+        "type": "bigint"
+      },
+      {
+        "name": "SAMI",
+        "type": "bigint"
+      },
+      {
+        "name": "S",
+        "type": "double"
+      },
+      {
+        "name": "A",
+        "type": "double"
+      },
+      {
+        "name": "M",
+        "type": "double"
+      },
+      {
+        "name": "I",
+        "type": "double"
+      },
+      {
+        "name": "EG0",
+        "type": "double"
+      },
+      {
+        "name": "EG3",
+        "type": "double"
+      },
+      {
+        "name": "EG2",
+        "type": "double"
+      },
+      {
+        "name": "EG1",
+        "type": "double"
+      },
+      {
+        "name": "EAQS",
+        "type": "string"
+      },
+      {
+        "name": "ID Composant catalogue Action",
+        "type": "string"
+      },
+      {
+        "name": "Description Composant cat. Action",
+        "type": "string"
+      },
+      {
+        "name": "Note EGx",
+        "type": "string"
+      },
+      {
+        "name": "Lettre",
+        "type": "string"
+      },
+      {
+        "name": "Thème EAQS",
+        "type": "string"
+      },
+      {
+        "name": "Poids Thème",
+        "type": "double"
+      },
+      {
+        "name": "Numéro Affaire",
+        "type": "string"
+      },
+      {
+        "name": "Programme Affaire",
+        "type": "string"
+      },
+      {
+        "name": "Périmètre POV",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
