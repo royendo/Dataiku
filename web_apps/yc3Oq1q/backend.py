@@ -27,10 +27,7 @@ def update_plot(attr, old, new):
         source.data['y'] = Close
         p.yaxis.axis_label = 'Close'
 
-# display a selection menu
-menu = Select(options=[('Close','Close'), ('Adj Close','Adj Close')],
-              value='Close',
-              title = 'AAPL Stocks')
+
 
 # callback when the Select menu changes its value
 menu.on_change('value', update_plot)
