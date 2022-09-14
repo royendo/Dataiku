@@ -1,73 +1,53 @@
-from bokeh.plotting import figure, output_file, show
-from bokeh.models import ColumnDataSource
-from bokeh.layouts import row, column, gridplot
-
-import pandas as pd
-import numpy as np
-import math
-
+from bokeh.plotting import figure
+from bokeh.models import ColumnDataSource, Select
+from bokeh.layouts import column
 from bokeh.io import curdoc
 
-x = np.arange(0, math.pi*2, 0.05)
+# load the dataframe from a CSV file
+df = pd.read_csv('AAPL.csv', parse_dates=['Date'])
 
-df = pd.DataFrame(dict(
-    x = x,
-    sin = np.sin(x),
-    cos = np.cos(x),
-    tan = np.tan(x)
-))
+# extract the columns
+Date = df['Date']
+Close = df['Close']
+AdjClose = df['Adj Close']
 
-source = ColumnDataSource(data=df)
+# create the data source
+source = ColumnDataSource(data=
+{
+    'x' : Date,
+    'y' : Close
+})
 
-#-------------------------------
-#   Sine Wave
-#-------------------------------
-p1 = figure(title = "Sine wave",
-            x_axis_label = 'x',
-            y_axis_label = 'y',
-            plot_width=300,
-            plot_height=300
-)
-p1.line('x', 'sin',
-        source=source,
-        legend_label = "sine",
-        line_width = 2)
+# called when the Select item changes in value
+def update_plot(attr, old, new):
+    if new == 'Close':
+        # update the data source
+        source.data['y'] = Close
+        p.yaxis.axis_label = 'Close'
+    else:
+        source.data['y'] = AdjClose
+        p.yaxis.axis_label = 'Adj Close'
 
-#-------------------------------
-#   Cosine Wave
-#-------------------------------
-p2 = figure(title = "Cosine wave",
-            x_axis_label = 'x',
-            y_axis_label = 'y',
-            plot_width=300,
-            plot_height=300
-)
-p2.line('x', 'cos',
-        source=source,
-        legend_label = "cos",
-        line_width = 2)
+# display a selection menu
+menu = Select(options=[('Close','Close'), ('Adj Close','Adj Close')],
+              value='Close',
+              title = 'AAPL Stocks')
 
-#-------------------------------
-#   Tangent Wave
-#-------------------------------
-p3 = figure(title = "Tangent wave",
-            x_axis_label = 'x',
-            y_axis_label = 'y',
-            plot_width=300,
-            plot_height=300
-)
-p3.line('x', 'tan',
-        source=source,
-        legend_label = "tan",
-        line_width = 2)
+# callback when the Select menu changes its value
+menu.on_change('value', update_plot)
 
-#-------------------------------
-#   Laying out in gridplot
-#-------------------------------
-plot = gridplot([p1, p2, p3], ncols=2, sizing_mode='stretch_both')
+p = figure(x_axis_type='datetime') # display the x-axis as dates
 
-# output_file("sine_cosine_tangent.html")
-# show(plot)
+p.line('x',
+       'y',
+       source=source,
+       color='green',
+       width=3)
 
-curdoc().add_root(plot)
-curdoc().title = "Using the Bokeh Server"
+p.title.text = 'AAPL Stock Prices'
+p.xaxis.axis_label = 'Date'
+p.yaxis.axis_label = 'Close'
+
+curdoc().theme = 'night_sky'
+curdoc().add_root(column(menu, p))
+curdoc().title = "First Graph"
