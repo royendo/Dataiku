@@ -12,7 +12,6 @@ df = dataset.get_dataframe()
 # extract the columns
 Date = df['SAMI']
 Close = df['Poids UO']
-AdjClose = df['Adj Close']
 
 # create the data source
 source = ColumnDataSource(data=
@@ -27,9 +26,6 @@ def update_plot(attr, old, new):
         # update the data source
         source.data['y'] = Close
         p.yaxis.axis_label = 'Close'
-    else:
-        source.data['y'] = AdjClose
-        p.yaxis.axis_label = 'Adj Close'
 
 # display a selection menu
 menu = Select(options=[('Close','Close'), ('Adj Close','Adj Close')],
