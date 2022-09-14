@@ -1,5 +1,5 @@
 from bokeh.io import curdoc
-from bokeh.plotting import figure, show
+from bokeh.plotting import figure, show, output_file
 
 #Import data
 import dataiku
@@ -11,5 +11,6 @@ y = df['SAMI']
       
 p = figure()
 p.line(x=x, y=y)
+output_file("foo.html")
 
 show(p)
