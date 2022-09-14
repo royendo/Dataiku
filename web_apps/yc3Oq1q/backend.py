@@ -12,4 +12,4 @@ y = df['SAMI']
 p = figure()
 p.line(x=x, y=y)
 
-show{p}
+show(p)
