@@ -39,6 +39,5 @@ p.title.text = 'AAPL Stock Prices'
 p.xaxis.axis_label = 'Date'
 p.yaxis.axis_label = 'Close'
 
-curdoc().theme = 'night_sky'
 curdoc().add_root(column(menu, p))
 curdoc().title = "First Graph"
