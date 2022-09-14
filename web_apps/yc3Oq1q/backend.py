@@ -29,9 +29,6 @@ def update_plot(attr, old, new):
 
 
 
-# callback when the Select menu changes its value
-menu.on_change('value', update_plot)
-
 p = figure(x_axis_type='datetime') # display the x-axis as dates
 
 p.line('x',
