@@ -33,9 +33,7 @@ p = figure(x_axis_type='datetime') # display the x-axis as dates
 
 p.line('x',
        'y',
-       source=source,
-       color='green',
-       width=3)
+       source=source)
 
 p.title.text = 'AAPL Stock Prices'
 p.xaxis.axis_label = 'Date'
