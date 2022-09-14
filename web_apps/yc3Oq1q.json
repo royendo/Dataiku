@@ -32,11 +32,11 @@
   "config": {},
   "name": "rebuild_test",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1663120262548
+    "lastModifiedOn": 1663120310647
   },
   "creationTag": {
     "versionNumber": 0,
