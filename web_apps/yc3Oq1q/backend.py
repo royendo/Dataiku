@@ -9,7 +9,7 @@ df = dataset.get_dataframe()
 x = df['S']
 y = df['SAMI']
       
-p = figure()
+p = figure(width=300, height=300)
 p.line(x=x, y=y)
 output_file("foo.html")
 
