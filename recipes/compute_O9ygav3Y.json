@@ -3,7 +3,26 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "logs": [
+        "gamma"
+      ],
+      "data": "Bakken",
+      "surface_column": "surface",
+      "depth_column": "depth",
+      "markers": [
+        "BB000",
+        "LB000",
+        "LB009",
+        "MB000",
+        "TF100",
+        "TF180",
+        "TF200",
+        "TF300",
+        "TF330",
+        "UB000"
+      ]
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +56,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1663370461116
+    "lastModifiedOn": 1663370462993
   },
   "creationTag": {
     "versionNumber": 0,
