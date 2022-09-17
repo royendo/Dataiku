@@ -1,0 +1,66 @@
+{
+  "type": "CustomCode_aaa",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "customConfig": {},
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "input_A_role": {
+      "items": [
+        {
+          "ref": "26698_purchase_amount_ranked_1",
+          "deps": []
+        }
+      ]
+    },
+    "input_B_role": {
+      "items": [
+        {
+          "ref": "26698_purchase_amount_ranked_1_1",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main_output": {
+      "items": [
+        {
+          "ref": "output",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1663389506971
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1663389506971
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
