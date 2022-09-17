@@ -1,3 +1,46 @@
 {
-  "data": []
+  "data": [
+    [
+      "t"
+    ],
+    [
+      "f"
+    ],
+    [
+      "t"
+    ],
+    [
+      "f"
+    ],
+    [
+      "t"
+    ],
+    [
+      "f"
+    ],
+    [
+      "t"
+    ],
+    [
+      "t"
+    ],
+    [
+      "t"
+    ],
+    [
+      "t"
+    ],
+    [
+      "f"
+    ],
+    [
+      "t"
+    ]
+  ],
+  "schema": {
+    "columns": [
+      {"name":"iscondemned","type":"boolean"}
+    ],
+    "userModified": false
+  }
 }
