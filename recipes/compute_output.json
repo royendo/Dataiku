@@ -38,7 +38,7 @@
     "input_A_role": {
       "items": [
         {
-          "ref": "26698_purchase_amount_ranked_1",
+          "ref": "33931",
           "deps": []
         }
       ]
@@ -47,6 +47,10 @@
       "items": [
         {
           "ref": "26698_purchase_amount_ranked_1_1",
+          "deps": []
+        },
+        {
+          "ref": "33931_2",
           "deps": []
         }
       ]
@@ -64,11 +68,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1663389510694
+    "lastModifiedOn": 1663389531376
   },
   "creationTag": {
     "versionNumber": 0,
