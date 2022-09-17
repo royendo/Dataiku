@@ -21,7 +21,8 @@
         "TF300",
         "TF330",
         "UB000"
-      ]
+      ],
+      "parameter2": 42
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -64,11 +65,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1663389662495
+    "lastModifiedOn": 1663390178023
   },
   "creationTag": {
     "versionNumber": 0,
