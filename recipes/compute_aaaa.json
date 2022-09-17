@@ -9,7 +9,7 @@
       "pipelineAllowStart": true,
       "pipelineAllowMerge": true
     },
-    "skipPrerunValidate": false
+    "skipPrerunValidate": true
   },
   "customMeta": {
     "kv": {}
@@ -40,11 +40,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1663373890921
+    "lastModifiedOn": 1663373917619
   },
   "creationTag": {
     "versionNumber": 0,
