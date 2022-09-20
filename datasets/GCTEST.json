@@ -24,9 +24,9 @@
     }
   },
   "formatParams": {
-    "style": "unix",
-    "charset": "utf8",
-    "separator": "\t",
+    "style": "excel",
+    "charset": "utf-8",
+    "separator": "|",
     "quoteChar": "\"",
     "escapeChar": "\\",
     "dateSerializationFormat": "ISO",
@@ -40,10 +40,10 @@
       "\u0007",
       "\b"
     ],
-    "skipRowsBeforeHeader": 0,
+    "skipRowsBeforeHeader": 6,
     "parseHeaderRow": false,
     "skipRowsAfterHeader": 0,
-    "probableNumberOfRecords": 0,
+    "probableNumberOfRecords": 37,
     "normalizeBooleans": false,
     "normalizeDoubles": true,
     "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
@@ -51,7 +51,7 @@
     "readDataTypeMismatchBehavior": "DISCARD_WARNING",
     "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
     "fileReadFailureBehavior": "FAIL",
-    "compress": "gz"
+    "compress": ""
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1663639471403
+    "lastModifiedOn": 1663639578938
   },
   "creationTag": {
     "versionNumber": 0,
@@ -95,10 +95,6 @@
     "columns": [
       {
         "name": "col_0",
-        "type": "string"
-      },
-      {
-        "name": "col_1",
         "type": "string"
       }
     ],
