@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1663639199209
+    "lastModifiedOn": 1663639380039
   },
   "creationTag": {
     "versionNumber": 0,
@@ -74,18 +74,30 @@
   },
   "tags": [],
   "params": {
-    "connection": "filesystem_managed",
-    "path": "${projectKey}/GCTEST",
+    "connection": "filesystem_root",
+    "path": "/Users/rendo/Library/DataScienceStudio9/run",
     "notReadyIfEmpty": false,
+    "previewFile": "",
     "filesSelectionRules": {
-      "mode": "ALL",
+      "mode": "RULES_INCLUDED_ONLY",
       "excludeRules": [],
-      "includeRules": [],
+      "includeRules": [
+        {
+          "matchingMode": "FILENAME",
+          "mode": "REGEXP",
+          "expr": "backend.log."
+        }
+      ],
       "explicitFiles": []
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "col_0",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
