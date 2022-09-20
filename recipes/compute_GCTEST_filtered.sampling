@@ -1,4 +1,16 @@
 {
+  "uiData": {
+    "mode": "\u0026\u0026",
+    "conditions": [
+      {
+        "input": "col_0",
+        "string": "GC",
+        "num": 0,
+        "operator": "contains"
+      }
+    ]
+  },
+  "$status": {},
   "distinct": false,
-  "enabled": false
+  "enabled": true
 }
