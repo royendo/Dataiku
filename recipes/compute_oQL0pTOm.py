@@ -4,12 +4,12 @@ client = dataiku.api_client()
 project = client.get_project('EVERYTHING')
 
 # Read recipe inputs
-tests = dataiku.get_managed_folder("iV6c3jWU")
+tests = project.get_managed_folder("iV6c3jWU")
 tests_info = tests.get_info()
 
 
 # Write recipe outputs
-folder = dataiku.get_managed_folder("oQL0pTOm")
+folder = project.get_managed_folder("oQL0pTOm")
 folder_info = folder.get_info()
 
 
