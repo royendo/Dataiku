@@ -23,5 +23,5 @@ import os
 
 handle = dataiku.Folder("oQL0pTOm")
 # This copies a local file to the managed folder
-with open("local_file_to_upload") as f:
+with open("/Users/rendo/Desktop/text.index") as f:
     folder.upload_stream("name_of_file_in_folder", f)
