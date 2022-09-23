@@ -13,5 +13,6 @@ folder = dataiku.Folder("oQL0pTOm")
 folder_info = folder.get_info()
 
 
-with folder.get_writer("myoutputfile.txt") as w:
-    w.write("some data")
+# target_folder will now contain a copy of all files that were in source_folder
+future = tests.copy_to(folder)
+future.wait_for_result()
