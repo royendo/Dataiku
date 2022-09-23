@@ -22,6 +22,6 @@ import dataiku
 import os
 
 handle = dataiku.Folder("oQL0pTOm")
-with handle.get_writer("myoutputfile.txt") as w:
-    w.write()
-
+# This copies a local file to the managed folder
+with open("local_file_to_upload") as f:
+    folder.upload_stream("name_of_file_in_folder", f)
