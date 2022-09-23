@@ -23,5 +23,5 @@ import os
 
 handle = dataiku.Folder("oQL0pTOm")
 with handle.get_writer("myoutputfile.txt") as w:
-    w.write("")
+    w.write()
 
