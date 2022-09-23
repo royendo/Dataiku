@@ -24,4 +24,4 @@ import os
 handle = dataiku.Folder("oQL0pTOm")
 path = handle.get_path()
 path_in = os.path.join(path, 'test.index')
-os.write_index(index,path_in) 
+os.write(index,path_in) 
