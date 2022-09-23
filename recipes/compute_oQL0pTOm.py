@@ -22,6 +22,6 @@ import dataiku
 import os
 
 handle = dataiku.Folder("oQL0pTOm")
-path = handle.get_path()
-path_in = os.path.join(path, 'test.index')
-os.write(index,path_in) 
+with handle.get_writer("myoutputfile.txt") as w:
+    w.write("some data")
+
