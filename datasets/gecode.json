@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1664154877602
+    "lastModifiedOn": 1664154923961
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,33 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "new_column",
+        "type": "string"
+      },
+      {
+        "name": "latitude",
+        "type": "double"
+      },
+      {
+        "name": "longitude",
+        "type": "double"
+      },
+      {
+        "name": "new_column_1",
+        "type": "string"
+      },
+      {
+        "name": "new_column_2",
+        "type": "string"
+      },
+      {
+        "name": "new_column_3",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
