@@ -7,9 +7,7 @@
       },
       "testQueries": [
         {
-          "q": {
-            "paramNameToReplace": "paramValueToReplace"
-          }
+          "q": {}
         }
       ],
       "inputFolderRefs": [
@@ -28,11 +26,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1664185337046
+    "lastModifiedOn": 1664185349217
   },
   "creationTag": {
     "versionNumber": 0,
