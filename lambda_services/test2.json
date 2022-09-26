@@ -5,7 +5,13 @@
       "envSelection": {
         "envMode": "INHERIT"
       },
-      "testQueries": [],
+      "testQueries": [
+        {
+          "q": {
+            "paramNameToReplace": "paramValueToReplace"
+          }
+        }
+      ],
       "inputFolderRefs": [
         {
           "ref": "oQL0pTOm"
@@ -22,11 +28,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1664185257447
+    "lastModifiedOn": 1664185315224
   },
   "creationTag": {
     "versionNumber": 0,
